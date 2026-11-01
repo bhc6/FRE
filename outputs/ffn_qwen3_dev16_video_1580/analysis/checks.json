@@ -1,0 +1,115 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "constant_has_only_dc",
+      "passed": true,
+      "values": null
+    },
+    {
+      "name": "single_sine_parseval_and_bin",
+      "passed": true,
+      "values": null
+    },
+    {
+      "name": "anti_increment_cross_term",
+      "passed": true,
+      "values": null
+    },
+    {
+      "name": "parseval_T2",
+      "passed": true,
+      "values": null
+    },
+    {
+      "name": "parseval_T7",
+      "passed": true,
+      "values": null
+    },
+    {
+      "name": "parseval_T8",
+      "passed": true,
+      "values": null
+    },
+    {
+      "name": "parseval_T31",
+      "passed": true,
+      "values": null
+    },
+    {
+      "name": "parseval_T32",
+      "passed": true,
+      "values": null
+    },
+    {
+      "name": "rounded_residual_decomposition",
+      "passed": true,
+      "values": null
+    },
+    {
+      "name": "opposite_spatial_signs_cancel_mean",
+      "passed": true,
+      "values": null
+    },
+    {
+      "name": "invalid_input_1_rejected",
+      "passed": true,
+      "values": null
+    },
+    {
+      "name": "invalid_input_2_rejected",
+      "passed": true,
+      "values": null
+    },
+    {
+      "name": "invalid_input_3_rejected",
+      "passed": true,
+      "values": null
+    },
+    {
+      "name": "invalid_input_4_rejected",
+      "passed": true,
+      "values": null
+    },
+    {
+      "name": "invalid_input_5_rejected",
+      "passed": true,
+      "values": null
+    },
+    {
+      "name": "invalid_input_6_rejected",
+      "passed": true,
+      "values": null
+    },
+    {
+      "name": "invalid_input_7_rejected",
+      "passed": true,
+      "values": null
+    },
+    {
+      "name": "invalid_input_8_rejected",
+      "passed": true,
+      "values": null
+    },
+    {
+      "name": "invalid_input_9_rejected",
+      "passed": true,
+      "values": null
+    }
+  ],
+  "check_count": 19,
+  "max_parseval_absolute_error": 2.220446049250313e-16,
+  "eight_sample_band_indices": [
+    [
+      1,
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ]
+  ],
+  "scope": "Independent synthetic numerical checks, no torch, model loading, GPU, or task-performance claims."
+}

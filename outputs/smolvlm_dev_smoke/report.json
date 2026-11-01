@@ -1,0 +1,48 @@
+{
+  "scores": {
+    "0:no_memory:all": {
+      "budget_pairs": 0,
+      "method": "no_memory",
+      "subset": "all",
+      "questions": 1,
+      "videos": 1,
+      "correct": 0,
+      "question_accuracy": 0.0,
+      "video_macro_accuracy": 0.0,
+      "mean_memory_bytes": 0.0,
+      "median_request_seconds": 1.0208430999991833
+    },
+    "4:full_reference:all": {
+      "budget_pairs": 4,
+      "method": "full_reference",
+      "subset": "all",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 28313100.0,
+      "median_request_seconds": 5.5399937000001955
+    },
+    "4:uniform:all": {
+      "budget_pairs": 4,
+      "method": "uniform",
+      "subset": "all",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 3539820.0,
+      "median_request_seconds": 0.9529084999994666
+    }
+  },
+  "comparisons": [],
+  "limitations": [
+    "No participant IDs; video bootstrap does not establish cross-person generalization.",
+    "Intervals are unadjusted descriptive comparisons; only the frozen primary contrast is confirmatory.",
+    "Full/last-pair references have different budgets and are reader diagnostics.",
+    "Per-video raw-image bytes are matched across same-budget methods; compute is reported separately.",
+    "Short-video event memory is not lifelong streaming memory."
+  ]
+}

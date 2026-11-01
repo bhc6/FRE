@@ -1,0 +1,719 @@
+{
+  "schema_version": 2,
+  "review_cutoff": "2026-11-01",
+  "distinct_main_conference_papers": 13,
+  "scope": {
+    "gpu_access": false,
+    "new_model_weights_downloaded": false,
+    "local_predictions_read": false,
+    "new_159_questions_scored": false,
+    "read_depth": "Relevant main methods, equations/tensors, evaluation, and specified appendices; full PDFs cached, not a claim of reading every reference/checklist/case page."
+  },
+  "parameter_policy": "Nominal model labels, active MoE parameters, trainable parameters and exact full tensor counts are distinct. Unknown counts/compute are not inferred.",
+  "papers": [
+    {
+      "id": "01_var",
+      "key": "P01",
+      "title": "See What You Are Told: Visual Attention Sink in Large Multimodal Models",
+      "venue": "ICLR 2025",
+      "kind": "冻结模型的 attention 概率重分配",
+      "read_sections": [
+        "§4–5; Eq.4; Tables 1,4; Appendix D.2"
+      ],
+      "tensor": "对每个文本 query、head 的完整 attention 行 A[i,:] 操作。先用非 sink 视觉质量/全部视觉质量选择 image-centric heads；再从 sink 集 S 收回 Ω_i=p Σ_{j∈S}a_ij，将质量按原比例加到非 sink 视觉集 V。sink 项乘(1−p)，其他非视觉项不变。保持全行概率和为1，不改 V 或 residual。",
+      "formula": "Ω_i=p∑_{j∈S}a_ij; a′_ij=(1−p)a_ij (j∈S); a′_ij=a_ij+Ω_i a_ij/∑_{k∈V}a_ik (j∈V).",
+      "models": "LLaVA-1.5、VILA、Qwen2-VL 等六种 LMM；主要 7B/13B 名义规格。",
+      "parameters": "论文型号常指 decoder 容量；未独立核计 vision/projector 后的唯一参数总数。未见直接2B结果。",
+      "training": "不训练模型权重；sink 阈值τ=20、p=.6；任务相关ρ=.8/.5/.9；不干预最后一层。",
+      "compute": "Appendix D.2 报告单张 NVIDIA A6000 48GB；未据此推算 GPU-hours。",
+      "results": [
+        "GQA：LLaVA-1.5-7B 62.0→63.5；Qwen2-VL-7B 64.5→64.7。",
+        "Table4 不做 image-centric head 筛选而对所有 heads 重分配，POPE/MME/MM-Vet 三项均退化到0.0。"
+      ],
+      "limits": "sink 判定依赖架构中的异常 hidden 维度；不能把所有 sink 或所有 heads 视为有害。选择和校准影响收益。",
+      "difference": "直接可比的冻结内部干预基线；需要完整 key 归一化和 identity 检查。我们的跨模型干预应报告 head选择、全行质量、失败样本与负效应。",
+      "source": {
+        "id": "01_var",
+        "title_prefix": "See What You Are Told",
+        "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/da8a39bc39ae1c89dd6ebb1e3bcbb3f3-Paper-Conference.pdf",
+        "venue_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/da8a39bc39ae1c89dd6ebb1e3bcbb3f3-Abstract-Conference.html",
+        "pdf": {
+          "source": "existing_cache",
+          "bytes": 5708100,
+          "sha256": "a1b27a3174741825148ae93292dc78ef8c38d6d76529709945f601fbc9e16291"
+        },
+        "pages": 28,
+        "text_sha256": "164866338921568a5bfdc491ec10a128c484c7e8d189c55e320c03b02cd6185a",
+        "first_page_title_text": "Published as a conference paper at ICLR 2025\n\n\nSEE WHAT YOU ARE TOLD: VISUAL ATTENTION SINK\nIN LARGE MULTIMODAL MODELS\n\n\n  Seil Kang∗Jinyeong Kim∗Junhyeok Kim  Seong Jae Hwang†\n Yonsei University\n {seil,jinyeong1324,timespt,seongjae}@yonsei.ac.kr\n\n\n\n                         ABSTRACT\n\n\n        Large multimodal models (LMMs) “see” images by leveragin",
+        "status": "pdf_and_text_cached",
+        "venue": {
+          "source": "existing_cache",
+          "bytes": 10069,
+          "sha256": "4ac9d715f620c827c1d174a79474615a8ea223ad06d121b335bb79bc0870b53e"
+        }
+      },
+      "local_pdf": "outputs/literature_internal_mechanism_v2/01_var.pdf",
+      "local_text": "outputs/literature_internal_mechanism_v2/01_var.txt",
+      "claim_status": "paper-reported, not locally reproduced"
+    },
+    {
+      "id": "02_rar",
+      "key": "P02",
+      "title": "RAR: Reversing Visual Attention Re-Sinking for Unlocking Potential in Multimodal Large Language Models",
+      "venue": "ICLR 2026",
+      "kind": "sink 功能分解与训练时 head 稀疏化",
+      "read_sections": [
+        "§4–6; §6.1; results tables; appendix"
+      ],
+      "tensor": "用最大视觉 attention 的两成分 GMM 谷值区分 vision/sink heads；对非视觉 keys 子矩阵逐行归一化，再跨 query 平均得到 p_j，计算熵并再次用 GMM 分出高熵 global sink 与低熵 specific sink。保留 vision、global sink 和共享 head0，对晚层其余头稀疏化。",
+      "formula": "p_j=mean_i normalize_keys(A[i,I])_j; H=−∑_j p_j log p_j.",
+      "models": "Qwen2.5-VL-3B/7B/32B，InternVL2-2B，LLaVA-1.5-7B。Qwen3B从层20、Intern2B从层15、LLaVA7B从层20干预。",
+      "parameters": "2B/3B 等是作者型号；本阅读未独立计数全模型参数，不能当成与本地2.13B精确等量。",
+      "training": "主要结果使用670k SFT 样本，来源 RefCOCO、Dcube、Visual Genome、GQA、OCRVQA、TextVQA、CLEVER。参数无新增不等于无训练。",
+      "compute": "已查实验设置未确认 GPU型号/总 GPU-hours，记作未核实，不填估值。",
+      "results": [
+        "GQA Qwen3B：baseline60.4、SFT62.0、RAR64.2；Intern2B：55.6、56.9、59.0。",
+        "§4.1 另有最后五层重分配的训练自由诊断，平均+0.74pp，不能代替主方法训练设置。"
+      ],
+      "limits": "高熵 sink 可能承担全局整合；去除所有 sink 会破坏功能。GMM/阈值/层边界需要模型适配。",
+      "difference": "重要机制证据及训练预算明确的强对照，不能放进纯训练自由比较列并引用主表增益。标题必须用本条正式标题；不将其他标题或版本重复计数。",
+      "source": {
+        "id": "02_rar",
+        "title_prefix": "RAR: Reversing Visual Attention Re-Sinking",
+        "pdf_url": "https://eprints.gla.ac.uk/382078/1/800_RAR_Reversing_Visual_Atten.pdf",
+        "venue_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/42a1f9ef76af656f3fe33580ab794351-Abstract-Conference.html",
+        "pdf": {
+          "source": "existing_cache",
+          "bytes": 9200759,
+          "sha256": "eff4d58562e82a590adbaaec828f86899d739ce126fb518d808b448b82a2ab00"
+        },
+        "pages": 18,
+        "text_sha256": "32831749ea1fb7c5c29500edc1f2f5c09b491edaf8a6e4700842cc05c9e8283b",
+        "first_page_title_text": "Published as a conference paper at ICLR 2026\n\n\nRAR: REVERSING VISUAL ATTENTION RE-SINKING\nFOR UNLOCKING POTENTIAL IN MULTIMODAL LARGE\nLANGUAGE MODELS\n\n\n  Zhehan Kan1, 2∗  Xin Li2∗  Yanli Liu1∗  Xiaochen Yang3  Xinghua Jiang2\n Yinsong Liu2   Deqiang Jiang2   Xing Sun2  Qingmin Liao1  Wenming Yang1†\n 1Tsinghua University   2Tencent Youtu Lab   3The U",
+        "status": "pdf_and_text_cached",
+        "venue": {
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/42a1f9ef76af656f3fe33580ab794351-Abstract-Conference.html",
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 10083,
+          "sha256": "6b01d5ecd3b8b97dd975c895affbaed647fd98ab4e21d6de524ac127dec7c3cf"
+        }
+      },
+      "local_pdf": "outputs/literature_internal_mechanism_v2/02_rar.pdf",
+      "local_text": "outputs/literature_internal_mechanism_v2/02_rar.txt",
+      "claim_status": "paper-reported, not locally reproduced"
+    },
+    {
+      "id": "03_layer_reallocation",
+      "key": "P03",
+      "title": "Reallocating Attention Across Layers to Reduce Multimodal Hallucination",
+      "venue": "CVPR 2026",
+      "kind": "按层和 head 对 attention 输出乘增益",
+      "read_sections": [
+        "§3.1–3.2; final Eq.6–10; Table1; experimental settings"
+      ],
+      "tensor": "按视觉 attention 质量比、浅/深层边界和阈值挑选 perception/reasoning heads。把整个 head context A_hV_h 乘 g_h≥1 后拼接，经 W_O 输出；attention 概率 A 和 V投影本身不变。不是只增加 visual-value 分量。",
+      "formula": "Y′=Concat_h(g_h A_h V_h)W_O; unselected heads: g_h=1.",
+      "models": "Kimi-VL-A3B-Thinking、OceanR1-7B、R1-Onevision-7B。",
+      "parameters": "Kimi A3B 是激活参数约3B，绝非全模型总参数3B；另外两个7B标签也未独立核计视觉总量。",
+      "training": "无需权重训练，但需校准层边界、视觉质量阈值和增益。Ocean示例 g_reason1.30/τ_reason.01，g_perception1.16/τ_perception.22。",
+      "compute": "Ocean用A40，其他模型用A800。未核实总GPU-hours；不把早期预印本的50样本说法写成最终版事实。",
+      "results": [
+        "Table1 MathVista：Kimi63.48→69.78；Ocean54.58→59.32。"
+      ],
+      "limits": "Eq7 用单个 query i*，附近文字又说 query平均，移植需明确定义。不能把概念性论证视作误差必然下降的定理。",
+      "difference": "可在冻结模型中实现的 head-output gain；与残差/FFN干预区分。需独立验证集选参，等强度随机头、反向gain和identity作对照。",
+      "source": {
+        "id": "03_layer_reallocation",
+        "title_prefix": "Reallocating Attention Across Layers",
+        "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Lu_Reallocating_Attention_Across_Layers_to_Reduce_Multimodal_Hallucination_CVPR_2026_paper.pdf",
+        "venue_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Lu_Reallocating_Attention_Across_Layers_to_Reduce_Multimodal_Hallucination_CVPR_2026_paper.html",
+        "pdf": {
+          "source": "existing_cache",
+          "bytes": 2814794,
+          "sha256": "04813dce158f193e5caa15864f72abf89e742c45cc4d4fa5db344c0464a3ffb3"
+        },
+        "pages": 11,
+        "text_sha256": "4b9372105c1c380bf230f2cc7b6644c289f07e09396d32c1d4594fb4fc07b343",
+        "first_page_title_text": "                  This CVPR paper is the Open Access version, provided by the Computer Vision Foundation.\n                              Except for this watermark, it is identical to the accepted version;\n                            the final published version of the proceedings is available on IEEE Xplore.\n\n\n\n\n\n   Reallocating Attention Across Laye",
+        "status": "pdf_and_text_cached",
+        "venue": {
+          "source": "existing_cache",
+          "bytes": 6692,
+          "sha256": "6c391cf6167417258429e96821302b712f11f184efba854c16f011add6c8ca12"
+        }
+      },
+      "local_pdf": "outputs/literature_internal_mechanism_v2/03_layer_reallocation.pdf",
+      "local_text": "outputs/literature_internal_mechanism_v2/03_layer_reallocation.txt",
+      "claim_status": "paper-reported, not locally reproduced"
+    },
+    {
+      "id": "04_delimiter",
+      "key": "P04",
+      "title": "Enhancing Multi-Image Understanding through Delimiter Token Scaling",
+      "venue": "ICLR 2026",
+      "kind": "真实分隔 token 的 residual hidden 缩放",
+      "read_sections": [
+        "§3–5; Eq2; Table1; §7; Appendix A.3 and Tables A2/A5; official author code"
+      ],
+      "tensor": "论文 Eq2 对真实 image delimiter tokens 的 hidden乘λ>1。作者 Qwen2.5/InternVL3 代码在 decoder block输出后缩放 residual stream；Qwen token为vision_start/end，Intern为<img>/</img>。代码只在开始/结束token数分别>1时执行；Intern还要求序列长度>1。",
+      "formula": "h_t^(l)←λ h_t^(l), t∈D. Public Qwen2.5-VL-3B Mantis command: λ=8, zero-based layers 0,1,2,3.",
+      "models": "Qwen2.5-VL3B/7B/32B，InternVL3-1B/2B/8B/14B，LLaVA-OneVision0.5B/7B；更大模型另做实验。",
+      "parameters": "额外Hub metadata核查：InternVL3-1B 938,193,024总tensor参数，2B 2,088,957,440；LLaVA-OV0.5B 893,675,552。来源为指定Hub revision的声明，非本地权重审计或推理验证。",
+      "training": "无需权重训练。Appendix A.3 多图用10% test作validation；多文档/多表直接在test调参。层在同模型各benchmark固定，λ可调。",
+      "compute": "作者按模型用A5000/A6000/H200。未下载新权重，也未把本地8GB能否运行当作已证实。",
+      "results": [
+        "Qwen3B Mantis59.91→63.13、Muir37.31→42.42。",
+        "InternVL3-2B Muir27.69→27.65；InternVL3-1B QBench2 50.80→50.20；并非每格提升。"
+      ],
+      "limits": "§7明确缺少帧delimiter的视频不适用。公开README只给Qwen3B Mantis λ8/层0–3，未找到InternVL3-1B最优层/λ；CLI默认禁用。pre-RMSNorm使正标量近似被归一化抵消，不能自动推出Q/K幅值放大。",
+      "difference": "最优先训练自由基线，但需固定真实token、层、prefill行为。Smol/Qwen3或中层/.5-2-4属移植与消融，不能称原版复现。理论解释转向相对residual更新并用实际QKV测量检验。",
+      "source": {
+        "id": "04_delimiter",
+        "title_prefix": "Enhancing Multi-Image Understanding through Delimiter Token Scaling",
+        "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/aebf6284fe85a8f44b4785d41bc8249a-Paper-Conference.pdf",
+        "venue_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/aebf6284fe85a8f44b4785d41bc8249a-Abstract-Conference.html",
+        "pdf": {
+          "source": "existing_cache",
+          "bytes": 15700336,
+          "sha256": "1a51c716d30d5e7faeaeb0e4694cb4e424d741ef2eb3e1160945cfad2ef5630b"
+        },
+        "pages": 23,
+        "text_sha256": "9537a6e59c2007e9318a069b38f33b4bdafa450fcdcaf49d6f9ff4fd30ec6eb4",
+        "first_page_title_text": "Published as a conference paper at ICLR 2026\n\n\nENHANCING MULTI-IMAGE UNDERSTANDING\nTHROUGH DELIMITER TOKEN SCALING\n\n\n Minyoung Lee1, Yeji Park1, Dongjun Hwang1, Yejin Kim1,2, Seong Joon Oh2,3, Junsuk Choe1†\n 1Sogang University, 2KAIST, 3University of T¨ubingen\n\n\n                         ABSTRACT\n\n        Large Vision-Language Models (LVLMs) achieve",
+        "status": "pdf_and_text_cached",
+        "venue": {
+          "source": "existing_cache",
+          "bytes": 9658,
+          "sha256": "55cf5984a5b91962d8600afa28758b921c274d7d6108ad4fcf47cdf4844addae"
+        }
+      },
+      "local_pdf": "outputs/literature_internal_mechanism_v2/04_delimiter.pdf",
+      "local_text": "outputs/literature_internal_mechanism_v2/04_delimiter.txt",
+      "claim_status": "paper-reported, not locally reproduced"
+    },
+    {
+      "id": "05_visual_heads",
+      "key": "P05",
+      "title": "Unveiling Visual Perception in Language Models: An Attention Head Analysis Approach",
+      "venue": "CVPR 2025",
+      "kind": "attention head 定位与删除诊断",
+      "read_sections": [
+        "attention scoring method; §5; main results; supplement"
+      ],
+      "tensor": "从最后输入位置/首个输出query读完整attention；组合视觉区域质量、集中度及层权重来识别视觉头。集中度由token分布熵定义，不能用只对视觉子集重新归一化的分数替代原口径。",
+      "formula": "Concentration C=1−H(α)/log₂(N+ε); score additionally combines regional attention mass and layer weighting.",
+      "models": "九个LLaVA/VIP变体，包括Phi3-3.8B及7B/8B/13B骨干。",
+      "parameters": "型号为名义语言骨干尺寸；没有独立全模型唯一参数统计。",
+      "training": "诊断/删除heads，无新的模型权重训练；PointQA约5700样本，控制prompt，并扩展MMBench/POPE/SEED/QBench。",
+      "compute": "阅读的main/supp未确认GPU型号及GPU-hours。",
+      "results": [
+        "早层top20视觉头删除比随机删除破坏更大；晚层可删约100heads而影响较小。",
+        "同家族头模式相关性>0.8，跨家族<0.1，不能移植固定head编号。"
+      ],
+      "limits": "关键head删除导致损失只说明模型对该路径敏感，不能推出增强该head必然改善正确率。",
+      "difference": "用于设计选头统计和必要性消融；不是已有原生QA增益基线。跨模型对齐应按功能/相对深度而非同一headID。",
+      "source": {
+        "id": "05_visual_heads",
+        "title_prefix": "Unveiling Visual Perception in Language Models",
+        "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Bi_Unveiling_Visual_Perception_in_Language_Models_An_Attention_Head_Analysis_CVPR_2025_paper.pdf",
+        "venue_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Bi_Unveiling_Visual_Perception_in_Language_Models_An_Attention_Head_Analysis_CVPR_2025_paper.html",
+        "pdf": {
+          "source": "existing_cache",
+          "bytes": 1994540,
+          "sha256": "753178b2cd6e93a5f37b1d613192f31149b91d559842e2b97d06db435427d882"
+        },
+        "pages": 10,
+        "text_sha256": "5d6478d2f578b6c3538b25909eba81ce9b67a34be7e2f1674e3994f36e99bf5a",
+        "first_page_title_text": "                     This CVPR paper is the Open Access version, provided by the Computer Vision Foundation.\n                                 Except for this watermark, it is identical to the accepted version;\n                                the final published version of the proceedings is available on IEEE Xplore.\n\n\n\n\n\n               Unveiling Vi",
+        "status": "pdf_and_text_cached",
+        "venue": {
+          "source": "existing_cache",
+          "bytes": 6286,
+          "sha256": "30fa80c1119fb3f1f45dfc0677be2825209c76db1e6d4950124a04f2e8cec68b"
+        }
+      },
+      "local_pdf": "outputs/literature_internal_mechanism_v2/05_visual_heads.pdf",
+      "local_text": "outputs/literature_internal_mechanism_v2/05_visual_heads.txt",
+      "claim_status": "paper-reported, not locally reproduced"
+    },
+    {
+      "id": "06_frequency_entropy",
+      "key": "P06",
+      "title": "Probing Rotary Position Embeddings through Frequency Entropy",
+      "venue": "ICLR 2026",
+      "kind": "token轴 RoPE频率诊断与幅度调制",
+      "read_sections": [
+        "frequency-entropy definitions; intervention; downstream table; Appendix G"
+      ],
+      "tensor": "沿token位置记录RoPE二维pair范数序列。STFT窗1024/hop512、长度4096产生7窗；平均power归一化后计算频率熵。SequenceFE采用去DC的正频DFT。低熵pair的Q/K旋转分量乘α。",
+      "formula": "q*_(m,j)=α_(l,h,j) R_(m,j)q_(m,j), similarly K, for pairs selected by entropy threshold.",
+      "models": "Llama4-Scout17B-16E、Llama3-8B、Qwen3-8B、Gemma2-9B；另有自训练小模型。",
+      "parameters": "Scout17B是激活规模，不是总模型参数；其他标签也不等于本地精确总量。",
+      "training": "主Wikitext103干预不finetune、扫描阈值。Appendix G另训练16层/d1024/8head模型约286k更新/205epochs，不能说全篇都无训练。",
+      "compute": "未确认GPU-hours；主推理和附录预训练预算必须分列。",
+      "results": [
+        "主语言建模PPL可改善；下游准确率无显著增益例：Qwen3 Winogrande58.94→58.92，其余两项不变。"
+      ],
+      "limits": "幅度乘α不改变RoPE角频率或相位速度；paper叙述不能替代数学。token轴不等于视频时间轴，也不支持长期多模态记忆结论。",
+      "difference": "给出Q/K pair统计工具；本地必须保留真实时序轴并区分token频谱、空间FFT和协方差特征谱。原生QA提升需单独证明。",
+      "source": {
+        "id": "06_frequency_entropy",
+        "title_prefix": "Probing Rotary Position Embeddings through Frequency Entropy",
+        "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/0aee38a6fe9fffc8b658cfb1d872c1d5-Paper-Conference.pdf",
+        "venue_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/0aee38a6fe9fffc8b658cfb1d872c1d5-Abstract-Conference.html",
+        "pdf": {
+          "source": "existing_cache",
+          "bytes": 20922929,
+          "sha256": "5143c8d5e367f0c45dd51703e7f17542078f99e8e49776084bb5ee384913d0a9"
+        },
+        "pages": 29,
+        "text_sha256": "4f7627a6d97f917353520792f31e931a66f1aab9966fe2fadc5e4c20118d5d9f",
+        "first_page_title_text": "Published as a conference paper at ICLR 2026\n\n\nPROBING ROTARY POSITION EMBEDDINGS\nTHROUGH FREQUENCY ENTROPY\n\n\n  Yui Oka1∗, Kentaro Hanafusa2*†, Taku Hasegawa1, Kyosuke Nishida1, Kuniko Saito1\n 1Human Informatics Labs., NTT, Inc.\n 2Ehime University\n yui.oka@ntt.com\n\n\n\n                         ABSTRACT\n\n        Rotary Position Embeddings (RoPE) are w",
+        "status": "pdf_and_text_cached",
+        "venue": {
+          "source": "existing_cache",
+          "bytes": 9575,
+          "sha256": "e5c1668f15b01cd2b38fa5f4d6c8120f0f458b82ed15d0f8c841171154a13c95"
+        }
+      },
+      "local_pdf": "outputs/literature_internal_mechanism_v2/06_frequency_entropy.pdf",
+      "local_text": "outputs/literature_internal_mechanism_v2/06_frequency_entropy.txt",
+      "claim_status": "paper-reported, not locally reproduced"
+    },
+    {
+      "id": "07_map_flow",
+      "key": "P07",
+      "title": "Map the Flow: Revealing Hidden Pathways of Information in VideoLLMs",
+      "venue": "ICLR 2026",
+      "kind": "attention 边敲除与层间信息路由",
+      "read_sections": [
+        "causal knockout method; main pathway experiments; Table3; Appendix G.7; training settings"
+      ],
+      "tensor": "在softmax之前对指定query-key边设−∞，以9层滑窗追踪路径。早中层视觉跨帧，中层视频→问题，晚层问题→最后token；这些是经干预的功能路径而非attention图的直接语义解释。",
+      "formula": "Attention(Q,K,V)=softmax(QKᵀ/√d+M)V; selected M_ij=−∞.",
+      "models": "LLaVA-NeXT7B/13B、MiniInternVL4B、VideoLLaMA3-7B。",
+      "parameters": "7B/4B等为论文名义规格，未独立核计总参数。",
+      "training": "其视频模型训练设置为VideoChat2-IT874k、3epochs；冻结vision，训练projector+LLM。因果分析主要筛选baseline答对样本。",
+      "compute": "A6000；未核实完整GPU-hours。",
+      "results": [
+        "Table3 LLaVA7B保留42% attention边：TVBench51.5→51.2、TOMATO30.2→29.2。",
+        "VideoLLaMA3保留58%边：TVBench55.2→57.2。"
+      ],
+      "limits": "正确样本筛选影响外推；保留边比例不等于实际kernel加速，也非所有模型/数据都涨分。Appendix G.7局部概率上升不是完整新测试集的修复结果。",
+      "difference": "直接指导内部路由干预和路径层定位；我们的验证应包含全部预冻结样本、native答案、latency/VRAM实测和失败率。",
+      "source": {
+        "id": "07_map_flow",
+        "title_prefix": "Map the Flow",
+        "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/537b3416a0c8035794a12b3fa596f941-Paper-Conference.pdf",
+        "venue_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/537b3416a0c8035794a12b3fa596f941-Abstract-Conference.html",
+        "pdf": {
+          "source": "existing_cache",
+          "bytes": 18255148,
+          "sha256": "eb3c38ae9675b5de70743ffa10d601a9abe0203b4cbfb1a765d3a0ff881b22f7"
+        },
+        "pages": 32,
+        "text_sha256": "ccf85bc04ada5c8d9c151314e3f1dd40e6ff875db7d9d699736fc1e0a8c1a40f",
+        "first_page_title_text": "Published as a conference paper at ICLR 2026\n\n\nMAP THE FLOW: REVEALING HIDDEN PATHWAYS OF\nINFORMATION IN VIDEOLLMS\n\n\n  Minji Kim1∗     Taekyung Kim3∗      Bohyung Han1,2\n\n 1ECE & 2IPAI, Seoul National University\n 3NAVER AI Lab\n\n\n                         ABSTRACT\n\n       Video Large Language Models (VideoLLMs) extend the capabilities of vision-\n    ",
+        "status": "pdf_and_text_cached",
+        "venue": {
+          "source": "existing_cache",
+          "bytes": 9357,
+          "sha256": "d24c2027b74ac5421baea47597dd6edf14d3ef6ad64f1ced4e1ac91c14197f49"
+        }
+      },
+      "local_pdf": "outputs/literature_internal_mechanism_v2/07_map_flow.pdf",
+      "local_text": "outputs/literature_internal_mechanism_v2/07_map_flow.txt",
+      "claim_status": "paper-reported, not locally reproduced"
+    },
+    {
+      "id": "08_t3",
+      "key": "P08",
+      "title": "Temporal Reasoning Transfer from Text to Video",
+      "venue": "ICLR 2025",
+      "kind": "用合成文字QA训练来迁移时序推理",
+      "read_sections": [
+        "representation probes; text training methods; main task ablations; training appendix"
+      ],
+      "tensor": "比较视觉编码器和decoder最终特征中可被probe读出的事件信息，再用按顺序的文字caption合成QA训练原VLM。任务涵盖distractor、顺序、属性、指代与grounding。外部LSTM读出并不说明原模型实际使用该信息。",
+      "formula": "Autoregressive supervised QA loss on caption sequences; no temporal FFT operator.",
+      "models": "LongVA7B、VILA8B用于probe；LongVA7B和Qwen2-VL72B用于迁移实验。",
+      "parameters": "7B/8B/72B为名义模型尺寸，没有本文独立总参数审计。",
+      "training": "任务探索22k；综合200k文字QA，与原instruction按1:2混合，一epoch。不是adapter-only；学习率vision2e−6、其余1e−5，纯文字样本不做视觉前向。",
+      "compute": "8×H100，综合训练≤5小时；这不是本地8GB训练配置。",
+      "results": [
+        "TempCompass全任务55.9→61.2；仅grounding训练55.9→41.0。"
+      ],
+      "limits": "任务构造和原instruction混合影响迁移及原视觉能力；数据训练贡献不能归因于频率或单一内部算子。",
+      "difference": "强证据表明视觉内容可读出与native推理可用之间有差距。可作训练型上界，不能替代同prompt/同输入的冻结内部修复验证。",
+      "source": {
+        "id": "08_t3",
+        "title_prefix": "Temporal Reasoning Transfer from Text to Video",
+        "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/b7eecb72574b043ad0c69ea296212450-Paper-Conference.pdf",
+        "venue_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/b7eecb72574b043ad0c69ea296212450-Abstract-Conference.html",
+        "pdf": {
+          "source": "existing_cache",
+          "bytes": 3108727,
+          "sha256": "cb8c1632a033189801eaaf9a241e3ab1d84d723ecde4410b16717ba2949080cf"
+        },
+        "pages": 33,
+        "text_sha256": "a216ab4d23bec0498948a028ce4d99c00d7f3d8db41e9e015970c081fb30ac89",
+        "first_page_title_text": "Published as a conference paper at ICLR 2025\n\n\nTEMPORAL REASONING TRANSFER FROM TEXT TO\nVIDEO\n\n\n Lei Li1∗  Yuanxin Liu2∗  Linli Yao2   Peiyuan Zhang3   Chenxin An1\n Lean Wang2  Xu Sun2   Lingpeng Kong1  Qi Liu1\n 1The University of Hong Kong   2Peking University   3University of California, San Diego\n nlp.lilei@gmail.com  {liuyuanxin, linliyao}@stu.",
+        "status": "pdf_and_text_cached",
+        "venue": {
+          "source": "existing_cache",
+          "bytes": 10241,
+          "sha256": "e009764416f6f34a3d33d2d6151a220f6f20ea527a0219399f85523e56a93da3"
+        }
+      },
+      "local_pdf": "outputs/literature_internal_mechanism_v2/08_t3.pdf",
+      "local_text": "outputs/literature_internal_mechanism_v2/08_t3.txt",
+      "claim_status": "paper-reported, not locally reproduced"
+    },
+    {
+      "id": "09_frame2freq",
+      "key": "P09",
+      "title": "Frame2Freq: Spectral Adapters for Fine-Grained Video Understanding",
+      "venue": "CVPR 2026",
+      "kind": "真实时序FFT/STFT adapter与中间表征频谱分析",
+      "read_sections": [
+        "method and architecture; main action-recognition tables; Supplement A.1 and training details; local axis audit"
+      ],
+      "tensor": "输入X[B,T,N,D]，按空间位置/通道沿T做复数STFT；FCdown→STFT→频域及时间卷积→iSTFT→FCup残差。多尺度版拆通道、用多窗口后concat。附录对内部embedding沿时间FFT，以功率和类别ANOVA计算频段区分性。",
+      "formula": "P_i(f)=mean_d |FFT_t(X_i)[f,d]|²; adapter uses iSTFT(Conv(STFT(FCdown(X)))).",
+      "models": "冻结CLIP或DINOv2 ViT-B/16、ViT-L/14骨干；分类head与adapter训练。",
+      "parameters": "多尺度adapter约7.3M可训练参数，吞吐表314GFLOPs；不是7.3M全模型，也不是native VLM QA系统。",
+      "training": "五个动作识别数据集；60epochs、batch32、lr1e−3，训练adapter与分类head。",
+      "compute": "小数据4×A100，SSv2/Diving48用16×A100；实际总GPU-hours未核实。",
+      "results": [
+        "Diving48 ST-Adapter90.4→Frame2Freq-MS92.2，+1.8pp。"
+      ],
+      "limits": "已有内部频谱诊断，不能说其只做频率模块而未分析hidden。类别监督频段区分性不是无监督因果证据；离散频率不自动是物理Hz。作者代码轴/布局疑点详见已有frame2freq_axis_audit。",
+      "difference": "频域方向最直接前作；若继续频率路线，需原生VLM推理、阶段/跨模型复现和同容量时域控制，不能只复写STFT adapter。",
+      "source": {
+        "id": "09_frame2freq",
+        "title_prefix": "Frame2Freq",
+        "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Ponbagavathi_Frame2Freq_Spectral_Adapters_for_Fine-Grained_Video_Understanding_CVPR_2026_paper.pdf",
+        "venue_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Ponbagavathi_Frame2Freq_Spectral_Adapters_for_Fine-Grained_Video_Understanding_CVPR_2026_paper.html",
+        "pdf": {
+          "source": "existing_cache",
+          "bytes": 2348185,
+          "sha256": "ad7299c331e2cca5c80146dce364f50dd91a6d4727c17f988bd141406ce24be2"
+        },
+        "pages": 11,
+        "text_sha256": "ab5ffc231c09cc432bdedd1872a3854b64d842a417a86f86e311c1c9f22579b6",
+        "first_page_title_text": "                  This CVPR paper is the Open Access version, provided by the Computer Vision Foundation.\n                             Except for this watermark, it is identical to the accepted version;\n                            the final published version of the proceedings is available on IEEE Xplore.\n\n\n\n\n    Frame2Freq: Spectral Adapters for F",
+        "status": "pdf_and_text_cached",
+        "venue": {
+          "source": "existing_cache",
+          "bytes": 6160,
+          "sha256": "4848fdfacbec798de430f51473f6d55234c3334fed95c2d586dff36ef7927cc0"
+        }
+      },
+      "local_pdf": "outputs/literature_internal_mechanism_v2/09_frame2freq.pdf",
+      "local_text": "outputs/literature_internal_mechanism_v2/09_frame2freq.txt",
+      "claim_status": "paper-reported, not locally reproduced"
+    },
+    {
+      "id": "10_lfm",
+      "key": "P10",
+      "title": "Language-guided Frequency Modulation for Large Vision-Language Models",
+      "venue": "CVPR 2026",
+      "kind": "语言引导空间频率调制与全参数训练",
+      "read_sections": [
+        "method Eq11–13; §4.1; Tables1–2; appendix implementation"
+      ],
+      "tensor": "按组平均vision中间层，对空间轴FFT得到F_k；额外CLIP text encoder产生语言特征T，用cos相似度调制频谱，再把IFFT后的结果和FFN后视觉特征混合，组间concat→2层MLP。这里是空间频率。",
+      "formula": "S_k=cos(F_k,T); F̂_k=F_k⊙(1+α_kS_k); fuse with β Re(IFFT(F̂_k)).",
+      "models": "Phi2-2.7B、Vicuna7/13B、Llama3-8B、Yi34B及InternVL2.5-1B/8B、Qwen2.5-VL7B。",
+      "parameters": "模型标签不含可直接比较的完整精确总参数；额外text encoder、多层vision融合和训练成本需计入。",
+      "training": "指令微调更新全部参数。预训练一epoch、SFT一epoch；表列0.5M+0.6M或1.2M+1.5M等配方，正文数据命名与数量有歧义，不虚构每模型统一训练集。",
+      "compute": "NVIDIA A6000 48GB；未核实每模型GPU数/总GPU-hours。",
+      "results": [
+        "InternVL2.5-1B：MMB70.7/66.3→73.1/68.3，MMStar48.8→52.3。",
+        "匹配CLIP/Vicuna7B配置的Table2 GQA62.0→64.6。"
+      ],
+      "limits": "不是仅训练轻量MLP的冻结插件；语言条件、训练数据、多vision层等混杂因素不能全部归功于频域。",
+      "difference": "文献矩阵必须区分空间/时间频率。我们的无训练内部干预需与其全训练结果分栏，并验证同容量非频率对照。",
+      "source": {
+        "id": "10_lfm",
+        "title_prefix": "Language-guided Frequency Modulation",
+        "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Ouyang_Language-guided_Frequency_Modulation_for_Large_Vision-Language_Models_CVPR_2026_paper.pdf",
+        "venue_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Ouyang_Language-guided_Frequency_Modulation_for_Large_Vision-Language_Models_CVPR_2026_paper.html",
+        "pdf": {
+          "source": "existing_cache",
+          "bytes": 1539415,
+          "sha256": "5b24199a5050a6977f5d1640b853f4d74d71f18b2e7599bcd60f43a5e903eff6"
+        },
+        "pages": 11,
+        "text_sha256": "79f0555c3869fecab4aa0a9bd9ebfcde48fbd5e4f302956312925e7598bffad1",
+        "first_page_title_text": "                  This CVPR paper is the Open Access version, provided by the Computer Vision Foundation.\n                             Except for this watermark, it is identical to the accepted version;\n                            the final published version of the proceedings is available on IEEE Xplore.\n\n\n\n\n\n  Language-guided Frequency Modulation",
+        "status": "pdf_and_text_cached",
+        "venue": {
+          "source": "existing_cache",
+          "bytes": 6448,
+          "sha256": "5eff6ce40ae7a9ad33194d8979f468b59ef91c2c012654b5f25a37bb1c1a1c59"
+        }
+      },
+      "local_pdf": "outputs/literature_internal_mechanism_v2/10_lfm.pdf",
+      "local_text": "outputs/literature_internal_mechanism_v2/10_lfm.txt",
+      "claim_status": "paper-reported, not locally reproduced"
+    },
+    {
+      "id": "11_too_late",
+      "key": "P11",
+      "title": "Too Late to Recall: Explaining the Two-Hop Problem in Multimodal Knowledge Retrieval",
+      "venue": "NeurIPS 2025",
+      "kind": "FFN实体信息时机、梯度归因和activation patching",
+      "read_sections": [
+        "two-hop dataset; Grad×Delta attribution; MLP transplantation; appendices and linear probes"
+      ],
+      "tensor": "比较图像→实体→知识的VLM与已获实体名的纯文本LLM。对clean/corrupted hidden作Grad×Delta归因；把文本LLM早层实体MLP activation移植到VLM所选位置，另测同模型backpatch。",
+      "formula": "Attribution=∑_d [∂KL(clean||corrupted)/∂H_corr,d]·(H_clean,d−H_corr,d).",
+      "models": "14组VLM/LLM骨干；重点LLaVA7/13B、LLaVA-MORE8B；Qwen2.5-VL7B/Gemma3-12B为较低退化组。",
+      "parameters": "名义骨干尺寸，不等于包含vision后的精确总数；donor LLM的额外存储与前向也需计入。",
+      "training": "15k WIT+GPT4.1构造QA，剔除识别错误，取每模型1000有效样本；归因100答对样本；patching100 VLM错/LLM对样本。无VLM权重训练，另训练ImageNet50类/2500图线性probe。",
+      "compute": "A100 80GB；没有据此推算本地可行性或完整GPU-hours。",
+      "results": [
+        "MLP transplantation恢复35%的性能差距，不是全测试集准确率+35pp。",
+        "backpatch约13%差距恢复，random约16%；不能只报最优移植列。"
+      ],
+      "limits": "donor得到真实实体文本，属于额外oracle信息；筛选样本偏差明确。外部probe读出与原生推理能力不同；CoT改变harness。",
+      "difference": "最接近FFN瓶颈→内部因果干预的论证模板。我们应在无答案/无entity oracle条件下识别FFN干扰，做随机/跨样本patch和原生答案验证。",
+      "source": {
+        "id": "11_too_late",
+        "title_prefix": "Too Late to Recall",
+        "pdf_url": "https://papers.neurips.cc/paper_files/paper/2025/file/4526cfacdbca6b6e184568dac91bf070-Paper-Conference.pdf",
+        "venue_url": "https://papers.neurips.cc/paper_files/paper/2025/hash/4526cfacdbca6b6e184568dac91bf070-Abstract-Conference.html",
+        "pdf": {
+          "source": "existing_cache",
+          "bytes": 961709,
+          "sha256": "c6ad7c035994d0b26ab66912573879f5dfdd6f5e170d9445b9bb55541981616e"
+        },
+        "pages": 28,
+        "text_sha256": "ac0e20a137ae51eaf4e57af2305b4b7f3264cbcbf7369e2f5ae514918ef02380",
+        "first_page_title_text": "Too Late to Recall: Explaining the Two-Hop Problem\n         in Multimodal Knowledge Retrieval\n\n\n\n\n Constantin Venhoff1,4  Ashkan Khakzar1,4  Sonia Joseph2,3  Philip Torr1  Neel Nanda\n\n                 1University of Oxford   2McGill University   3Meta  4MATS\n\n\n               § cvenhoff/vlm-two-hop\n\n\n                                Abstract\n\n       ",
+        "status": "pdf_and_text_cached",
+        "venue": {
+          "source": "existing_cache",
+          "bytes": 10286,
+          "sha256": "5d62dfa346082547fef424b32933e309a7fee0252c6a042fbc2a95f72ebbb00f"
+        }
+      },
+      "local_pdf": "outputs/literature_internal_mechanism_v2/11_too_late.pdf",
+      "local_text": "outputs/literature_internal_mechanism_v2/11_too_late.txt",
+      "claim_status": "paper-reported, not locally reproduced"
+    },
+    {
+      "id": "12_nerve",
+      "key": "P12",
+      "title": "NerVE: Nonlinear Eigenspectrum Dynamics in LLM Feed-Forward Networks",
+      "venue": "ICLR 2026",
+      "kind": "FFN非线性前后协方差特征谱诊断",
+      "read_sections": [
+        "FFN pre/post definitions; covariance metrics; architecture/optimizer experiments; compute appendix"
+      ],
+      "tensor": "非门控FFN比较W_up x+b与σ(pre)；SwiGLU比较W_gate x与σ(W_gate x)⊙W_up x。把[B,S,D]展成[BS,D]计算协方差特征值的熵/参与率/JS距离；已丢弃token顺序，不能当成时间频谱。",
+      "formula": "Σ=(X−μ)ᵀ(X−μ)/(N−1); p_i=λ_i/∑λ; SE=−∑p_i log p_i; PR=(∑λ_i)²/∑λ_i².",
+      "models": "GPT2-125M，Llama71M–1.3B从头训练；另有160M/350M优化器对比。",
+      "parameters": "这里明确研究小型语言模型，非已验证的冻结VLM；型号容量不证明可对等迁移到多模态模型。",
+      "training": "CodeParrot2.1B tokens/41k steps；Llama约1.1–2.2B tokens；另RoPE研究26B tokens。",
+      "compute": "24GB RTX3090；RoPE实验4GPU。总训练GPU-hours未独立核实。",
+      "results": [
+        "RoPE vs NoPE实验PPL15.20 vs16.78；包含多个架构/优化器相关性比较。"
+      ],
+      "limits": "eigenspectrum是特征协方差谱，非FFT；相关性不是冻结模型内FFN干预提高QA的证明。token池化也不构成独立样本统计。",
+      "difference": "可移植的pre/post FFN统计（用Gram节省内存），但必须与native错误/修复因果配对。不能以SE高低直接判定干扰或选择需要增强的方向。",
+      "source": {
+        "id": "12_nerve",
+        "title_prefix": "NerVE",
+        "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/2764bbdbd9f36d9f1ec63f4ad22b24ff-Paper-Conference.pdf",
+        "venue_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/2764bbdbd9f36d9f1ec63f4ad22b24ff-Abstract-Conference.html",
+        "pdf": {
+          "source": "existing_cache",
+          "bytes": 19789407,
+          "sha256": "d131e6a928fd85da7d230018294a89397567baab09d0b6287f6add8dfa73ceb3"
+        },
+        "pages": 40,
+        "text_sha256": "101e2e04da8983a75b22f275e4af154dd9fc3e4f8853bd450106cd6601ba6d03",
+        "first_page_title_text": "Published as a conference paper at ICLR 2026\n\n\nNERVE: NONLINEAR EIGENSPECTRUM DYNAMICS IN\nLLM FEED-FORWARD NETWORKS\n\n\n Nandan Kumar Jha & Brandon Reagen\n New York University\n {nj2049,bjr5}@nyu.edu\n\n\n\n                         ABSTRACT\n\n     We introduce NerVE, a unified eigenspectral framework for understanding how\n        feed-forward networks (FFN",
+        "status": "pdf_and_text_cached",
+        "venue": {
+          "source": "existing_cache",
+          "bytes": 9505,
+          "sha256": "23224df4dbfd59a4376fa86c9a5c2b31effaafc51029c8c26d2fed7792fc389d"
+        }
+      },
+      "local_pdf": "outputs/literature_internal_mechanism_v2/12_nerve.pdf",
+      "local_text": "outputs/literature_internal_mechanism_v2/12_nerve.txt",
+      "claim_status": "paper-reported, not locally reproduced"
+    },
+    {
+      "id": "13_localization_heads",
+      "key": "P13",
+      "title": "Your Large Vision-Language Model Only Needs A Few Attention Heads For Visual Grounding",
+      "venue": "CVPR 2025",
+      "kind": "少量head的外部grounding读出",
+      "read_sections": [
+        "head selection Eq3; grounding readout; main tables; supplement implementation"
+      ],
+      "tensor": "最后文本query→视觉attention总质量阈值选头。视觉map按均值二值化、8连通分量，按分量面积分布计算spatial entropy；每样本选10低熵头，再按频次取最终3头，排除最前2层。不是普通token熵。",
+      "formula": "H_spatial=−∑_i p(C_i)log p(C_i), p(C_i)=area(C_i)/∑_j area(C_j).",
+      "models": "10个LVLM，包括DeepSeek-VL1.3B、MiniGemini2B、其他6B/7B/13B。",
+      "parameters": "1.3B/2B为模型标签；RES另用SAM，不能不计其参数/计算。",
+      "training": "无需权重训练；使用1000 RefCOCO train图文pair选头。Gaussian attention map产生box，SAM仅用于segmentation。",
+      "compute": "Supplement报告A6000 48GB；未核实总GPU-hours。",
+      "results": [
+        "DeepSeek-VL1.3B RefCOCO val：REC73.2，RES56.3（后者含SAM）。"
+      ],
+      "limits": "输出是外部grounding readout，不是修改decoder后原生QA涨分；训练集选头可迁移程度需要测量。",
+      "difference": "小模型也可存在稀疏视觉路径；用作head诊断和空间控制。不能把外部box/SAM成绩当成长期视频理解或内部干预收益。",
+      "source": {
+        "id": "13_localization_heads",
+        "title_prefix": "Your Large Vision-Language Model Only Needs A Few Attention Heads",
+        "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Kang_Your_Large_Vision-Language_Model_Only_Needs_A_Few_Attention_Heads_CVPR_2025_paper.pdf",
+        "venue_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Kang_Your_Large_Vision-Language_Model_Only_Needs_A_Few_Attention_Heads_CVPR_2025_paper.html",
+        "pdf": {
+          "source": "existing_cache",
+          "bytes": 3994909,
+          "sha256": "02cd140712c5404994d6a825820ab8383357c0212c27bf14ef4796e9919126aa"
+        },
+        "pages": 12,
+        "text_sha256": "a4c8a551e676f2f595f63a5debc9a44d04801da78e5b11b10e9370366e3923d0",
+        "first_page_title_text": "                     This CVPR paper is the Open Access version, provided by the Computer Vision Foundation.\n                                 Except for this watermark, it is identical to the accepted version;\n                                the final published version of the proceedings is available on IEEE Xplore.\n\n\n\n\n             Your Large Visi",
+        "status": "pdf_and_text_cached",
+        "venue": {
+          "source": "existing_cache",
+          "bytes": 6313,
+          "sha256": "11469fa21de9777a9f489e6066f9d788e70c11ffcf6a84bbd2e99ada036eee05"
+        }
+      },
+      "local_pdf": "outputs/literature_internal_mechanism_v2/13_localization_heads.pdf",
+      "local_text": "outputs/literature_internal_mechanism_v2/13_localization_heads.txt",
+      "claim_status": "paper-reported, not locally reproduced"
+    }
+  ],
+  "support": [
+    {
+      "file": "09_frame2freq_supp.pdf",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Ponbagavathi_Frame2Freq_Spectral_Adapters_CVPR_2026_supplemental.pdf",
+      "http_status": 200,
+      "status": "cached",
+      "bytes": 2601178,
+      "sha256": "ecb399bb9bb9b6f43bf31d6813dde78b13f0e206dfa07e5c9f650e1bc637f708",
+      "pages": 4
+    },
+    {
+      "file": "13_localization_heads_supp.pdf",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Kang_Your_Large_Vision-Language_CVPR_2025_supplemental.pdf",
+      "http_status": 200,
+      "status": "cached",
+      "bytes": 7654678,
+      "sha256": "a67ea9240eb033b1cb823ae1abbe21a3321a00a304f427330b2ed4682cc614b8",
+      "pages": 12
+    },
+    {
+      "file": "05_visual_heads_supp.pdf",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Bi_Unveiling_Visual_Perception_CVPR_2025_supplemental.pdf",
+      "http_status": 200,
+      "status": "cached",
+      "bytes": 2745212,
+      "sha256": "99bd77fbd6a07e0760346287cba579892d5c6e3d6c65dabaf98f6d990a5ae4dd",
+      "pages": 3
+    },
+    {
+      "file": "04_delimiter_qwen2_5_code.py",
+      "url": "https://raw.githubusercontent.com/MYMY-young/DelimScaling/main/transformers/src/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py",
+      "http_status": 200,
+      "status": "cached",
+      "bytes": 106127,
+      "sha256": "54c33e4ca39e77e8e972e9010c1c82df2014a5b62f80e2a49fd90a049aedf389"
+    },
+    {
+      "file": "internvl3_1b.metadata.json",
+      "url": "https://huggingface.co/api/models/OpenGVLab/InternVL3-1B?blobs=true",
+      "http_status": 200,
+      "status": "cached",
+      "bytes": 5179,
+      "sha256": "4363c7239a8b433f9b6b15117596ae4c17d52582261d1f3238047c1f9528f7b2",
+      "model_id": "OpenGVLab/InternVL3-1B",
+      "revision": "4415a3b810e636d11dfa86b0e9ba40bb00535aa8",
+      "safetensors": {
+        "parameters": {
+          "BF16": 938193024
+        },
+        "total": 938193024
+      },
+      "weight_files": [
+        {
+          "file": "model.safetensors",
+          "bytes": 1876463472
+        }
+      ],
+      "weights_total_bytes": 1876463472,
+      "weights_downloaded": false
+    },
+    {
+      "file": "internvl3_2b.metadata.json",
+      "url": "https://huggingface.co/api/models/OpenGVLab/InternVL3-2B?blobs=true",
+      "http_status": 200,
+      "status": "cached",
+      "bytes": 5162,
+      "sha256": "4b079a058a4ba1e95886850c18a16242e2244fe75b46d03c67837544650246de",
+      "model_id": "OpenGVLab/InternVL3-2B",
+      "revision": "899155015275a9b7338c7f4677e19c784e0e5a21",
+      "safetensors": {
+        "parameters": {
+          "BF16": 2088957440
+        },
+        "total": 2088957440
+      },
+      "weight_files": [
+        {
+          "file": "model.safetensors",
+          "bytes": 4177999192
+        }
+      ],
+      "weights_total_bytes": 4177999192,
+      "weights_downloaded": false
+    },
+    {
+      "file": "llava_onevision_05b.metadata.json",
+      "url": "https://huggingface.co/api/models/llava-hf/llava-onevision-qwen2-0.5b-ov-hf?blobs=true",
+      "http_status": 200,
+      "status": "cached",
+      "bytes": 10622,
+      "sha256": "114cbd22b758a3a95597f6bcc9ba9bd30dd58fabdc03040b62b18fad62957784",
+      "model_id": "llava-hf/llava-onevision-qwen2-0.5b-ov-hf",
+      "revision": "74dd0bf867a4cda7950c17663794267c60cf4b40",
+      "safetensors": {
+        "parameters": {
+          "F16": 893675552
+        },
+        "total": 893675552
+      },
+      "weight_files": [
+        {
+          "file": "model.safetensors",
+          "bytes": 1787445680
+        }
+      ],
+      "weights_total_bytes": 1787445680,
+      "weights_downloaded": false
+    }
+  ],
+  "code_audit_manifest": "outputs/literature_internal_mechanism_v2/delimiter_code_sources.json",
+  "rendered_equation_checks": [
+    "outputs/literature_internal_mechanism_v2/04_delimiter_page5.png",
+    "outputs/literature_internal_mechanism_v2/09_frame2freq_page3.png",
+    "outputs/literature_internal_mechanism_v2/10_lfm_page4.png",
+    "outputs/literature_internal_mechanism_v2/13_localization_heads_page4.png"
+  ],
+  "limitations": [
+    "InternVL3-1B optimal delimiter layers/scales not located in checked public repository/paper.",
+    "No exact total-model count inferred from a B label.",
+    "No GPU-hours inferred from GPU model.",
+    "Delimiter pre-RMSNorm interpretation is analytical reasoning, not a reported local experiment.",
+    "No new held-out predictions were inspected."
+  ]
+}

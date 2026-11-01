@@ -1,0 +1,17 @@
+{
+  "tag": "unit_time_constant_cap0.3_seed20261101",
+  "method": "unit_time_constant",
+  "seed": 20261101,
+  "residual_limit": 0.3,
+  "steps": 200,
+  "elapsed_seconds": 1.5689235999998346,
+  "parameter_count": 8,
+  "checkpoint_sha256": "408016d609daf6d7542d195e3d98456f1686f00fa74da36b0f58d447dea8973b",
+  "artifacts_sha256": {
+    "initial.pt": "5e3096fd5199bf1dd7ab8280e198f1b157aac92569633f8cbaf947c029a893bb",
+    "optimizer.pt": "174e4e0243c7beea6f6eaa34b30628d8f3b7e196bdaca299286d4c3d80f55438",
+    "initial_replay.json": "6995d1c7f9bbbca711b0ea455670b29b6b9bf7d16e35e8d8865654cde6ef30f1",
+    "final_replay.json": "3bd9096e71e23904c07447939d790c1cecf38452a961fdd7ff34490f9e9f9ff5",
+    "training.jsonl": "7bc5b0fa9e2363e3610ac095d556be569c6add3dce19f2eb31056763d70d92f8"
+  }
+}

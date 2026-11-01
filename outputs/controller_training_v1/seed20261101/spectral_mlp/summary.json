@@ -1,0 +1,11 @@
+{
+  "method": "spectral_mlp",
+  "seed": 20261101,
+  "steps": 200,
+  "elapsed_seconds": 0.9525883000005706,
+  "parameter_count": 18584,
+  "checkpoint_sha256": "689b5b5f45ba8326133d5f8820e2f24dca37288564198d400e80660c7a4f5f73",
+  "training_log_sha256": "62c8208e80161143b01353e855ff5caa2d0036abf811fff7a2a302de6e507423",
+  "optimizer_sha256": "16b36cdb71e7be1920a0943a6316c6fb0097f79aeb3dd86c290f6fbe2992dfc8",
+  "initial_state_sha256": "0120b24d2f9ee891b54840ac20ec18a5e9a955bec0d644d94a8cd49646808252"
+}

@@ -1,0 +1,1393 @@
+{
+  "status": "complete",
+  "input_path": "D:\\FRE\\outputs\\ffn_qwen3_dev16_video_6860\\branches.npz",
+  "input_sha256": "fd28cbab35dea65db9e439e6932d18e889b097694526f472ac8ac0b48092e4d3",
+  "analysis_source_sha256": "117a45d3ac9f37235e460162831bbd0f35f3c6a336cd8abcc0cde68461e4bdc7",
+  "layout": {
+    "samples": 8,
+    "interval_seconds": 4.6514727442356385,
+    "first_to_last_seconds": 32.56030920964947,
+    "dft_period_seconds": 37.21178195388511,
+    "bin_spacing_hz": 0.026873209169054446,
+    "rfft_frequencies_hz": [
+      0.0,
+      0.026873209169054446,
+      0.05374641833810889,
+      0.08061962750716334,
+      0.10749283667621778
+    ],
+    "one_sided_multiplicity": [
+      1.0,
+      2.0,
+      2.0,
+      2.0,
+      1.0
+    ],
+    "bands": [
+      {
+        "name": "band_1",
+        "indices": [
+          1,
+          2
+        ],
+        "frequencies_hz": [
+          0.026873209169054446,
+          0.05374641833810889
+        ],
+        "bin_count": 2
+      },
+      {
+        "name": "band_2",
+        "indices": [
+          3
+        ],
+        "frequencies_hz": [
+          0.08061962750716334
+        ],
+        "bin_count": 1
+      },
+      {
+        "name": "band_3",
+        "indices": [
+          4
+        ],
+        "frequencies_hz": [
+          0.10749283667621778
+        ],
+        "bin_count": 1
+      }
+    ],
+    "band_rule": "np.array_split of ascending non-DC bin indices into three nearly equal-count groups",
+    "resolution_warning": "Few temporal samples: band estimates have weak frequency resolution; T=8 gives only four non-DC bins."
+  },
+  "layers": {
+    "0": {
+      "branches": {
+        "decoder_input": {
+          "shape": [
+            8,
+            2048
+          ],
+          "energy": {
+            "dc": 0.10268567501928277,
+            "temporal": 0.0018295114781854852,
+            "band_1": 0.0013813213786840375,
+            "band_2": 0.0003211932254230963,
+            "band_3": 0.0001269968740783513,
+            "raw_mean_square": 0.10451518649746827,
+            "temporal_variance_direct": 0.0018295114781854854,
+            "parseval_temporal_absolute_error": 2.168404344971009e-19,
+            "parseval_raw_absolute_error": 1.3877787807814457e-17,
+            "temporal_fraction_of_raw": 0.017504742989955843,
+            "band_fractions_of_temporal": {
+              "band_1": 0.7550219799954664,
+              "band_2": 0.1755622903998704,
+              "band_3": 0.06941572960466319
+            }
+          },
+          "spatial_moments": {
+            "mean_patch_coordinate_square": 0.239743173122406,
+            "mean_spatial_mean_coordinate_square": 0.10451518649746827,
+            "mean_spatial_variance": 0.13522798662493773,
+            "unclipped_minimum_spatial_variance": 0.09583556283902805,
+            "spatial_mean_retained_second_moment_fraction": 0.43594645526822073,
+            "spatial_variance_by_time": [
+              0.12614577817156647,
+              0.1349670639056844,
+              0.14672604303509437,
+              0.17067905661882754,
+              0.14078606137818936,
+              0.09583556283902805,
+              0.14214207731139583,
+              0.12454224973971587
+            ],
+            "identifiable": "Instantaneous spatial dispersion and second-moment retention only.",
+            "not_identifiable": "Patchwise temporal means are absent; temporal energy removed by spatial pooling, action information loss, and downstream task utility cannot be recovered from these moments."
+          }
+        },
+        "attention_delta": {
+          "shape": [
+            8,
+            2048
+          ],
+          "energy": {
+            "dc": 0.017150119285625345,
+            "temporal": 0.00016586961828118964,
+            "band_1": 0.00011164551073023819,
+            "band_2": 4.060300366638077e-05,
+            "band_3": 1.3621103884570678e-05,
+            "raw_mean_square": 0.017315988903906537,
+            "temporal_variance_direct": 0.00016586961828118964,
+            "parseval_temporal_absolute_error": 0.0,
+            "parseval_raw_absolute_error": 3.469446951953614e-18,
+            "temporal_fraction_of_raw": 0.009578986172933443,
+            "band_fractions_of_temporal": {
+              "band_1": 0.6730919856641359,
+              "band_2": 0.24478867249545802,
+              "band_3": 0.08211934184040606
+            }
+          },
+          "spatial_moments": {
+            "mean_patch_coordinate_square": 0.02171421702951193,
+            "mean_spatial_mean_coordinate_square": 0.017315988903906537,
+            "mean_spatial_variance": 0.004398228125605391,
+            "unclipped_minimum_spatial_variance": 0.003907045393035623,
+            "spatial_mean_retained_second_moment_fraction": 0.7974493798405105,
+            "spatial_variance_by_time": [
+              0.004074103989225832,
+              0.004669561091596698,
+              0.004757789602498681,
+              0.004346863102261938,
+              0.00467694862073623,
+              0.003907045393035623,
+              0.004154891793318856,
+              0.004598621412169275
+            ],
+            "identifiable": "Instantaneous spatial dispersion and second-moment retention only.",
+            "not_identifiable": "Patchwise temporal means are absent; temporal energy removed by spatial pooling, action information loss, and downstream task utility cannot be recovered from these moments."
+          }
+        },
+        "pre_ffn": {
+          "shape": [
+            8,
+            2048
+          ],
+          "energy": {
+            "dc": 0.07994532772224636,
+            "temporal": 0.00207180612247526,
+            "band_1": 0.0015454198346068274,
+            "band_2": 0.00038155890940892956,
+            "band_3": 0.00014482737845950276,
+            "raw_mean_square": 0.08201713384472163,
+            "temporal_variance_direct": 0.00207180612247526,
+            "parseval_temporal_absolute_error": 0.0,
+            "parseval_raw_absolute_error": 1.3877787807814457e-17,
+            "temporal_fraction_of_raw": 0.025260650127053846,
+            "band_fractions_of_temporal": {
+              "band_1": 0.7459287902675275,
+              "band_2": 0.18416728537951596,
+              "band_3": 0.06990392435295653
+            }
+          },
+          "spatial_moments": {
+            "mean_patch_coordinate_square": 0.2253644485026598,
+            "mean_spatial_mean_coordinate_square": 0.08201713384472163,
+            "mean_spatial_variance": 0.14334731465793815,
+            "unclipped_minimum_spatial_variance": 0.10244784522244779,
+            "spatial_mean_retained_second_moment_fraction": 0.36393110976309845,
+            "spatial_variance_by_time": [
+              0.13358115428909348,
+              0.14345338783471817,
+              0.15573243031158657,
+              0.179049883405115,
+              0.14968211172066925,
+              0.10244784522244779,
+              0.14996491189517142,
+              0.1328667925847036
+            ],
+            "identifiable": "Instantaneous spatial dispersion and second-moment retention only.",
+            "not_identifiable": "Patchwise temporal means are absent; temporal energy removed by spatial pooling, action information loss, and downstream task utility cannot be recovered from these moments."
+          }
+        },
+        "ffn_input": {
+          "shape": [
+            8,
+            2048
+          ],
+          "energy": {
+            "dc": 0.10783188874828653,
+            "temporal": 0.0006178341037924218,
+            "band_1": 0.00042184627457147187,
+            "band_2": 0.00014477553909693526,
+            "band_3": 5.121229012401457e-05,
+            "raw_mean_square": 0.10844972285207893,
+            "temporal_variance_direct": 0.0006178341037924218,
+            "parseval_temporal_absolute_error": 0.0,
+            "parseval_raw_absolute_error": 1.3877787807814457e-17,
+            "temporal_fraction_of_raw": 0.005696963418109631,
+            "band_fractions_of_temporal": {
+              "band_1": 0.6827824362269304,
+              "band_2": 0.23432752936146847,
+              "band_3": 0.08289003441160112
+            }
+          },
+          "spatial_moments": {
+            "mean_patch_coordinate_square": 0.13707022927701473,
+            "mean_spatial_mean_coordinate_square": 0.10844972285207893,
+            "mean_spatial_variance": 0.028620506424935785,
+            "unclipped_minimum_spatial_variance": 0.02671682057563554,
+            "spatial_mean_retained_second_moment_fraction": 0.7911982304553191,
+            "spatial_variance_by_time": [
+              0.02671682057563554,
+              0.0300218522319165,
+              0.030228606931268456,
+              0.028371390257656712,
+              0.028742944080167157,
+              0.02742295764961121,
+              0.027663259085671202,
+              0.029796220587559513
+            ],
+            "identifiable": "Instantaneous spatial dispersion and second-moment retention only.",
+            "not_identifiable": "Patchwise temporal means are absent; temporal energy removed by spatial pooling, action information loss, and downstream task utility cannot be recovered from these moments."
+          }
+        },
+        "ffn_delta": {
+          "shape": [
+            8,
+            2048
+          ],
+          "energy": {
+            "dc": 0.33960745582179075,
+            "temporal": 0.009653002441207124,
+            "band_1": 0.006882659299135735,
+            "band_2": 0.001995794036731516,
+            "band_3": 0.000774549105339874,
+            "raw_mean_square": 0.3492604582629979,
+            "temporal_variance_direct": 0.009653002441207125,
+            "parseval_temporal_absolute_error": 1.734723475976807e-18,
+            "parseval_raw_absolute_error": 0.0,
+            "temporal_fraction_of_raw": 0.027638406274833095,
+            "band_fractions_of_temporal": {
+              "band_1": 0.7130071023037104,
+              "band_2": 0.206753706827193,
+              "band_3": 0.08023919086909662
+            }
+          },
+          "spatial_moments": {
+            "mean_patch_coordinate_square": 0.8107993081212044,
+            "mean_spatial_mean_coordinate_square": 0.3492604582629979,
+            "mean_spatial_variance": 0.4615388498582065,
+            "unclipped_minimum_spatial_variance": 0.4080763012299332,
+            "spatial_mean_retained_second_moment_fraction": 0.43076067624220005,
+            "spatial_variance_by_time": [
+              0.4633040114521801,
+              0.48053083920892126,
+              0.5021965898154589,
+              0.4467385224289515,
+              0.4551487860622876,
+              0.45252419042829334,
+              0.4080763012299332,
+              0.4837915582396262
+            ],
+            "identifiable": "Instantaneous spatial dispersion and second-moment retention only.",
+            "not_identifiable": "Patchwise temporal means are absent; temporal energy removed by spatial pooling, action information loss, and downstream task utility cannot be recovered from these moments."
+          }
+        },
+        "post_ffn": {
+          "shape": [
+            8,
+            2048
+          ],
+          "energy": {
+            "dc": 0.5792146167730882,
+            "temporal": 0.01585198132933372,
+            "band_1": 0.011551434475871291,
+            "band_2": 0.0030443150519200296,
+            "band_3": 0.001256231801542399,
+            "raw_mean_square": 0.595066598102422,
+            "temporal_variance_direct": 0.01585198132933372,
+            "parseval_temporal_absolute_error": 0.0,
+            "parseval_raw_absolute_error": 1.1102230246251565e-16,
+            "temporal_fraction_of_raw": 0.026639003734848014,
+            "band_fractions_of_temporal": {
+              "band_1": 0.728706035913355,
+              "band_2": 0.1920463435246795,
+              "band_3": 0.07924762056196542
+            }
+          },
+          "spatial_moments": {
+            "mean_patch_coordinate_square": 1.4262183755636215,
+            "mean_spatial_mean_coordinate_square": 0.595066598102422,
+            "mean_spatial_variance": 0.8311517774611995,
+            "unclipped_minimum_spatial_variance": 0.75571132659303,
+            "spatial_mean_retained_second_moment_fraction": 0.41723386004423063,
+            "spatial_variance_by_time": [
+              0.801156045866295,
+              0.8606224464843204,
+              0.9130534689478492,
+              0.86193872982468,
+              0.8404353777091811,
+              0.75571132659303,
+              0.7616432083643784,
+              0.8546536158998619
+            ],
+            "identifiable": "Instantaneous spatial dispersion and second-moment retention only.",
+            "not_identifiable": "Patchwise temporal means are absent; temporal energy removed by spatial pooling, action information loss, and downstream task utility cannot be recovered from these moments."
+          }
+        }
+      },
+      "ffn_decomposition": {
+        "scopes": {
+          "dc": {
+            "base_energy": 0.07994532772224636,
+            "increment_energy": 0.33960745582179075,
+            "base_increment_cross_term": 0.1596764687675334,
+            "rounding_energy": 1.0059128053356328e-08,
+            "base_rounding_cross_term": -3.3208949377071285e-06,
+            "increment_rounding_cross_term": -1.1324702672620265e-05,
+            "rounding_total_contribution": -1.4635538482274038e-05,
+            "observed_energy": 0.5792146167730882,
+            "reconstructed_energy": 0.5792146167730883,
+            "closure_absolute_error": 1.1102230246251565e-16,
+            "observed_minus_base_energy": 0.4992692890508418,
+            "increment_plus_cross_without_rounding": 0.49928392458932414,
+            "base_increment_spectral_cosine": 0.48453569042466066
+          },
+          "temporal": {
+            "base_energy": 0.00207180612247526,
+            "increment_energy": 0.009653002441207124,
+            "base_increment_cross_term": 0.004127057503391833,
+            "rounding_energy": 6.586053141727196e-08,
+            "base_rounding_cross_term": -2.8962186373721277e-08,
+            "increment_rounding_cross_term": 7.836391445841197e-08,
+            "rounding_total_contribution": 1.1526225950196266e-07,
+            "observed_energy": 0.01585198132933372,
+            "reconstructed_energy": 0.015851981329333718,
+            "closure_absolute_error": 3.469446951953614e-18,
+            "observed_minus_base_energy": 0.013780175206858461,
+            "increment_plus_cross_without_rounding": 0.013780059944598957,
+            "base_increment_spectral_cosine": 0.46142886679868
+          },
+          "band_1": {
+            "base_energy": 0.0015454198346068274,
+            "increment_energy": 0.006882659299135735,
+            "base_increment_cross_term": 0.0031233528042402246,
+            "rounding_energy": 3.8736828041022966e-08,
+            "base_rounding_cross_term": -1.0266294455409653e-07,
+            "increment_rounding_cross_term": 6.64640050166695e-08,
+            "rounding_total_contribution": 2.5378885035959313e-09,
+            "observed_energy": 0.011551434475871291,
+            "reconstructed_energy": 0.01155143447587129,
+            "closure_absolute_error": 1.734723475976807e-18,
+            "observed_minus_base_energy": 0.010006014641264464,
+            "increment_plus_cross_without_rounding": 0.010006012103375959,
+            "base_increment_spectral_cosine": 0.4788391718200839
+          },
+          "band_2": {
+            "base_energy": 0.00038155890940892956,
+            "increment_energy": 0.001995794036731516,
+            "base_increment_cross_term": 0.0006668616682713492,
+            "rounding_energy": 1.7735761110173328e-08,
+            "base_rounding_cross_term": 1.0051631597498741e-07,
+            "increment_rounding_cross_term": -1.7814568850154038e-08,
+            "rounding_total_contribution": 1.004375082350067e-07,
+            "observed_energy": 0.0030443150519200296,
+            "reconstructed_energy": 0.0030443150519200296,
+            "closure_absolute_error": 0.0,
+            "observed_minus_base_energy": 0.0026627561425111,
+            "increment_plus_cross_without_rounding": 0.002662655705002865,
+            "base_increment_spectral_cosine": 0.3820912560075938
+          },
+          "band_3": {
+            "base_energy": 0.00014482737845950276,
+            "increment_energy": 0.000774549105339874,
+            "base_increment_cross_term": 0.00033684303088025904,
+            "rounding_energy": 9.38794226607567e-09,
+            "base_rounding_cross_term": -2.6815557794612154e-08,
+            "increment_rounding_cross_term": 2.971447829189651e-08,
+            "rounding_total_contribution": 1.2286862763360027e-08,
+            "observed_energy": 0.001256231801542399,
+            "reconstructed_energy": 0.0012562318015423993,
+            "closure_absolute_error": 2.168404344971009e-19,
+            "observed_minus_base_energy": 0.0011114044230828963,
+            "increment_plus_cross_without_rounding": 0.001111392136220133,
+            "base_increment_spectral_cosine": 0.5028607719044592
+          }
+        },
+        "effective_rounding_max_abs": 0.003711223602294922,
+        "rounding_definition": "Observed saved mean minus base mean minus increment mean, recomputed in float64. It includes residual-addition and spatial-reduction rounding; it is not only BF16 quantization."
+      },
+      "attention_decomposition": {
+        "scopes": {
+          "dc": {
+            "base_energy": 0.10268567501928277,
+            "increment_energy": 0.017150119285625345,
+            "base_increment_cross_term": -0.03988891650048025,
+            "rounding_energy": 1.285749819706593e-09,
+            "base_rounding_cross_term": -1.0652525467369845e-06,
+            "increment_rounding_cross_term": -4.86115384577509e-07,
+            "rounding_total_contribution": -1.550082181494787e-06,
+            "observed_energy": 0.07994532772224636,
+            "reconstructed_energy": 0.07994532772224637,
+            "closure_absolute_error": 1.3877787807814457e-17,
+            "observed_minus_base_energy": -0.022740347297036417,
+            "increment_plus_cross_without_rounding": -0.022738797214854906,
+            "base_increment_spectral_cosine": -0.4752627103411778
+          },
+          "temporal": {
+            "base_energy": 0.0018295114781854852,
+            "increment_energy": 0.00016586961828118964,
+            "base_increment_cross_term": 7.681623480300427e-05,
+            "rounding_energy": 9.630128322577874e-09,
+            "base_rounding_cross_term": -3.429957019801866e-07,
+            "increment_rounding_cross_term": -5.78432207615495e-08,
+            "rounding_total_contribution": -3.912087944191582e-07,
+            "observed_energy": 0.00207180612247526,
+            "reconstructed_energy": 0.0020718061224752602,
+            "closure_absolute_error": 4.336808689942018e-19,
+            "observed_minus_base_energy": 0.00024229464428977463,
+            "increment_plus_cross_without_rounding": 0.00024268585308419391,
+            "base_increment_spectral_cosine": 0.06972235191865407
+          },
+          "band_1": {
+            "base_energy": 0.0013813213786840375,
+            "increment_energy": 0.00011164551073023819,
+            "base_increment_cross_term": 5.283620579907438e-05,
+            "rounding_energy": 6.047419432594783e-09,
+            "base_rounding_cross_term": -3.333436722686086e-07,
+            "increment_rounding_cross_term": -5.596435368653175e-08,
+            "rounding_total_contribution": -3.8326060652254556e-07,
+            "observed_energy": 0.0015454198346068274,
+            "reconstructed_energy": 0.0015454198346068274,
+            "closure_absolute_error": 0.0,
+            "observed_minus_base_energy": 0.00016409845592278986,
+            "increment_plus_cross_without_rounding": 0.00016448171652931257,
+            "base_increment_spectral_cosine": 0.06727188984664245
+          },
+          "band_2": {
+            "base_energy": 0.0003211932254230963,
+            "increment_energy": 4.060300366638077e-05,
+            "base_increment_cross_term": 1.9759235305231773e-05,
+            "rounding_energy": 2.3924511247382076e-09,
+            "base_rounding_cross_term": -1.7486106173980811e-09,
+            "increment_rounding_cross_term": 2.801173713373515e-09,
+            "rounding_total_contribution": 3.4450142207136414e-09,
+            "observed_energy": 0.00038155890940892956,
+            "reconstructed_energy": 0.0003815589094089296,
+            "closure_absolute_error": 5.421010862427522e-20,
+            "observed_minus_base_energy": 6.0365683985833245e-05,
+            "increment_plus_cross_without_rounding": 6.036223897161254e-05,
+            "base_increment_spectral_cosine": 0.08651230193860698
+          },
+          "band_3": {
+            "base_energy": 0.0001269968740783513,
+            "increment_energy": 1.3621103884570678e-05,
+            "base_increment_cross_term": 4.220793698698115e-06,
+            "rounding_energy": 1.190257765244883e-09,
+            "base_rounding_cross_term": -7.903419094179862e-09,
+            "increment_rounding_cross_term": -4.6800407883912655e-09,
+            "rounding_total_contribution": -1.1393202117326246e-08,
+            "observed_energy": 0.00014482737845950276,
+            "reconstructed_energy": 0.00014482737845950276,
+            "closure_absolute_error": 0.0,
+            "observed_minus_base_energy": 1.7830504381151466e-05,
+            "increment_plus_cross_without_rounding": 1.7841897583268793e-05,
+            "base_increment_spectral_cosine": 0.05074128503007243
+          }
+        },
+        "effective_rounding_max_abs": 0.0030201971530914307,
+        "rounding_definition": "Observed saved mean minus base mean minus increment mean, recomputed in float64. It includes residual-addition and spatial-reduction rounding; it is not only BF16 quantization."
+      },
+      "saved_rounding_validation": {
+        "max_absolute_discrepancy": 7.310882210731506e-07,
+        "tolerance": 2.6812499999999998e-05,
+        "saved_rounding_energy": {
+          "dc": 1.005899274085724e-08,
+          "temporal": 6.586005634323223e-08,
+          "band_1": 3.873631715320869e-08,
+          "band_2": 1.773592742140355e-08,
+          "band_3": 9.387811768619988e-09,
+          "raw_mean_square": 7.591904908408947e-08,
+          "temporal_variance_direct": 6.586005634323224e-08,
+          "parseval_temporal_absolute_error": 1.3234889800848443e-23,
+          "parseval_raw_absolute_error": 0.0,
+          "temporal_fraction_of_raw": 0.8675037047722278,
+          "band_fractions_of_temporal": {
+            "band_1": 0.5881610084165867,
+            "band_2": 0.2692971795980872,
+            "band_3": 0.14254181198532603
+          }
+        }
+      }
+    },
+    "13": {
+      "branches": {
+        "decoder_input": {
+          "shape": [
+            8,
+            2048
+          ],
+          "energy": {
+            "dc": 4.886417294551373,
+            "temporal": 0.12298578659643508,
+            "band_1": 0.09462529180959735,
+            "band_2": 0.019714038764161557,
+            "band_3": 0.008646456022676174,
+            "raw_mean_square": 5.009403081147809,
+            "temporal_variance_direct": 0.12298578659643508,
+            "parseval_temporal_absolute_error": 0.0,
+            "parseval_raw_absolute_error": 8.881784197001252e-16,
+            "temporal_fraction_of_raw": 0.02455098633593191,
+            "band_fractions_of_temporal": {
+              "band_1": 0.7694002244348795,
+              "band_2": 0.16029526101947944,
+              "band_3": 0.07030451454564103
+            }
+          },
+          "spatial_moments": {
+            "mean_patch_coordinate_square": 7.90959233045578,
+            "mean_spatial_mean_coordinate_square": 5.009403081147809,
+            "mean_spatial_variance": 2.9001892493079713,
+            "unclipped_minimum_spatial_variance": 2.6690036865524647,
+            "spatial_mean_retained_second_moment_fraction": 0.6333326512744746,
+            "spatial_variance_by_time": [
+              3.2357862498595384,
+              2.950005479500862,
+              3.0162041065993836,
+              2.766344658453911,
+              2.8462262591154097,
+              2.6690036865524647,
+              2.755686795132945,
+              2.9622567592492555
+            ],
+            "identifiable": "Instantaneous spatial dispersion and second-moment retention only.",
+            "not_identifiable": "Patchwise temporal means are absent; temporal energy removed by spatial pooling, action information loss, and downstream task utility cannot be recovered from these moments."
+          }
+        },
+        "attention_delta": {
+          "shape": [
+            8,
+            2048
+          ],
+          "energy": {
+            "dc": 0.18025921941267242,
+            "temporal": 0.01602548630400822,
+            "band_1": 0.01292403188559408,
+            "band_2": 0.0020750868203679913,
+            "band_3": 0.00102636759804615,
+            "raw_mean_square": 0.19628470571668066,
+            "temporal_variance_direct": 0.01602548630400822,
+            "parseval_temporal_absolute_error": 0.0,
+            "parseval_raw_absolute_error": 2.7755575615628914e-17,
+            "temporal_fraction_of_raw": 0.0816440906360762,
+            "band_fractions_of_temporal": {
+              "band_1": 0.8064673758051,
+              "band_2": 0.12948666773681497,
+              "band_3": 0.06404595645808513
+            }
+          },
+          "spatial_moments": {
+            "mean_patch_coordinate_square": 0.4255138412117958,
+            "mean_spatial_mean_coordinate_square": 0.19628470571668066,
+            "mean_spatial_variance": 0.22922913549511514,
+            "unclipped_minimum_spatial_variance": 0.13527891042603885,
+            "spatial_mean_retained_second_moment_fraction": 0.4612886508173107,
+            "spatial_variance_by_time": [
+              0.13527891042603885,
+              0.21148503063769353,
+              0.23999862827166463,
+              0.24435202148259794,
+              0.2439720041604947,
+              0.25506251222763887,
+              0.24048782190985923,
+              0.2631961548449334
+            ],
+            "identifiable": "Instantaneous spatial dispersion and second-moment retention only.",
+            "not_identifiable": "Patchwise temporal means are absent; temporal energy removed by spatial pooling, action information loss, and downstream task utility cannot be recovered from these moments."
+          }
+        },
+        "pre_ffn": {
+          "shape": [
+            8,
+            2048
+          ],
+          "energy": {
+            "dc": 5.817663493895028,
+            "temporal": 0.12568463080726958,
+            "band_1": 0.09630265743892213,
+            "band_2": 0.02039124945022662,
+            "band_3": 0.008990723918120832,
+            "raw_mean_square": 5.943348124702299,
+            "temporal_variance_direct": 0.1256846308072696,
+            "parseval_temporal_absolute_error": 2.7755575615628914e-17,
+            "parseval_raw_absolute_error": 1.7763568394002505e-15,
+            "temporal_fraction_of_raw": 0.02114710903184139,
+            "band_fractions_of_temporal": {
+              "band_1": 0.7662246117156276,
+              "band_2": 0.16224139196060872,
+              "band_3": 0.0715339963237638
+            }
+          },
+          "spatial_moments": {
+            "mean_patch_coordinate_square": 9.116685152053833,
+            "mean_spatial_mean_coordinate_square": 5.943348124702299,
+            "mean_spatial_variance": 3.1733370273515344,
+            "unclipped_minimum_spatial_variance": 2.955608008290363,
+            "spatial_mean_retained_second_moment_fraction": 0.651919861833044,
+            "spatial_variance_by_time": [
+              3.451746077858143,
+              3.2195521349800984,
+              3.3181140816435155,
+              3.0461206607257747,
+              3.1130373683400725,
+              2.955608008290363,
+              3.033751284546124,
+              3.2487666024281845
+            ],
+            "identifiable": "Instantaneous spatial dispersion and second-moment retention only.",
+            "not_identifiable": "Patchwise temporal means are absent; temporal energy removed by spatial pooling, action information loss, and downstream task utility cannot be recovered from these moments."
+          }
+        },
+        "ffn_input": {
+          "shape": [
+            8,
+            2048
+          ],
+          "energy": {
+            "dc": 0.16013418011349415,
+            "temporal": 0.0058248878782130595,
+            "band_1": 0.004443715366387649,
+            "band_2": 0.0009516701731236421,
+            "band_3": 0.0004295023387017683,
+            "raw_mean_square": 0.16595906799170723,
+            "temporal_variance_direct": 0.00582488787821306,
+            "parseval_temporal_absolute_error": 8.673617379884035e-19,
+            "parseval_raw_absolute_error": 2.7755575615628914e-17,
+            "temporal_fraction_of_raw": 0.035098340504684696,
+            "band_fractions_of_temporal": {
+              "band_1": 0.7628842750791073,
+              "band_2": 0.16337999855468333,
+              "band_3": 0.07373572636620941
+            }
+          },
+          "spatial_moments": {
+            "mean_patch_coordinate_square": 0.3185696564614773,
+            "mean_spatial_mean_coordinate_square": 0.16595906799170723,
+            "mean_spatial_variance": 0.15261058846977005,
+            "unclipped_minimum_spatial_variance": 0.1418476542121074,
+            "spatial_mean_retained_second_moment_fraction": 0.5209506449393295,
+            "spatial_variance_by_time": [
+              0.1418476542121074,
+              0.14527237108319188,
+              0.15814660809518882,
+              0.1486592675959833,
+              0.15476412730848954,
+              0.15402634453383487,
+              0.15552977473467736,
+              0.16263856019468723
+            ],
+            "identifiable": "Instantaneous spatial dispersion and second-moment retention only.",
+            "not_identifiable": "Patchwise temporal means are absent; temporal energy removed by spatial pooling, action information loss, and downstream task utility cannot be recovered from these moments."
+          }
+        },
+        "ffn_delta": {
+          "shape": [
+            8,
+            2048
+          ],
+          "energy": {
+            "dc": 0.18125501521177717,
+            "temporal": 0.019272454697198082,
+            "band_1": 0.015118697716761064,
+            "band_2": 0.002749911052574186,
+            "band_3": 0.0014038459278628308,
+            "raw_mean_square": 0.2005274699089753,
+            "temporal_variance_direct": 0.019272454697198085,
+            "parseval_temporal_absolute_error": 3.469446951953614e-18,
+            "parseval_raw_absolute_error": 5.551115123125783e-17,
+            "temporal_fraction_of_raw": 0.09610880098345806,
+            "band_fractions_of_temporal": {
+              "band_1": 0.784471825426529,
+              "band_2": 0.1426860820678946,
+              "band_3": 0.07284209250557627
+            }
+          },
+          "spatial_moments": {
+            "mean_patch_coordinate_square": 0.6844156384468079,
+            "mean_spatial_mean_coordinate_square": 0.2005274699089753,
+            "mean_spatial_variance": 0.48388816853783256,
+            "unclipped_minimum_spatial_variance": 0.32661770773709076,
+            "spatial_mean_retained_second_moment_fraction": 0.29299077730609174,
+            "spatial_variance_by_time": [
+              0.32661770773709076,
+              0.4614692475341048,
+              0.4976973293716536,
+              0.49584301324359875,
+              0.525275979314998,
+              0.5135742030725594,
+              0.514948021933109,
+              0.5356798460955461
+            ],
+            "identifiable": "Instantaneous spatial dispersion and second-moment retention only.",
+            "not_identifiable": "Patchwise temporal means are absent; temporal energy removed by spatial pooling, action information loss, and downstream task utility cannot be recovered from these moments."
+          }
+        },
+        "post_ffn": {
+          "shape": [
+            8,
+            2048
+          ],
+          "energy": {
+            "dc": 6.634960097504112,
+            "temporal": 0.14836627538381425,
+            "band_1": 0.11458879576760989,
+            "band_2": 0.02309198628290195,
+            "band_3": 0.010685493333302407,
+            "raw_mean_square": 6.783326372887929,
+            "temporal_variance_direct": 0.14836627538381428,
+            "parseval_temporal_absolute_error": 2.7755575615628914e-17,
+            "parseval_raw_absolute_error": 2.6645352591003757e-15,
+            "temporal_fraction_of_raw": 0.02187220063254142,
+            "band_fractions_of_temporal": {
+              "band_1": 0.7723372139064343,
+              "band_2": 0.15564174690753968,
+              "band_3": 0.07202103918602598
+            }
+          },
+          "spatial_moments": {
+            "mean_patch_coordinate_square": 10.3303062915802,
+            "mean_spatial_mean_coordinate_square": 6.783326372887929,
+            "mean_spatial_variance": 3.546979918692272,
+            "unclipped_minimum_spatial_variance": 3.332971749861432,
+            "spatial_mean_retained_second_moment_fraction": 0.6566432960866547,
+            "spatial_variance_by_time": [
+              3.785050058625437,
+              3.583485536568862,
+              3.6889649446378456,
+              3.399196815063121,
+              3.5291746226018796,
+              3.332971749861432,
+              3.4223683574657606,
+              3.634627264713836
+            ],
+            "identifiable": "Instantaneous spatial dispersion and second-moment retention only.",
+            "not_identifiable": "Patchwise temporal means are absent; temporal energy removed by spatial pooling, action information loss, and downstream task utility cannot be recovered from these moments."
+          }
+        }
+      },
+      "ffn_decomposition": {
+        "scopes": {
+          "dc": {
+            "base_energy": 5.817663493895028,
+            "increment_energy": 0.18125501521177717,
+            "base_increment_cross_term": 0.6370095127267184,
+            "rounding_energy": 1.057323096984565e-07,
+            "base_rounding_cross_term": -0.000885231979930587,
+            "increment_rounding_cross_term": -8.27980817892648e-05,
+            "rounding_total_contribution": -0.0009679243294101533,
+            "observed_energy": 6.634960097504112,
+            "reconstructed_energy": 6.634960097504113,
+            "closure_absolute_error": 8.881784197001252e-16,
+            "observed_minus_base_energy": 0.8172966036090843,
+            "increment_plus_cross_without_rounding": 0.8182645279384955,
+            "base_increment_spectral_cosine": 0.3101677271495698
+          },
+          "temporal": {
+            "base_energy": 0.12568463080726958,
+            "increment_energy": 0.019272454697198082,
+            "base_increment_cross_term": 0.003333843565371772,
+            "rounding_energy": 3.697986196040227e-07,
+            "base_rounding_cross_term": 5.510977900212881e-05,
+            "increment_rounding_cross_term": 1.9866736353076932e-05,
+            "rounding_total_contribution": 7.534631397480977e-05,
+            "observed_energy": 0.14836627538381425,
+            "reconstructed_energy": 0.14836627538381425,
+            "closure_absolute_error": 0.0,
+            "observed_minus_base_energy": 0.022681644576544674,
+            "increment_plus_cross_without_rounding": 0.022606298262569855,
+            "base_increment_spectral_cosine": 0.03386925299935756
+          },
+          "band_1": {
+            "base_energy": 0.09630265743892213,
+            "increment_energy": 0.015118697716761064,
+            "base_increment_cross_term": 0.003104664083762653,
+            "rounding_energy": 2.421723816474425e-07,
+            "base_rounding_cross_term": 4.4602369846456084e-05,
+            "increment_rounding_cross_term": 1.793198593593497e-05,
+            "rounding_total_contribution": 6.27765281640385e-05,
+            "observed_energy": 0.11458879576760989,
+            "reconstructed_energy": 0.1145887957676099,
+            "closure_absolute_error": 1.3877787807814457e-17,
+            "observed_minus_base_energy": 0.01828613832868775,
+            "increment_plus_cross_without_rounding": 0.018223361800523717,
+            "base_increment_spectral_cosine": 0.04068256193094418
+          },
+          "band_2": {
+            "base_energy": 0.02039124945022662,
+            "increment_energy": 0.002749911052574186,
+            "base_increment_cross_term": -5.498975540040404e-05,
+            "rounding_energy": 8.385885330039701e-08,
+            "base_rounding_cross_term": 5.038034587952054e-06,
+            "increment_rounding_cross_term": 6.93642060297767e-07,
+            "rounding_total_contribution": 5.815535501550218e-06,
+            "observed_energy": 0.02309198628290195,
+            "reconstructed_energy": 0.02309198628290195,
+            "closure_absolute_error": 0.0,
+            "observed_minus_base_energy": 0.00270073683267533,
+            "increment_plus_cross_without_rounding": 0.002694921297173782,
+            "base_increment_spectral_cosine": -0.0036717284129342744
+          },
+          "band_3": {
+            "base_energy": 0.008990723918120832,
+            "increment_energy": 0.0014038459278628308,
+            "base_increment_cross_term": 0.00028416923700952303,
+            "rounding_energy": 4.3767384656183164e-08,
+            "base_rounding_cross_term": 5.469374567720671e-06,
+            "increment_rounding_cross_term": 1.2411083568441957e-06,
+            "rounding_total_contribution": 6.75425030922105e-06,
+            "observed_energy": 0.010685493333302407,
+            "reconstructed_energy": 0.010685493333302406,
+            "closure_absolute_error": 1.734723475976807e-18,
+            "observed_minus_base_energy": 0.0016947694151815754,
+            "increment_plus_cross_without_rounding": 0.0016880151648723538,
+            "base_increment_spectral_cosine": 0.039993555124986195
+          }
+        },
+        "effective_rounding_max_abs": 0.02406024932861328,
+        "rounding_definition": "Observed saved mean minus base mean minus increment mean, recomputed in float64. It includes residual-addition and spatial-reduction rounding; it is not only BF16 quantization."
+      },
+      "attention_decomposition": {
+        "scopes": {
+          "dc": {
+            "base_energy": 4.886417294551373,
+            "increment_energy": 0.18025921941267242,
+            "base_increment_cross_term": 0.7516835382395977,
+            "rounding_energy": 7.461701489879967e-08,
+            "base_rounding_cross_term": -0.0006336346499789332,
+            "increment_rounding_cross_term": -6.299827565121811e-05,
+            "rounding_total_contribution": -0.0006965583086152525,
+            "observed_energy": 5.817663493895028,
+            "reconstructed_energy": 5.8176634938950285,
+            "closure_absolute_error": 8.881784197001252e-16,
+            "observed_minus_base_energy": 0.9312461993436543,
+            "increment_plus_cross_without_rounding": 0.9319427576522701,
+            "base_increment_spectral_cosine": 0.40046173482305647
+          },
+          "temporal": {
+            "base_energy": 0.12298578659643508,
+            "increment_energy": 0.01602548630400822,
+            "base_increment_cross_term": -0.013375387635170263,
+            "rounding_energy": 5.28678831094671e-07,
+            "base_rounding_cross_term": 6.322970613606649e-05,
+            "increment_rounding_cross_term": -1.5012842970609225e-05,
+            "rounding_total_contribution": 4.8745541996551937e-05,
+            "observed_energy": 0.12568463080726958,
+            "reconstructed_energy": 0.12568463080726958,
+            "closure_absolute_error": 0.0,
+            "observed_minus_base_energy": 0.0026988442108344946,
+            "increment_plus_cross_without_rounding": 0.0026500986688379573,
+            "base_increment_spectral_cosine": -0.15064104209417126
+          },
+          "band_1": {
+            "base_energy": 0.09462529180959735,
+            "increment_energy": 0.01292403188559408,
+            "base_increment_cross_term": -0.01128473806975793,
+            "rounding_energy": 3.794227601064625e-07,
+            "base_rounding_cross_term": 5.283597207965857e-05,
+            "increment_rounding_cross_term": -1.514358135112604e-05,
+            "rounding_total_contribution": 3.807181348863899e-05,
+            "observed_energy": 0.09630265743892213,
+            "reconstructed_energy": 0.09630265743892215,
+            "closure_absolute_error": 1.3877787807814457e-17,
+            "observed_minus_base_energy": 0.0016773656293247868,
+            "increment_plus_cross_without_rounding": 0.0016392938158361504,
+            "base_increment_spectral_cosine": -0.16134624447454196
+          },
+          "band_2": {
+            "base_energy": 0.019714038764161557,
+            "increment_energy": 0.0020750868203679913,
+            "base_increment_cross_term": -0.001403842307982737,
+            "rounding_energy": 1.0454561405316888e-07,
+            "base_rounding_cross_term": 6.333635282096969e-06,
+            "increment_rounding_cross_term": -4.720072163424274e-07,
+            "rounding_total_contribution": 5.966173679807711e-06,
+            "observed_energy": 0.02039124945022662,
+            "reconstructed_energy": 0.02039124945022662,
+            "closure_absolute_error": 0.0,
+            "observed_minus_base_energy": 0.0006772106860650634,
+            "increment_plus_cross_without_rounding": 0.0006712445123852543,
+            "base_increment_spectral_cosine": -0.1097444059384389
+          },
+          "band_3": {
+            "base_energy": 0.008646456022676174,
+            "increment_energy": 0.00102636759804615,
+            "base_increment_cross_term": -0.0006868072574295965,
+            "rounding_energy": 4.471045693503956e-08,
+            "base_rounding_cross_term": 4.060098774310949e-06,
+            "increment_rounding_cross_term": 6.027455968592418e-07,
+            "rounding_total_contribution": 4.70755482810523e-06,
+            "observed_energy": 0.008990723918120832,
+            "reconstructed_energy": 0.008990723918120832,
+            "closure_absolute_error": 0.0,
+            "observed_minus_base_energy": 0.0003442678954446582,
+            "increment_plus_cross_without_rounding": 0.00033956034061655344,
+            "base_increment_spectral_cosine": -0.11527479139649387
+          }
+        },
+        "effective_rounding_max_abs": 0.04543352127075195,
+        "rounding_definition": "Observed saved mean minus base mean minus increment mean, recomputed in float64. It includes residual-addition and spatial-reduction rounding; it is not only BF16 quantization."
+      },
+      "saved_rounding_validation": {
+        "max_absolute_discrepancy": 4.990957677364349e-06,
+        "tolerance": 0.0001950749969482422,
+        "saved_rounding_energy": {
+          "dc": 1.0572840364576194e-07,
+          "temporal": 3.697971652023486e-07,
+          "band_1": 2.421686738263192e-07,
+          "band_2": 8.386227074433771e-08,
+          "band_3": 4.376622063169166e-08,
+          "raw_mean_square": 4.7552556884811057e-07,
+          "temporal_variance_direct": 3.697971652023486e-07,
+          "parseval_temporal_absolute_error": 0.0,
+          "parseval_raw_absolute_error": 5.293955920339377e-23,
+          "temporal_fraction_of_raw": 0.7776598976541405,
+          "band_fractions_of_temporal": {
+            "band_1": 0.6548689298194251,
+            "band_2": 0.22677910659063402,
+            "band_3": 0.11835196358994075
+          }
+        }
+      }
+    },
+    "27": {
+      "branches": {
+        "decoder_input": {
+          "shape": [
+            8,
+            2048
+          ],
+          "energy": {
+            "dc": 1205.6827265491902,
+            "temporal": 5.692489522039102,
+            "band_1": 3.975270181308866,
+            "band_2": 1.0786392174458288,
+            "band_3": 0.6385801232844069,
+            "raw_mean_square": 1211.3752160712297,
+            "temporal_variance_direct": 5.692489522039102,
+            "parseval_temporal_absolute_error": 0.0,
+            "parseval_raw_absolute_error": 4.547473508864641e-13,
+            "temporal_fraction_of_raw": 0.00469919596052259,
+            "band_fractions_of_temporal": {
+              "band_1": 0.6983359681064266,
+              "band_2": 0.18948462061629764,
+              "band_3": 0.1121794112772757
+            }
+          },
+          "spatial_moments": {
+            "mean_patch_coordinate_square": 1512.1583251953125,
+            "mean_spatial_mean_coordinate_square": 1211.3752160712297,
+            "mean_spatial_variance": 300.78310912408267,
+            "unclipped_minimum_spatial_variance": 265.08951945650847,
+            "spatial_mean_retained_second_moment_fraction": 0.8010902006010295,
+            "spatial_variance_by_time": [
+              265.08951945650847,
+              298.3048604256221,
+              308.8801814209048,
+              298.9098754116703,
+              317.1392555566181,
+              315.8625952115319,
+              285.72772792346996,
+              316.3508575863359
+            ],
+            "identifiable": "Instantaneous spatial dispersion and second-moment retention only.",
+            "not_identifiable": "Patchwise temporal means are absent; temporal energy removed by spatial pooling, action information loss, and downstream task utility cannot be recovered from these moments."
+          }
+        },
+        "attention_delta": {
+          "shape": [
+            8,
+            2048
+          ],
+          "energy": {
+            "dc": 11.797074684716122,
+            "temporal": 0.36720371904638016,
+            "band_1": 0.27135431524444953,
+            "band_2": 0.06596377223887157,
+            "band_3": 0.02988563156305904,
+            "raw_mean_square": 12.164278403762502,
+            "temporal_variance_direct": 0.3672037190463802,
+            "parseval_temporal_absolute_error": 5.551115123125783e-17,
+            "parseval_raw_absolute_error": 0.0,
+            "temporal_fraction_of_raw": 0.030187053178000373,
+            "band_fractions_of_temporal": {
+              "band_1": 0.7389748555628756,
+              "band_2": 0.17963808321489227,
+              "band_3": 0.08138706122223205
+            }
+          },
+          "spatial_moments": {
+            "mean_patch_coordinate_square": 16.89583110809326,
+            "mean_spatial_mean_coordinate_square": 12.164278403762502,
+            "mean_spatial_variance": 4.73155270433076,
+            "unclipped_minimum_spatial_variance": 3.457882291406708,
+            "spatial_mean_retained_second_moment_fraction": 0.7199573862889584,
+            "spatial_variance_by_time": [
+              3.457882291406708,
+              3.5144093643489107,
+              4.775611244946802,
+              4.9569519099473744,
+              5.0632288523718785,
+              5.178382162075659,
+              4.974906962203153,
+              5.93104884734559
+            ],
+            "identifiable": "Instantaneous spatial dispersion and second-moment retention only.",
+            "not_identifiable": "Patchwise temporal means are absent; temporal energy removed by spatial pooling, action information loss, and downstream task utility cannot be recovered from these moments."
+          }
+        },
+        "pre_ffn": {
+          "shape": [
+            8,
+            2048
+          ],
+          "energy": {
+            "dc": 1362.6464256568897,
+            "temporal": 6.327636709980807,
+            "band_1": 4.444220992278977,
+            "band_2": 1.184812027390221,
+            "band_3": 0.6986036903116088,
+            "raw_mean_square": 1368.9740623668708,
+            "temporal_variance_direct": 6.327636709980808,
+            "parseval_temporal_absolute_error": 1.7763568394002505e-15,
+            "parseval_raw_absolute_error": 2.2737367544323206e-13,
+            "temporal_fraction_of_raw": 0.004622174286516953,
+            "band_fractions_of_temporal": {
+              "band_1": 0.7023508453430882,
+              "band_2": 0.1872440030448295,
+              "band_3": 0.11040515161208234
+            }
+          },
+          "spatial_moments": {
+            "mean_patch_coordinate_square": 1676.6563262939453,
+            "mean_spatial_mean_coordinate_square": 1368.9740623668708,
+            "mean_spatial_variance": 307.6822639270744,
+            "unclipped_minimum_spatial_variance": 270.9098104870418,
+            "spatial_mean_retained_second_moment_fraction": 0.8164905597516394,
+            "spatial_variance_by_time": [
+              270.9098104870418,
+              304.02771074131647,
+              314.9314862074855,
+              305.30065174688116,
+              326.6442585361433,
+              321.9830465370592,
+              291.30598215841064,
+              326.3551650022573
+            ],
+            "identifiable": "Instantaneous spatial dispersion and second-moment retention only.",
+            "not_identifiable": "Patchwise temporal means are absent; temporal energy removed by spatial pooling, action information loss, and downstream task utility cannot be recovered from these moments."
+          }
+        },
+        "ffn_input": {
+          "shape": [
+            8,
+            2048
+          ],
+          "energy": {
+            "dc": 4.362631075605136,
+            "temporal": 0.043146965042826266,
+            "band_1": 0.029969058203605167,
+            "band_2": 0.00790146921746463,
+            "band_3": 0.005276437621756473,
+            "raw_mean_square": 4.405778040647963,
+            "temporal_variance_direct": 0.043146965042826266,
+            "parseval_temporal_absolute_error": 0.0,
+            "parseval_raw_absolute_error": 8.881784197001252e-16,
+            "temporal_fraction_of_raw": 0.009793267986891277,
+            "band_fractions_of_temporal": {
+              "band_1": 0.6945809090826865,
+              "band_2": 0.18312920061983246,
+              "band_3": 0.12228989029748102
+            }
+          },
+          "spatial_moments": {
+            "mean_patch_coordinate_square": 6.250376582145691,
+            "mean_spatial_mean_coordinate_square": 4.405778040647963,
+            "mean_spatial_variance": 1.8445985414977284,
+            "unclipped_minimum_spatial_variance": 1.5970608874126597,
+            "spatial_mean_retained_second_moment_fraction": 0.7048820151465984,
+            "spatial_variance_by_time": [
+              1.5970608874126597,
+              1.7670125707463153,
+              1.9033276926132068,
+              1.8317687291672318,
+              1.9243679769810065,
+              1.9380902422150292,
+              1.7609766012590402,
+              2.0341836315873385
+            ],
+            "identifiable": "Instantaneous spatial dispersion and second-moment retention only.",
+            "not_identifiable": "Patchwise temporal means are absent; temporal energy removed by spatial pooling, action information loss, and downstream task utility cannot be recovered from these moments."
+          }
+        },
+        "ffn_delta": {
+          "shape": [
+            8,
+            2048
+          ],
+          "energy": {
+            "dc": 1036.4436143502826,
+            "temporal": 1.047528323549764,
+            "band_1": 0.6742992618345782,
+            "band_2": 0.25876319023981126,
+            "band_3": 0.11446587147537463,
+            "raw_mean_square": 1037.4911426738324,
+            "temporal_variance_direct": 1.0475283235497643,
+            "parseval_temporal_absolute_error": 2.220446049250313e-16,
+            "parseval_raw_absolute_error": 0.0,
+            "temporal_fraction_of_raw": 0.0010096744737984594,
+            "band_fractions_of_temporal": {
+              "band_1": 0.6437050404036592,
+              "band_2": 0.24702261926717095,
+              "band_3": 0.1092723403291699
+            }
+          },
+          "spatial_moments": {
+            "mean_patch_coordinate_square": 1082.8423919677734,
+            "mean_spatial_mean_coordinate_square": 1037.4911426738324,
+            "mean_spatial_variance": 45.351249293941095,
+            "unclipped_minimum_spatial_variance": 38.272818321881914,
+            "spatial_mean_retained_second_moment_fraction": 0.9581183285486936,
+            "spatial_variance_by_time": [
+              38.27709358490483,
+              45.95769698185086,
+              52.68142554212545,
+              52.021215960153086,
+              38.272818321881914,
+              41.003278166587506,
+              40.39033426851472,
+              54.206131525510386
+            ],
+            "identifiable": "Instantaneous spatial dispersion and second-moment retention only.",
+            "not_identifiable": "Patchwise temporal means are absent; temporal energy removed by spatial pooling, action information loss, and downstream task utility cannot be recovered from these moments."
+          }
+        },
+        "post_ffn": {
+          "shape": [
+            8,
+            2048
+          ],
+          "energy": {
+            "dc": 146.25210117544498,
+            "temporal": 6.660003658253462,
+            "band_1": 4.579845043999808,
+            "band_2": 1.2370888352543647,
+            "band_3": 0.8430697789992895,
+            "raw_mean_square": 152.91210483369846,
+            "temporal_variance_direct": 6.660003658253462,
+            "parseval_temporal_absolute_error": 0.0,
+            "parseval_raw_absolute_error": 2.842170943040401e-14,
+            "temporal_fraction_of_raw": 0.04355445676126579,
+            "band_fractions_of_temporal": {
+              "band_1": 0.687664043295862,
+              "band_2": 0.1857489723329645,
+              "band_3": 0.12658698437117352
+            }
+          },
+          "spatial_moments": {
+            "mean_patch_coordinate_square": 493.4342956542969,
+            "mean_spatial_mean_coordinate_square": 152.91210483369846,
+            "mean_spatial_variance": 340.52219082059844,
+            "unclipped_minimum_spatial_variance": 304.3485825297214,
+            "spatial_mean_retained_second_moment_fraction": 0.3098935485036282,
+            "spatial_variance_by_time": [
+              304.3485825297214,
+              341.4952207561681,
+              361.5663429345049,
+              343.3830248020149,
+              349.62063685103203,
+              344.70056629599577,
+              321.07237394645256,
+              357.9907784488977
+            ],
+            "identifiable": "Instantaneous spatial dispersion and second-moment retention only.",
+            "not_identifiable": "Patchwise temporal means are absent; temporal energy removed by spatial pooling, action information loss, and downstream task utility cannot be recovered from these moments."
+          }
+        }
+      },
+      "ffn_decomposition": {
+        "scopes": {
+          "dc": {
+            "base_energy": 1362.6464256568897,
+            "increment_energy": 1036.4436143502826,
+            "base_increment_cross_term": -2252.8354989379354,
+            "rounding_energy": 2.7633595151082854e-06,
+            "base_rounding_cross_term": -0.002819449275327543,
+            "increment_rounding_cross_term": 0.0003767921242004935,
+            "rounding_total_contribution": -0.0024398937916119408,
+            "observed_energy": 146.25210117544498,
+            "reconstructed_energy": 146.2521011754453,
+            "closure_absolute_error": 3.126388037344441e-13,
+            "observed_minus_base_energy": -1216.3943244814448,
+            "increment_plus_cross_without_rounding": -1216.3918845876528,
+            "base_increment_spectral_cosine": -0.9478400479388406
+          },
+          "temporal": {
+            "base_energy": 6.327636709980807,
+            "increment_energy": 1.047528323549764,
+            "base_increment_cross_term": -0.7149217207555221,
+            "rounding_energy": 1.9883266603312647e-05,
+            "base_rounding_cross_term": -0.0003538184798925326,
+            "increment_rounding_cross_term": 9.428069170252715e-05,
+            "rounding_total_contribution": -0.0002396545215866928,
+            "observed_energy": 6.660003658253462,
+            "reconstructed_energy": 6.660003658253462,
+            "closure_absolute_error": 0.0,
+            "observed_minus_base_energy": 0.33236694827265545,
+            "increment_plus_cross_without_rounding": 0.33260660279424203,
+            "base_increment_spectral_cosine": -0.1388432722783541
+          },
+          "band_1": {
+            "base_energy": 4.444220992278977,
+            "increment_energy": 0.6742992618345782,
+            "base_increment_cross_term": -0.538298566081006,
+            "rounding_energy": 1.1377210793829272e-05,
+            "base_rounding_cross_term": -0.00034418693168414527,
+            "increment_rounding_cross_term": -4.3834311851063094e-05,
+            "rounding_total_contribution": -0.00037664403274137914,
+            "observed_energy": 4.579845043999808,
+            "reconstructed_energy": 4.579845043999808,
+            "closure_absolute_error": 0.0,
+            "observed_minus_base_energy": 0.13562405172083114,
+            "increment_plus_cross_without_rounding": 0.1360006957535722,
+            "base_increment_spectral_cosine": -0.1554780417133554
+          },
+          "band_2": {
+            "base_energy": 1.184812027390221,
+            "increment_energy": 0.25876319023981126,
+            "base_increment_cross_term": -0.20640533380325307,
+            "rounding_energy": 5.711760399313409e-06,
+            "base_rounding_cross_term": -0.00016983337241909137,
+            "increment_rounding_cross_term": 8.307303960540473e-05,
+            "rounding_total_contribution": -8.104857241437324e-05,
+            "observed_energy": 1.2370888352543647,
+            "reconstructed_energy": 1.237088835254365,
+            "closure_absolute_error": 2.220446049250313e-16,
+            "observed_minus_base_energy": 0.05227680786414379,
+            "increment_plus_cross_without_rounding": 0.05235785643655819,
+            "base_increment_spectral_cosine": -0.1863867109612317
+          },
+          "band_3": {
+            "base_energy": 0.6986036903116088,
+            "increment_energy": 0.11446587147537463,
+            "base_increment_cross_term": 0.029782179128736957,
+            "rounding_energy": 2.7942954101699675e-06,
+            "base_rounding_cross_term": 0.000160201824210704,
+            "increment_rounding_cross_term": 5.504196394818552e-05,
+            "rounding_total_contribution": 0.00021803808356905948,
+            "observed_energy": 0.8430697789992895,
+            "reconstructed_energy": 0.8430697789992894,
+            "closure_absolute_error": 1.1102230246251565e-16,
+            "observed_minus_base_energy": 0.14446608868768063,
+            "increment_plus_cross_without_rounding": 0.14424805060411158,
+            "base_increment_spectral_cosine": 0.052659051040932325
+          }
+        },
+        "effective_rounding_max_abs": 0.04402303695678711,
+        "rounding_definition": "Observed saved mean minus base mean minus increment mean, recomputed in float64. It includes residual-addition and spatial-reduction rounding; it is not only BF16 quantization."
+      },
+      "attention_decomposition": {
+        "scopes": {
+          "dc": {
+            "base_energy": 1205.6827265491902,
+            "increment_energy": 11.797074684716122,
+            "base_increment_cross_term": 145.29927881201507,
+            "rounding_energy": 1.1324895180900873e-05,
+            "base_rounding_cross_term": -0.12654600761241677,
+            "increment_rounding_cross_term": -0.006119706314584217,
+            "rounding_total_contribution": -0.13265438903182009,
+            "observed_energy": 1362.6464256568897,
+            "reconstructed_energy": 1362.6464256568895,
+            "closure_absolute_error": 2.2737367544323206e-13,
+            "observed_minus_base_energy": 156.96369910769954,
+            "increment_plus_cross_without_rounding": 157.09635349673118,
+            "base_increment_spectral_cosine": 0.6091577573607476
+          },
+          "temporal": {
+            "base_energy": 5.692489522039102,
+            "increment_energy": 0.36720371904638016,
+            "base_increment_cross_term": 0.2694480256081562,
+            "rounding_energy": 7.058330514519229e-05,
+            "base_rounding_cross_term": -0.0014451288285579388,
+            "increment_rounding_cross_term": -0.00013001118941821055,
+            "rounding_total_contribution": -0.001504556712830957,
+            "observed_energy": 6.327636709980807,
+            "reconstructed_energy": 6.327636709980807,
+            "closure_absolute_error": 0.0,
+            "observed_minus_base_energy": 0.6351471879417048,
+            "increment_plus_cross_without_rounding": 0.6366517446545363,
+            "base_increment_spectral_cosine": 0.09318378661873146
+          },
+          "band_1": {
+            "base_energy": 3.975270181308866,
+            "increment_energy": 0.27135431524444953,
+            "base_increment_cross_term": 0.20138382617239972,
+            "rounding_energy": 5.203372237431051e-05,
+            "base_rounding_cross_term": -0.0034838093689872718,
+            "increment_rounding_cross_term": -0.0003555548001246445,
+            "rounding_total_contribution": -0.003787330446737606,
+            "observed_energy": 4.444220992278977,
+            "reconstructed_energy": 4.444220992278978,
+            "closure_absolute_error": 8.881784197001252e-16,
+            "observed_minus_base_energy": 0.46895081097011104,
+            "increment_plus_cross_without_rounding": 0.4727381414168492,
+            "base_increment_spectral_cosine": 0.09694890328034977
+          },
+          "band_2": {
+            "base_energy": 1.0786392174458288,
+            "increment_energy": 0.06596377223887157,
+            "base_increment_cross_term": 0.03797786558128219,
+            "rounding_energy": 1.5644008838449627e-05,
+            "base_rounding_cross_term": 0.002015532921808561,
+            "increment_rounding_cross_term": 0.00019999519359118623,
+            "rounding_total_contribution": 0.0022311721242381966,
+            "observed_energy": 1.184812027390221,
+            "reconstructed_energy": 1.1848120273902207,
+            "closure_absolute_error": 2.220446049250313e-16,
+            "observed_minus_base_energy": 0.10617280994439215,
+            "increment_plus_cross_without_rounding": 0.10394163782015375,
+            "base_increment_spectral_cosine": 0.0711884787416019
+          },
+          "band_3": {
+            "base_energy": 0.6385801232844069,
+            "increment_energy": 0.02988563156305904,
+            "base_increment_cross_term": 0.030086333854474328,
+            "rounding_energy": 2.9055739324321474e-06,
+            "base_rounding_cross_term": 2.3147618620772037e-05,
+            "increment_rounding_cross_term": 2.5548417115247727e-05,
+            "rounding_total_contribution": 5.160160966845191e-05,
+            "observed_energy": 0.6986036903116088,
+            "reconstructed_energy": 0.6986036903116087,
+            "closure_absolute_error": 1.1102230246251565e-16,
+            "observed_minus_base_energy": 0.06002356702720191,
+            "increment_plus_cross_without_rounding": 0.05997196541753337,
+            "base_increment_spectral_cosine": 0.10889309896607086
+          }
+        },
+        "effective_rounding_max_abs": 0.44376373291015625,
+        "rounding_definition": "Observed saved mean minus base mean minus increment mean, recomputed in float64. It includes residual-addition and spatial-reduction rounding; it is not only BF16 quantization."
+      },
+      "saved_rounding_validation": {
+        "max_absolute_discrepancy": 8.443370461463928e-05,
+        "tolerance": 0.002118,
+        "saved_rounding_energy": {
+          "dc": 2.7633364027120676e-06,
+          "temporal": 1.988374758975811e-05,
+          "band_1": 1.1377467603100188e-05,
+          "band_2": 5.7118683147069646e-06,
+          "band_3": 2.7944116719509575e-06,
+          "raw_mean_square": 2.264708399247018e-05,
+          "temporal_variance_direct": 1.988374758975811e-05,
+          "parseval_temporal_absolute_error": 0.0,
+          "parseval_raw_absolute_error": 3.3881317890172014e-21,
+          "temporal_fraction_of_raw": 0.8779826840563298,
+          "band_fractions_of_temporal": {
+            "band_1": 0.5721993578796278,
+            "band_2": 0.2872631675152164,
+            "band_3": 0.14053747460515575
+          }
+        }
+      }
+    }
+  },
+  "energy_units": "Squared state units, averaged over T temporal samples and D coordinates; DC plus temporal equals raw mean square.",
+  "transform": "Temporal mean-centered orthonormal rFFT for non-DC bins; raw orthonormal rFFT coefficient for DC; one-sided multiplicity.",
+  "decomposition": "E(post)=E(base)+E(delta)+2Re<base,delta>+E(rounding)+2Re<base,rounding>+2Re<delta,rounding>.",
+  "limitations": [
+    "Descriptive representation audit only: no task benefit, memory utility, or causal FFN contribution is established.",
+    "FFN input is normalized pre-FFN residual; comparing its energy directly with the residual confounds normalization.",
+    "Spatial second moments do not identify temporal dynamics removed by spatial averaging.",
+    "post_ffn must be captured before DeepStack addition; next-layer input is not a substitute.",
+    "FFN and attention increments may reinforce or cancel their base through cross terms; increment energy is not explained task variance.",
+    "Short trajectories have weak spectral resolution; frequency bands do not automatically denote semantic timescales."
+  ]
+}

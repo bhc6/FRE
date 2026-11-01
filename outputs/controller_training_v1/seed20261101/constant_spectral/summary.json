@@ -1,0 +1,11 @@
+{
+  "method": "constant_spectral",
+  "seed": 20261101,
+  "steps": 200,
+  "elapsed_seconds": 1.3751413000009052,
+  "parameter_count": 8,
+  "checkpoint_sha256": "2f1a62a62d12da3d70ab0113c2443150db51875939462e6652619e267f9ae6d7",
+  "training_log_sha256": "0b5f38109d9e8e92f198a4053012337d1d7d04d5964d0df367df19f85421c312",
+  "optimizer_sha256": "9407c7fd668272d448a9834dd121bbcc8db03f258ad36f61f779211e0fed6d35",
+  "initial_state_sha256": "5e3096fd5199bf1dd7ab8280e198f1b157aac92569633f8cbaf947c029a893bb"
+}

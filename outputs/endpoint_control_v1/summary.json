@@ -1,0 +1,130 @@
+{
+  "video_qa_correct": 20,
+  "video_qa_total": 32,
+  "static_correct": 8,
+  "static_total": 8,
+  "static_readability_gate_passed": true,
+  "mixed_correct": 12,
+  "mixed_total": 24,
+  "mixed_interpretation": "interference_or_endpoint_readout_candidate_only",
+  "long_term_forgetting_inferred": false,
+  "per_sequence": {
+    "A16": {
+      "correct": 4,
+      "total": 4
+    },
+    "B16": {
+      "correct": 4,
+      "total": 4
+    },
+    "A8B8": {
+      "correct": 2,
+      "total": 4
+    },
+    "B8A8": {
+      "correct": 2,
+      "total": 4
+    },
+    "A2B14": {
+      "correct": 2,
+      "total": 4
+    },
+    "B14A2": {
+      "correct": 2,
+      "total": 4
+    },
+    "B2A14": {
+      "correct": 2,
+      "total": 4
+    },
+    "A14B2": {
+      "correct": 2,
+      "total": 4
+    }
+  },
+  "option_order_consistency": [
+    {
+      "sequence": "A16",
+      "endpoint": "first",
+      "same_predicted_word_across_option_orders": true
+    },
+    {
+      "sequence": "A16",
+      "endpoint": "last",
+      "same_predicted_word_across_option_orders": true
+    },
+    {
+      "sequence": "B16",
+      "endpoint": "first",
+      "same_predicted_word_across_option_orders": true
+    },
+    {
+      "sequence": "B16",
+      "endpoint": "last",
+      "same_predicted_word_across_option_orders": true
+    },
+    {
+      "sequence": "A8B8",
+      "endpoint": "first",
+      "same_predicted_word_across_option_orders": true
+    },
+    {
+      "sequence": "A8B8",
+      "endpoint": "last",
+      "same_predicted_word_across_option_orders": true
+    },
+    {
+      "sequence": "B8A8",
+      "endpoint": "first",
+      "same_predicted_word_across_option_orders": false
+    },
+    {
+      "sequence": "B8A8",
+      "endpoint": "last",
+      "same_predicted_word_across_option_orders": false
+    },
+    {
+      "sequence": "A2B14",
+      "endpoint": "first",
+      "same_predicted_word_across_option_orders": false
+    },
+    {
+      "sequence": "A2B14",
+      "endpoint": "last",
+      "same_predicted_word_across_option_orders": false
+    },
+    {
+      "sequence": "B14A2",
+      "endpoint": "first",
+      "same_predicted_word_across_option_orders": true
+    },
+    {
+      "sequence": "B14A2",
+      "endpoint": "last",
+      "same_predicted_word_across_option_orders": true
+    },
+    {
+      "sequence": "B2A14",
+      "endpoint": "first",
+      "same_predicted_word_across_option_orders": true
+    },
+    {
+      "sequence": "B2A14",
+      "endpoint": "last",
+      "same_predicted_word_across_option_orders": true
+    },
+    {
+      "sequence": "A14B2",
+      "endpoint": "first",
+      "same_predicted_word_across_option_orders": true
+    },
+    {
+      "sequence": "A14B2",
+      "endpoint": "last",
+      "same_predicted_word_across_option_orders": true
+    }
+  ],
+  "no_video_prior_count": 4,
+  "no_video_accuracy": null,
+  "unit_of_analysis": "one constructed source example, not 32 independent videos"
+}

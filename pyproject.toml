@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spectral-memory-probe"
+version = "0.1.0"
+description = "Leakage-aware probes for temporal dynamics and multimodal memory utility"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<3", "scipy>=1.11,<2"]
+
+[project.optional-dependencies]
+extract = ["torch>=2.2", "torchvision>=0.17", "transformers==4.57.1", "Pillow>=10"]
+smolvlm = ["num2words==0.5.14"]
+plots = ["matplotlib>=3.8,<4"]
+monitor = ["psutil>=5.9,<8"]
+video = ["opencv-python>=4.10,<5"]
+
+[project.scripts]
+spectral-memory = "spectral_memory.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["spectral_memory*"]

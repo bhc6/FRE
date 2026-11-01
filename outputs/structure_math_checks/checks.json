@@ -1,0 +1,318 @@
+{
+  "created_at_local": "2026-11-01T20:20:31.617837+08:00",
+  "purpose": "Synthetic mathematical identity/counterexample checks, not model or QA results",
+  "seed": 20261101,
+  "numpy": "2.4.2",
+  "dtype": "float64",
+  "processes": 1,
+  "thread_limits": {
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "NUMEXPR_NUM_THREADS": "2"
+  },
+  "model_or_gpu_loaded": false,
+  "check_count": 35,
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "unitary_dft_product_convolution_T7",
+      "passed": true,
+      "metrics": {
+        "maximum_absolute_error": 4.47545209131181e-16
+      }
+    },
+    {
+      "name": "unitary_dft_product_convolution_T8",
+      "passed": true,
+      "metrics": {
+        "maximum_absolute_error": 6.280369834735101e-16
+      }
+    },
+    {
+      "name": "unitary_dft_product_convolution_T32",
+      "passed": true,
+      "metrics": {
+        "maximum_absolute_error": 1.1102230246251565e-15
+      }
+    },
+    {
+      "name": "swiglu_jacobian_directional_derivative",
+      "passed": true,
+      "metrics": {
+        "maximum_absolute_error": 7.868705687030797e-13
+      }
+    },
+    {
+      "name": "swiglu_hessian_directional_derivative",
+      "passed": true,
+      "metrics": {
+        "maximum_absolute_error": 1.696297463604779e-09
+      }
+    },
+    {
+      "name": "local_taylor_remainder_bound",
+      "passed": true,
+      "metrics": {
+        "radii": [
+          0.1,
+          0.05,
+          0.025,
+          0.0125
+        ],
+        "remainder_norms": [
+          0.0013411693666431695,
+          0.0003327946630661047,
+          8.288521879683708e-05,
+          2.068204969634135e-05
+        ],
+        "bound_fractions": [
+          0.013838915443651692,
+          0.014372786805557218,
+          0.014649547010432185,
+          0.014790439328486739
+        ]
+      }
+    },
+    {
+      "name": "local_taylor_second_order_example",
+      "passed": true,
+      "metrics": {
+        "halving_reduction_ratios": [
+          4.030020656841982,
+          4.015126796996574,
+          4.007592091392153
+        ]
+      }
+    },
+    {
+      "name": "swiglu_creates_second_harmonic_example",
+      "passed": true,
+      "metrics": {
+        "input_bin_6_magnitude": 1.1754305645758323e-16,
+        "output_bin_6_magnitude": 0.039999999999999994
+      }
+    },
+    {
+      "name": "swiglu_exact_fourier_identity",
+      "passed": true,
+      "metrics": {
+        "maximum_absolute_error": 6.958382176060062e-17
+      }
+    },
+    {
+      "name": "tokenwise_ffn_constant_input_stays_constant",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "common_linear_jacobian_commutes_with_time_dft",
+      "passed": true,
+      "metrics": {
+        "maximum_absolute_error": 2.78474764931046e-17
+      }
+    },
+    {
+      "name": "rmsnorm_jacobian",
+      "passed": true,
+      "metrics": {
+        "maximum_absolute_error": 1.2488898804008386e-10
+      }
+    },
+    {
+      "name": "rmsnorm_radial_derivative",
+      "passed": true,
+      "metrics": {
+        "maximum_absolute_error": 6.140921104957897e-16
+      }
+    },
+    {
+      "name": "positive_epsilon_rmsnorm_invertible_in_exact_reals",
+      "passed": true,
+      "metrics": {
+        "maximum_absolute_error": 2.9976021664879227e-15,
+        "normalized_square": 0.9924645051112121
+      }
+    },
+    {
+      "name": "zero_epsilon_positive_scale_invariance",
+      "passed": true,
+      "metrics": {
+        "maximum_absolute_error": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "residual_spectral_cross_term_identity",
+      "passed": true,
+      "metrics": {
+        "maximum_absolute_error": 4.930380657631326e-32
+      }
+    },
+    {
+      "name": "temporal_fraction_can_rise_with_unchanged_temporal_energy",
+      "passed": true,
+      "metrics": {
+        "temporal_energy_before": 0.4999999999999998,
+        "temporal_energy_after": 0.4999999999999998,
+        "fraction_ratio": 67.00000000000001
+      }
+    },
+    {
+      "name": "pool_then_nonlinearity_is_not_true_mean_output",
+      "passed": true,
+      "metrics": {
+        "gap_norm": 2.449489742783178
+      }
+    },
+    {
+      "name": "saved_spatial_moments_cannot_identify_patch_temporal_energy",
+      "passed": true,
+      "metrics": {
+        "static_patch_temporal_energy": 0.0,
+        "alternating_patch_temporal_energy": 1.0
+      }
+    },
+    {
+      "name": "causal_prefix_causes_drift_with_identical_visual_values",
+      "passed": true,
+      "metrics": {
+        "temporal_variance": 0.01520339023919753,
+        "visual_outputs": [
+          0.5,
+          0.6666666666666666,
+          0.75,
+          0.8,
+          0.8333333333333334,
+          0.8571428571428571,
+          0.875,
+          0.8888888888888888
+        ]
+      }
+    },
+    {
+      "name": "causal_drift_is_not_universal",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "spectral_loss_equals_input_conditioned_time_quadratic_T7",
+      "passed": true,
+      "metrics": {
+        "loss_error": 0.0,
+        "minimum_eigenvalue": -1.3748789967969226e-40,
+        "imaginary_residue": 1.5104269466614353e-18
+      }
+    },
+    {
+      "name": "centered_mse_plus_mean_bias_T7",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "spectral_loss_equals_input_conditioned_time_quadratic_T8",
+      "passed": true,
+      "metrics": {
+        "loss_error": 1.1102230246251565e-16,
+        "minimum_eigenvalue": -7.04731412115579e-18,
+        "imaginary_residue": 8.233325856222183e-19
+      }
+    },
+    {
+      "name": "centered_mse_plus_mean_bias_T8",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "spectral_loss_equals_input_conditioned_time_quadratic_T32",
+      "passed": true,
+      "metrics": {
+        "loss_error": 0.0,
+        "minimum_eigenvalue": -2.8146293382513064e-95,
+        "imaginary_residue": 4.586185526661552e-19
+      }
+    },
+    {
+      "name": "centered_mse_plus_mean_bias_T32",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "last_visual_ffn_has_no_path_to_answer_logits",
+      "passed": true,
+      "metrics": {
+        "maximum_answer_logit_difference": 0.0,
+        "visual_hidden_change_norm": 1.362543927672308
+      }
+    },
+    {
+      "name": "last_visual_ffn_does_not_change_prefill_kv",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "earlier_visual_ffn_can_reach_answer_example",
+      "passed": true,
+      "metrics": {
+        "maximum_answer_logit_difference": 0.08872545810941446
+      }
+    },
+    {
+      "name": "last_visual_only_adapter_answer_gradient_is_zero",
+      "passed": true,
+      "metrics": {
+        "maximum_finite_difference_gradient": 0.0
+      }
+    },
+    {
+      "name": "time_space_channel_energy_decomposition_each_frequency",
+      "passed": true,
+      "metrics": {
+        "maximum_absolute_error": 4.440892098500626e-16
+      }
+    },
+    {
+      "name": "causal_temporal_fir_preserves_prefix_under_future_changes",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "whole_trajectory_fft_filter_can_leak_future_into_prefix",
+      "passed": true,
+      "metrics": {
+        "maximum_prefix_difference": 0.2796161811767591
+      }
+    },
+    {
+      "name": "invertible_reencoding_improves_restricted_readability_without_new_information",
+      "passed": true,
+      "metrics": {
+        "grid_search_best_original_linear_accuracy": 0.75,
+        "transformed_readout_accuracy": 1.0,
+        "task_label_entropy_bits": 1.0,
+        "caution": "Finite grid search illustrates the known XOR linear-separation obstruction; it is not a numerical proof over all hyperplanes."
+      }
+    }
+  ],
+  "source_provenance": [
+    {
+      "path": "D:\\FRE\\outputs\\structure_math_checks\\validate_structure.py",
+      "sha256": "3ddef7e7ed0aaad3918a1fa91319d004f32a9bb054bdcc581d0e1ddf6ca66373"
+    },
+    {
+      "path": "C:\\Users\\123\\AppData\\Roaming\\Python\\Python313\\site-packages\\transformers\\models\\qwen3_vl\\modeling_qwen3_vl.py",
+      "sha256": "dd63ed3b124232735b3dca1bfa28f9d6b0d3f7182afcb75dde8f3e724b2b22da"
+    },
+    {
+      "path": "D:\\DEMO\\superembedding-storage\\huggingface\\hub\\models--Qwen--Qwen3-VL-2B-Instruct\\snapshots\\89644892e4d85e24eaac8bacfd4f463576704203\\config.json",
+      "sha256": "bec4b3d446efa05807365c9e1cec03ac590836879d02f3a6da879971154bdd3b"
+    },
+    {
+      "path": "D:\\FRE\\docs\\spectral_memory_method.md",
+      "sha256": "194fcceb905623b96bc0fb7647d3f6575bd64d095d3313d6de83c88cca5cdea4"
+    },
+    {
+      "path": "D:\\FRE\\docs\\ffn_development_protocol.md",
+      "sha256": "fef49cbdd8bec043815c16cf48e0660a122566d0abe3cd61d8c38e1f9d60998a"
+    }
+  ]
+}

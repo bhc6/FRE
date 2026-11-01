@@ -1,0 +1,193 @@
+{
+  "status": "frozen_before_new_test",
+  "created_at_utc": "2026-11-01T14:14:20.045997+00:00",
+  "protocol_sha256": "3954767ef2662e15eb4934f90eea08ca6d48eaaef39fd2d297e3d9a3df590748",
+  "data": {
+    "train": {
+      "questions": 142,
+      "videos": 32
+    },
+    "validation": {
+      "questions": 40,
+      "videos": 8
+    },
+    "test": {
+      "questions": 74,
+      "videos": 16
+    }
+  },
+  "checkpoints": [
+    {
+      "directory": "D:\\FRE\\outputs\\controller_training_v1\\seed20261101\\time_mlp",
+      "method": "time_mlp",
+      "seed": 20261101,
+      "steps": 200,
+      "elapsed_seconds": 1.3069938999997248,
+      "parameter_count": 18584,
+      "checkpoint_sha256": "2ef90e9e7d72f007838d47ca6b9d69ae27d13fc6f0c4c25a34b97d9d25397577",
+      "training_log_sha256": "01982fe8068be75cff95798b9ab14938c14cb9840879d59b51233a23a64f47be",
+      "optimizer_sha256": "36643f40ba0583cb8d4e412499b9f1b65360ebf1f25e41ec5131e89391939f18",
+      "initial_state_sha256": "0120b24d2f9ee891b54840ac20ec18a5e9a955bec0d644d94a8cd49646808252"
+    },
+    {
+      "directory": "D:\\FRE\\outputs\\controller_training_v1\\seed20261101\\spectral_mlp",
+      "method": "spectral_mlp",
+      "seed": 20261101,
+      "steps": 200,
+      "elapsed_seconds": 0.9525883000005706,
+      "parameter_count": 18584,
+      "checkpoint_sha256": "689b5b5f45ba8326133d5f8820e2f24dca37288564198d400e80660c7a4f5f73",
+      "training_log_sha256": "62c8208e80161143b01353e855ff5caa2d0036abf811fff7a2a302de6e507423",
+      "optimizer_sha256": "16b36cdb71e7be1920a0943a6316c6fb0097f79aeb3dd86c290f6fbe2992dfc8",
+      "initial_state_sha256": "0120b24d2f9ee891b54840ac20ec18a5e9a955bec0d644d94a8cd49646808252"
+    },
+    {
+      "directory": "D:\\FRE\\outputs\\controller_training_v1\\seed20261101\\spectral_phaseblind",
+      "method": "spectral_phaseblind",
+      "seed": 20261101,
+      "steps": 200,
+      "elapsed_seconds": 1.3032516000002943,
+      "parameter_count": 18584,
+      "checkpoint_sha256": "f89637930d2ca6ae242056bde0e415b95cd96444e0e79de6b457af3dce9b3463",
+      "training_log_sha256": "466f32d15335fb5bd727da2ab62cdf2b7cac25abd503f9d76fab66f7805135bf",
+      "optimizer_sha256": "311cbec6823a29ce20b8db9bc68ac6044e0c67115081d13c571d1cea3c72dcb8",
+      "initial_state_sha256": "0120b24d2f9ee891b54840ac20ec18a5e9a955bec0d644d94a8cd49646808252"
+    },
+    {
+      "directory": "D:\\FRE\\outputs\\controller_training_v1\\seed20261101\\constant_spectral",
+      "method": "constant_spectral",
+      "seed": 20261101,
+      "steps": 200,
+      "elapsed_seconds": 1.3751413000009052,
+      "parameter_count": 8,
+      "checkpoint_sha256": "2f1a62a62d12da3d70ab0113c2443150db51875939462e6652619e267f9ae6d7",
+      "training_log_sha256": "0b5f38109d9e8e92f198a4053012337d1d7d04d5964d0df367df19f85421c312",
+      "optimizer_sha256": "9407c7fd668272d448a9834dd121bbcc8db03f258ad36f61f779211e0fed6d35",
+      "initial_state_sha256": "5e3096fd5199bf1dd7ab8280e198f1b157aac92569633f8cbaf947c029a893bb"
+    },
+    {
+      "directory": "D:\\FRE\\outputs\\controller_training_v1\\seed20261102\\time_mlp",
+      "method": "time_mlp",
+      "seed": 20261102,
+      "steps": 200,
+      "elapsed_seconds": 1.3527223000000959,
+      "parameter_count": 18584,
+      "checkpoint_sha256": "87b46b3b86cb241955afcdb585fad5cb949899f6b431ee59d43fd0f88c749cfb",
+      "training_log_sha256": "3534d08322c220bfd24bf092d914dd8e8c969158d4910e96555d6f1ecf6b122b",
+      "optimizer_sha256": "144404326ac1adc2656d97a9373da0a13411f2c5a7ee2ec926661f092b0eff85",
+      "initial_state_sha256": "d764b94e486eaac37177bfd11dd364cc046fa6f41cf8b89ef8e1f60934b593c3"
+    },
+    {
+      "directory": "D:\\FRE\\outputs\\controller_training_v1\\seed20261102\\spectral_mlp",
+      "method": "spectral_mlp",
+      "seed": 20261102,
+      "steps": 200,
+      "elapsed_seconds": 1.2094639000006282,
+      "parameter_count": 18584,
+      "checkpoint_sha256": "d10c4020ccd94fec0c1545dd0ccca9b4843526ce74ef65b36a469e77fa2a8985",
+      "training_log_sha256": "e6337d12de58b89a11416d3603a1c45a1e08f0853b53670cbfa292bf0ce2cbf0",
+      "optimizer_sha256": "0591d4d68e915696b2cc47094fc2f73f63d1d34634991a549959a5ed239b8dcd",
+      "initial_state_sha256": "d764b94e486eaac37177bfd11dd364cc046fa6f41cf8b89ef8e1f60934b593c3"
+    },
+    {
+      "directory": "D:\\FRE\\outputs\\controller_training_v1\\seed20261102\\spectral_phaseblind",
+      "method": "spectral_phaseblind",
+      "seed": 20261102,
+      "steps": 200,
+      "elapsed_seconds": 0.9691294999993261,
+      "parameter_count": 18584,
+      "checkpoint_sha256": "004ebca6f9be52e79f0af1965e2c8082c76fcfcea93f5d6c9f097ef76d74900a",
+      "training_log_sha256": "a2333fd55aca50353506f9b0cefb2b990b74adeb87623cd39ded4517efe2dad8",
+      "optimizer_sha256": "91f1d79f1e378a7a29a3d99fc20df99b6d94a275479d5903c1f39ca15f1cbf6f",
+      "initial_state_sha256": "d764b94e486eaac37177bfd11dd364cc046fa6f41cf8b89ef8e1f60934b593c3"
+    },
+    {
+      "directory": "D:\\FRE\\outputs\\controller_training_v1\\seed20261102\\constant_spectral",
+      "method": "constant_spectral",
+      "seed": 20261102,
+      "steps": 200,
+      "elapsed_seconds": 0.9297599000001355,
+      "parameter_count": 8,
+      "checkpoint_sha256": "95edafeafa3321629ec6b1fc3b8f2e4d04e3ac338d40b3a6af36af21b22e261b",
+      "training_log_sha256": "3bc2eb1044d425beeb7e182123ee1ff11bd80af289ab95717b345383efc40b3e",
+      "optimizer_sha256": "235f28eab2a0868bb0b8cf34bca2aadd30e26897717e806923df27ffd16a2a1a",
+      "initial_state_sha256": "5e3096fd5199bf1dd7ab8280e198f1b157aac92569633f8cbaf947c029a893bb"
+    },
+    {
+      "directory": "D:\\FRE\\outputs\\controller_training_v1\\seed20261103\\time_mlp",
+      "method": "time_mlp",
+      "seed": 20261103,
+      "steps": 200,
+      "elapsed_seconds": 1.9623274999994464,
+      "parameter_count": 18584,
+      "checkpoint_sha256": "c49b907580223556102587f862108de24904b2a34b8058537926d6e95e2cc447",
+      "training_log_sha256": "2b4066355e3dd17a09eb155d7bbf50b6c5acb85dbd7bd913c2c60899f9c14ad6",
+      "optimizer_sha256": "e693e9d08796d6ab8cfb6eb94c0f683151cc6bd01ab9722dcf095594e790948e",
+      "initial_state_sha256": "3abfecf5b4cf297f436c46c28cc902c6dab3de6e6865a454d1b25f30a9472223"
+    },
+    {
+      "directory": "D:\\FRE\\outputs\\controller_training_v1\\seed20261103\\spectral_mlp",
+      "method": "spectral_mlp",
+      "seed": 20261103,
+      "steps": 200,
+      "elapsed_seconds": 1.4461630000005243,
+      "parameter_count": 18584,
+      "checkpoint_sha256": "e86640d9a88ab979a15cbdaceaf814dd0697eb3a7ace186bf81bd1944f020875",
+      "training_log_sha256": "17c74c8367f39b9c43b8fb65bbd3efe63c8e1d5e7aa62a246cff7eba9e144c06",
+      "optimizer_sha256": "6e14ef750ced6d84c99be6012756b912f465c7a1ef69060a742fb2decdba78e0",
+      "initial_state_sha256": "3abfecf5b4cf297f436c46c28cc902c6dab3de6e6865a454d1b25f30a9472223"
+    },
+    {
+      "directory": "D:\\FRE\\outputs\\controller_training_v1\\seed20261103\\spectral_phaseblind",
+      "method": "spectral_phaseblind",
+      "seed": 20261103,
+      "steps": 200,
+      "elapsed_seconds": 1.4669368000013492,
+      "parameter_count": 18584,
+      "checkpoint_sha256": "8c3790230aad45bc9d97eb993d6624c9bc5df88db40593a6885fd1da5c133b24",
+      "training_log_sha256": "f1543a32e22e742f3dee1f4fde917ae6238aab3c5dbd48e340bae9e0fb48593c",
+      "optimizer_sha256": "99c715f9dc78a2353861301a480a2002dceef8478a957132fc84919af0ce33d6",
+      "initial_state_sha256": "3abfecf5b4cf297f436c46c28cc902c6dab3de6e6865a454d1b25f30a9472223"
+    },
+    {
+      "directory": "D:\\FRE\\outputs\\controller_training_v1\\seed20261103\\constant_spectral",
+      "method": "constant_spectral",
+      "seed": 20261103,
+      "steps": 200,
+      "elapsed_seconds": 1.3266466999994009,
+      "parameter_count": 8,
+      "checkpoint_sha256": "161a90e8e0e57a7205572e5874835f253d2b468d67751d8c1a456b93fb94d889",
+      "training_log_sha256": "cfd5091bb4d272cb06cd7b9c2410bb984df671916315d7ee8258846969109aa7",
+      "optimizer_sha256": "277b5e66b219aa5283474b3ecf00eb825ad9360fc6e2f1ec5fb41c2437de95a1",
+      "initial_state_sha256": "5e3096fd5199bf1dd7ab8280e198f1b157aac92569633f8cbaf947c029a893bb"
+    }
+  ],
+  "files_sha256": {
+    "docs\\learned_controller_protocol_v1.md": "3954767ef2662e15eb4934f90eea08ca6d48eaaef39fd2d297e3d9a3df590748",
+    "data\\internal_controller_v1\\evaluation_contract.py": "3ed0ca7083ad1b46a7aaef29ca4f1cd329e7f49dfea50019772ab839d6ac636f",
+    "spectral_memory\\controller_freeze.py": "84155e79077dfef871cc52bfc2c1f8581a13974998a269382b3ebf9209592b18",
+    "spectral_memory\\controller_cache.py": "c1086e2c7b06bf66d10482556384ad7e7973da98f35bad9d3e0b3529d139b291",
+    "spectral_memory\\controller_train.py": "7d314ec27c5fdd96697a3296aedee8d8335db57ea77c42e5c140ce4f382c6f60",
+    "spectral_memory\\controller_runtime.py": "eccbbce89b75d289015e1affc2fa47f5a3486b6162c1747c3362b7cc8f8d0f4d",
+    "spectral_memory\\controller_evaluate.py": "492ef9f3d130559ba2c965c0b2fd790f23438e30541776f4a273f118d4ef4663",
+    "spectral_memory\\learned_readout.py": "1ff3e5f50d6e1ed1f197dc5dc4ae71698a322fbb29f097cb16640ee105a0cbe3",
+    "spectral_memory\\resource_guard.py": "284658b5b5fc932cf92de20b55743162b2f788497fcffb79e55437f7bbcdf070",
+    "spectral_memory\\qwen3_backend.py": "6031fcabbff020a53d7f830a2ad6a379b0cab6db348c312444d82ea37a95d79a",
+    "spectral_memory\\passive_probe.py": "558d6fc25f8d2e8a67849e729ecc369ed2a6e1c75b50577ef0db463b7cd0c647",
+    "spectral_memory\\evaluate_small.py": "eaff80cb585c6bcb8d8ace2a8659aed5222c6e6462625986e0abb5ddc411e6c4",
+    "spectral_memory\\endpoint_control.py": "dabb6cc6538b88d5bb1245a6d0daba4cd6ad2157430ffcd144424272ad177a2c",
+    "spectral_memory\\report_learned_controller.py": "e54f86095323613de2b623e5cf1ef2d347da953195899c602009081fa7956476",
+    "data\\internal_controller_v1\\train.questions.jsonl": "b1cb8b15865aa387bed3cefb7f6a922f41f0c1c7301fe590f2f562920b3c5845",
+    "data\\internal_controller_v1\\frames16\\train.frames.manifest.jsonl": "952cba4ce0cda44ae79992f705fd8cec691942eae555c3eefee4a16c592c4a5d",
+    "data\\internal_controller_v1\\validation.questions.jsonl": "76e60bb8b3cc522dfd3aa6323782d753ef58caa78b7dbcbe864224f34d7d3504",
+    "data\\internal_controller_v1\\frames16\\validation.frames.manifest.jsonl": "82d93ca7f9acb6fc8062160676a2f7e20885298218a0fd8430bdda11aac6b9b9",
+    "data\\internal_controller_v1\\test.questions.jsonl": "10a5fe30f688a512bbb93b3ad049f2f02fae3b6a88da613354d05b42aa72e4ac",
+    "data\\internal_controller_v1\\frames16\\test.frames.manifest.jsonl": "b15fded6c1eecda205b69b04e12d284f5a183d42d54aa8c48bab9d962582eca9"
+  },
+  "paired_sampling_verified": true,
+  "all_final_step_200": true,
+  "primary": "all_74_video_macro_accuracy_spectral_mlp_minus_time_mlp_three_seed_mean",
+  "test_matrix": "106_conditions_x_13_identity_or_method_seed_rows",
+  "test_predictions_read": false,
+  "new_hyperparameter_or_checkpoint_selection_permitted": false
+}

@@ -1,0 +1,17 @@
+{
+  "tag": "ffn_lowrank_cap0.3_seed20261101",
+  "method": "ffn_lowrank",
+  "seed": 20261101,
+  "residual_limit": 0.3,
+  "steps": 200,
+  "elapsed_seconds": 0.8609535000014148,
+  "parameter_count": 18436,
+  "checkpoint_sha256": "2932b3af0cd27efa0299843da8aadc27903d67b881e3992ae8ebc2e23cede4fb",
+  "artifacts_sha256": {
+    "initial.pt": "b4206f702bd1fe03102647f97183f4f7a93d1b555df1a9ba2e52856f5b6f4db5",
+    "optimizer.pt": "b817afff490d856ca5477ca0899466bd5dc3aedb7c0669aa470126ebf6c6f01e",
+    "initial_replay.json": "254d2304d1442dfb0b0c7d88c087fdef673b8545d5e855fa723ac7ee9231e250",
+    "final_replay.json": "d244f7b934c6bbe6ff428ebba7e282ee5deaf014ce68f2451f90c57deb07a997",
+    "training.jsonl": "421f8563f7a26bcffb7393e2b094e616029080268ae7af48d8705a6148e0d5db"
+  }
+}

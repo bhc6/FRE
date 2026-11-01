@@ -1,0 +1,2073 @@
+{
+  "status": "complete",
+  "scope": "eight_original_development_videos_descriptive_mechanism_diagnostic",
+  "video_ids": [
+    "video_10993",
+    "video_1580",
+    "video_2564",
+    "video_3501",
+    "video_6860",
+    "video_8241",
+    "video_874",
+    "video_9253"
+  ],
+  "layers": [
+    0,
+    13,
+    27
+  ],
+  "model": "Qwen/Qwen3-VL-2B-Instruct",
+  "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+  "dtype": "torch.bfloat16",
+  "frames_per_video": 16,
+  "temporal_positions_per_video": 8,
+  "records": [
+    {
+      "video_id": "video_10993",
+      "layer": 0,
+      "path": "Attention",
+      "before": {
+        "temporal": 0.001509169207003115,
+        "dc": 0.10658836308626668
+      },
+      "after": {
+        "temporal": 0.0016858707628983715,
+        "dc": 0.08415860805527284
+      },
+      "temporal_energy_ratio": 1.1170853175875142,
+      "dc_energy_ratio": 0.7895665682299629,
+      "temporal_fraction_ratio": 1.4066619991720783,
+      "total_energy_ratio": 0.7941391167494388,
+      "temporal_fraction_before": 0.013961180935275399,
+      "temporal_fraction_after": 0.0196386626852176,
+      "temporal_fraction_difference_pp": 0.56774817499422,
+      "fraction_ratio_identity_absolute_error": 0.0,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": true,
+      "dc_base_increment_cross_term": -0.03966917945740625,
+      "temporal_base_increment_cross_term": 3.9085763959269986e-05,
+      "dc_increment_energy": 0.01724200252829266,
+      "temporal_increment_energy": 0.0001375937968321573,
+      "dc_rounding_total_contribution": -2.578101880239312e-06,
+      "temporal_rounding_total_contribution": 2.199510382901897e-08
+    },
+    {
+      "video_id": "video_10993",
+      "layer": 0,
+      "path": "FFN",
+      "before": {
+        "temporal": 0.0016858707628983715,
+        "dc": 0.08415860805527284
+      },
+      "after": {
+        "temporal": 0.01297396204872079,
+        "dc": 0.5649610708525818
+      },
+      "temporal_energy_ratio": 7.695703807340357,
+      "dc_energy_ratio": 6.713051509615421,
+      "temporal_fraction_ratio": 1.143093332071754,
+      "total_energy_ratio": 6.732349486627295,
+      "temporal_fraction_before": 0.0196386626852176,
+      "temporal_fraction_after": 0.022448824366278604,
+      "temporal_fraction_difference_pp": 0.2810161681061005,
+      "fraction_ratio_identity_absolute_error": 0.0,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 0.16008752662871223,
+      "temporal_base_increment_cross_term": 0.0032862561078692747,
+      "dc_increment_energy": 0.3207214903079727,
+      "temporal_increment_energy": 0.008002099487885104,
+      "dc_rounding_total_contribution": -6.554139375892695e-06,
+      "temporal_rounding_total_contribution": -2.643099319603435e-07
+    },
+    {
+      "video_id": "video_1580",
+      "layer": 0,
+      "path": "Attention",
+      "before": {
+        "temporal": 0.0018404809759818399,
+        "dc": 0.10243701571123096
+      },
+      "after": {
+        "temporal": 0.002053576621039061,
+        "dc": 0.07706521957195869
+      },
+      "temporal_energy_ratio": 1.1157825850079983,
+      "dc_energy_ratio": 0.7523180857709177,
+      "temporal_fraction_ratio": 1.4705862628142299,
+      "total_energy_ratio": 0.7587331754838704,
+      "temporal_fraction_before": 0.017649838502572453,
+      "temporal_fraction_after": 0.025955610042772727,
+      "temporal_fraction_difference_pp": 0.8305771540200273,
+      "fraction_ratio_identity_absolute_error": 0.0,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": true,
+      "dc_base_increment_cross_term": -0.04255810252759847,
+      "temporal_base_increment_cross_term": 7.779586994299361e-05,
+      "dc_increment_energy": 0.017187677578904693,
+      "temporal_increment_energy": 0.00013539000927344528,
+      "dc_rounding_total_contribution": -1.3711905784919798e-06,
+      "temporal_rounding_total_contribution": -9.023415921795625e-08
+    },
+    {
+      "video_id": "video_1580",
+      "layer": 0,
+      "path": "FFN",
+      "before": {
+        "temporal": 0.002053576621039061,
+        "dc": 0.07706521957195869
+      },
+      "after": {
+        "temporal": 0.01571982636820094,
+        "dc": 0.5515427828007897
+      },
+      "temporal_energy_ratio": 7.6548526152616025,
+      "dc_energy_ratio": 7.156831393775418,
+      "temporal_fraction_ratio": 1.0676584604114006,
+      "total_energy_ratio": 7.1697578383933385,
+      "temporal_fraction_before": 0.025955610042772727,
+      "temporal_fraction_after": 0.027711726657305417,
+      "temporal_fraction_difference_pp": 0.17561166145326906,
+      "fraction_ratio_identity_absolute_error": 0.0,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 0.14911353026735139,
+      "temporal_base_increment_cross_term": 0.004285348131109902,
+      "dc_increment_energy": 0.325352887697653,
+      "temporal_increment_energy": 0.009380814624046338,
+      "dc_rounding_total_contribution": 1.1145263826448326e-05,
+      "temporal_rounding_total_contribution": 8.699200563592803e-08
+    },
+    {
+      "video_id": "video_2564",
+      "layer": 0,
+      "path": "Attention",
+      "before": {
+        "temporal": 0.0011496904480002277,
+        "dc": 0.11239162366713071
+      },
+      "after": {
+        "temporal": 0.0013081465106740372,
+        "dc": 0.08709395852248389
+      },
+      "temporal_energy_ratio": 1.1378249797146947,
+      "dc_energy_ratio": 0.7749150308605676,
+      "temporal_fraction_ratio": 1.4613921623401602,
+      "total_energy_ratio": 0.7785897646342032,
+      "temporal_fraction_before": 0.010125745478288557,
+      "temporal_fraction_after": 0.014797685079822213,
+      "temporal_fraction_difference_pp": 0.4671939601533656,
+      "fraction_ratio_identity_absolute_error": 2.220446049250313e-16,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": true,
+      "dc_base_increment_cross_term": -0.0426617474836981,
+      "temporal_base_increment_cross_term": 3.519360530289512e-05,
+      "dc_increment_energy": 0.017362357806394876,
+      "temporal_increment_energy": 0.00012329702360040876,
+      "dc_rounding_total_contribution": 1.7245326563995861e-06,
+      "temporal_rounding_total_contribution": -3.456622949443588e-08
+    },
+    {
+      "video_id": "video_2564",
+      "layer": 0,
+      "path": "FFN",
+      "before": {
+        "temporal": 0.0013081465106740372,
+        "dc": 0.08709395852248389
+      },
+      "after": {
+        "temporal": 0.010569715214948962,
+        "dc": 0.6323445992088786
+      },
+      "temporal_energy_ratio": 8.079916988428764,
+      "dc_energy_ratio": 7.260487523318103,
+      "temporal_fraction_ratio": 1.1110060147134968,
+      "total_energy_ratio": 7.272613182487937,
+      "temporal_fraction_before": 0.014797685079822213,
+      "temporal_fraction_after": 0.016440317127518648,
+      "temporal_fraction_difference_pp": 0.1642632047696435,
+      "fraction_ratio_identity_absolute_error": 0.0,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 0.17353148884373104,
+      "temporal_base_increment_cross_term": 0.0026767478410307864,
+      "dc_increment_energy": 0.37173466497868213,
+      "temporal_increment_energy": 0.0065849329889086095,
+      "dc_rounding_total_contribution": -1.5513136018512482e-05,
+      "temporal_rounding_total_contribution": -1.1212566447164444e-07
+    },
+    {
+      "video_id": "video_3501",
+      "layer": 0,
+      "path": "Attention",
+      "before": {
+        "temporal": 0.001740220268010929,
+        "dc": 0.0965418611603796
+      },
+      "after": {
+        "temporal": 0.0019633714431759367,
+        "dc": 0.07351417012356909
+      },
+      "temporal_energy_ratio": 1.128231568880685,
+      "dc_energy_ratio": 0.7614745483458631,
+      "temporal_fraction_ratio": 1.469111799630575,
+      "total_energy_ratio": 0.767968488963462,
+      "temporal_fraction_before": 0.017706383938143125,
+      "temporal_fraction_after": 0.026012657572315353,
+      "temporal_fraction_difference_pp": 0.8306273634172228,
+      "fraction_ratio_identity_absolute_error": 0.0,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": true,
+      "dc_base_increment_cross_term": -0.04010214429344215,
+      "temporal_base_increment_cross_term": 6.397905641720338e-05,
+      "dc_increment_energy": 0.017076427305540147,
+      "temporal_increment_energy": 0.00015924613075194458,
+      "dc_rounding_total_contribution": -1.97404890849535e-06,
+      "temporal_rounding_total_contribution": -7.401200414050728e-08
+    },
+    {
+      "video_id": "video_3501",
+      "layer": 0,
+      "path": "FFN",
+      "before": {
+        "temporal": 0.0019633714431759367,
+        "dc": 0.07351417012356909
+      },
+      "after": {
+        "temporal": 0.016842117288066033,
+        "dc": 0.5169953706061319
+      },
+      "temporal_energy_ratio": 8.578161481671719,
+      "dc_energy_ratio": 7.032594800935936,
+      "temporal_fraction_ratio": 1.2128382784677139,
+      "total_energy_ratio": 7.0727990977570965,
+      "temporal_fraction_before": 0.026012657572315353,
+      "temporal_fraction_after": 0.031549146828377096,
+      "temporal_fraction_difference_pp": 0.5536489256061743,
+      "fraction_ratio_identity_absolute_error": 4.440892098500626e-16,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 0.14143486783509662,
+      "temporal_base_increment_cross_term": 0.004435743903226274,
+      "dc_increment_energy": 0.30204288475380836,
+      "temporal_increment_energy": 0.010444053638304616,
+      "dc_rounding_total_contribution": 3.4478936576588017e-06,
+      "temporal_rounding_total_contribution": -1.0516966407926057e-06
+    },
+    {
+      "video_id": "video_6860",
+      "layer": 0,
+      "path": "Attention",
+      "before": {
+        "temporal": 0.0018295114781854854,
+        "dc": 0.10268567501928279
+      },
+      "after": {
+        "temporal": 0.00207180612247526,
+        "dc": 0.07994532772224638
+      },
+      "temporal_energy_ratio": 1.13243679921051,
+      "dc_energy_ratio": 0.778544112479505,
+      "temporal_fraction_ratio": 1.4430746079247385,
+      "total_energy_ratio": 0.7847389130067561,
+      "temporal_fraction_before": 0.017504742989955843,
+      "temporal_fraction_after": 0.025260650127053842,
+      "temporal_fraction_difference_pp": 0.7755907137097999,
+      "fraction_ratio_identity_absolute_error": 2.220446049250313e-16,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": true,
+      "dc_base_increment_cross_term": -0.03988891650048025,
+      "temporal_base_increment_cross_term": 7.681623480300427e-05,
+      "dc_increment_energy": 0.017150119285625345,
+      "temporal_increment_energy": 0.00016586961828118964,
+      "dc_rounding_total_contribution": -1.550082181494787e-06,
+      "temporal_rounding_total_contribution": -3.912087944191582e-07
+    },
+    {
+      "video_id": "video_6860",
+      "layer": 0,
+      "path": "FFN",
+      "before": {
+        "temporal": 0.00207180612247526,
+        "dc": 0.07994532772224638
+      },
+      "after": {
+        "temporal": 0.01585198132933372,
+        "dc": 0.5792146167730883
+      },
+      "temporal_energy_ratio": 7.651286072267612,
+      "dc_energy_ratio": 7.245134059434348,
+      "temporal_fraction_ratio": 1.0545652467716171,
+      "total_energy_ratio": 7.255393723328928,
+      "temporal_fraction_before": 0.025260650127053842,
+      "temporal_fraction_after": 0.026639003734848014,
+      "temporal_fraction_difference_pp": 0.13783536077941716,
+      "fraction_ratio_identity_absolute_error": 0.0,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 0.1596764687675334,
+      "temporal_base_increment_cross_term": 0.004127057503391833,
+      "dc_increment_energy": 0.33960745582179075,
+      "temporal_increment_energy": 0.009653002441207124,
+      "dc_rounding_total_contribution": -1.4635538482274038e-05,
+      "temporal_rounding_total_contribution": 1.1526225950196266e-07
+    },
+    {
+      "video_id": "video_8241",
+      "layer": 0,
+      "path": "Attention",
+      "before": {
+        "temporal": 0.0018741452502457716,
+        "dc": 0.10552756170657028
+      },
+      "after": {
+        "temporal": 0.002109930841029538,
+        "dc": 0.08153256946418214
+      },
+      "temporal_energy_ratio": 1.1258096675019431,
+      "dc_energy_ratio": 0.7726187182348763,
+      "temporal_fraction_ratio": 1.4456033661951662,
+      "total_energy_ratio": 0.778781852497396,
+      "temporal_fraction_before": 0.01744986465624169,
+      "temporal_fraction_after": 0.025225583086713042,
+      "temporal_fraction_difference_pp": 0.7775718430471354,
+      "fraction_ratio_identity_absolute_error": 2.220446049250313e-16,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": true,
+      "dc_base_increment_cross_term": -0.04066015145044745,
+      "temporal_base_increment_cross_term": 7.859616302854289e-05,
+      "dc_increment_energy": 0.016666085469241546,
+      "temporal_increment_energy": 0.0001571211285481296,
+      "dc_rounding_total_contribution": -9.262611822417246e-07,
+      "temporal_rounding_total_contribution": 6.829920709353779e-08
+    },
+    {
+      "video_id": "video_8241",
+      "layer": 0,
+      "path": "FFN",
+      "before": {
+        "temporal": 0.002109930841029538,
+        "dc": 0.08153256946418214
+      },
+      "after": {
+        "temporal": 0.014317019769427019,
+        "dc": 0.5073758128742027
+      },
+      "temporal_energy_ratio": 6.785539834301416,
+      "dc_energy_ratio": 6.222983234903405,
+      "temporal_fraction_ratio": 1.0879189479861688,
+      "total_energy_ratio": 6.237174053142499,
+      "temporal_fraction_before": 0.025225583086713042,
+      "temporal_fraction_after": 0.027443389814034547,
+      "temporal_fraction_difference_pp": 0.22178067273215044,
+      "fraction_ratio_identity_absolute_error": 0.0,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 0.14420737765207403,
+      "temporal_base_increment_cross_term": 0.00372695738094328,
+      "dc_increment_energy": 0.2816260325714687,
+      "temporal_increment_energy": 0.008480642667985809,
+      "dc_rounding_total_contribution": 9.83318647794246e-06,
+      "temporal_rounding_total_contribution": -5.111205316074919e-07
+    },
+    {
+      "video_id": "video_874",
+      "layer": 0,
+      "path": "Attention",
+      "before": {
+        "temporal": 0.0012520844648130276,
+        "dc": 0.10119870055492242
+      },
+      "after": {
+        "temporal": 0.0014371121434841349,
+        "dc": 0.07749088673362313
+      },
+      "temporal_energy_ratio": 1.1477757163121878,
+      "dc_energy_ratio": 0.7657300568950229,
+      "temporal_fraction_ratio": 1.4898454900125364,
+      "total_energy_ratio": 0.7703991615281728,
+      "temporal_fraction_before": 0.012221326216015176,
+      "temporal_fraction_after": 0.018207887744902188,
+      "temporal_fraction_difference_pp": 0.5986561528887012,
+      "fraction_ratio_identity_absolute_error": 0.0,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": true,
+      "dc_base_increment_cross_term": -0.04072956914582227,
+      "temporal_base_increment_cross_term": 5.840733009494689e-05,
+      "dc_increment_energy": 0.017024630757789268,
+      "temporal_increment_energy": 0.0001265016978890229,
+      "dc_rounding_total_contribution": -2.875433266279121e-06,
+      "temporal_rounding_total_contribution": 1.1865068713755677e-07
+    },
+    {
+      "video_id": "video_874",
+      "layer": 0,
+      "path": "FFN",
+      "before": {
+        "temporal": 0.0014371121434841349,
+        "dc": 0.07749088673362313
+      },
+      "after": {
+        "temporal": 0.01169245949011545,
+        "dc": 0.548610600400071
+      },
+      "temporal_energy_ratio": 8.136080084723416,
+      "dc_energy_ratio": 7.079678960003823,
+      "temporal_fraction_ratio": 1.1461021110913834,
+      "total_energy_ratio": 7.0989137930963055,
+      "temporal_fraction_before": 0.018207887744902188,
+      "temporal_fraction_after": 0.020868098582947324,
+      "temporal_fraction_difference_pp": 0.2660210838045136,
+      "fraction_ratio_identity_absolute_error": 0.0,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 0.14848859797833422,
+      "temporal_base_increment_cross_term": 0.003038935173673935,
+      "dc_increment_energy": 0.32262636501040454,
+      "temporal_increment_energy": 0.0072171595021566955,
+      "dc_rounding_total_contribution": 4.750677709131201e-06,
+      "temporal_rounding_total_contribution": -7.473291993170775e-07
+    },
+    {
+      "video_id": "video_9253",
+      "layer": 0,
+      "path": "Attention",
+      "before": {
+        "temporal": 0.0021558270001445466,
+        "dc": 0.10363574233992792
+      },
+      "after": {
+        "temporal": 0.002373570985684111,
+        "dc": 0.08023503962604156
+      },
+      "temporal_energy_ratio": 1.1010025319865484,
+      "dc_energy_ratio": 0.7742023920943081,
+      "temporal_fraction_ratio": 1.4099835942491605,
+      "total_energy_ratio": 0.7808619451156454,
+      "temporal_fraction_before": 0.02037806049756696,
+      "temporal_fraction_after": 0.028732730984186296,
+      "temporal_fraction_difference_pp": 0.8354670486619337,
+      "fraction_ratio_identity_absolute_error": 0.0,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": true,
+      "dc_base_increment_cross_term": -0.03990922271008908,
+      "temporal_base_increment_cross_term": 6.590783986174141e-05,
+      "dc_increment_energy": 0.016508595250773285,
+      "temporal_increment_energy": 0.00015217877209203014,
+      "dc_rounding_total_contribution": -7.5254570568847e-08,
+      "temporal_rounding_total_contribution": -3.4262641420737554e-07
+    },
+    {
+      "video_id": "video_9253",
+      "layer": 0,
+      "path": "FFN",
+      "before": {
+        "temporal": 0.002373570985684111,
+        "dc": 0.08023503962604156
+      },
+      "after": {
+        "temporal": 0.014478785133994676,
+        "dc": 0.5004425405229226
+      },
+      "temporal_energy_ratio": 6.100000893725788,
+      "dc_energy_ratio": 6.237206871902584,
+      "temporal_fraction_ratio": 0.9786205648369668,
+      "total_energy_ratio": 6.233264569442209,
+      "temporal_fraction_before": 0.028732730984186296,
+      "temporal_fraction_after": 0.02811844142505301,
+      "temporal_fraction_difference_pp": -0.06142895591332853,
+      "fraction_ratio_identity_absolute_error": 1.1102230246251565e-16,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 0.14347489472074987,
+      "temporal_base_increment_cross_term": 0.003995804228919151,
+      "dc_increment_energy": 0.2767158292460167,
+      "temporal_increment_energy": 0.008110071602252399,
+      "dc_rounding_total_contribution": 1.677693011443355e-05,
+      "temporal_rounding_total_contribution": -6.616828609870091e-07
+    },
+    {
+      "video_id": "video_10993",
+      "layer": 13,
+      "path": "Attention",
+      "before": {
+        "temporal": 0.11677628425414002,
+        "dc": 4.741025739800961
+      },
+      "after": {
+        "temporal": 0.12282837631035257,
+        "dc": 5.6572859659880805
+      },
+      "temporal_energy_ratio": 1.051826379772809,
+      "dc_energy_ratio": 1.1932620231303754,
+      "temporal_fraction_ratio": 0.8839901797830366,
+      "total_energy_ratio": 1.1898620638873674,
+      "temporal_fraction_before": 0.024038913828904825,
+      "temporal_fraction_after": 0.0212501637574025,
+      "temporal_fraction_difference_pp": -0.27887500715023245,
+      "fraction_ratio_identity_absolute_error": 0.0,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 0.7349682611284793,
+      "temporal_base_increment_cross_term": -0.011242800916277497,
+      "dc_increment_energy": 0.18196182391256116,
+      "temporal_increment_energy": 0.017297171467289138,
+      "dc_rounding_total_contribution": -0.0006698588539222035,
+      "temporal_rounding_total_contribution": -2.2784947991057014e-06
+    },
+    {
+      "video_id": "video_10993",
+      "layer": 13,
+      "path": "FFN",
+      "before": {
+        "temporal": 0.12282837631035257,
+        "dc": 5.6572859659880805
+      },
+      "after": {
+        "temporal": 0.14384077791220332,
+        "dc": 6.408667322776388
+      },
+      "temporal_energy_ratio": 1.1710712315268124,
+      "dc_energy_ratio": 1.1328165769426637,
+      "temporal_fraction_ratio": 1.0330281957972525,
+      "total_energy_ratio": 1.1336294946170598,
+      "temporal_fraction_before": 0.0212501637574025,
+      "temporal_fraction_after": 0.02195201832670567,
+      "temporal_fraction_difference_pp": 0.07018545693031689,
+      "fraction_ratio_identity_absolute_error": 0.0,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 0.573252141482495,
+      "temporal_base_increment_cross_term": 0.0016397383231026904,
+      "dc_increment_energy": 0.1788962616056962,
+      "temporal_increment_energy": 0.019342323733899533,
+      "dc_rounding_total_contribution": -0.0007670462998829441,
+      "temporal_rounding_total_contribution": 3.0339544848538593e-05
+    },
+    {
+      "video_id": "video_1580",
+      "layer": 13,
+      "path": "Attention",
+      "before": {
+        "temporal": 0.1186727862778415,
+        "dc": 4.773678705959686
+      },
+      "after": {
+        "temporal": 0.12412419140554812,
+        "dc": 5.892083305288474
+      },
+      "temporal_energy_ratio": 1.0459364383249885,
+      "dc_energy_ratio": 1.23428568787684,
+      "temporal_fraction_ratio": 0.8505505665548874,
+      "total_energy_ratio": 1.2297169380081678,
+      "temporal_fraction_before": 0.024256798896427262,
+      "temporal_fraction_after": 0.020631634044164175,
+      "temporal_fraction_difference_pp": -0.36251648522630864,
+      "fraction_ratio_identity_absolute_error": 0.0,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 0.9130913180233051,
+      "temporal_base_increment_cross_term": -0.013795231856102302,
+      "dc_increment_energy": 0.20475352487929283,
+      "temporal_increment_energy": 0.01926634646486868,
+      "dc_rounding_total_contribution": 0.0005597564261913849,
+      "temporal_rounding_total_contribution": -1.9709481059739383e-05
+    },
+    {
+      "video_id": "video_1580",
+      "layer": 13,
+      "path": "FFN",
+      "before": {
+        "temporal": 0.12412419140554812,
+        "dc": 5.892083305288474
+      },
+      "after": {
+        "temporal": 0.1472845863302519,
+        "dc": 6.564703202879823
+      },
+      "temporal_energy_ratio": 1.1865904999053114,
+      "dc_energy_ratio": 1.1141565491763559,
+      "temporal_fraction_ratio": 1.0635857640432917,
+      "total_energy_ratio": 1.1156509799401686,
+      "temporal_fraction_before": 0.020631634044164175,
+      "temporal_fraction_after": 0.021943512258323944,
+      "temporal_fraction_difference_pp": 0.13118782141597687,
+      "fraction_ratio_identity_absolute_error": 0.0,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 0.4985878436760201,
+      "temporal_base_increment_cross_term": 0.00041322180835170813,
+      "dc_increment_energy": 0.17461370279993949,
+      "temporal_increment_energy": 0.022761101510402174,
+      "dc_rounding_total_contribution": -0.0005816488846114122,
+      "temporal_rounding_total_contribution": -1.3928394050105828e-05
+    },
+    {
+      "video_id": "video_2564",
+      "layer": 13,
+      "path": "Attention",
+      "before": {
+        "temporal": 0.11156402327223078,
+        "dc": 4.678673258928383
+      },
+      "after": {
+        "temporal": 0.11312568572642824,
+        "dc": 5.7588689569173415
+      },
+      "temporal_energy_ratio": 1.0139979037004323,
+      "dc_energy_ratio": 1.230876498145624,
+      "temporal_fraction_ratio": 0.8271960139582419,
+      "total_energy_ratio": 1.2258254229832646,
+      "temporal_fraction_before": 0.023289874112661653,
+      "temporal_fraction_after": 0.019265291031582966,
+      "temporal_fraction_difference_pp": -0.4024583081078687,
+      "fraction_ratio_identity_absolute_error": 0.0,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 0.8810863789912291,
+      "temporal_base_increment_cross_term": -0.015725305079033487,
+      "dc_increment_energy": 0.19996718659792068,
+      "temporal_increment_energy": 0.01728747368677254,
+      "dc_rounding_total_contribution": -0.0008578676001922435,
+      "temporal_rounding_total_contribution": -5.061535416119773e-07
+    },
+    {
+      "video_id": "video_2564",
+      "layer": 13,
+      "path": "FFN",
+      "before": {
+        "temporal": 0.11312568572642824,
+        "dc": 5.7588689569173415
+      },
+      "after": {
+        "temporal": 0.13179599911254733,
+        "dc": 6.556783090015189
+      },
+      "temporal_energy_ratio": 1.165040443876464,
+      "dc_energy_ratio": 1.1385539659032218,
+      "temporal_fraction_ratio": 1.0228048668851235,
+      "total_energy_ratio": 1.139064235609778,
+      "temporal_fraction_before": 0.019265291031582966,
+      "temporal_fraction_after": 0.01970463342906138,
+      "temporal_fraction_difference_pp": 0.04393423974784136,
+      "fraction_ratio_identity_absolute_error": 2.220446049250313e-16,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 0.6113180086383949,
+      "temporal_base_increment_cross_term": 0.0010970129373363898,
+      "dc_increment_energy": 0.18685280281454936,
+      "temporal_increment_energy": 0.017522068382223414,
+      "dc_rounding_total_contribution": -0.0002566783550978733,
+      "temporal_rounding_total_contribution": 5.1232066559299806e-05
+    },
+    {
+      "video_id": "video_3501",
+      "layer": 13,
+      "path": "Attention",
+      "before": {
+        "temporal": 0.13613543202012882,
+        "dc": 4.708892172915647
+      },
+      "after": {
+        "temporal": 0.14347745783614962,
+        "dc": 5.509248035348139
+      },
+      "temporal_energy_ratio": 1.0539317774004289,
+      "dc_energy_ratio": 1.1699669121828562,
+      "temporal_fraction_ratio": 0.9033392053764161,
+      "total_energy_ratio": 1.166706560644915,
+      "temporal_fraction_before": 0.028097968292573515,
+      "temporal_fraction_after": 0.025381996350105095,
+      "temporal_fraction_difference_pp": -0.27159719424684203,
+      "fraction_ratio_identity_absolute_error": 0.0,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 0.646581149234847,
+      "temporal_base_increment_cross_term": -0.01397696071984987,
+      "dc_increment_energy": 0.15331060418734102,
+      "temporal_increment_energy": 0.021307407839615013,
+      "dc_rounding_total_contribution": 0.00046410901030328913,
+      "temporal_rounding_total_contribution": 1.1578696255652745e-05
+    },
+    {
+      "video_id": "video_3501",
+      "layer": 13,
+      "path": "FFN",
+      "before": {
+        "temporal": 0.14347745783614962,
+        "dc": 5.509248035348139
+      },
+      "after": {
+        "temporal": 0.16799317793100113,
+        "dc": 6.373505064947377
+      },
+      "temporal_energy_ratio": 1.1708680963865996,
+      "dc_energy_ratio": 1.1568738644646308,
+      "temporal_fraction_ratio": 1.0117859383064494,
+      "total_energy_ratio": 1.157229066008197,
+      "temporal_fraction_before": 0.025381996350105095,
+      "temporal_fraction_after": 0.02568114699318196,
+      "temporal_fraction_difference_pp": 0.02991506430768641,
+      "fraction_ratio_identity_absolute_error": 0.0,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 0.688526575376368,
+      "temporal_base_increment_cross_term": 0.0011545191595007847,
+      "dc_increment_energy": 0.17502332217159464,
+      "temporal_increment_energy": 0.02345728834542063,
+      "dc_rounding_total_contribution": 0.0007071320512742517,
+      "temporal_rounding_total_contribution": -9.608741006991198e-05
+    },
+    {
+      "video_id": "video_6860",
+      "layer": 13,
+      "path": "Attention",
+      "before": {
+        "temporal": 0.12298578659643508,
+        "dc": 4.886417294551373
+      },
+      "after": {
+        "temporal": 0.1256846308072696,
+        "dc": 5.817663493895029
+      },
+      "temporal_energy_ratio": 1.021944358657399,
+      "dc_energy_ratio": 1.1905785247571974,
+      "temporal_fraction_ratio": 0.8613547636125425,
+      "total_energy_ratio": 1.1864383896495099,
+      "temporal_fraction_before": 0.024550986335931915,
+      "temporal_fraction_after": 0.021147109031841395,
+      "temporal_fraction_difference_pp": -0.34038773040905196,
+      "fraction_ratio_identity_absolute_error": 1.1102230246251565e-16,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 0.7516835382395977,
+      "temporal_base_increment_cross_term": -0.013375387635170263,
+      "dc_increment_energy": 0.18025921941267242,
+      "temporal_increment_energy": 0.01602548630400822,
+      "dc_rounding_total_contribution": -0.0006965583086152525,
+      "temporal_rounding_total_contribution": 4.8745541996551937e-05
+    },
+    {
+      "video_id": "video_6860",
+      "layer": 13,
+      "path": "FFN",
+      "before": {
+        "temporal": 0.1256846308072696,
+        "dc": 5.817663493895029
+      },
+      "after": {
+        "temporal": 0.14836627538381428,
+        "dc": 6.6349600975041145
+      },
+      "temporal_energy_ratio": 1.1804647428318082,
+      "dc_energy_ratio": 1.1404853691635386,
+      "temporal_fraction_ratio": 1.0342879775958147,
+      "total_energy_ratio": 1.1413308173375265,
+      "temporal_fraction_before": 0.021147109031841395,
+      "temporal_fraction_after": 0.021872200632541423,
+      "temporal_fraction_difference_pp": 0.07250916007000285,
+      "fraction_ratio_identity_absolute_error": 2.220446049250313e-16,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 0.6370095127267184,
+      "temporal_base_increment_cross_term": 0.003333843565371772,
+      "dc_increment_energy": 0.18125501521177717,
+      "temporal_increment_energy": 0.019272454697198082,
+      "dc_rounding_total_contribution": -0.0009679243294101533,
+      "temporal_rounding_total_contribution": 7.534631397480977e-05
+    },
+    {
+      "video_id": "video_8241",
+      "layer": 13,
+      "path": "Attention",
+      "before": {
+        "temporal": 0.1204568645831651,
+        "dc": 4.507609994468499
+      },
+      "after": {
+        "temporal": 0.12287629941973069,
+        "dc": 5.534087201968489
+      },
+      "temporal_energy_ratio": 1.0200854874061178,
+      "dc_energy_ratio": 1.2277209449707558,
+      "temporal_fraction_ratio": 0.8345508746000001,
+      "total_energy_ratio": 1.2223167196308364,
+      "temporal_fraction_before": 0.026027468541767757,
+      "temporal_fraction_after": 0.02172124663515627,
+      "temporal_fraction_difference_pp": -0.4306221906611486,
+      "fraction_ratio_identity_absolute_error": 1.1102230246251565e-16,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 0.8360632823147848,
+      "temporal_base_increment_cross_term": -0.01858955626866774,
+      "dc_increment_energy": 0.19011474004694331,
+      "temporal_increment_energy": 0.0209809514506592,
+      "dc_rounding_total_contribution": 0.00029918513826075196,
+      "temporal_rounding_total_contribution": 2.8039654574147364e-05
+    },
+    {
+      "video_id": "video_8241",
+      "layer": 13,
+      "path": "FFN",
+      "before": {
+        "temporal": 0.12287629941973069,
+        "dc": 5.534087201968489
+      },
+      "after": {
+        "temporal": 0.14703302146321406,
+        "dc": 6.203528153946735
+      },
+      "temporal_energy_ratio": 1.1965938277565384,
+      "dc_energy_ratio": 1.120966823894666,
+      "temporal_fraction_ratio": 1.0659038504842357,
+      "total_energy_ratio": 1.1226095366978275,
+      "temporal_fraction_before": 0.02172124663515627,
+      "temporal_fraction_after": 0.02315276042573082,
+      "temporal_fraction_difference_pp": 0.1431513790574549,
+      "fraction_ratio_identity_absolute_error": 2.220446049250313e-16,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 0.49358015654596865,
+      "temporal_base_increment_cross_term": 0.0017373642615541407,
+      "dc_increment_energy": 0.17604963862558268,
+      "temporal_increment_energy": 0.022371584044649055,
+      "dc_rounding_total_contribution": -0.00018884319330565407,
+      "temporal_rounding_total_contribution": 4.777373728016085e-05
+    },
+    {
+      "video_id": "video_874",
+      "layer": 13,
+      "path": "Attention",
+      "before": {
+        "temporal": 0.11997341753387131,
+        "dc": 4.679778674818499
+      },
+      "after": {
+        "temporal": 0.12318288126374147,
+        "dc": 5.701112206425682
+      },
+      "temporal_energy_ratio": 1.0267514570797656,
+      "dc_energy_ratio": 1.2182439817299255,
+      "temporal_fraction_ratio": 0.8461371514058217,
+      "total_energy_ratio": 1.2134574818915123,
+      "temporal_fraction_before": 0.024995752952538856,
+      "temporal_fraction_after": 0.021149835200504886,
+      "temporal_fraction_difference_pp": -0.38459177520339705,
+      "fraction_ratio_identity_absolute_error": 1.1102230246251565e-16,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 0.8250148296232331,
+      "temporal_base_increment_cross_term": -0.015981111512394244,
+      "dc_increment_energy": 0.19634193131268682,
+      "temporal_increment_energy": 0.019165821191509117,
+      "dc_rounding_total_contribution": -2.3229328737084867e-05,
+      "temporal_rounding_total_contribution": 2.4754050755279642e-05
+    },
+    {
+      "video_id": "video_874",
+      "layer": 13,
+      "path": "FFN",
+      "before": {
+        "temporal": 0.12318288126374147,
+        "dc": 5.701112206425682
+      },
+      "after": {
+        "temporal": 0.1431491728083163,
+        "dc": 6.544409379005841
+      },
+      "temporal_energy_ratio": 1.1620865768014135,
+      "dc_energy_ratio": 1.147918010038407,
+      "temporal_fraction_ratio": 1.0120786365149985,
+      "total_energy_ratio": 1.1482176728904718,
+      "temporal_fraction_before": 0.021149835200504886,
+      "temporal_fraction_after": 0.021405296372243907,
+      "temporal_fraction_difference_pp": 0.02554611717390208,
+      "fraction_ratio_identity_absolute_error": 2.220446049250313e-16,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 0.6425134821921954,
+      "temporal_base_increment_cross_term": -0.0005878875264738526,
+      "dc_increment_energy": 0.20000451129806895,
+      "temporal_increment_energy": 0.02057727797620214,
+      "dc_rounding_total_contribution": 0.0007791790898944306,
+      "temporal_rounding_total_contribution": -2.3098905153439853e-05
+    },
+    {
+      "video_id": "video_9253",
+      "layer": 13,
+      "path": "Attention",
+      "before": {
+        "temporal": 0.12631281807676914,
+        "dc": 4.579922246050028
+      },
+      "after": {
+        "temporal": 0.1342127912589623,
+        "dc": 5.609906103977551
+      },
+      "temporal_energy_ratio": 1.0625429255912238,
+      "dc_energy_ratio": 1.2248911231660835,
+      "temporal_fraction_ratio": 0.8705559311636412,
+      "total_energy_ratio": 1.2205337848551103,
+      "temporal_fraction_before": 0.026839462193375466,
+      "temporal_fraction_after": 0.02336525300168532,
+      "temporal_fraction_difference_pp": -0.3474209191690145,
+      "fraction_ratio_identity_absolute_error": 1.1102230246251565e-16,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 0.8383503744346771,
+      "temporal_base_increment_cross_term": -0.016765039476486124,
+      "dc_increment_energy": 0.19192048418547697,
+      "temporal_increment_energy": 0.02464888132869418,
+      "dc_rounding_total_contribution": -0.00028700069263136544,
+      "temporal_rounding_total_contribution": 1.6131329985110812e-05
+    },
+    {
+      "video_id": "video_9253",
+      "layer": 13,
+      "path": "FFN",
+      "before": {
+        "temporal": 0.1342127912589623,
+        "dc": 5.609906103977551
+      },
+      "after": {
+        "temporal": 0.15989293072976785,
+        "dc": 6.217322744704691
+      },
+      "temporal_energy_ratio": 1.191338986619062,
+      "dc_energy_ratio": 1.1082757232418683,
+      "temporal_fraction_ratio": 1.0730690526950493,
+      "total_energy_ratio": 1.110216517405822,
+      "temporal_fraction_before": 0.02336525300168532,
+      "temporal_fraction_after": 0.02507252990449862,
+      "temporal_fraction_difference_pp": 0.17072769028133006,
+      "fraction_ratio_identity_absolute_error": 2.220446049250313e-16,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 0.44120416920073047,
+      "temporal_base_increment_cross_term": -0.0017736599585325193,
+      "dc_increment_energy": 0.16644876132510225,
+      "temporal_increment_energy": 0.0275588402329828,
+      "dc_rounding_total_contribution": -0.00023628979869352732,
+      "temporal_rounding_total_contribution": -0.00010504080364475763
+    },
+    {
+      "video_id": "video_10993",
+      "layer": 27,
+      "path": "Attention",
+      "before": {
+        "temporal": 6.961416569330206,
+        "dc": 1182.2979852820968
+      },
+      "after": {
+        "temporal": 7.58784041765319,
+        "dc": 1332.3058799027294
+      },
+      "temporal_energy_ratio": 1.0899851118065265,
+      "dc_energy_ratio": 1.126878245998906,
+      "temporal_fraction_ratio": 0.967446165643673,
+      "total_energy_ratio": 1.1266622893495313,
+      "temporal_fraction_before": 0.005853572869377988,
+      "temporal_fraction_after": 0.005663016627795567,
+      "temporal_fraction_difference_pp": -0.019055624158242045,
+      "fraction_ratio_identity_absolute_error": 0.0,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 138.15709367382308,
+      "temporal_base_increment_cross_term": 0.2654249110397967,
+      "dc_increment_energy": 11.833727346193228,
+      "temporal_increment_energy": 0.3581462645067839,
+      "dc_rounding_total_contribution": 0.017073600616449025,
+      "temporal_rounding_total_contribution": 0.0028526727764029767
+    },
+    {
+      "video_id": "video_10993",
+      "layer": 27,
+      "path": "FFN",
+      "before": {
+        "temporal": 7.58784041765319,
+        "dc": 1332.3058799027294
+      },
+      "after": {
+        "temporal": 8.250411328434124,
+        "dc": 145.7312665699667
+      },
+      "temporal_energy_ratio": 1.0873200903434204,
+      "dc_energy_ratio": 0.10938273918043986,
+      "temporal_fraction_ratio": 9.46147217586899,
+      "total_energy_ratio": 0.11492081466101817,
+      "temporal_fraction_before": 0.005663016627795567,
+      "temporal_fraction_after": 0.05358047425537119,
+      "temporal_fraction_difference_pp": 4.791745762757563,
+      "fraction_ratio_identity_absolute_error": 0.0,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": true,
+      "dc_base_increment_cross_term": -2228.5372430953225,
+      "temporal_base_increment_cross_term": -0.6460270511601817,
+      "dc_increment_energy": 1041.9655525831897,
+      "temporal_increment_energy": 1.3080753567345016,
+      "dc_rounding_total_contribution": -0.002922820629761191,
+      "temporal_rounding_total_contribution": 0.0005226052066135224
+    },
+    {
+      "video_id": "video_1580",
+      "layer": 27,
+      "path": "Attention",
+      "before": {
+        "temporal": 6.14170811251274,
+        "dc": 1206.8394095440815
+      },
+      "after": {
+        "temporal": 6.7505285094487855,
+        "dc": 1366.7931407481794
+      },
+      "temporal_energy_ratio": 1.0991288393689163,
+      "dc_energy_ratio": 1.1325393668280397,
+      "temporal_fraction_ratio": 0.9706444417212322,
+      "total_energy_ratio": 1.1323701987309012,
+      "temporal_fraction_before": 0.005063317163896291,
+      "temporal_fraction_after": 0.004914680661807648,
+      "temporal_fraction_difference_pp": -0.014863650208864296,
+      "fraction_ratio_identity_absolute_error": 1.1102230246251565e-16,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 147.8880952207447,
+      "temporal_base_increment_cross_term": 0.2395434189830869,
+      "dc_increment_energy": 12.03067088114275,
+      "temporal_increment_energy": 0.37190845630965347,
+      "dc_rounding_total_contribution": 0.03496510221033874,
+      "temporal_rounding_total_contribution": -0.0026314783566944574
+    },
+    {
+      "video_id": "video_1580",
+      "layer": 27,
+      "path": "FFN",
+      "before": {
+        "temporal": 6.7505285094487855,
+        "dc": 1366.7931407481794
+      },
+      "after": {
+        "temporal": 7.22468898983611,
+        "dc": 161.95645928049282
+      },
+      "temporal_energy_ratio": 1.0702404974252961,
+      "dc_energy_ratio": 0.11849376065191418,
+      "temporal_fraction_ratio": 8.689041745199358,
+      "total_energy_ratio": 0.12317129193407286,
+      "temporal_fraction_before": 0.004914680661807648,
+      "temporal_fraction_after": 0.04270386543477066,
+      "temporal_fraction_difference_pp": 3.778918477296301,
+      "fraction_ratio_identity_absolute_error": 0.0,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": true,
+      "dc_base_increment_cross_term": -2147.222857096443,
+      "temporal_base_increment_cross_term": -0.7794997794586175,
+      "dc_increment_energy": 942.3844787339049,
+      "temporal_increment_energy": 1.253278600667927,
+      "dc_rounding_total_contribution": 0.0016968948516668976,
+      "temporal_rounding_total_contribution": 0.0003816591780143913
+    },
+    {
+      "video_id": "video_2564",
+      "layer": 27,
+      "path": "Attention",
+      "before": {
+        "temporal": 6.383191156695339,
+        "dc": 1209.947764709719
+      },
+      "after": {
+        "temporal": 7.010786135953197,
+        "dc": 1366.8166986933863
+      },
+      "temporal_energy_ratio": 1.0983199412099027,
+      "dc_energy_ratio": 1.1296493440122204,
+      "temporal_fraction_ratio": 0.9724077867789469,
+      "total_energy_ratio": 1.1294849302349108,
+      "temporal_fraction_before": 0.0052479065224057195,
+      "temporal_fraction_after": 0.0051031051666753455,
+      "temporal_fraction_difference_pp": -0.014480135573037393,
+      "fraction_ratio_identity_absolute_error": 1.1102230246251565e-16,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 144.92295700135696,
+      "temporal_base_increment_cross_term": 0.3358908367616629,
+      "dc_increment_energy": 12.054137558937205,
+      "temporal_increment_energy": 0.2970397676212885,
+      "dc_rounding_total_contribution": -0.10816057662691123,
+      "temporal_rounding_total_contribution": -0.005335625125094
+    },
+    {
+      "video_id": "video_2564",
+      "layer": 27,
+      "path": "FFN",
+      "before": {
+        "temporal": 7.010786135953197,
+        "dc": 1366.8166986933863
+      },
+      "after": {
+        "temporal": 6.795689946907212,
+        "dc": 151.08953516904518
+      },
+      "temporal_energy_ratio": 0.969319248244799,
+      "dc_energy_ratio": 0.1105411832570379,
+      "temporal_fraction_ratio": 8.434465123857041,
+      "total_energy_ratio": 0.1149236180375044,
+      "temporal_fraction_before": 0.0051031051666753455,
+      "temporal_fraction_after": 0.04304196255169788,
+      "temporal_fraction_difference_pp": 3.7938857385022535,
+      "fraction_ratio_identity_absolute_error": 1.7763568394002505e-15,
+      "fraction_rises_while_temporal_energy_does_not": true,
+      "fraction_rises_with_dc_decrease": true,
+      "dc_base_increment_cross_term": -2309.251243178865,
+      "temporal_base_increment_cross_term": -1.9163786522203086,
+      "dc_increment_energy": 1093.5238668451289,
+      "temporal_increment_energy": 1.701620776287231,
+      "dc_rounding_total_contribution": 0.0002128093954429089,
+      "temporal_rounding_total_contribution": -0.00033831311290827466
+    },
+    {
+      "video_id": "video_3501",
+      "layer": 27,
+      "path": "Attention",
+      "before": {
+        "temporal": 8.876090700060452,
+        "dc": 1218.5345270178211
+      },
+      "after": {
+        "temporal": 9.948336881857738,
+        "dc": 1376.789802417921
+      },
+      "temporal_energy_ratio": 1.1208016251782988,
+      "dc_energy_ratio": 1.1298734437894065,
+      "temporal_fraction_ratio": 0.9920285424571511,
+      "total_energy_ratio": 1.1298078404097025,
+      "temporal_fraction_before": 0.007231557697100358,
+      "temporal_fraction_after": 0.00717391164194926,
+      "temporal_fraction_difference_pp": -0.005764605515109784,
+      "fraction_ratio_identity_absolute_error": 1.1102230246251565e-16,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 146.072132974084,
+      "temporal_base_increment_cross_term": 0.5018050752819736,
+      "dc_increment_energy": 12.375399640475822,
+      "temporal_increment_energy": 0.5699300087676104,
+      "dc_rounding_total_contribution": -0.19225721446018829,
+      "temporal_rounding_total_contribution": 0.000511097747703827
+    },
+    {
+      "video_id": "video_3501",
+      "layer": 27,
+      "path": "FFN",
+      "before": {
+        "temporal": 9.948336881857738,
+        "dc": 1376.789802417921
+      },
+      "after": {
+        "temporal": 11.077309381228083,
+        "dc": 149.43879547848374
+      },
+      "temporal_energy_ratio": 1.1134835412971582,
+      "dc_energy_ratio": 0.1085414746797507,
+      "temporal_fraction_ratio": 9.619658385984845,
+      "total_energy_ratio": 0.11575084027094186,
+      "temporal_fraction_before": 0.00717391164194926,
+      "temporal_fraction_after": 0.06901057928679151,
+      "temporal_fraction_difference_pp": 6.183666764484225,
+      "fraction_ratio_identity_absolute_error": 0.0,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": true,
+      "dc_base_increment_cross_term": -2309.3401125189603,
+      "temporal_base_increment_cross_term": -0.7938577937652611,
+      "dc_increment_energy": 1081.9896839876405,
+      "temporal_increment_energy": 1.9225244015873204,
+      "dc_rounding_total_contribution": -0.0005784081169503291,
+      "temporal_rounding_total_contribution": 0.00030589154828425207
+    },
+    {
+      "video_id": "video_6860",
+      "layer": 27,
+      "path": "Attention",
+      "before": {
+        "temporal": 5.692489522039102,
+        "dc": 1205.6827265491904
+      },
+      "after": {
+        "temporal": 6.327636709980808,
+        "dc": 1362.6464256568897
+      },
+      "temporal_energy_ratio": 1.111576347305105,
+      "dc_energy_ratio": 1.1301865703566545,
+      "temporal_fraction_ratio": 0.9836096058447689,
+      "total_energy_ratio": 1.1300991172716663,
+      "temporal_fraction_before": 0.004699195960522591,
+      "temporal_fraction_after": 0.004622174286516956,
+      "temporal_fraction_difference_pp": -0.007702167400563519,
+      "fraction_ratio_identity_absolute_error": 0.0,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 145.29927881201507,
+      "temporal_base_increment_cross_term": 0.2694480256081562,
+      "dc_increment_energy": 11.797074684716122,
+      "temporal_increment_energy": 0.36720371904638016,
+      "dc_rounding_total_contribution": -0.13265438903182009,
+      "temporal_rounding_total_contribution": -0.001504556712830957
+    },
+    {
+      "video_id": "video_6860",
+      "layer": 27,
+      "path": "FFN",
+      "before": {
+        "temporal": 6.327636709980808,
+        "dc": 1362.6464256568897
+      },
+      "after": {
+        "temporal": 6.660003658253462,
+        "dc": 146.25210117544498
+      },
+      "temporal_energy_ratio": 1.0525262374416027,
+      "dc_energy_ratio": 0.10732945716636753,
+      "temporal_fraction_ratio": 9.42293692566195,
+      "total_energy_ratio": 0.11169832141985434,
+      "temporal_fraction_before": 0.004622174286516956,
+      "temporal_fraction_after": 0.043554456761265806,
+      "temporal_fraction_difference_pp": 3.893228247474885,
+      "fraction_ratio_identity_absolute_error": 0.0,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": true,
+      "dc_base_increment_cross_term": -2252.8354989379354,
+      "temporal_base_increment_cross_term": -0.7149217207555221,
+      "dc_increment_energy": 1036.4436143502826,
+      "temporal_increment_energy": 1.047528323549764,
+      "dc_rounding_total_contribution": -0.0024398937916119408,
+      "temporal_rounding_total_contribution": -0.0002396545215866928
+    },
+    {
+      "video_id": "video_8241",
+      "layer": 27,
+      "path": "Attention",
+      "before": {
+        "temporal": 6.169848812094644,
+        "dc": 1305.6193301595883
+      },
+      "after": {
+        "temporal": 6.867270405937258,
+        "dc": 1478.679866908926
+      },
+      "temporal_energy_ratio": 1.1130370638054323,
+      "dc_energy_ratio": 1.13255053195956,
+      "temporal_fraction_ratio": 0.9828499812759006,
+      "total_energy_ratio": 1.1324587526170857,
+      "temporal_fraction_before": 0.00470338443935878,
+      "temporal_fraction_after": 0.004622721308157139,
+      "temporal_fraction_difference_pp": -0.008066313120164061,
+      "fraction_ratio_identity_absolute_error": 1.1102230246251565e-16,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 160.90630434590202,
+      "temporal_base_increment_cross_term": 0.3244576313155041,
+      "dc_increment_energy": 12.129794451405203,
+      "temporal_increment_energy": 0.37962197234721573,
+      "dc_rounding_total_contribution": 0.024437952030304223,
+      "temporal_rounding_total_contribution": -0.006658009820106484
+    },
+    {
+      "video_id": "video_8241",
+      "layer": 27,
+      "path": "FFN",
+      "before": {
+        "temporal": 6.867270405937258,
+        "dc": 1478.679866908926
+      },
+      "after": {
+        "temporal": 9.23425778927707,
+        "dc": 186.05123289067436
+      },
+      "temporal_energy_ratio": 1.344676595418957,
+      "dc_energy_ratio": 0.1258225238973471,
+      "temporal_fraction_ratio": 10.22902653947145,
+      "total_energy_ratio": 0.13145694658530413,
+      "temporal_fraction_before": 0.004622721308157139,
+      "temporal_fraction_after": 0.04728593894571956,
+      "temporal_fraction_difference_pp": 4.266321763756242,
+      "fraction_ratio_identity_absolute_error": 1.7763568394002505e-15,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": true,
+      "dc_base_increment_cross_term": -2264.9595976647684,
+      "temporal_base_increment_cross_term": 0.46828749122358404,
+      "dc_increment_energy": 972.332565641247,
+      "temporal_increment_energy": 1.9000888088042271,
+      "dc_rounding_total_contribution": -0.0016019947298863968,
+      "temporal_rounding_total_contribution": -0.0013889166879982873
+    },
+    {
+      "video_id": "video_874",
+      "layer": 27,
+      "path": "Attention",
+      "before": {
+        "temporal": 6.66407854934646,
+        "dc": 1207.9944973366885
+      },
+      "after": {
+        "temporal": 7.397463343550812,
+        "dc": 1361.348385720274
+      },
+      "temporal_energy_ratio": 1.1100504426491604,
+      "dc_energy_ratio": 1.1269491613758926,
+      "temporal_fraction_ratio": 0.9850859388922382,
+      "total_energy_ratio": 1.1268564485830026,
+      "temporal_fraction_before": 0.005486380026161126,
+      "temporal_fraction_after": 0.005404555819190555,
+      "temporal_fraction_difference_pp": -0.00818242069705712,
+      "fraction_ratio_identity_absolute_error": 2.220446049250313e-16,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 141.9071341121939,
+      "temporal_base_increment_cross_term": 0.3190317638629187,
+      "dc_increment_energy": 11.467764702962675,
+      "temporal_increment_energy": 0.4119483016886205,
+      "dc_rounding_total_contribution": -0.021010431570621522,
+      "temporal_rounding_total_contribution": 0.002404728652812976
+    },
+    {
+      "video_id": "video_874",
+      "layer": 27,
+      "path": "FFN",
+      "before": {
+        "temporal": 7.397463343550812,
+        "dc": 1361.348385720274
+      },
+      "after": {
+        "temporal": 7.983070445458372,
+        "dc": 154.55280348666926
+      },
+      "temporal_energy_ratio": 1.0791632313282227,
+      "dc_energy_ratio": 0.11352920759141101,
+      "temporal_fraction_ratio": 9.087841087682724,
+      "total_energy_ratio": 0.11874803057360618,
+      "temporal_fraction_before": 0.005404555819190555,
+      "temporal_fraction_after": 0.04911574443431469,
+      "temporal_fraction_difference_pp": 4.3711188615124135,
+      "fraction_ratio_identity_absolute_error": 0.0,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": true,
+      "dc_base_increment_cross_term": -2207.573718973116,
+      "temporal_base_increment_cross_term": -1.0359535506018436,
+      "dc_increment_energy": 1000.7821571977862,
+      "temporal_increment_energy": 1.6211863983989474,
+      "dc_rounding_total_contribution": -0.0040204582760675405,
+      "temporal_rounding_total_contribution": 0.00037425411045577774
+    },
+    {
+      "video_id": "video_9253",
+      "layer": 27,
+      "path": "Attention",
+      "before": {
+        "temporal": 7.9874952614792605,
+        "dc": 1243.7128877746854
+      },
+      "after": {
+        "temporal": 8.972645104663533,
+        "dc": 1414.9380351838572
+      },
+      "temporal_energy_ratio": 1.1233365167595513,
+      "dc_energy_ratio": 1.1376725682368192,
+      "temporal_fraction_ratio": 0.9874781949254945,
+      "total_energy_ratio": 1.1375810853669608,
+      "temporal_fraction_before": 0.00638131566446,
+      "temporal_fraction_after": 0.006301410073590743,
+      "temporal_fraction_difference_pp": -0.007990559086925707,
+      "fraction_ratio_identity_absolute_error": 0.0,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": false,
+      "dc_base_increment_cross_term": 158.11420352096425,
+      "temporal_base_increment_cross_term": 0.4908776738299821,
+      "dc_increment_energy": 13.14175798751619,
+      "temporal_increment_energy": 0.4895331875439547,
+      "dc_rounding_total_contribution": -0.03081409930833164,
+      "temporal_rounding_total_contribution": 0.004738981810336487
+    },
+    {
+      "video_id": "video_9253",
+      "layer": 27,
+      "path": "FFN",
+      "before": {
+        "temporal": 8.972645104663533,
+        "dc": 1414.9380351838572
+      },
+      "after": {
+        "temporal": 12.793556671426341,
+        "dc": 155.1205509946047
+      },
+      "temporal_energy_ratio": 1.4258400418374833,
+      "dc_energy_ratio": 0.10963063196929916,
+      "temporal_fraction_ratio": 12.091115464779653,
+      "total_energy_ratio": 0.11792460720359745,
+      "temporal_fraction_before": 0.006301410073590743,
+      "temporal_fraction_after": 0.07619107679071133,
+      "temporal_fraction_difference_pp": 6.988966671712059,
+      "fraction_ratio_identity_absolute_error": 0.0,
+      "fraction_rises_while_temporal_energy_does_not": false,
+      "fraction_rises_with_dc_decrease": true,
+      "dc_base_increment_cross_term": -2314.911925004209,
+      "temporal_base_increment_cross_term": 1.2111114661369653,
+      "dc_increment_energy": 1055.1003677677882,
+      "temporal_increment_energy": 2.6079148539886248,
+      "dc_rounding_total_contribution": -0.0059269528315618325,
+      "temporal_rounding_total_contribution": 0.0018852466372187224
+    }
+  ],
+  "summaries": [
+    {
+      "layer": 0,
+      "path": "Attention",
+      "videos": 8,
+      "metrics": {
+        "temporal_energy_ratio": {
+          "count": 8,
+          "median": 1.127020618191314,
+          "minimum": 1.1010025319865484,
+          "maximum": 1.1477757163121878
+        },
+        "dc_energy_ratio": {
+          "count": 8,
+          "median": 0.7734105551645922,
+          "minimum": 0.7523180857709177,
+          "maximum": 0.7895665682299629
+        },
+        "temporal_fraction_ratio": {
+          "count": 8,
+          "median": 1.4534977642676632,
+          "minimum": 1.4066619991720783,
+          "maximum": 1.4898454900125364
+        },
+        "total_energy_ratio": {
+          "count": 8,
+          "median": 0.7786858085657995,
+          "minimum": 0.7587331754838704,
+          "maximum": 0.7941391167494388
+        },
+        "temporal_fraction_difference_pp": {
+          "count": 8,
+          "median": 0.7765812783784677,
+          "minimum": 0.4671939601533656,
+          "maximum": 0.8354670486619337
+        }
+      },
+      "fraction_rises_with_dc_decrease_count": 8,
+      "fraction_rises_without_temporal_energy_increase_count": 0
+    },
+    {
+      "layer": 0,
+      "path": "FFN",
+      "videos": 8,
+      "metrics": {
+        "temporal_energy_ratio": {
+          "count": 8,
+          "median": 7.67527821130098,
+          "minimum": 6.100000893725788,
+          "maximum": 8.578161481671719
+        },
+        "dc_energy_ratio": {
+          "count": 8,
+          "median": 7.056136880469879,
+          "minimum": 6.222983234903405,
+          "maximum": 7.260487523318103
+        },
+        "temporal_fraction_ratio": {
+          "count": 8,
+          "median": 1.0994624813498328,
+          "minimum": 0.9786205648369668,
+          "maximum": 1.2128382784677139
+        },
+        "total_energy_ratio": {
+          "count": 8,
+          "median": 7.0858564454267015,
+          "minimum": 6.233264569442209,
+          "maximum": 7.272613182487937
+        },
+        "temporal_fraction_difference_pp": {
+          "count": 8,
+          "median": 0.19869616709270976,
+          "minimum": -0.06142895591332853,
+          "maximum": 0.5536489256061743
+        }
+      },
+      "fraction_rises_with_dc_decrease_count": 0,
+      "fraction_rises_without_temporal_energy_increase_count": 0
+    },
+    {
+      "layer": 13,
+      "path": "Attention",
+      "videos": 8,
+      "metrics": {
+        "temporal_energy_ratio": {
+          "count": 8,
+          "median": 1.036343947702377,
+          "minimum": 1.0139979037004323,
+          "maximum": 1.0625429255912238
+        },
+        "dc_energy_ratio": {
+          "count": 8,
+          "median": 1.2215675524480045,
+          "minimum": 1.1699669121828562,
+          "maximum": 1.23428568787684
+        },
+        "temporal_fraction_ratio": {
+          "count": 8,
+          "median": 0.8559526650837149,
+          "minimum": 0.8271960139582419,
+          "maximum": 0.9033392053764161
+        },
+        "total_energy_ratio": {
+          "count": 8,
+          "median": 1.2169956333733114,
+          "minimum": 1.166706560644915,
+          "maximum": 1.2297169380081678
+        },
+        "temporal_fraction_difference_pp": {
+          "count": 8,
+          "median": -0.3549687021976616,
+          "minimum": -0.4306221906611486,
+          "maximum": -0.27159719424684203
+        }
+      },
+      "fraction_rises_with_dc_decrease_count": 0,
+      "fraction_rises_without_temporal_energy_increase_count": 0
+    },
+    {
+      "layer": 13,
+      "path": "FFN",
+      "videos": 8,
+      "metrics": {
+        "temporal_energy_ratio": {
+          "count": 8,
+          "median": 1.1757679871793103,
+          "minimum": 1.1620865768014135,
+          "maximum": 1.1965938277565384
+        },
+        "dc_energy_ratio": {
+          "count": 8,
+          "median": 1.1356852714229428,
+          "minimum": 1.1082757232418683,
+          "maximum": 1.1568738644646308
+        },
+        "temporal_fraction_ratio": {
+          "count": 8,
+          "median": 1.0336580866965335,
+          "minimum": 1.0117859383064494,
+          "maximum": 1.0730690526950493
+        },
+        "total_energy_ratio": {
+          "count": 8,
+          "median": 1.1363468651134188,
+          "minimum": 1.110216517405822,
+          "maximum": 1.157229066008197
+        },
+        "temporal_fraction_difference_pp": {
+          "count": 8,
+          "median": 0.07134730850015987,
+          "minimum": 0.02554611717390208,
+          "maximum": 0.17072769028133006
+        }
+      },
+      "fraction_rises_with_dc_decrease_count": 0,
+      "fraction_rises_without_temporal_energy_increase_count": 0
+    },
+    {
+      "layer": 27,
+      "path": "Attention",
+      "videos": 8,
+      "metrics": {
+        "temporal_energy_ratio": {
+          "count": 8,
+          "median": 1.1108133949771326,
+          "minimum": 1.0899851118065265,
+          "maximum": 1.1233365167595513
+        },
+        "dc_energy_ratio": {
+          "count": 8,
+          "median": 1.1300300070730305,
+          "minimum": 1.126878245998906,
+          "maximum": 1.1376725682368192
+        },
+        "temporal_fraction_ratio": {
+          "count": 8,
+          "median": 0.9832297935603347,
+          "minimum": 0.967446165643673,
+          "maximum": 0.9920285424571511
+        },
+        "total_energy_ratio": {
+          "count": 8,
+          "median": 1.1299534788406844,
+          "minimum": 1.1266622893495313,
+          "maximum": 1.1375810853669608
+        },
+        "temporal_fraction_difference_pp": {
+          "count": 8,
+          "median": -0.00812436690861059,
+          "minimum": -0.019055624158242045,
+          "maximum": -0.005764605515109784
+        }
+      },
+      "fraction_rises_with_dc_decrease_count": 0,
+      "fraction_rises_without_temporal_energy_increase_count": 0
+    },
+    {
+      "layer": 27,
+      "path": "FFN",
+      "videos": 8,
+      "metrics": {
+        "temporal_energy_ratio": {
+          "count": 8,
+          "median": 1.0832416608358215,
+          "minimum": 0.969319248244799,
+          "maximum": 1.4258400418374833
+        },
+        "dc_energy_ratio": {
+          "count": 8,
+          "median": 0.11008590761316853,
+          "minimum": 0.10732945716636753,
+          "maximum": 0.1258225238973471
+        },
+        "temporal_fraction_ratio": {
+          "count": 8,
+          "median": 9.44220455076547,
+          "minimum": 8.434465123857041,
+          "maximum": 12.091115464779653
+        },
+        "total_energy_ratio": {
+          "count": 8,
+          "median": 0.11683772373726965,
+          "minimum": 0.11169832141985434,
+          "maximum": 0.13145694658530413
+        },
+        "temporal_fraction_difference_pp": {
+          "count": 8,
+          "median": 4.318720312634328,
+          "minimum": 3.778918477296301,
+          "maximum": 6.988966671712059
+        }
+      },
+      "fraction_rises_with_dc_decrease_count": 8,
+      "fraction_rises_without_temporal_energy_increase_count": 1
+    }
+  ],
+  "provenance": [
+    {
+      "directory": "D:\\FRE\\outputs\\ffn_qwen3_dev16_v1",
+      "video_id": "video_10993",
+      "source_hashes": {
+        "probe_ffn.py": "a8f9f4f60c4b185b9e5491612d27614d4db21061b5333f70cf378de8793ac243",
+        "resource_guard.py": "769deff3214dac523a26447cbeb75a1e0cab8433daeb3c24bbc79aa8d27497b6",
+        "analyze_ffn.py": "117a45d3ac9f37235e460162831bbd0f35f3c6a336cd8abcc0cde68461e4bdc7"
+      },
+      "probe_sha256": "2959dbc3b5c185124f5887b1e0dbc9319f114c04701d83fa9ea1d0a61c40b6d8",
+      "branches_sha256": "193d3a7e1ddaa7a69fe9e865da7a7f0dbc1c90c40d83af2500ba4da83c3cc5ad",
+      "analysis_report_sha256": "942201228d4728a16b7e8d4de08b793c9bdc4ef6c705cb67eed535dd740db901",
+      "analysis_bin_spacing_hz": 0.02784102306920763,
+      "forward_seconds": 1.0393005999999332,
+      "peak_cuda_allocated_bytes": 4363261440,
+      "peak_cuda_reserved_bytes": 4410310656,
+      "source_to_target_maximum_error_s": 0.015761505899306805,
+      "resource_summary": {
+        "status": "complete",
+        "samples": 10,
+        "elapsed_seconds": 20.330542700000024,
+        "peak_sampled_rss_bytes": 3264524288,
+        "minimum_sampled_available_ram_bytes": 18488479744,
+        "peak_sampled_gpu_temperature_c": 50,
+        "sampling_limitation": "Two-second telemetry can miss short peaks; CUDA allocator peaks are recorded separately.",
+        "exception": null
+      },
+      "resource_limits": {
+        "device": "cuda",
+        "cpu_threads": 2,
+        "interop_threads": 1,
+        "cuda_allocator_fraction": 0.65,
+        "minimum_initial_available_ram_gib": 12,
+        "minimum_running_available_ram_gib": 6,
+        "maximum_process_rss_gib": 8,
+        "maximum_gpu_temperature_c": 78,
+        "maximum_initial_gpu_temperature_c": 65,
+        "timeout_seconds": 300,
+        "maximum_initial_gpu_used_mib": 256,
+        "minimum_initial_gpu_free_mib": 6500,
+        "monitor_interval_seconds": 2,
+        "limitation": "Process and allocator limits cannot prevent hypervisor, driver, firmware or hardware faults.",
+        "cpu_affinity": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "directory": "D:\\FRE\\outputs\\ffn_qwen3_dev16_video_1580",
+      "video_id": "video_1580",
+      "source_hashes": {
+        "probe_ffn.py": "d6ded7e84b24fcc6da75742ec2ac5972148d46ff41e404a8fbdb30ff6abcd88e",
+        "resource_guard.py": "284658b5b5fc932cf92de20b55743162b2f788497fcffb79e55437f7bbcdf070",
+        "analyze_ffn.py": "117a45d3ac9f37235e460162831bbd0f35f3c6a336cd8abcc0cde68461e4bdc7"
+      },
+      "probe_sha256": "758d10b53857f667cb380c4c90d155cf376ee650008e03fdea9a960a8d14c5c8",
+      "branches_sha256": "b3e4bec317c12fe66b9257752128435270f48674a4331ed8f76469198884a349",
+      "analysis_report_sha256": "f5166efbb31125bc96ed9a66d894af851f27e2d2e69b78350c822c45aa66b41c",
+      "analysis_bin_spacing_hz": 0.027420504385964915,
+      "forward_seconds": 1.5784095000001344,
+      "peak_cuda_allocated_bytes": 4363261440,
+      "peak_cuda_reserved_bytes": 4410310656,
+      "source_to_target_maximum_error_s": 0.013329334532976134,
+      "resource_summary": {
+        "status": "complete",
+        "samples": 16,
+        "elapsed_seconds": 33.284959999999955,
+        "peak_sampled_rss_bytes": 4462342144,
+        "minimum_sampled_available_ram_bytes": 17552891904,
+        "peak_sampled_gpu_temperature_c": 45,
+        "sampling_limitation": "Two-second telemetry can miss short peaks; CUDA allocator peaks are recorded separately.",
+        "exception": null
+      },
+      "resource_limits": {
+        "device": "cuda",
+        "cpu_threads": 2,
+        "interop_threads": 1,
+        "cuda_allocator_fraction": 0.65,
+        "minimum_initial_available_ram_gib": 12,
+        "minimum_running_available_ram_gib": 6,
+        "maximum_process_rss_gib": 8,
+        "maximum_gpu_temperature_c": 78,
+        "maximum_initial_gpu_temperature_c": 65,
+        "timeout_seconds": 300,
+        "maximum_initial_gpu_used_mib": 256,
+        "minimum_initial_gpu_free_mib": 6500,
+        "monitor_interval_seconds": 2,
+        "limitation": "Process and allocator limits cannot prevent hypervisor, driver, firmware or hardware faults.",
+        "cpu_affinity": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "directory": "D:\\FRE\\outputs\\ffn_qwen3_dev16_video_2564",
+      "video_id": "video_2564",
+      "source_hashes": {
+        "probe_ffn.py": "d6ded7e84b24fcc6da75742ec2ac5972148d46ff41e404a8fbdb30ff6abcd88e",
+        "resource_guard.py": "284658b5b5fc932cf92de20b55743162b2f788497fcffb79e55437f7bbcdf070",
+        "analyze_ffn.py": "117a45d3ac9f37235e460162831bbd0f35f3c6a336cd8abcc0cde68461e4bdc7"
+      },
+      "probe_sha256": "e506347000cd69433459f54be41fe0f3a4784c37ce5bfc249ddcc398c57657c8",
+      "branches_sha256": "17c19d8c3312c1cd1d7efacbd1a0351462ec2df70e735df4594c0b7919e5e9bd",
+      "analysis_report_sha256": "ae4fd71d9c487c31e5090327d73d4e198f672287df33d06968ea2444908f8661",
+      "analysis_bin_spacing_hz": 0.02955493421052632,
+      "forward_seconds": 1.4203906999998708,
+      "peak_cuda_allocated_bytes": 4363193344,
+      "peak_cuda_reserved_bytes": 4410310656,
+      "source_to_target_maximum_error_s": 0.011130032165798553,
+      "resource_summary": {
+        "status": "complete",
+        "samples": 16,
+        "elapsed_seconds": 34.561046799999986,
+        "peak_sampled_rss_bytes": 5008572416,
+        "minimum_sampled_available_ram_bytes": 17004007424,
+        "peak_sampled_gpu_temperature_c": 46,
+        "sampling_limitation": "Two-second telemetry can miss short peaks; CUDA allocator peaks are recorded separately.",
+        "exception": null
+      },
+      "resource_limits": {
+        "device": "cuda",
+        "cpu_threads": 2,
+        "interop_threads": 1,
+        "cuda_allocator_fraction": 0.65,
+        "minimum_initial_available_ram_gib": 12,
+        "minimum_running_available_ram_gib": 6,
+        "maximum_process_rss_gib": 8,
+        "maximum_gpu_temperature_c": 78,
+        "maximum_initial_gpu_temperature_c": 65,
+        "timeout_seconds": 300,
+        "maximum_initial_gpu_used_mib": 256,
+        "minimum_initial_gpu_free_mib": 6500,
+        "monitor_interval_seconds": 2,
+        "limitation": "Process and allocator limits cannot prevent hypervisor, driver, firmware or hardware faults.",
+        "cpu_affinity": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "directory": "D:\\FRE\\outputs\\ffn_qwen3_dev16_video_3501",
+      "video_id": "video_3501",
+      "source_hashes": {
+        "probe_ffn.py": "d6ded7e84b24fcc6da75742ec2ac5972148d46ff41e404a8fbdb30ff6abcd88e",
+        "resource_guard.py": "284658b5b5fc932cf92de20b55743162b2f788497fcffb79e55437f7bbcdf070",
+        "analyze_ffn.py": "117a45d3ac9f37235e460162831bbd0f35f3c6a336cd8abcc0cde68461e4bdc7"
+      },
+      "probe_sha256": "28a8873d7fd4e57bf1fcbab5c9ca2c6d77a3418d42bee4c0c7c67767ff97e510",
+      "branches_sha256": "3fcdb4ae953ce11701f0531465fc1d80a65dd863f3f2075e997e2435b6b85e2d",
+      "analysis_report_sha256": "3feec285b3bd164a31094162797e4df58c244d55849c7d13f2197f5147089ba6",
+      "analysis_bin_spacing_hz": 0.026844883110687025,
+      "forward_seconds": 1.4531233000000157,
+      "peak_cuda_allocated_bytes": 4363261440,
+      "peak_cuda_reserved_bytes": 4410310656,
+      "source_to_target_maximum_error_s": 0.015550890288469787,
+      "resource_summary": {
+        "status": "complete",
+        "samples": 16,
+        "elapsed_seconds": 33.08349270000008,
+        "peak_sampled_rss_bytes": 4515299328,
+        "minimum_sampled_available_ram_bytes": 17537200128,
+        "peak_sampled_gpu_temperature_c": 48,
+        "sampling_limitation": "Two-second telemetry can miss short peaks; CUDA allocator peaks are recorded separately.",
+        "exception": null
+      },
+      "resource_limits": {
+        "device": "cuda",
+        "cpu_threads": 2,
+        "interop_threads": 1,
+        "cuda_allocator_fraction": 0.65,
+        "minimum_initial_available_ram_gib": 12,
+        "minimum_running_available_ram_gib": 6,
+        "maximum_process_rss_gib": 8,
+        "maximum_gpu_temperature_c": 78,
+        "maximum_initial_gpu_temperature_c": 65,
+        "timeout_seconds": 300,
+        "maximum_initial_gpu_used_mib": 256,
+        "minimum_initial_gpu_free_mib": 6500,
+        "monitor_interval_seconds": 2,
+        "limitation": "Process and allocator limits cannot prevent hypervisor, driver, firmware or hardware faults.",
+        "cpu_affinity": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "directory": "D:\\FRE\\outputs\\ffn_qwen3_dev16_video_6860",
+      "video_id": "video_6860",
+      "source_hashes": {
+        "probe_ffn.py": "d6ded7e84b24fcc6da75742ec2ac5972148d46ff41e404a8fbdb30ff6abcd88e",
+        "resource_guard.py": "284658b5b5fc932cf92de20b55743162b2f788497fcffb79e55437f7bbcdf070",
+        "analyze_ffn.py": "117a45d3ac9f37235e460162831bbd0f35f3c6a336cd8abcc0cde68461e4bdc7"
+      },
+      "probe_sha256": "3d8d564edcd60671516ee46e9e6c8ace5dfbf8a1227a6c40248e107afa494607",
+      "branches_sha256": "fd28cbab35dea65db9e439e6932d18e889b097694526f472ac8ac0b48092e4d3",
+      "analysis_report_sha256": "351a7eb4466ec1f774679abf26de14e839ce9754790087353f338e2afd883744",
+      "analysis_bin_spacing_hz": 0.026873209169054446,
+      "forward_seconds": 1.5290325999999368,
+      "peak_cuda_allocated_bytes": 4363261440,
+      "peak_cuda_reserved_bytes": 4410310656,
+      "source_to_target_maximum_error_s": 0.013328002132482197,
+      "resource_summary": {
+        "status": "complete",
+        "samples": 16,
+        "elapsed_seconds": 34.28688420000003,
+        "peak_sampled_rss_bytes": 4362117120,
+        "minimum_sampled_available_ram_bytes": 17661575168,
+        "peak_sampled_gpu_temperature_c": 48,
+        "sampling_limitation": "Two-second telemetry can miss short peaks; CUDA allocator peaks are recorded separately.",
+        "exception": null
+      },
+      "resource_limits": {
+        "device": "cuda",
+        "cpu_threads": 2,
+        "interop_threads": 1,
+        "cuda_allocator_fraction": 0.65,
+        "minimum_initial_available_ram_gib": 12,
+        "minimum_running_available_ram_gib": 6,
+        "maximum_process_rss_gib": 8,
+        "maximum_gpu_temperature_c": 78,
+        "maximum_initial_gpu_temperature_c": 65,
+        "timeout_seconds": 300,
+        "maximum_initial_gpu_used_mib": 256,
+        "minimum_initial_gpu_free_mib": 6500,
+        "monitor_interval_seconds": 2,
+        "limitation": "Process and allocator limits cannot prevent hypervisor, driver, firmware or hardware faults.",
+        "cpu_affinity": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "directory": "D:\\FRE\\outputs\\ffn_qwen3_dev16_video_8241",
+      "video_id": "video_8241",
+      "source_hashes": {
+        "probe_ffn.py": "d6ded7e84b24fcc6da75742ec2ac5972148d46ff41e404a8fbdb30ff6abcd88e",
+        "resource_guard.py": "284658b5b5fc932cf92de20b55743162b2f788497fcffb79e55437f7bbcdf070",
+        "analyze_ffn.py": "117a45d3ac9f37235e460162831bbd0f35f3c6a336cd8abcc0cde68461e4bdc7"
+      },
+      "probe_sha256": "2b9007d7ff73b54fdda654c724efe76e8bdd3a196d4073cabb92a812a68f6473",
+      "branches_sha256": "fad486c1b5d7d458dd7693a0dfff65e422418ca4beacc3fa7863df210aa4e57d",
+      "analysis_report_sha256": "1b293ab8e7d9cd309dee12e0e1688c309d596fb3c20bbd33ba7f1dacb0b2e63f",
+      "analysis_bin_spacing_hz": 0.035802656850192065,
+      "forward_seconds": 1.5857673000000432,
+      "peak_cuda_allocated_bytes": 4363193344,
+      "peak_cuda_reserved_bytes": 4410310656,
+      "source_to_target_maximum_error_s": 0.015646304119448118,
+      "resource_summary": {
+        "status": "complete",
+        "samples": 14,
+        "elapsed_seconds": 30.228173300000208,
+        "peak_sampled_rss_bytes": 3159236608,
+        "minimum_sampled_available_ram_bytes": 18862768128,
+        "peak_sampled_gpu_temperature_c": 46,
+        "sampling_limitation": "Two-second telemetry can miss short peaks; CUDA allocator peaks are recorded separately.",
+        "exception": null
+      },
+      "resource_limits": {
+        "device": "cuda",
+        "cpu_threads": 2,
+        "interop_threads": 1,
+        "cuda_allocator_fraction": 0.65,
+        "minimum_initial_available_ram_gib": 12,
+        "minimum_running_available_ram_gib": 6,
+        "maximum_process_rss_gib": 8,
+        "maximum_gpu_temperature_c": 78,
+        "maximum_initial_gpu_temperature_c": 65,
+        "timeout_seconds": 300,
+        "maximum_initial_gpu_used_mib": 256,
+        "minimum_initial_gpu_free_mib": 6500,
+        "monitor_interval_seconds": 2,
+        "limitation": "Process and allocator limits cannot prevent hypervisor, driver, firmware or hardware faults.",
+        "cpu_affinity": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "directory": "D:\\FRE\\outputs\\ffn_qwen3_dev16_video_874",
+      "video_id": "video_874",
+      "source_hashes": {
+        "probe_ffn.py": "d6ded7e84b24fcc6da75742ec2ac5972148d46ff41e404a8fbdb30ff6abcd88e",
+        "resource_guard.py": "284658b5b5fc932cf92de20b55743162b2f788497fcffb79e55437f7bbcdf070",
+        "analyze_ffn.py": "117a45d3ac9f37235e460162831bbd0f35f3c6a336cd8abcc0cde68461e4bdc7"
+      },
+      "probe_sha256": "6164b62e9ca9670b428e08be2798bcb47c9ff57fbe9734a09de7f51c66a8c6db",
+      "branches_sha256": "c158e14b7797a06f5f380dde0eed78794e35127dcbac3e21fc878a482cb66ef7",
+      "analysis_report_sha256": "a1afe81990bffe2aaafdc87597c97b5be88ae63a562b9001c180ad8732e343fe",
+      "analysis_bin_spacing_hz": 0.026766212632594016,
+      "forward_seconds": 1.441980199999989,
+      "peak_cuda_allocated_bytes": 4363261440,
+      "peak_cuda_reserved_bytes": 4410310656,
+      "source_to_target_maximum_error_s": 0.01576203825671918,
+      "resource_summary": {
+        "status": "complete",
+        "samples": 13,
+        "elapsed_seconds": 26.098150399999895,
+        "peak_sampled_rss_bytes": 4887764992,
+        "minimum_sampled_available_ram_bytes": 17141907456,
+        "peak_sampled_gpu_temperature_c": 43,
+        "sampling_limitation": "Two-second telemetry can miss short peaks; CUDA allocator peaks are recorded separately.",
+        "exception": null
+      },
+      "resource_limits": {
+        "device": "cuda",
+        "cpu_threads": 2,
+        "interop_threads": 1,
+        "cuda_allocator_fraction": 0.65,
+        "minimum_initial_available_ram_gib": 12,
+        "minimum_running_available_ram_gib": 6,
+        "maximum_process_rss_gib": 8,
+        "maximum_gpu_temperature_c": 78,
+        "maximum_initial_gpu_temperature_c": 65,
+        "timeout_seconds": 300,
+        "maximum_initial_gpu_used_mib": 256,
+        "minimum_initial_gpu_free_mib": 6500,
+        "monitor_interval_seconds": 2,
+        "limitation": "Process and allocator limits cannot prevent hypervisor, driver, firmware or hardware faults.",
+        "cpu_affinity": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "directory": "D:\\FRE\\outputs\\ffn_qwen3_dev16_video_9253",
+      "video_id": "video_9253",
+      "source_hashes": {
+        "probe_ffn.py": "d6ded7e84b24fcc6da75742ec2ac5972148d46ff41e404a8fbdb30ff6abcd88e",
+        "resource_guard.py": "284658b5b5fc932cf92de20b55743162b2f788497fcffb79e55437f7bbcdf070",
+        "analyze_ffn.py": "117a45d3ac9f37235e460162831bbd0f35f3c6a336cd8abcc0cde68461e4bdc7"
+      },
+      "probe_sha256": "9b1b83299b63dcab96b6ca868ed3ebd28d43452c068e938945ff550a5a2c6b7b",
+      "branches_sha256": "285f658598104b6959f6e330a5a6c2eb12a022beec4744f68fabefc835ab672b",
+      "analysis_report_sha256": "ec9b13b805dfb7a871e00ed1231162ce204391237c2d99b7ad8a3eeb552704a9",
+      "analysis_bin_spacing_hz": 0.036708524214659685,
+      "forward_seconds": 1.5606116000001293,
+      "peak_cuda_allocated_bytes": 4363193344,
+      "peak_cuda_reserved_bytes": 4410310656,
+      "source_to_target_maximum_error_s": 0.015599754860994963,
+      "resource_summary": {
+        "status": "complete",
+        "samples": 15,
+        "elapsed_seconds": 30.80097159999991,
+        "peak_sampled_rss_bytes": 4613193728,
+        "minimum_sampled_available_ram_bytes": 17395527680,
+        "peak_sampled_gpu_temperature_c": 45,
+        "sampling_limitation": "Two-second telemetry can miss short peaks; CUDA allocator peaks are recorded separately.",
+        "exception": null
+      },
+      "resource_limits": {
+        "device": "cuda",
+        "cpu_threads": 2,
+        "interop_threads": 1,
+        "cuda_allocator_fraction": 0.65,
+        "minimum_initial_available_ram_gib": 12,
+        "minimum_running_available_ram_gib": 6,
+        "maximum_process_rss_gib": 8,
+        "maximum_gpu_temperature_c": 78,
+        "maximum_initial_gpu_temperature_c": 65,
+        "timeout_seconds": 300,
+        "maximum_initial_gpu_used_mib": 256,
+        "minimum_initial_gpu_free_mib": 6500,
+        "monitor_interval_seconds": 2,
+        "limitation": "Process and allocator limits cannot prevent hypervisor, driver, firmware or hardware faults.",
+        "cpu_affinity": [
+          0,
+          1
+        ]
+      }
+    }
+  ],
+  "source_versions": {
+    "probe_ffn.py": [
+      "a8f9f4f60c4b185b9e5491612d27614d4db21061b5333f70cf378de8793ac243",
+      "d6ded7e84b24fcc6da75742ec2ac5972148d46ff41e404a8fbdb30ff6abcd88e"
+    ],
+    "resource_guard.py": [
+      "284658b5b5fc932cf92de20b55743162b2f788497fcffb79e55437f7bbcdf070",
+      "769deff3214dac523a26447cbeb75a1e0cab8433daeb3c24bbc79aa8d27497b6"
+    ],
+    "analyze_ffn.py": [
+      "117a45d3ac9f37235e460162831bbd0f35f3c6a336cd8abcc0cde68461e4bdc7"
+    ]
+  },
+  "source_versions_identical": false,
+  "observed_resources": {
+    "maximum_cuda_allocated_bytes": 4363261440,
+    "maximum_cuda_reserved_bytes": 4410310656,
+    "maximum_sampled_gpu_temperature_c": 50,
+    "maximum_sampled_process_rss_bytes": 5008572416,
+    "minimum_sampled_available_ram_bytes": 17004007424,
+    "forward_seconds": {
+      "count": 8,
+      "median": 1.4910779499999762,
+      "minimum": 1.0393005999999332,
+      "maximum": 1.5857673000000432
+    },
+    "scope": "Largest observed allocator peaks across these runs; maximum/minimum sampled telemetry across runs. Two-second telemetry may miss short peaks. CUDA allocated/reserved is not driver-wide VRAM usage."
+  },
+  "report_source_sha256": "bea91fff1bad9ccb30ae25879c636944f183d77ecb6233d26954c8feec065738",
+  "ratio_identity": "Temporal fraction post/pre = temporal energy post/pre divided by total energy post/pre.",
+  "limits": [
+    "Eight original development videos, not independent confirmation and not a task-effectiveness test.",
+    "Only medians and observed min-max ranges are reported; no significance test or confidence interval.",
+    "A normalized temporal fraction increase can reflect DC cancellation instead of stronger temporal signal.",
+    "The frozen v1 spectral_balanced objective already excludes DC; this diagnosis does not explain its failure or demonstrate a fix.",
+    "DC is the trajectory time mean, not a semantic label for background or long-term information.",
+    "Eight temporal positions give four non-DC bins, with clip-dependent physical frequencies.",
+    "Recorded source snapshots are individually verified; differences are retained instead of claiming identical code.",
+    "Probe, resource guard and analysis snapshots are verified; this does not independently hash every imported dependency.",
+    "Resource guard success and sampled telemetry do not establish that prior operating-system instability is fixed."
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "status": "complete",
+  "created_at_utc": "2026-11-01T14:26:49.016421+00:00",
+  "records": 2522,
+  "cases": 194,
+  "splits": [
+    "endpoint",
+    "test",
+    "validation"
+  ],
+  "protocol_sha256": "3954767ef2662e15eb4934f90eea08ca6d48eaaef39fd2d297e3d9a3df590748",
+  "analyzer_sha256": "e54f86095323613de2b623e5cf1ef2d347da953195899c602009081fa7956476",
+  "numpy_version": "2.4.2",
+  "python_version": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "primary_comparison": {
+    "split": "test",
+    "subset": "all",
+    "method": "spectral_mlp",
+    "reference": "time_mlp",
+    "metric": "video_macro_accuracy",
+    "primary": true,
+    "source_videos": 16,
+    "cases": 74,
+    "per_seed_repairs": [
+      0,
+      0,
+      0
+    ],
+    "per_seed_regressions": [
+      0,
+      0,
+      0
+    ],
+    "difference": 0.0,
+    "per_seed_differences": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "seed_difference_sample_sd": 0.0,
+    "video_bootstrap_95_percentile": [
+      0.0,
+      0.0
+    ],
+    "video_seed_bootstrap_95_percentile": [
+      0.0,
+      0.0
+    ],
+    "valid_replicates": 10000,
+    "undefined_replicates": 0
+  },
+  "bootstrap": {
+    "seed": 20261101,
+    "repetitions": 10000,
+    "percentile": [
+      2.5,
+      97.5
+    ],
+    "video_ids": [
+      "video_1001",
+      "video_10049",
+      "video_11070",
+      "video_1567",
+      "video_2418",
+      "video_3017",
+      "video_3020",
+      "video_309",
+      "video_5320",
+      "video_5425",
+      "video_604",
+      "video_6184",
+      "video_687",
+      "video_7303",
+      "video_8108",
+      "video_8376"
+    ],
+    "selection_strata": [
+      "nonmemory_temporal",
+      "nonmemory_temporal",
+      "memory",
+      "nonmemory_temporal",
+      "memory",
+      "nonmemory_temporal",
+      "memory",
+      "nonmemory_temporal",
+      "memory",
+      "memory",
+      "nonmemory_temporal",
+      "memory",
+      "memory",
+      "nonmemory_temporal",
+      "memory",
+      "nonmemory_temporal"
+    ],
+    "training_seeds": [
+      20261101,
+      20261102,
+      20261103
+    ],
+    "draws_sha256": "2da725a8a1d84133fb38f000c1d2664b3331e236baba97619de28671d831853f",
+    "same_draws_for_all_methods_and_subsets": true,
+    "seed_resampling": "globally crossed with videos, never independently within video",
+    "identity": "one fixed baseline, reused algebraically across seed pairings"
+  },
+  "training_audit_complete": true,
+  "resource_scope": "Explicit input directories only; no claim of complete historical research cost",
+  "cuda_or_model_execution": false,
+  "limitations": [
+    "16 source clusters and three training seeds",
+    "overlapping diagnostic subsets",
+    "official valid split with local experimental roles",
+    "short videos, not a long-term-memory demonstration"
+  ],
+  "output_sha256": {
+    "audited_records.jsonl": "f5f046476bdc67d3fc26a384fc272be17d33c9981a746a9b6d23e5c684767a66",
+    "audit_runs.json": "9a2ba06a59f61c94d3b29688a41f756134fe4265f88183765152ca414b26582c",
+    "bootstrap_draws.npz": "2da725a8a1d84133fb38f000c1d2664b3331e236baba97619de28671d831853f",
+    "main_table.md": "6cd80b98eccc0a4adde3b6cdf37ed0728b5d72e9ce4b564092eb681175012a07",
+    "main_table.tex": "9c2b7fc70d2ed5678473b85e1c293b967c960f7d03e41ec51d2b0477931aad27",
+    "paired_comparisons.jsonl": "ddbf282ccd05dfcf8f77bd0b26b33e3702234fd0dfe5fbda14843ab072d10c96",
+    "paired_comparisons.tex": "411f88b16026afad9132d90ff5837add3f23755ee054e89a942768bc3c80f6ad",
+    "per_seed_metrics.jsonl": "86cab991845a89348cd1a0a41cbe0dff4b1c974dd9402e2ebc69e7ab8742a99c",
+    "report.md": "68ad067ee07d3452ea6355d9a0c7da2e3147bed361b8f317dc296332a2f05c50",
+    "resource_ledger.json": "fc37c955dc988f435928a35af528aa9ec7df098090951827df55f08ca4cbe09c",
+    "test_main.md": "6cd80b98eccc0a4adde3b6cdf37ed0728b5d72e9ce4b564092eb681175012a07",
+    "test_main.tex": "9c2b7fc70d2ed5678473b85e1c293b967c960f7d03e41ec51d2b0477931aad27",
+    "training_audit.json": "0ab366a8228407fcc7da220f843e7d7e4bfd7d07bd567c7e1b2d0d07efdaaf07",
+    "validation_main.md": "5c4f97770d29ca2cd6f92484ff00e1fdfbfaaa1454a1da75516e80a9706604d6",
+    "validation_main.tex": "1eed3414dc26df2dfc1f68fc5706efaaa891a77f75ee3e5c9a03469d485cf456"
+  }
+}

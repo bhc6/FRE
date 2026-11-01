@@ -1,0 +1,420 @@
+{
+  "created_at_utc": "2026-11-01T13:52:41.389537+00:00",
+  "seed": 20261101,
+  "check_count": 60,
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "spectral_parseval_context_T1",
+      "passed": true,
+      "metrics": {
+        "maximum_error": 0.0
+      }
+    },
+    {
+      "name": "visual_probabilities_not_renormalized_T1",
+      "passed": true,
+      "metrics": {
+        "visual_probability_mass": [
+          0.2089299788121963,
+          0.42270558146882764
+        ]
+      }
+    },
+    {
+      "name": "phaseblind_conditioner_preserves_complex_magnitude_T1",
+      "passed": true,
+      "metrics": {
+        "squared_norm_error": 0.0
+      }
+    },
+    {
+      "name": "cross_spectral_gains_equal_time_lag_filter_T1",
+      "passed": true,
+      "metrics": {
+        "maximum_error": 0.0
+      }
+    },
+    {
+      "name": "complete_fft_of_time_basis_is_only_rotation_T1",
+      "passed": true,
+      "metrics": {
+        "maximum_error": 0.0
+      }
+    },
+    {
+      "name": "spectral_parseval_context_T2",
+      "passed": true,
+      "metrics": {
+        "maximum_error": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "visual_probabilities_not_renormalized_T2",
+      "passed": true,
+      "metrics": {
+        "visual_probability_mass": [
+          0.4419028980897236,
+          0.6301727220125187
+        ]
+      }
+    },
+    {
+      "name": "phaseblind_conditioner_preserves_complex_magnitude_T2",
+      "passed": true,
+      "metrics": {
+        "squared_norm_error": 0.0
+      }
+    },
+    {
+      "name": "cross_spectral_gains_equal_time_lag_filter_T2",
+      "passed": true,
+      "metrics": {
+        "maximum_error": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "complete_fft_of_time_basis_is_only_rotation_T2",
+      "passed": true,
+      "metrics": {
+        "maximum_error": 4.440892098500626e-16
+      }
+    },
+    {
+      "name": "spectral_parseval_context_T3",
+      "passed": true,
+      "metrics": {
+        "maximum_error": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "visual_probabilities_not_renormalized_T3",
+      "passed": true,
+      "metrics": {
+        "visual_probability_mass": [
+          0.7309386740241994,
+          0.6656009423163469
+        ]
+      }
+    },
+    {
+      "name": "phaseblind_conditioner_preserves_complex_magnitude_T3",
+      "passed": true,
+      "metrics": {
+        "squared_norm_error": 5.551115123125783e-17
+      }
+    },
+    {
+      "name": "cross_spectral_gains_equal_time_lag_filter_T3",
+      "passed": true,
+      "metrics": {
+        "maximum_error": 2.7755575615628914e-16
+      }
+    },
+    {
+      "name": "complete_fft_of_time_basis_is_only_rotation_T3",
+      "passed": true,
+      "metrics": {
+        "maximum_error": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "spectral_parseval_context_T8",
+      "passed": true,
+      "metrics": {
+        "maximum_error": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "visual_probabilities_not_renormalized_T8",
+      "passed": true,
+      "metrics": {
+        "visual_probability_mass": [
+          0.8366106850294142,
+          0.7774017108547223
+        ]
+      }
+    },
+    {
+      "name": "phaseblind_conditioner_preserves_complex_magnitude_T8",
+      "passed": true,
+      "metrics": {
+        "squared_norm_error": 2.7755575615628914e-17
+      }
+    },
+    {
+      "name": "cross_spectral_gains_equal_time_lag_filter_T8",
+      "passed": true,
+      "metrics": {
+        "maximum_error": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "complete_fft_of_time_basis_is_only_rotation_T8",
+      "passed": true,
+      "metrics": {
+        "maximum_error": 5.551115123125783e-17
+      }
+    },
+    {
+      "name": "spectral_parseval_context_T9",
+      "passed": true,
+      "metrics": {
+        "maximum_error": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "visual_probabilities_not_renormalized_T9",
+      "passed": true,
+      "metrics": {
+        "visual_probability_mass": [
+          0.8893105799177647,
+          0.8876259337714549
+        ]
+      }
+    },
+    {
+      "name": "phaseblind_conditioner_preserves_complex_magnitude_T9",
+      "passed": true,
+      "metrics": {
+        "squared_norm_error": 5.551115123125783e-17
+      }
+    },
+    {
+      "name": "cross_spectral_gains_equal_time_lag_filter_T9",
+      "passed": true,
+      "metrics": {
+        "maximum_error": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "complete_fft_of_time_basis_is_only_rotation_T9",
+      "passed": true,
+      "metrics": {
+        "maximum_error": 1.6653345369377348e-16
+      }
+    },
+    {
+      "name": "parameter_counts_are_matched",
+      "passed": true,
+      "metrics": {
+        "counts": {
+          "time_mlp": 18584,
+          "spectral_mlp": 18584,
+          "spectral_phaseblind": 18584,
+          "constant_spectral": 8
+        }
+      }
+    },
+    {
+      "name": "module_accepts_no_labels",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "exact_zero_initial_residual_time_mlp",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "common_native_context_feature_scale_time_mlp",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "finite_gradients_at_zero_init_time_mlp",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "zero_init_gradient_staging_time_mlp",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "gradient_flow_after_first_step_time_mlp",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "per_head_gain_and_residual_caps_time_mlp",
+      "passed": true,
+      "metrics": {
+        "maximum_bound_violation": 5.421010862427522e-20
+      }
+    },
+    {
+      "name": "zero_native_context_forces_zero_residual_time_mlp",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "exact_zero_initial_residual_spectral_mlp",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "common_native_context_feature_scale_spectral_mlp",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "finite_gradients_at_zero_init_spectral_mlp",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "zero_init_gradient_staging_spectral_mlp",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "gradient_flow_after_first_step_spectral_mlp",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "per_head_gain_and_residual_caps_spectral_mlp",
+      "passed": true,
+      "metrics": {
+        "maximum_bound_violation": 0.0
+      }
+    },
+    {
+      "name": "zero_native_context_forces_zero_residual_spectral_mlp",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "exact_zero_initial_residual_spectral_phaseblind",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "common_native_context_feature_scale_spectral_phaseblind",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "finite_gradients_at_zero_init_spectral_phaseblind",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "zero_init_gradient_staging_spectral_phaseblind",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "gradient_flow_after_first_step_spectral_phaseblind",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "per_head_gain_and_residual_caps_spectral_phaseblind",
+      "passed": true,
+      "metrics": {
+        "maximum_bound_violation": 0.0
+      }
+    },
+    {
+      "name": "zero_native_context_forces_zero_residual_spectral_phaseblind",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "exact_zero_initial_residual_constant_spectral",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "common_native_context_feature_scale_constant_spectral",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "finite_gradients_at_zero_init_constant_spectral",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "constant_gains_have_gradient",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "gradient_flow_after_first_step_constant_spectral",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "per_head_gain_and_residual_caps_constant_spectral",
+      "passed": true,
+      "metrics": {
+        "maximum_bound_violation": 0.0
+      }
+    },
+    {
+      "name": "zero_native_context_forces_zero_residual_constant_spectral",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "controller_does_not_modify_input_bases",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "controller_parameter_directional_derivative",
+      "passed": true,
+      "metrics": {
+        "analytic": -0.1279814398641687,
+        "finite_difference": -0.12798143986421373,
+        "absolute_error": 4.50195436485501e-14
+      }
+    },
+    {
+      "name": "phaseblind_is_conditioner_only_not_phaseblind_intervention",
+      "passed": true,
+      "metrics": {
+        "conditioner_reversal_error": 8.326672684688674e-17,
+        "signed_intervention_difference": 0.040162968566424165
+      }
+    },
+    {
+      "name": "uniform_attention_cross_spectrum_loses_temporal_order",
+      "passed": true,
+      "metrics": {
+        "spectral_collision_error": 0.0,
+        "time_basis_difference": 0.5200798997902161
+      }
+    },
+    {
+      "name": "cross_spectrum_is_not_fft_of_time_contributions",
+      "passed": true,
+      "metrics": {
+        "feature_difference": 0.4640797717921042
+      }
+    }
+  ],
+  "cpu_threads": 2,
+  "interop_threads": 1,
+  "torch": "2.10.0+cu128",
+  "gpu_used": false,
+  "model_loaded": false,
+  "module_sha256": "1ff3e5f50d6e1ed1f197dc5dc4ae71698a322fbb29f097cb16640ee105a0cbe3",
+  "check_source_sha256": "8eda0691f1e13522ca440e9e26ed9d30d4fcccd1d0b910e65b5c8fd24d45e147",
+  "parameter_counts": {
+    "time_mlp": 18584,
+    "spectral_mlp": 18584,
+    "spectral_phaseblind": 18584,
+    "constant_spectral": 8
+  },
+  "limitations": [
+    "Time contributions and cross-spectrum are matched-parameter structured controls, not equal feature classes.",
+    "Cross-spectral coefficients are exactly expressible as circular-lag correlation filters.",
+    "Uniform visual attention can erase temporal order in cross-spectral features.",
+    "Phaseblind affects only the conditioner; the signed intervention retains phase-sensitive terms.",
+    "Zero-init tests apply to delta_context, not cached-tail/full-model BF16 logit parity."
+  ]
+}

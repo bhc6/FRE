@@ -1,0 +1,570 @@
+{
+  "status": "passed",
+  "created_at_utc": "2026-11-01T14:52:11.303251+00:00",
+  "passed": 108,
+  "failed": 0,
+  "device": "cpu",
+  "cpu_threads": 2,
+  "interop_threads": 1,
+  "source_sha256": "6c8ab1f65ec8b50b3de318402b465de96ba9ac0e28b2d25226fb0d6b61eaad15",
+  "v1_frozen_source_sha256": {
+    "learned_readout.py": "1ff3e5f50d6e1ed1f197dc5dc4ae71698a322fbb29f097cb16640ee105a0cbe3",
+    "controller_runtime.py": "eccbbce89b75d289015e1affc2fa47f5a3486b6162c1747c3362b7cc8f8d0f4d",
+    "controller_train.py": "7d314ec27c5fdd96697a3296aedee8d8335db57ea77c42e5c140ce4f382c6f60"
+  },
+  "checks": [
+    {
+      "name": "unit_time_mlp:parameter_count",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_mlp:zero_initialization_exact",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_mlp:output_shape",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_mlp:runtime_diagnostic_keys",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_mlp:runtime_diagnostic_shapes",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_mlp:direction_normalization",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_mlp:initial_parameter_gradients_finite",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_mlp:initial_parameter_gradients_nonzero",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_mlp:first_layer_initial_gradient_zero",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_mlp:independent_numpy_forward",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_mlp:independent_numpy_gain",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_mlp:each_direction_positive_scaling_invariance",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_mlp:gain_positive_scaling_invariance",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_mlp:context_basis_common_scale_equivariance:0.0001",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_mlp:common_scale_gain_invariance:0.0001",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_mlp:context_basis_common_scale_equivariance:0.125",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_mlp:common_scale_gain_invariance:0.125",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_mlp:context_basis_common_scale_equivariance:16.0",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_mlp:common_scale_gain_invariance:16.0",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_mlp:context_basis_common_scale_equivariance:10000.0",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_mlp:common_scale_gain_invariance:10000.0",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_mlp:phase_ablation_not_used",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_mlp:zero_basis_exact",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_mlp:zero_context_exact",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_mlp:zero_basis_context_exact",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_mlp:zero_input_parameter_backward_finite",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_mlp:first_layer_gradient_after_nonzero_output_weights",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_mlp:state_dict_replay_exact",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_spectral_mlp:parameter_count",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_spectral_mlp:zero_initialization_exact",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_spectral_mlp:output_shape",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_spectral_mlp:runtime_diagnostic_keys",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_spectral_mlp:runtime_diagnostic_shapes",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_spectral_mlp:direction_normalization",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_spectral_mlp:initial_parameter_gradients_finite",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_spectral_mlp:initial_parameter_gradients_nonzero",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_spectral_mlp:first_layer_initial_gradient_zero",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_spectral_mlp:independent_numpy_forward",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_spectral_mlp:independent_numpy_gain",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_spectral_mlp:each_direction_positive_scaling_invariance",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_spectral_mlp:gain_positive_scaling_invariance",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_spectral_mlp:context_basis_common_scale_equivariance:0.0001",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_spectral_mlp:common_scale_gain_invariance:0.0001",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_spectral_mlp:context_basis_common_scale_equivariance:0.125",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_spectral_mlp:common_scale_gain_invariance:0.125",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_spectral_mlp:context_basis_common_scale_equivariance:16.0",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_spectral_mlp:common_scale_gain_invariance:16.0",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_spectral_mlp:context_basis_common_scale_equivariance:10000.0",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_spectral_mlp:common_scale_gain_invariance:10000.0",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_spectral_mlp:phase_ablation_not_used",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_spectral_mlp:zero_basis_exact",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_spectral_mlp:zero_context_exact",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_spectral_mlp:zero_basis_context_exact",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_spectral_mlp:zero_input_parameter_backward_finite",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_spectral_mlp:first_layer_gradient_after_nonzero_output_weights",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_spectral_mlp:state_dict_replay_exact",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_constant:parameter_count",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_constant:zero_initialization_exact",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_constant:output_shape",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_constant:runtime_diagnostic_keys",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_constant:runtime_diagnostic_shapes",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_constant:direction_normalization",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_constant:initial_parameter_gradients_finite",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_constant:initial_parameter_gradients_nonzero",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_constant:independent_numpy_forward",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_constant:independent_numpy_gain",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_constant:each_direction_positive_scaling_invariance",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_constant:gain_positive_scaling_invariance",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_constant:context_basis_common_scale_equivariance:0.0001",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_constant:common_scale_gain_invariance:0.0001",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_constant:context_basis_common_scale_equivariance:0.125",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_constant:common_scale_gain_invariance:0.125",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_constant:context_basis_common_scale_equivariance:16.0",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_constant:common_scale_gain_invariance:16.0",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_constant:context_basis_common_scale_equivariance:10000.0",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_constant:common_scale_gain_invariance:10000.0",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_constant:phase_ablation_not_used",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_constant:zero_basis_exact",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_constant:zero_context_exact",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_constant:zero_basis_context_exact",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_constant:zero_input_parameter_backward_finite",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unit_time_constant:state_dict_replay_exact",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "cap_0.1:bound_all_heads",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "cap_0.1:active_heads_hit_radius",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "cap_0.1:zero_head_stays_zero",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "cap_0.1:correct_activation_count",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "cap_0.3:bound_all_heads",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "cap_0.3:active_heads_hit_radius",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "cap_0.3:zero_head_stays_zero",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "cap_0.3:correct_activation_count",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "relative_epsilon_scales_with_context",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "subthreshold_direction_is_attenuated",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "subthreshold_formula_independent",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "finite_difference_cap_0.01",
+      "passed": true,
+      "metrics": {
+        "analytical": 0.025555423058937814,
+        "numerical": 0.0255554230615615,
+        "active_heads": 4
+      }
+    },
+    {
+      "name": "finite_difference_cap_0.3",
+      "passed": true,
+      "metrics": {
+        "analytical": -0.7923501213054892,
+        "numerical": -0.7923501213202844,
+        "active_heads": 0
+      }
+    },
+    {
+      "name": "reject_invalid_input_0",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "reject_invalid_input_1",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "reject_invalid_input_2",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "reject_invalid_input_3",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "reject_invalid_input_4",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "reject_invalid_input_5",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "reject_invalid_constructor:{'method': 'unknown'}",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "reject_invalid_constructor:{'method': 'unit_time_mlp', 'head_dim': 0}",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "reject_invalid_constructor:{'method': 'unit_time_mlp', 'time_bins': True}",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "reject_invalid_constructor:{'method': 'unit_time_mlp', 'epsilon': 0}",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "reject_invalid_constructor:{'method': 'unit_time_mlp', 'residual_limit': inf}",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "new_source_unchanged_during_checks",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "v1_frozen_sources_unchanged",
+      "passed": true,
+      "metrics": {}
+    }
+  ],
+  "limitations": [
+    "Arithmetic and gradient checks only; no task-accuracy claim or GPU/native-model parity claim.",
+    "Independent positive basis rescaling is invariant above the relative epsilon floor; subthreshold directions remain attenuated.",
+    "The FP32/double residual cap is before any BF16 projection conversion in the runner."
+  ]
+}

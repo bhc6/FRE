@@ -1,0 +1,379 @@
+{
+  "status": "complete",
+  "analyzer_sha256": "aa6d10d5d68d19270ee246e37e2efbbb7fb354ce59ed53d061fb5ba7835d9312",
+  "protocol_sha256": "3954767ef2662e15eb4934f90eea08ca6d48eaaef39fd2d297e3d9a3df590748",
+  "independent_recomputation": "FP64 from native, batch1 and batch8 three-option logits; native matched to original cache records",
+  "diagnostic_serialization_tolerance": "Recorded FP32 reductions compared to independent FP64 with rtol=1e-6 and atol=1e-10; this is not a replay performance acceptance threshold",
+  "sources": [
+    {
+      "training_directory": "D:\\FRE\\outputs\\controller_training_v1\\seed20261101",
+      "seed": 20261101,
+      "replay_parity_sha256": "4e49e25ee1611e6f91b020e76dc524ab750dc2bcd2972a56b2e8eecdcb2298b8",
+      "config_sha256": "de9788a0200ae5c4a3f7da6947175d6a103dc8b400eaf6eed7f38125f68f15c8"
+    },
+    {
+      "training_directory": "D:\\FRE\\outputs\\controller_training_v1\\seed20261102",
+      "seed": 20261102,
+      "replay_parity_sha256": "4e49e25ee1611e6f91b020e76dc524ab750dc2bcd2972a56b2e8eecdcb2298b8",
+      "config_sha256": "8c706369a3a5918bfe3fc430a4b004c1d7343c282499d92fc49462bbc9c4d7b8"
+    },
+    {
+      "training_directory": "D:\\FRE\\outputs\\controller_training_v1\\seed20261103",
+      "seed": 20261103,
+      "replay_parity_sha256": "4e49e25ee1611e6f91b020e76dc524ab750dc2bcd2972a56b2e8eecdcb2298b8",
+      "config_sha256": "c858e72fab0ab110077996fd4ee42bfb4fdb986163f595625e77f66ac3748b30"
+    }
+  ],
+  "records": 1236,
+  "unique_native_cases": 206,
+  "summaries": [
+    {
+      "seed": 20261101,
+      "replay_mode": "batch1",
+      "subset": "all",
+      "cases": 206,
+      "maximum_absolute_option_logit_error": 0.25,
+      "pooled_option_logit_rms_error": 0.014222003099714357,
+      "maximum_per_case_option_logit_rms_error": 0.14433756729740643,
+      "maximum_pairwise_option_margin_error": 0.25,
+      "prediction_changes": 0,
+      "prediction_change_fraction": 0.0,
+      "changed_case_ids": [],
+      "exact_option_ties_native": 4,
+      "exact_option_ties_replay": 4,
+      "actual_replay_batch_sizes_by_case": {
+        "1": 206
+      }
+    },
+    {
+      "seed": 20261101,
+      "replay_mode": "batch1",
+      "subset": "real",
+      "cases": 142,
+      "maximum_absolute_option_logit_error": 0.25,
+      "pooled_option_logit_rms_error": 0.01712971774568829,
+      "maximum_per_case_option_logit_rms_error": 0.14433756729740643,
+      "maximum_pairwise_option_margin_error": 0.25,
+      "prediction_changes": 0,
+      "prediction_change_fraction": 0.0,
+      "changed_case_ids": [],
+      "exact_option_ties_native": 3,
+      "exact_option_ties_replay": 3,
+      "actual_replay_batch_sizes_by_case": {
+        "1": 142
+      }
+    },
+    {
+      "seed": 20261101,
+      "replay_mode": "batch1",
+      "subset": "static_no_gold",
+      "cases": 64,
+      "maximum_absolute_option_logit_error": 0.0,
+      "pooled_option_logit_rms_error": 0.0,
+      "maximum_per_case_option_logit_rms_error": 0.0,
+      "maximum_pairwise_option_margin_error": 0.0,
+      "prediction_changes": 0,
+      "prediction_change_fraction": 0.0,
+      "changed_case_ids": [],
+      "exact_option_ties_native": 1,
+      "exact_option_ties_replay": 1,
+      "actual_replay_batch_sizes_by_case": {
+        "1": 64
+      }
+    },
+    {
+      "seed": 20261101,
+      "replay_mode": "batch8",
+      "subset": "all",
+      "cases": 206,
+      "maximum_absolute_option_logit_error": 0.25,
+      "pooled_option_logit_rms_error": 0.04354581339322611,
+      "maximum_per_case_option_logit_rms_error": 0.1613743060919757,
+      "maximum_pairwise_option_margin_error": 0.375,
+      "prediction_changes": 1,
+      "prediction_change_fraction": 0.0048543689320388345,
+      "changed_case_ids": [
+        "perception_test:video_2752:mc:0:static_last"
+      ],
+      "exact_option_ties_native": 4,
+      "exact_option_ties_replay": 4,
+      "actual_replay_batch_sizes_by_case": {
+        "8": 200,
+        "6": 6
+      }
+    },
+    {
+      "seed": 20261101,
+      "replay_mode": "batch8",
+      "subset": "real",
+      "cases": 142,
+      "maximum_absolute_option_logit_error": 0.25,
+      "pooled_option_logit_rms_error": 0.046519090936907224,
+      "maximum_per_case_option_logit_rms_error": 0.1613743060919757,
+      "maximum_pairwise_option_margin_error": 0.375,
+      "prediction_changes": 0,
+      "prediction_change_fraction": 0.0,
+      "changed_case_ids": [],
+      "exact_option_ties_native": 3,
+      "exact_option_ties_replay": 4,
+      "actual_replay_batch_sizes_by_case": {
+        "8": 138,
+        "6": 4
+      }
+    },
+    {
+      "seed": 20261101,
+      "replay_mode": "batch8",
+      "subset": "static_no_gold",
+      "cases": 64,
+      "maximum_absolute_option_logit_error": 0.25,
+      "pooled_option_logit_rms_error": 0.03608439182435161,
+      "maximum_per_case_option_logit_rms_error": 0.14433756729740643,
+      "maximum_pairwise_option_margin_error": 0.25,
+      "prediction_changes": 1,
+      "prediction_change_fraction": 0.015625,
+      "changed_case_ids": [
+        "perception_test:video_2752:mc:0:static_last"
+      ],
+      "exact_option_ties_native": 1,
+      "exact_option_ties_replay": 0,
+      "actual_replay_batch_sizes_by_case": {
+        "8": 62,
+        "6": 2
+      }
+    },
+    {
+      "seed": 20261102,
+      "replay_mode": "batch1",
+      "subset": "all",
+      "cases": 206,
+      "maximum_absolute_option_logit_error": 0.25,
+      "pooled_option_logit_rms_error": 0.014222003099714357,
+      "maximum_per_case_option_logit_rms_error": 0.14433756729740643,
+      "maximum_pairwise_option_margin_error": 0.25,
+      "prediction_changes": 0,
+      "prediction_change_fraction": 0.0,
+      "changed_case_ids": [],
+      "exact_option_ties_native": 4,
+      "exact_option_ties_replay": 4,
+      "actual_replay_batch_sizes_by_case": {
+        "1": 206
+      }
+    },
+    {
+      "seed": 20261102,
+      "replay_mode": "batch1",
+      "subset": "real",
+      "cases": 142,
+      "maximum_absolute_option_logit_error": 0.25,
+      "pooled_option_logit_rms_error": 0.01712971774568829,
+      "maximum_per_case_option_logit_rms_error": 0.14433756729740643,
+      "maximum_pairwise_option_margin_error": 0.25,
+      "prediction_changes": 0,
+      "prediction_change_fraction": 0.0,
+      "changed_case_ids": [],
+      "exact_option_ties_native": 3,
+      "exact_option_ties_replay": 3,
+      "actual_replay_batch_sizes_by_case": {
+        "1": 142
+      }
+    },
+    {
+      "seed": 20261102,
+      "replay_mode": "batch1",
+      "subset": "static_no_gold",
+      "cases": 64,
+      "maximum_absolute_option_logit_error": 0.0,
+      "pooled_option_logit_rms_error": 0.0,
+      "maximum_per_case_option_logit_rms_error": 0.0,
+      "maximum_pairwise_option_margin_error": 0.0,
+      "prediction_changes": 0,
+      "prediction_change_fraction": 0.0,
+      "changed_case_ids": [],
+      "exact_option_ties_native": 1,
+      "exact_option_ties_replay": 1,
+      "actual_replay_batch_sizes_by_case": {
+        "1": 64
+      }
+    },
+    {
+      "seed": 20261102,
+      "replay_mode": "batch8",
+      "subset": "all",
+      "cases": 206,
+      "maximum_absolute_option_logit_error": 0.25,
+      "pooled_option_logit_rms_error": 0.04354581339322611,
+      "maximum_per_case_option_logit_rms_error": 0.1613743060919757,
+      "maximum_pairwise_option_margin_error": 0.375,
+      "prediction_changes": 1,
+      "prediction_change_fraction": 0.0048543689320388345,
+      "changed_case_ids": [
+        "perception_test:video_2752:mc:0:static_last"
+      ],
+      "exact_option_ties_native": 4,
+      "exact_option_ties_replay": 4,
+      "actual_replay_batch_sizes_by_case": {
+        "8": 200,
+        "6": 6
+      }
+    },
+    {
+      "seed": 20261102,
+      "replay_mode": "batch8",
+      "subset": "real",
+      "cases": 142,
+      "maximum_absolute_option_logit_error": 0.25,
+      "pooled_option_logit_rms_error": 0.046519090936907224,
+      "maximum_per_case_option_logit_rms_error": 0.1613743060919757,
+      "maximum_pairwise_option_margin_error": 0.375,
+      "prediction_changes": 0,
+      "prediction_change_fraction": 0.0,
+      "changed_case_ids": [],
+      "exact_option_ties_native": 3,
+      "exact_option_ties_replay": 4,
+      "actual_replay_batch_sizes_by_case": {
+        "8": 138,
+        "6": 4
+      }
+    },
+    {
+      "seed": 20261102,
+      "replay_mode": "batch8",
+      "subset": "static_no_gold",
+      "cases": 64,
+      "maximum_absolute_option_logit_error": 0.25,
+      "pooled_option_logit_rms_error": 0.03608439182435161,
+      "maximum_per_case_option_logit_rms_error": 0.14433756729740643,
+      "maximum_pairwise_option_margin_error": 0.25,
+      "prediction_changes": 1,
+      "prediction_change_fraction": 0.015625,
+      "changed_case_ids": [
+        "perception_test:video_2752:mc:0:static_last"
+      ],
+      "exact_option_ties_native": 1,
+      "exact_option_ties_replay": 0,
+      "actual_replay_batch_sizes_by_case": {
+        "8": 62,
+        "6": 2
+      }
+    },
+    {
+      "seed": 20261103,
+      "replay_mode": "batch1",
+      "subset": "all",
+      "cases": 206,
+      "maximum_absolute_option_logit_error": 0.25,
+      "pooled_option_logit_rms_error": 0.014222003099714357,
+      "maximum_per_case_option_logit_rms_error": 0.14433756729740643,
+      "maximum_pairwise_option_margin_error": 0.25,
+      "prediction_changes": 0,
+      "prediction_change_fraction": 0.0,
+      "changed_case_ids": [],
+      "exact_option_ties_native": 4,
+      "exact_option_ties_replay": 4,
+      "actual_replay_batch_sizes_by_case": {
+        "1": 206
+      }
+    },
+    {
+      "seed": 20261103,
+      "replay_mode": "batch1",
+      "subset": "real",
+      "cases": 142,
+      "maximum_absolute_option_logit_error": 0.25,
+      "pooled_option_logit_rms_error": 0.01712971774568829,
+      "maximum_per_case_option_logit_rms_error": 0.14433756729740643,
+      "maximum_pairwise_option_margin_error": 0.25,
+      "prediction_changes": 0,
+      "prediction_change_fraction": 0.0,
+      "changed_case_ids": [],
+      "exact_option_ties_native": 3,
+      "exact_option_ties_replay": 3,
+      "actual_replay_batch_sizes_by_case": {
+        "1": 142
+      }
+    },
+    {
+      "seed": 20261103,
+      "replay_mode": "batch1",
+      "subset": "static_no_gold",
+      "cases": 64,
+      "maximum_absolute_option_logit_error": 0.0,
+      "pooled_option_logit_rms_error": 0.0,
+      "maximum_per_case_option_logit_rms_error": 0.0,
+      "maximum_pairwise_option_margin_error": 0.0,
+      "prediction_changes": 0,
+      "prediction_change_fraction": 0.0,
+      "changed_case_ids": [],
+      "exact_option_ties_native": 1,
+      "exact_option_ties_replay": 1,
+      "actual_replay_batch_sizes_by_case": {
+        "1": 64
+      }
+    },
+    {
+      "seed": 20261103,
+      "replay_mode": "batch8",
+      "subset": "all",
+      "cases": 206,
+      "maximum_absolute_option_logit_error": 0.25,
+      "pooled_option_logit_rms_error": 0.04354581339322611,
+      "maximum_per_case_option_logit_rms_error": 0.1613743060919757,
+      "maximum_pairwise_option_margin_error": 0.375,
+      "prediction_changes": 1,
+      "prediction_change_fraction": 0.0048543689320388345,
+      "changed_case_ids": [
+        "perception_test:video_2752:mc:0:static_last"
+      ],
+      "exact_option_ties_native": 4,
+      "exact_option_ties_replay": 4,
+      "actual_replay_batch_sizes_by_case": {
+        "8": 200,
+        "6": 6
+      }
+    },
+    {
+      "seed": 20261103,
+      "replay_mode": "batch8",
+      "subset": "real",
+      "cases": 142,
+      "maximum_absolute_option_logit_error": 0.25,
+      "pooled_option_logit_rms_error": 0.046519090936907224,
+      "maximum_per_case_option_logit_rms_error": 0.1613743060919757,
+      "maximum_pairwise_option_margin_error": 0.375,
+      "prediction_changes": 0,
+      "prediction_change_fraction": 0.0,
+      "changed_case_ids": [],
+      "exact_option_ties_native": 3,
+      "exact_option_ties_replay": 4,
+      "actual_replay_batch_sizes_by_case": {
+        "8": 138,
+        "6": 4
+      }
+    },
+    {
+      "seed": 20261103,
+      "replay_mode": "batch8",
+      "subset": "static_no_gold",
+      "cases": 64,
+      "maximum_absolute_option_logit_error": 0.25,
+      "pooled_option_logit_rms_error": 0.03608439182435161,
+      "maximum_per_case_option_logit_rms_error": 0.14433756729740643,
+      "maximum_pairwise_option_margin_error": 0.25,
+      "prediction_changes": 1,
+      "prediction_change_fraction": 0.015625,
+      "changed_case_ids": [
+        "perception_test:video_2752:mc:0:static_last"
+      ],
+      "exact_option_ties_native": 1,
+      "exact_option_ties_replay": 0,
+      "actual_replay_batch_sizes_by_case": {
+        "8": 62,
+        "6": 2
+      }
+    }
+  ],
+  "gpu_used": false,
+  "tolerance_policy": "No performance-error acceptance threshold; finite differentiable replay only, per frozen protocol",
+  "limitation": "This is zero-controller cached-tail numerical replay; final performance is scored by complete model forward. Repeated seeds reuse the same 206 frozen native inputs."
+}

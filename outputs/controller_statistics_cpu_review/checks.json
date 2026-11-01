@@ -1,0 +1,3994 @@
+{
+  "status": "passed",
+  "created_at_utc": "2026-11-01T14:13:01.937181+00:00",
+  "passed": 794,
+  "failed": 0,
+  "analyzer_sha256": "e54f86095323613de2b623e5cf1ef2d347da953195899c602009081fa7956476",
+  "actual_validation_cases_audited": 56,
+  "validation_artifacts": [
+    {
+      "directory": "D:\\FRE\\outputs\\controller_evaluation_v1\\validation00",
+      "records_sha256": "e4b873dcc39fce132fd8595f593fad973e0156fba36b1938899dac123a3b41dd",
+      "cases": 28
+    },
+    {
+      "directory": "D:\\FRE\\outputs\\controller_evaluation_v1\\validation01",
+      "records_sha256": "3bfff9f8d4b88d3a1b45439461bda3cfabea097101051de86cadbcbc78940d9a",
+      "cases": 28
+    }
+  ],
+  "checks": [
+    {
+      "name": "interleaved_strata_preserved",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "integer_global_seed_multiplicities",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unequal_and_missing:micro_accuracy:per_seed_point",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unequal_and_missing:micro_accuracy:seed_mean_point",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unequal_and_missing:micro_accuracy:fixed_seed_percentiles",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unequal_and_missing:micro_accuracy:crossed_seed_percentiles",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unequal_and_missing:micro_accuracy:undefined_count",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unequal_and_missing:video_macro_accuracy:per_seed_point",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unequal_and_missing:video_macro_accuracy:seed_mean_point",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unequal_and_missing:video_macro_accuracy:fixed_seed_percentiles",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unequal_and_missing:video_macro_accuracy:crossed_seed_percentiles",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unequal_and_missing:video_macro_accuracy:undefined_count",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "sparse:micro_accuracy:per_seed_point",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "sparse:micro_accuracy:seed_mean_point",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "sparse:micro_accuracy:fixed_seed_percentiles",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "sparse:micro_accuracy:crossed_seed_percentiles",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "sparse:micro_accuracy:undefined_count",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "sparse:video_macro_accuracy:per_seed_point",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "sparse:video_macro_accuracy:seed_mean_point",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "sparse:video_macro_accuracy:fixed_seed_percentiles",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "sparse:video_macro_accuracy:crossed_seed_percentiles",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "sparse:video_macro_accuracy:undefined_count",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "global_seed_effect_not_averaged_per_video",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "identical_seed_effects_add_no_baseline_randomness",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "unequal_case_counts_macro_not_micro",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "one_identity_metric",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_has_32_visual_cases",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_8_static_24_mixed",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:A16:first:men_enm",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:A16:first:enm_men",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:A16:last:men_enm",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:A16:last:enm_men",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:B16:first:men_enm",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:B16:first:enm_men",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:B16:last:men_enm",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:B16:last:enm_men",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:A8B8:first:men_enm",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:A8B8:first:enm_men",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:A8B8:last:men_enm",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:A8B8:last:enm_men",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:B8A8:first:men_enm",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:B8A8:first:enm_men",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:B8A8:last:men_enm",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:B8A8:last:enm_men",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:A2B14:first:men_enm",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:A2B14:first:enm_men",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:A2B14:last:men_enm",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:A2B14:last:enm_men",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:B14A2:first:men_enm",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:B14A2:first:enm_men",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:B14A2:last:men_enm",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:B14A2:last:enm_men",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:B2A14:first:men_enm",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:B2A14:first:enm_men",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:B2A14:last:men_enm",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:B2A14:last:enm_men",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:A14B2:first:men_enm",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:A14B2:first:enm_men",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:A14B2:last:men_enm",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "endpoint_binding:video_1580:endpoint_v1:A14B2:last:enm_men",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "static_distillation_no_accuracy",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "validation_record_hash:validation00",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:static_first:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:static_first:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:static_first:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:static_first:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:static_first:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:static_first:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:static_first:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:static_first:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:static_first:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:static_first:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:static_first:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:static_first:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:static_first:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:static_last:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:static_last:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:static_last:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:static_last:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:static_last:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:static_last:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:static_last:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:static_last:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:static_last:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:static_last:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:static_last:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:static_last:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:0:static_last:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:1:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:1:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:1:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:1:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:1:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:1:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:1:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:1:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:1:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:1:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:1:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:1:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:1:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:2:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:2:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:2:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:2:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:2:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:2:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:2:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:2:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:2:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:2:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:2:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:2:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:2:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:3:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:3:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:3:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:3:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:3:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:3:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:3:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:3:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:3:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:3:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:3:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:3:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:3:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:4:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:4:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:4:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:4:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:4:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:4:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:4:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:4:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:4:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:4:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:4:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:4:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:4:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:5:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:5:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:5:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:5:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:5:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:5:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:5:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:5:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:5:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:5:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:5:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:5:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1024:mc:5:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:static_first:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:static_first:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:static_first:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:static_first:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:static_first:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:static_first:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:static_first:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:static_first:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:static_first:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:static_first:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:static_first:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:static_first:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:static_first:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:static_last:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:static_last:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:static_last:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:static_last:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:static_last:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:static_last:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:static_last:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:static_last:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:static_last:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:static_last:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:static_last:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:static_last:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:0:static_last:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:1:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:1:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:1:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:1:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:1:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:1:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:1:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:1:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:1:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:1:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:1:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:1:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:1:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:2:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:2:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:2:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:2:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:2:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:2:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:2:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:2:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:2:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:2:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:2:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:2:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:2:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:3:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:3:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:3:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:3:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:3:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:3:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:3:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:3:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:3:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:3:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:3:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:3:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:3:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:4:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:4:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:4:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:4:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:4:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:4:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:4:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:4:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:4:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:4:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:4:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:4:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_10267:mc:4:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:static_first:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:static_first:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:static_first:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:static_first:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:static_first:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:static_first:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:static_first:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:static_first:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:static_first:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:static_first:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:static_first:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:static_first:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:static_first:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:static_last:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:static_last:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:static_last:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:static_last:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:static_last:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:static_last:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:static_last:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:static_last:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:static_last:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:static_last:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:static_last:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:static_last:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:0:static_last:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:1:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:1:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:1:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:1:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:1:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:1:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:1:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:1:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:1:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:1:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:1:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:1:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:1:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:2:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:2:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:2:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:2:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:2:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:2:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:2:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:2:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:2:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:2:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:2:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:2:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_1414:mc:2:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:static_first:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:static_first:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:static_first:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:static_first:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:static_first:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:static_first:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:static_first:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:static_first:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:static_first:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:static_first:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:static_first:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:static_first:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:static_first:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:static_last:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:static_last:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:static_last:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:static_last:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:static_last:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:static_last:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:static_last:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:static_last:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:static_last:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:static_last:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:static_last:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:static_last:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:0:static_last:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:1:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:1:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:1:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:1:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:1:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:1:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:1:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:1:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:1:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:1:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:1:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:1:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:1:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:2:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:2:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:2:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:2:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:2:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:2:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:2:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:2:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:2:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:2:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:2:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:2:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:2:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:3:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:3:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:3:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:3:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:3:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:3:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:3:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:3:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:3:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:3:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:3:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:3:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:3:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:4:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:4:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:4:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:4:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:4:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:4:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:4:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:4:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:4:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:4:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:4:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:4:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:4:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:5:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:5:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:5:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:5:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:5:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:5:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:5:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:5:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:5:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:5:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:5:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:5:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_275:mc:5:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "validation_records_unchanged:validation00",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "validation_record_hash:validation01",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:static_first:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:static_first:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:static_first:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:static_first:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:static_first:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:static_first:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:static_first:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:static_first:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:static_first:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:static_first:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:static_first:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:static_first:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:static_first:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:static_last:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:static_last:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:static_last:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:static_last:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:static_last:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:static_last:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:static_last:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:static_last:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:static_last:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:static_last:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:static_last:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:static_last:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:0:static_last:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:1:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:1:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:1:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:1:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:1:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:1:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:1:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:1:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:1:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:1:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:1:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:1:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:1:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:2:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:2:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:2:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:2:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:2:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:2:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:2:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:2:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:2:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:2:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:2:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:2:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:2:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:3:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:3:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:3:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:3:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:3:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:3:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:3:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:3:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:3:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:3:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:3:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:3:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:3:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:4:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:4:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:4:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:4:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:4:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:4:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:4:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:4:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:4:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:4:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:4:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:4:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_3007:mc:4:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:static_first:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:static_first:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:static_first:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:static_first:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:static_first:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:static_first:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:static_first:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:static_first:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:static_first:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:static_first:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:static_first:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:static_first:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:static_first:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:static_last:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:static_last:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:static_last:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:static_last:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:static_last:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:static_last:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:static_last:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:static_last:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:static_last:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:static_last:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:static_last:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:static_last:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:0:static_last:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:1:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:1:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:1:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:1:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:1:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:1:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:1:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:1:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:1:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:1:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:1:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:1:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:1:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:2:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:2:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:2:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:2:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:2:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:2:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:2:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:2:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:2:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:2:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:2:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:2:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:2:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:3:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:3:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:3:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:3:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:3:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:3:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:3:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:3:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:3:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:3:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:3:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:3:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:3:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:4:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:4:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:4:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:4:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:4:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:4:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:4:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:4:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:4:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:4:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:4:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:4:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:4:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:5:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:5:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:5:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:5:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:5:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:5:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:5:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:5:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:5:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:5:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:5:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:5:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:5:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:6:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:6:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:6:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:6:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:6:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:6:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:6:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:6:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:6:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:6:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:6:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:6:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_341:mc:6:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:static_first:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:static_first:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:static_first:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:static_first:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:static_first:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:static_first:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:static_first:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:static_first:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:static_first:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:static_first:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:static_first:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:static_first:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:static_first:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:static_last:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:static_last:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:static_last:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:static_last:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:static_last:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:static_last:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:static_last:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:static_last:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:static_last:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:static_last:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:static_last:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:static_last:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:0:static_last:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:1:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:1:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:1:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:1:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:1:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:1:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:1:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:1:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:1:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:1:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:1:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:1:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:1:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:2:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:2:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:2:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:2:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:2:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:2:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:2:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:2:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:2:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:2:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:2:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:2:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:2:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:3:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:3:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:3:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:3:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:3:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:3:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:3:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:3:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:3:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:3:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:3:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:3:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_6532:mc:3:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:static_first:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:static_first:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:static_first:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:static_first:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:static_first:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:static_first:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:static_first:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:static_first:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:static_first:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:static_first:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:static_first:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:static_first:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:static_first:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:static_last:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:static_last:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:static_last:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:static_last:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:static_last:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:static_last:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:static_last:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:static_last:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:static_last:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:static_last:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:static_last:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:static_last:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:0:static_last:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:1:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:1:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:1:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:1:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:1:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:1:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:1:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:1:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:1:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:1:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:1:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:1:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:1:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:2:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:2:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:2:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:2:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:2:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:2:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:2:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:2:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:2:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:2:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:2:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:2:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:2:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:3:real:identity:None",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:3:real:time_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:3:real:spectral_mlp:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:3:real:spectral_phaseblind:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:3:real:constant_spectral:20261101",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:3:real:time_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:3:real:spectral_mlp:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:3:real:spectral_phaseblind:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:3:real:constant_spectral:20261102",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:3:real:time_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:3:real:spectral_mlp:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:3:real:spectral_phaseblind:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "actual_archive:perception_test:video_8221:mc:3:real:constant_spectral:20261103",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "validation_records_unchanged:validation01",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "analyzer_unchanged",
+      "passed": true,
+      "metrics": {}
+    }
+  ],
+  "gpu_used": false,
+  "scope": "Independent expanded-sample bootstrap, metric weighting, endpoint definitions, and completed validation NPZ rescoring; no test performance read."
+}

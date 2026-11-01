@@ -1,0 +1,653 @@
+{
+  "status": "complete",
+  "run_config": {
+    "started_at_utc": "2026-11-01T09:14:00.515289+00:00",
+    "questions_path": "D:\\FRE\\data\\perception_test_sample\\questions.jsonl",
+    "questions_sha256": "24d9ae4b93a8bae34fc7f586047862f96a4bb593a630ab655be1ff0c6b4815eb",
+    "frames_manifest_path": "D:\\FRE\\data\\perception_test_frames64\\frames.manifest.jsonl",
+    "frames_manifest_sha256": "b3b2605c6bc63b0bba8b149ea5c65c081fc4914d0461bf099ee517a3b9d02f78",
+    "requested_conditions": [
+      "no_memory",
+      "first_half",
+      "last_half",
+      "uniform_full"
+    ],
+    "executed_conditions": [
+      "no_memory",
+      "first_half",
+      "last_half",
+      "uniform_full"
+    ],
+    "baseline_added_for_pairing": false,
+    "selected_query_ids": [
+      "perception_test:video_1580:mc:1"
+    ],
+    "model_path": "Qwen/Qwen3-VL-2B-Instruct",
+    "requested_revision": null,
+    "device": "cuda",
+    "frames_per_condition": 16,
+    "prompt_template": "Answer the multiple-choice question using the provided visual evidence, if any. The frames may cover only part of the original video. Choose exactly one of the listed options. Return only its capital letter, with no explanation.\n\nQuestion: {question}\n{options}\nAnswer:",
+    "prompt_hash": "022cdf5ef9bad2caf34c630de2316a6fc7cfde3b34a9931b46d747ef02471553",
+    "decoding": {
+      "do_sample": false,
+      "max_new_tokens": 8,
+      "seed": 17,
+      "max_pixels": 65536,
+      "parser": "strict_capital_letter_optional_brackets_punctuation_v1"
+    },
+    "decoding_hash": "586f539d63a7eef3ed536cde5fddcfdb673e83e6dfc4bf99704d0c79f779af8b",
+    "reward_metric": "mcq_exact_match_0_1_strict_letter_v1",
+    "query_presentation_policy": "after_source_video"
+  },
+  "backend": {
+    "model_id": "Qwen/Qwen3-VL-2B-Instruct",
+    "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+    "processor_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+    "transformers": "4.57.1",
+    "torch": "2.10.0+cu128",
+    "torch_cuda_build": "12.8",
+    "dtype": "torch.bfloat16",
+    "device": "cuda",
+    "attention_implementation": "sdpa",
+    "local_files_only": true,
+    "max_input_tokens": 4096,
+    "model_class": "Qwen3VLForConditionalGeneration",
+    "device_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "device_total_memory_bytes": 8546484224
+  },
+  "evaluated_queries": 1,
+  "forward_calls": 4,
+  "conditions": {
+    "no_memory": {
+      "questions": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "parse_failures": 0,
+      "memory_area_questions": 1
+    },
+    "first_half": {
+      "questions": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "parse_failures": 0,
+      "memory_area_questions": 1
+    },
+    "last_half": {
+      "questions": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "parse_failures": 0,
+      "memory_area_questions": 1
+    },
+    "uniform_full": {
+      "questions": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "parse_failures": 0,
+      "memory_area_questions": 1
+    }
+  },
+  "results": [
+    {
+      "query_id": "perception_test:video_1580:mc:1",
+      "video_id": "video_1580",
+      "area": "memory",
+      "reasoning": "descriptive",
+      "tags": [
+        "change detection",
+        "spatial relations"
+      ],
+      "condition": "no_memory",
+      "prompt": "Answer the multiple-choice question using the provided visual evidence, if any. The frames may cover only part of the original video. Choose exactly one of the listed options. Return only its capital letter, with no explanation.\n\nQuestion: Are the letters that the person shuffled in the same order at the end of the video compared to the beginning of the video?\nA. I don't know\nB. Yes\nC. No\nAnswer:",
+      "input_prompt_sha256": "3274507c5dfa2bbd2e7a527513f22c48f6140165c090a8bac4552b561b5dc179",
+      "prompt_hash": "022cdf5ef9bad2caf34c630de2316a6fc7cfde3b34a9931b46d747ef02471553",
+      "decoding_hash": "586f539d63a7eef3ed536cde5fddcfdb673e83e6dfc4bf99704d0c79f779af8b",
+      "candidate_hash": "ea1f33e5ca20f6ef34acb7b900857a40408b8f2a9366639810ff20ce24fdf532",
+      "memory_payload_path": "D:\\FRE\\outputs\\qwen3_memory_pilot\\payloads\\empty_memory.json",
+      "frame_count": 0,
+      "timestamps_s": [],
+      "seed": 17,
+      "status": "completed",
+      "raw_answer": "C",
+      "parser": {
+        "status": "valid",
+        "answer_index": 2
+      },
+      "reward": 1,
+      "official_answer_index": 2,
+      "model_id": "Qwen/Qwen3-VL-2B-Instruct",
+      "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "generation": {
+        "raw_text": "C",
+        "elapsed_seconds": 0.6658266999984335,
+        "peak_memory_bytes": 4283119104,
+        "peak_reserved_memory_bytes": 4303355904,
+        "input_tokens": 95,
+        "output_tokens": 2,
+        "visual_tokens": 0,
+        "model_id": "Qwen/Qwen3-VL-2B-Instruct",
+        "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+        "device": "cuda",
+        "seed": 17,
+        "do_sample": false,
+        "timing_scope": "model generation and decoding; excludes image I/O and input preprocessing",
+        "rendered_prompt": "<|im_start|>user\nAnswer the multiple-choice question using the provided visual evidence, if any. The frames may cover only part of the original video. Choose exactly one of the listed options. Return only its capital letter, with no explanation.\n\nQuestion: Are the letters that the person shuffled in the same order at the end of the video compared to the beginning of the video?\nA. I don't know\nB. Yes\nC. No\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+        "provenance": {
+          "model_id": "Qwen/Qwen3-VL-2B-Instruct",
+          "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+          "processor_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+          "transformers": "4.57.1",
+          "torch": "2.10.0+cu128",
+          "torch_cuda_build": "12.8",
+          "dtype": "torch.bfloat16",
+          "device": "cuda",
+          "attention_implementation": "sdpa",
+          "local_files_only": true,
+          "max_input_tokens": 4096,
+          "model_class": "Qwen3VLForConditionalGeneration",
+          "device_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+          "device_total_memory_bytes": 8546484224,
+          "rendered_prompt": "<|im_start|>user\nAnswer the multiple-choice question using the provided visual evidence, if any. The frames may cover only part of the original video. Choose exactly one of the listed options. Return only its capital letter, with no explanation.\n\nQuestion: Are the letters that the person shuffled in the same order at the end of the video compared to the beginning of the video?\nA. I don't know\nB. Yes\nC. No\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+          "visual_tokens": 0,
+          "modality": "text",
+          "input_tokens": 95,
+          "prompt_sha256": "b74486e6f85ba0b35b16d9be008265ed57dcf7fffcaf52c440aa84b95fd21bec"
+        }
+      }
+    },
+    {
+      "query_id": "perception_test:video_1580:mc:1",
+      "video_id": "video_1580",
+      "area": "memory",
+      "reasoning": "descriptive",
+      "tags": [
+        "change detection",
+        "spatial relations"
+      ],
+      "condition": "first_half",
+      "prompt": "Answer the multiple-choice question using the provided visual evidence, if any. The frames may cover only part of the original video. Choose exactly one of the listed options. Return only its capital letter, with no explanation.\n\nQuestion: Are the letters that the person shuffled in the same order at the end of the video compared to the beginning of the video?\nA. I don't know\nB. Yes\nC. No\nAnswer:",
+      "input_prompt_sha256": "3274507c5dfa2bbd2e7a527513f22c48f6140165c090a8bac4552b561b5dc179",
+      "prompt_hash": "022cdf5ef9bad2caf34c630de2316a6fc7cfde3b34a9931b46d747ef02471553",
+      "decoding_hash": "586f539d63a7eef3ed536cde5fddcfdb673e83e6dfc4bf99704d0c79f779af8b",
+      "candidate_hash": "2b998b83dab6e75d0f36492e099500b94a0895344f9563112dcd922b3ad5e8c4",
+      "memory_payload_path": "D:\\FRE\\outputs\\qwen3_memory_pilot\\payloads\\2b998b83dab6e75d0f36492e099500b94a0895344f9563112dcd922b3ad5e8c4.json",
+      "frame_count": 16,
+      "timestamps_s": [
+        0.0,
+        1.0853886691135517,
+        2.1707773382271034,
+        3.256166007340655,
+        4.341554676454207,
+        5.426943345567759,
+        6.51233201468131,
+        7.597720683794861,
+        9.22580368746519,
+        10.311192356578742,
+        11.396581025692292,
+        12.481969694805844,
+        13.567358363919396,
+        14.652747033032949,
+        15.738135702146499,
+        16.823524371260053
+      ],
+      "seed": 17,
+      "status": "completed",
+      "raw_answer": "C",
+      "parser": {
+        "status": "valid",
+        "answer_index": 2
+      },
+      "reward": 1,
+      "official_answer_index": 2,
+      "model_id": "Qwen/Qwen3-VL-2B-Instruct",
+      "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "generation": {
+        "raw_text": "C",
+        "elapsed_seconds": 0.3314453000020876,
+        "peak_memory_bytes": 4456241664,
+        "peak_reserved_memory_bytes": 4500488192,
+        "input_tokens": 642,
+        "output_tokens": 2,
+        "visual_tokens": 480,
+        "model_id": "Qwen/Qwen3-VL-2B-Instruct",
+        "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+        "device": "cuda",
+        "seed": 17,
+        "do_sample": false,
+        "timing_scope": "model generation and decoding; excludes image I/O and input preprocessing",
+        "rendered_prompt": "<|im_start|>user\n<0.5 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><2.7 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><4.9 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><7.1 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><9.8 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><11.9 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><14.1 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><16.3 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|>Answer the multiple-choice question using the provided visual evidence, if any. The frames may cover only part of the original video. Choose exactly one of the listed options. Return only its capital letter, with no explanation.\n\nQuestion: Are the letters that the person shuffled in the same order at the end of the video compared to the beginning of the video?\nA. I don't know\nB. Yes\nC. No\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+        "provenance": {
+          "model_id": "Qwen/Qwen3-VL-2B-Instruct",
+          "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+          "processor_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+          "transformers": "4.57.1",
+          "torch": "2.10.0+cu128",
+          "torch_cuda_build": "12.8",
+          "dtype": "torch.bfloat16",
+          "device": "cuda",
+          "attention_implementation": "sdpa",
+          "local_files_only": true,
+          "max_input_tokens": 4096,
+          "model_class": "Qwen3VLForConditionalGeneration",
+          "device_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+          "device_total_memory_bytes": 8546484224,
+          "rendered_prompt": "<|im_start|>user\n<0.5 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><2.7 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><4.9 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><7.1 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><9.8 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><11.9 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><14.1 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><16.3 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|>Answer the multiple-choice question using the provided visual evidence, if any. The frames may cover only part of the original video. Choose exactly one of the listed options. Return only its capital letter, with no explanation.\n\nQuestion: Are the letters that the person shuffled in the same order at the end of the video compared to the beginning of the video?\nA. I don't know\nB. Yes\nC. No\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+          "modality": "video",
+          "visual_tokens": 480,
+          "source_timestamps_s": [
+            0.0,
+            1.0853886691135517,
+            2.1707773382271034,
+            3.256166007340655,
+            4.341554676454207,
+            5.426943345567759,
+            6.51233201468131,
+            7.597720683794861,
+            9.22580368746519,
+            10.311192356578742,
+            11.396581025692292,
+            12.481969694805844,
+            13.567358363919396,
+            14.652747033032949,
+            15.738135702146499,
+            16.823524371260053
+          ],
+          "hidden_timestamps_s": [
+            0.5426943345567758,
+            2.7134716727838795,
+            4.884249011010983,
+            7.055026349238085,
+            9.768498022021966,
+            11.939275360249068,
+            14.110052698476172,
+            16.280830036703275
+          ],
+          "frame_groups": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ],
+            [
+              12,
+              13
+            ],
+            [
+              14,
+              15
+            ]
+          ],
+          "video_grid_thw": [
+            8,
+            12,
+            20
+          ],
+          "timestamp_prompt_precision_decimals": 1,
+          "uniform_hidden_sampling": false,
+          "hidden_sampling_hz": null,
+          "temporal_patch_size": 2,
+          "patch_size": 16,
+          "spatial_merge_size": 2,
+          "max_pixels_per_frame": 65536,
+          "resized_pixels_per_frame": 61440,
+          "processor_resamples_frames": false,
+          "timestamp_rendering": "official Qwen3 per-grid format, actual adjacent-frame centers",
+          "input_tokens": 642,
+          "prompt_sha256": "1eec30f3900b04ea7e5442b30b4d2b4236b63a3499afece6fe1ad6bf122cfaa3"
+        }
+      }
+    },
+    {
+      "query_id": "perception_test:video_1580:mc:1",
+      "video_id": "video_1580",
+      "area": "memory",
+      "reasoning": "descriptive",
+      "tags": [
+        "change detection",
+        "spatial relations"
+      ],
+      "condition": "last_half",
+      "prompt": "Answer the multiple-choice question using the provided visual evidence, if any. The frames may cover only part of the original video. Choose exactly one of the listed options. Return only its capital letter, with no explanation.\n\nQuestion: Are the letters that the person shuffled in the same order at the end of the video compared to the beginning of the video?\nA. I don't know\nB. Yes\nC. No\nAnswer:",
+      "input_prompt_sha256": "3274507c5dfa2bbd2e7a527513f22c48f6140165c090a8bac4552b561b5dc179",
+      "prompt_hash": "022cdf5ef9bad2caf34c630de2316a6fc7cfde3b34a9931b46d747ef02471553",
+      "decoding_hash": "586f539d63a7eef3ed536cde5fddcfdb673e83e6dfc4bf99704d0c79f779af8b",
+      "candidate_hash": "262061725b5922c93f266b2f2ac8eb986400a0fb54ab251a5986e249a5e6bc86",
+      "memory_payload_path": "D:\\FRE\\outputs\\qwen3_memory_pilot\\payloads\\262061725b5922c93f266b2f2ac8eb986400a0fb54ab251a5986e249a5e6bc86.json",
+      "frame_count": 16,
+      "timestamps_s": [
+        17.366218705816827,
+        18.45160737493038,
+        19.53699604404393,
+        20.622384713157484,
+        21.707773382271036,
+        22.793162051384584,
+        23.878550720498136,
+        24.96393938961169,
+        26.592022393282015,
+        27.677411062395567,
+        28.76279973150912,
+        29.84818840062267,
+        30.933577069736224,
+        32.01896573884977,
+        33.10435440796333,
+        34.189743077076876
+      ],
+      "seed": 17,
+      "status": "completed",
+      "raw_answer": "C",
+      "parser": {
+        "status": "valid",
+        "answer_index": 2
+      },
+      "reward": 1,
+      "official_answer_index": 2,
+      "model_id": "Qwen/Qwen3-VL-2B-Instruct",
+      "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "generation": {
+        "raw_text": "C",
+        "elapsed_seconds": 0.23339060000216705,
+        "peak_memory_bytes": 4455686144,
+        "peak_reserved_memory_bytes": 4500488192,
+        "input_tokens": 647,
+        "output_tokens": 2,
+        "visual_tokens": 480,
+        "model_id": "Qwen/Qwen3-VL-2B-Instruct",
+        "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+        "device": "cuda",
+        "seed": 17,
+        "do_sample": false,
+        "timing_scope": "model generation and decoding; excludes image I/O and input preprocessing",
+        "rendered_prompt": "<|im_start|>user\n<17.9 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><20.1 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><22.3 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><24.4 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><27.1 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><29.3 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><31.5 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><33.6 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|>Answer the multiple-choice question using the provided visual evidence, if any. The frames may cover only part of the original video. Choose exactly one of the listed options. Return only its capital letter, with no explanation.\n\nQuestion: Are the letters that the person shuffled in the same order at the end of the video compared to the beginning of the video?\nA. I don't know\nB. Yes\nC. No\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+        "provenance": {
+          "model_id": "Qwen/Qwen3-VL-2B-Instruct",
+          "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+          "processor_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+          "transformers": "4.57.1",
+          "torch": "2.10.0+cu128",
+          "torch_cuda_build": "12.8",
+          "dtype": "torch.bfloat16",
+          "device": "cuda",
+          "attention_implementation": "sdpa",
+          "local_files_only": true,
+          "max_input_tokens": 4096,
+          "model_class": "Qwen3VLForConditionalGeneration",
+          "device_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+          "device_total_memory_bytes": 8546484224,
+          "rendered_prompt": "<|im_start|>user\n<17.9 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><20.1 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><22.3 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><24.4 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><27.1 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><29.3 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><31.5 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><33.6 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|>Answer the multiple-choice question using the provided visual evidence, if any. The frames may cover only part of the original video. Choose exactly one of the listed options. Return only its capital letter, with no explanation.\n\nQuestion: Are the letters that the person shuffled in the same order at the end of the video compared to the beginning of the video?\nA. I don't know\nB. Yes\nC. No\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+          "modality": "video",
+          "visual_tokens": 480,
+          "source_timestamps_s": [
+            17.366218705816827,
+            18.45160737493038,
+            19.53699604404393,
+            20.622384713157484,
+            21.707773382271036,
+            22.793162051384584,
+            23.878550720498136,
+            24.96393938961169,
+            26.592022393282015,
+            27.677411062395567,
+            28.76279973150912,
+            29.84818840062267,
+            30.933577069736224,
+            32.01896573884977,
+            33.10435440796333,
+            34.189743077076876
+          ],
+          "hidden_timestamps_s": [
+            17.908913040373605,
+            20.07969037860071,
+            22.25046771682781,
+            24.42124505505491,
+            27.134716727838793,
+            29.305494066065897,
+            31.476271404292998,
+            33.6470487425201
+          ],
+          "frame_groups": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ],
+            [
+              12,
+              13
+            ],
+            [
+              14,
+              15
+            ]
+          ],
+          "video_grid_thw": [
+            8,
+            12,
+            20
+          ],
+          "timestamp_prompt_precision_decimals": 1,
+          "uniform_hidden_sampling": false,
+          "hidden_sampling_hz": null,
+          "temporal_patch_size": 2,
+          "patch_size": 16,
+          "spatial_merge_size": 2,
+          "max_pixels_per_frame": 65536,
+          "resized_pixels_per_frame": 61440,
+          "processor_resamples_frames": false,
+          "timestamp_rendering": "official Qwen3 per-grid format, actual adjacent-frame centers",
+          "input_tokens": 647,
+          "prompt_sha256": "b894544788d6072686c8d7d2a3340b0a425990916d4101892fa230682cef79dc"
+        }
+      }
+    },
+    {
+      "query_id": "perception_test:video_1580:mc:1",
+      "video_id": "video_1580",
+      "area": "memory",
+      "reasoning": "descriptive",
+      "tags": [
+        "change detection",
+        "spatial relations"
+      ],
+      "condition": "uniform_full",
+      "prompt": "Answer the multiple-choice question using the provided visual evidence, if any. The frames may cover only part of the original video. Choose exactly one of the listed options. Return only its capital letter, with no explanation.\n\nQuestion: Are the letters that the person shuffled in the same order at the end of the video compared to the beginning of the video?\nA. I don't know\nB. Yes\nC. No\nAnswer:",
+      "input_prompt_sha256": "3274507c5dfa2bbd2e7a527513f22c48f6140165c090a8bac4552b561b5dc179",
+      "prompt_hash": "022cdf5ef9bad2caf34c630de2316a6fc7cfde3b34a9931b46d747ef02471553",
+      "decoding_hash": "586f539d63a7eef3ed536cde5fddcfdb673e83e6dfc4bf99704d0c79f779af8b",
+      "candidate_hash": "cecab237e866b7bb09a6c45c144abe134ed5d605438cd3c260703992fa4d1855",
+      "memory_payload_path": "D:\\FRE\\outputs\\qwen3_memory_pilot\\payloads\\cecab237e866b7bb09a6c45c144abe134ed5d605438cd3c260703992fa4d1855.json",
+      "frame_count": 16,
+      "timestamps_s": [
+        0.0,
+        2.1707773382271034,
+        4.341554676454207,
+        7.055026349238086,
+        9.22580368746519,
+        11.396581025692292,
+        13.567358363919396,
+        15.738135702146499,
+        18.45160737493038,
+        20.622384713157484,
+        22.793162051384584,
+        24.96393938961169,
+        27.134716727838793,
+        29.84818840062267,
+        32.01896573884977,
+        34.189743077076876
+      ],
+      "seed": 17,
+      "status": "completed",
+      "raw_answer": "C",
+      "parser": {
+        "status": "valid",
+        "answer_index": 2
+      },
+      "reward": 1,
+      "official_answer_index": 2,
+      "model_id": "Qwen/Qwen3-VL-2B-Instruct",
+      "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "generation": {
+        "raw_text": "C",
+        "elapsed_seconds": 0.2382767999988573,
+        "peak_memory_bytes": 4455401984,
+        "peak_reserved_memory_bytes": 4500488192,
+        "input_tokens": 645,
+        "output_tokens": 2,
+        "visual_tokens": 480,
+        "model_id": "Qwen/Qwen3-VL-2B-Instruct",
+        "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+        "device": "cuda",
+        "seed": 17,
+        "do_sample": false,
+        "timing_scope": "model generation and decoding; excludes image I/O and input preprocessing",
+        "rendered_prompt": "<|im_start|>user\n<1.1 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><5.7 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><10.3 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><14.7 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><19.5 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><23.9 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><28.5 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><33.1 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|>Answer the multiple-choice question using the provided visual evidence, if any. The frames may cover only part of the original video. Choose exactly one of the listed options. Return only its capital letter, with no explanation.\n\nQuestion: Are the letters that the person shuffled in the same order at the end of the video compared to the beginning of the video?\nA. I don't know\nB. Yes\nC. No\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+        "provenance": {
+          "model_id": "Qwen/Qwen3-VL-2B-Instruct",
+          "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+          "processor_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+          "transformers": "4.57.1",
+          "torch": "2.10.0+cu128",
+          "torch_cuda_build": "12.8",
+          "dtype": "torch.bfloat16",
+          "device": "cuda",
+          "attention_implementation": "sdpa",
+          "local_files_only": true,
+          "max_input_tokens": 4096,
+          "model_class": "Qwen3VLForConditionalGeneration",
+          "device_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+          "device_total_memory_bytes": 8546484224,
+          "rendered_prompt": "<|im_start|>user\n<1.1 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><5.7 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><10.3 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><14.7 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><19.5 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><23.9 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><28.5 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|><33.1 seconds><|vision_start|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|video_pad|><|vision_end|>Answer the multiple-choice question using the provided visual evidence, if any. The frames may cover only part of the original video. Choose exactly one of the listed options. Return only its capital letter, with no explanation.\n\nQuestion: Are the letters that the person shuffled in the same order at the end of the video compared to the beginning of the video?\nA. I don't know\nB. Yes\nC. No\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+          "modality": "video",
+          "visual_tokens": 480,
+          "source_timestamps_s": [
+            0.0,
+            2.1707773382271034,
+            4.341554676454207,
+            7.055026349238086,
+            9.22580368746519,
+            11.396581025692292,
+            13.567358363919396,
+            15.738135702146499,
+            18.45160737493038,
+            20.622384713157484,
+            22.793162051384584,
+            24.96393938961169,
+            27.134716727838793,
+            29.84818840062267,
+            32.01896573884977,
+            34.189743077076876
+          ],
+          "hidden_timestamps_s": [
+            1.0853886691135517,
+            5.698290512846146,
+            10.31119235657874,
+            14.652747033032949,
+            19.53699604404393,
+            23.878550720498136,
+            28.491452564230734,
+            33.10435440796333
+          ],
+          "frame_groups": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ],
+            [
+              12,
+              13
+            ],
+            [
+              14,
+              15
+            ]
+          ],
+          "video_grid_thw": [
+            8,
+            12,
+            20
+          ],
+          "timestamp_prompt_precision_decimals": 1,
+          "uniform_hidden_sampling": false,
+          "hidden_sampling_hz": null,
+          "temporal_patch_size": 2,
+          "patch_size": 16,
+          "spatial_merge_size": 2,
+          "max_pixels_per_frame": 65536,
+          "resized_pixels_per_frame": 61440,
+          "processor_resamples_frames": false,
+          "timestamp_rendering": "official Qwen3 per-grid format, actual adjacent-frame centers",
+          "input_tokens": 645,
+          "prompt_sha256": "82376e9709eb122f2029065259b83a18e7055bd96345f73a8273f394de9a5257"
+        }
+      }
+    }
+  ],
+  "paired_utilities": 3,
+  "error": null,
+  "limitations": [
+    "Descriptive small-model mechanism pilot; repeated conditions are not independent samples.",
+    "Equal frame count does not prove equal visual token count or information coverage.",
+    "No-memory has zero visual budget; differences are coverage diagnostics, not fair method comparisons.",
+    "Official QA answers score real generations; they are never injected as memory-utility labels.",
+    "Utility is measured against empty memory for one frozen readout, not lifelong storage quality.",
+    "No probe is trained and no hidden-state path is fabricated by this command.",
+    "Payload descriptors bind frame bytes but do not measure total retained-memory storage cost."
+  ]
+}

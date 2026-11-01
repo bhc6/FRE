@@ -1,0 +1,242 @@
+{
+  "status": "complete",
+  "created_at_utc": "2026-11-01T14:55:25.526540+00:00",
+  "purpose": "diagnostic scoring calibration, not internal-model or memory improvement",
+  "source_sha256": "ee5123db5b0dcaed85a1cf110317218671c93dcfcc050d2e20e0824cd60fd96c",
+  "provenance": {
+    "frozen_question_manifests": {
+      "train": {
+        "path": "D:\\FRE\\data\\internal_controller_v1\\train.questions.jsonl",
+        "sha256": "b1cb8b15865aa387bed3cefb7f6a922f41f0c1c7301fe590f2f562920b3c5845"
+      },
+      "validation": {
+        "path": "D:\\FRE\\data\\internal_controller_v1\\validation.questions.jsonl",
+        "sha256": "76e60bb8b3cc522dfd3aa6323782d753ef58caa78b7dbcbe864224f34d7d3504"
+      },
+      "test": {
+        "path": "D:\\FRE\\data\\internal_controller_v1\\test.questions.jsonl",
+        "sha256": "10a5fe30f688a512bbb93b3ad049f2f02fae3b6a88da613354d05b42aa72e4ac"
+      }
+    },
+    "native_score_sources": [
+      {
+        "path": "D:\\FRE\\outputs\\controller_train_cache_v1\\chunk00\\records.jsonl",
+        "sha256": "6c5df72da97884977b4675d6f19016e42cb2674701700d33e556c5cdda785a63"
+      },
+      {
+        "path": "D:\\FRE\\outputs\\controller_train_cache_v1\\chunk01\\records.jsonl",
+        "sha256": "6785af29d46ec60059203b554a23e133814bf609d89198aa7d2adca299f3e17d"
+      },
+      {
+        "path": "D:\\FRE\\outputs\\controller_train_cache_v1\\chunk02\\records.jsonl",
+        "sha256": "4d01204919be4a638f0a1ac23493035e1bbbbd624cf2d4ab0c7a67f2965522c6"
+      },
+      {
+        "path": "D:\\FRE\\outputs\\controller_train_cache_v1\\chunk03\\records.jsonl",
+        "sha256": "2a6e004b06ae13da8a392b7fa80a552fb6a725947028ce7d493a2891c3b28b9b"
+      },
+      {
+        "path": "D:\\FRE\\outputs\\controller_analysis_v1\\audited_records.jsonl",
+        "sha256": "f5f046476bdc67d3fc26a384fc272be17d33c9981a746a9b6d23e5c684767a66"
+      }
+    ]
+  },
+  "fit_data": "142 frozen train QA only",
+  "optimization": {
+    "optimizer": "NumPy float64 Adam",
+    "steps": 200,
+    "learning_rate": 0.03,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "epsilon": 1e-08,
+    "l2_coefficient_on_three_biases": 0.01,
+    "batch": "full training set",
+    "initial_parameters": [
+      0.0,
+      0.0
+    ],
+    "trainable_parameters": 2,
+    "constraint": "bias_C = -bias_A - bias_B",
+    "checkpoint_selection": "fixed final step 200"
+  },
+  "letter_bias_ABC": [
+    -0.2562399472650754,
+    0.24295402350768303,
+    0.013285923757392348
+  ],
+  "metrics": [
+    {
+      "split": "train",
+      "method": "native",
+      "cases": 142,
+      "source_videos": 32,
+      "correct": 84,
+      "micro_accuracy": 0.5915492957746479,
+      "source_macro_accuracy": 0.6028645833333333,
+      "mean_nll": 1.1628369575889232,
+      "source_macro_nll": 1.076486832548264,
+      "gold_counts_ABC": [
+        37,
+        51,
+        54
+      ],
+      "prediction_counts_ABC": [
+        40,
+        48,
+        54
+      ],
+      "exact_maximum_ties": 3
+    },
+    {
+      "split": "train",
+      "method": "train_only_letter_calibration",
+      "cases": 142,
+      "source_videos": 32,
+      "correct": 88,
+      "micro_accuracy": 0.6197183098591549,
+      "source_macro_accuracy": 0.6281622023809523,
+      "mean_nll": 1.1514034072315713,
+      "source_macro_nll": 1.0645751128708316,
+      "gold_counts_ABC": [
+        37,
+        51,
+        54
+      ],
+      "prediction_counts_ABC": [
+        31,
+        54,
+        57
+      ],
+      "exact_maximum_ties": 0
+    },
+    {
+      "split": "validation",
+      "method": "native",
+      "cases": 40,
+      "source_videos": 8,
+      "correct": 17,
+      "micro_accuracy": 0.425,
+      "source_macro_accuracy": 0.4348214285714286,
+      "mean_nll": 1.221479244072245,
+      "source_macro_nll": 1.2189226545948881,
+      "gold_counts_ABC": [
+        12,
+        11,
+        17
+      ],
+      "prediction_counts_ABC": [
+        6,
+        14,
+        20
+      ],
+      "exact_maximum_ties": 0
+    },
+    {
+      "split": "validation",
+      "method": "train_only_letter_calibration",
+      "cases": 40,
+      "source_videos": 8,
+      "correct": 17,
+      "micro_accuracy": 0.425,
+      "source_macro_accuracy": 0.4318452380952381,
+      "mean_nll": 1.2722925371109448,
+      "source_macro_nll": 1.2680729637473331,
+      "gold_counts_ABC": [
+        12,
+        11,
+        17
+      ],
+      "prediction_counts_ABC": [
+        6,
+        16,
+        18
+      ],
+      "exact_maximum_ties": 0
+    },
+    {
+      "split": "old_test_seen",
+      "method": "native",
+      "cases": 74,
+      "source_videos": 16,
+      "correct": 32,
+      "micro_accuracy": 0.43243243243243246,
+      "source_macro_accuracy": 0.40520833333333334,
+      "mean_nll": 1.2145091495872677,
+      "source_macro_nll": 1.224202661276468,
+      "gold_counts_ABC": [
+        24,
+        27,
+        23
+      ],
+      "prediction_counts_ABC": [
+        16,
+        30,
+        28
+      ],
+      "exact_maximum_ties": 6
+    },
+    {
+      "split": "old_test_seen",
+      "method": "train_only_letter_calibration",
+      "cases": 74,
+      "source_videos": 16,
+      "correct": 31,
+      "micro_accuracy": 0.4189189189189189,
+      "source_macro_accuracy": 0.440625,
+      "mean_nll": 1.2488459196622643,
+      "source_macro_nll": 1.2413985531476028,
+      "gold_counts_ABC": [
+        24,
+        27,
+        23
+      ],
+      "prediction_counts_ABC": [
+        10,
+        35,
+        29
+      ],
+      "exact_maximum_ties": 0
+    }
+  ],
+  "comparisons": [
+    {
+      "split": "train",
+      "repairs": 5,
+      "regressions": 1,
+      "prediction_changes": 9,
+      "micro_accuracy_difference": 0.028169014084507005,
+      "source_macro_accuracy_difference": 0.02529761904761907,
+      "mean_nll_difference": -0.01143355035735194
+    },
+    {
+      "split": "validation",
+      "repairs": 1,
+      "regressions": 1,
+      "prediction_changes": 2,
+      "micro_accuracy_difference": 0.0,
+      "source_macro_accuracy_difference": -0.0029761904761904656,
+      "mean_nll_difference": 0.05081329303869975
+    },
+    {
+      "split": "old_test_seen",
+      "repairs": 2,
+      "regressions": 3,
+      "prediction_changes": 6,
+      "micro_accuracy_difference": -0.013513513513513542,
+      "source_macro_accuracy_difference": 0.03541666666666665,
+      "mean_nll_difference": 0.03433677007499658
+    }
+  ],
+  "model_forward_executed": false,
+  "gpu_used": false,
+  "new_confirmation_sources_read": false,
+  "interpretation": "Validation and old_test_seen are development diagnostics. No source selection, heldout tuning, memory mechanism, or option-permutation robustness is established.",
+  "output_sha256": {
+    "case_scores.jsonl": "fec96c943e152c83a3a096be0d38d948e0eb14b4e283e854ca0b3a8bc2679bca",
+    "metrics.jsonl": "a76efbe1f202c68d058b1acc380e1bcd0404f08f6ff24624fa30c56562ad9a81",
+    "optimization.jsonl": "d9b8ca9779ef2e5342e92dc6ffdc96a79689dcfdea31d34d1aa81a563a975e25",
+    "report.md": "f458cc3c36d7ca3f1ef5fe6533b62e86b9bf75cf149529a4b3f8dfe6c7d49ec1"
+  }
+}

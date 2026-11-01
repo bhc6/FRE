@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "created_at_utc": "2026-11-01T14:13:02.630107+00:00",
+  "records": 728,
+  "cases": 56,
+  "splits": [
+    "validation"
+  ],
+  "protocol_sha256": "3954767ef2662e15eb4934f90eea08ca6d48eaaef39fd2d297e3d9a3df590748",
+  "analyzer_sha256": "e54f86095323613de2b623e5cf1ef2d347da953195899c602009081fa7956476",
+  "numpy_version": "2.4.2",
+  "python_version": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "primary_comparison": null,
+  "bootstrap": null,
+  "training_audit_complete": true,
+  "resource_scope": "Explicit input directories only; no claim of complete historical research cost",
+  "cuda_or_model_execution": false,
+  "limitations": [
+    "16 source clusters and three training seeds",
+    "overlapping diagnostic subsets",
+    "official valid split with local experimental roles",
+    "short videos, not a long-term-memory demonstration"
+  ],
+  "output_sha256": {
+    "audited_records.jsonl": "6200205aa70bbd907cd7c0111f024161ad4dea15f3c47d76e450bcd236ed3a25",
+    "audit_runs.json": "625f7f7ea3da8fcc825ca6e5fac6644e893c75eb45ded4ecaf4ecab93a6f1009",
+    "paired_comparisons.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "per_seed_metrics.jsonl": "fca93b1a66b7afcd65deab7a8df7528b9a3912c8b69db3b23029448bf602263b",
+    "report.md": "af407422dd5b808695679bd087538e6e6017f09dc877535c793887bc5981309d",
+    "resource_ledger.json": "f06e701a43b914a9b4538343d86f4fb82f14b3d3a5f69cf1ede03892d90b9fc3",
+    "training_audit.json": "0ab366a8228407fcc7da220f843e7d7e4bfd7d07bd567c7e1b2d0d07efdaaf07",
+    "validation_main.md": "5c4f97770d29ca2cd6f92484ff00e1fdfbfaaa1454a1da75516e80a9706604d6",
+    "validation_main.tex": "1eed3414dc26df2dfc1f68fc5706efaaa891a77f75ee3e5c9a03469d485cf456"
+  }
+}

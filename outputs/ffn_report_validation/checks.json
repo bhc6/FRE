@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "checks": [
+    "DC cancellation can raise normalized fraction without raising temporal energy",
+    "Common amplitude scaling preserves temporal fraction",
+    "Zero-signal ratios remain undefined",
+    "Descriptive median/range excludes undefined values"
+  ]
+}

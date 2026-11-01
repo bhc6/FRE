@@ -1,0 +1,61 @@
+{
+  "created_at_utc": "2026-11-01T16:12:51.610117+00:00",
+  "purpose": "CPU algebra and feature-level counterfactual checks; no model or task claim",
+  "python": "3.13.7",
+  "numpy": "2.4.2",
+  "dtype": "float64",
+  "source_sha256": "1784e014034364686815eef12bf5e57ca7d4beca300257bd640440fa64e741f3",
+  "gpu_used": false,
+  "torch_imported": false,
+  "check_count": 7,
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "identity_exact",
+      "passed": true,
+      "metrics": {
+        "hash": "f3202d18374d97c4b3fc0ac85ccd3ce8bfb7ebee7baa989734f78d279d54631f"
+      }
+    },
+    {
+      "name": "temporal_reverse_preserves_temporal_power",
+      "passed": true,
+      "metrics": {
+        "max_power_error": 1.7763568394002505e-15
+      }
+    },
+    {
+      "name": "allpass_phase_preserves_joint_3d_power",
+      "passed": true,
+      "metrics": {
+        "max_power_error": 5.329070518200751e-15,
+        "rms_change": 40.960854215533004
+      }
+    },
+    {
+      "name": "allpass_phase_changes_features",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "spatial_mean_control_is_finite",
+      "passed": true,
+      "metrics": {
+        "spatial_constant_energy_ratio": 0.03517247278111271
+      }
+    },
+    {
+      "name": "bundle_reports_feature_level_only",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "bundle_preservation_errors_pass",
+      "passed": true,
+      "metrics": {
+        "temporal_error": 1.6888332462484927e-16,
+        "phase_error": 8.923273844590906e-16
+      }
+    }
+  ]
+}

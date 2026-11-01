@@ -1,0 +1,228 @@
+{
+  "status": "passed",
+  "checks_passed": 55,
+  "checks": [
+    {
+      "name": "parameter_parity_8",
+      "passed": true
+    },
+    {
+      "name": "metadata_method_8",
+      "passed": true
+    },
+    {
+      "name": "metadata_time_method_8",
+      "passed": true
+    },
+    {
+      "name": "shape_4d_8",
+      "passed": true
+    },
+    {
+      "name": "dtype_4d_8",
+      "passed": true
+    },
+    {
+      "name": "zero_identity_spectral_8",
+      "passed": true
+    },
+    {
+      "name": "zero_identity_time_8",
+      "passed": true
+    },
+    {
+      "name": "first_step_gradient_spectral_8",
+      "passed": true
+    },
+    {
+      "name": "layout_equivalence_spectral_8",
+      "passed": true
+    },
+    {
+      "name": "layout_equivalence_time_8",
+      "passed": true
+    },
+    {
+      "name": "finite_spectral_8",
+      "passed": true
+    },
+    {
+      "name": "finite_time_8",
+      "passed": true
+    },
+    {
+      "name": "bounded_spectral_8",
+      "passed": true
+    },
+    {
+      "name": "bounded_time_8",
+      "passed": true
+    },
+    {
+      "name": "gate_bound_spectral_8",
+      "passed": true
+    },
+    {
+      "name": "gate_bound_time_8",
+      "passed": true
+    },
+    {
+      "name": "different_parameterizations_8",
+      "passed": true
+    },
+    {
+      "name": "parameter_parity_16",
+      "passed": true
+    },
+    {
+      "name": "metadata_method_16",
+      "passed": true
+    },
+    {
+      "name": "metadata_time_method_16",
+      "passed": true
+    },
+    {
+      "name": "shape_4d_16",
+      "passed": true
+    },
+    {
+      "name": "dtype_4d_16",
+      "passed": true
+    },
+    {
+      "name": "zero_identity_spectral_16",
+      "passed": true
+    },
+    {
+      "name": "zero_identity_time_16",
+      "passed": true
+    },
+    {
+      "name": "first_step_gradient_spectral_16",
+      "passed": true
+    },
+    {
+      "name": "layout_equivalence_spectral_16",
+      "passed": true
+    },
+    {
+      "name": "layout_equivalence_time_16",
+      "passed": true
+    },
+    {
+      "name": "finite_spectral_16",
+      "passed": true
+    },
+    {
+      "name": "finite_time_16",
+      "passed": true
+    },
+    {
+      "name": "bounded_spectral_16",
+      "passed": true
+    },
+    {
+      "name": "bounded_time_16",
+      "passed": true
+    },
+    {
+      "name": "gate_bound_spectral_16",
+      "passed": true
+    },
+    {
+      "name": "gate_bound_time_16",
+      "passed": true
+    },
+    {
+      "name": "different_parameterizations_16",
+      "passed": true
+    },
+    {
+      "name": "parameter_parity_7",
+      "passed": true
+    },
+    {
+      "name": "metadata_method_7",
+      "passed": true
+    },
+    {
+      "name": "metadata_time_method_7",
+      "passed": true
+    },
+    {
+      "name": "shape_4d_7",
+      "passed": true
+    },
+    {
+      "name": "dtype_4d_7",
+      "passed": true
+    },
+    {
+      "name": "zero_identity_spectral_7",
+      "passed": true
+    },
+    {
+      "name": "zero_identity_time_7",
+      "passed": true
+    },
+    {
+      "name": "first_step_gradient_spectral_7",
+      "passed": true
+    },
+    {
+      "name": "layout_equivalence_spectral_7",
+      "passed": true
+    },
+    {
+      "name": "layout_equivalence_time_7",
+      "passed": true
+    },
+    {
+      "name": "finite_spectral_7",
+      "passed": true
+    },
+    {
+      "name": "finite_time_7",
+      "passed": true
+    },
+    {
+      "name": "bounded_spectral_7",
+      "passed": true
+    },
+    {
+      "name": "bounded_time_7",
+      "passed": true
+    },
+    {
+      "name": "gate_bound_spectral_7",
+      "passed": true
+    },
+    {
+      "name": "gate_bound_time_7",
+      "passed": true
+    },
+    {
+      "name": "different_parameterizations_7",
+      "passed": true
+    },
+    {
+      "name": "reject_integer",
+      "passed": true
+    },
+    {
+      "name": "reject_nan",
+      "passed": true
+    },
+    {
+      "name": "reject_wrong_time",
+      "passed": true
+    },
+    {
+      "name": "reject_wrong_feature",
+      "passed": true
+    }
+  ],
+  "torch_version": "2.10.0+cu128",
+  "numpy_version": "2.4.2"
+}

@@ -1,0 +1,133 @@
+{
+  "scope": "CPU synthetic hook, BF16 association, controller arithmetic and prompt checks; no native GPU parity claim",
+  "checks": [
+    {
+      "name": "parameters:0.1",
+      "passed": true
+    },
+    {
+      "name": "zero:0.1",
+      "passed": true
+    },
+    {
+      "name": "zero_output_gradient:0.1",
+      "passed": true
+    },
+    {
+      "name": "frozen_zero_first_gradient:0.1",
+      "passed": true
+    },
+    {
+      "name": "cap:0.1",
+      "passed": true
+    },
+    {
+      "name": "cap_active:0.1",
+      "passed": true
+    },
+    {
+      "name": "gain:0.1",
+      "passed": true
+    },
+    {
+      "name": "finite:0.1",
+      "passed": true
+    },
+    {
+      "name": "zero_context:0.1",
+      "passed": true
+    },
+    {
+      "name": "parameters:0.3",
+      "passed": true
+    },
+    {
+      "name": "zero:0.3",
+      "passed": true
+    },
+    {
+      "name": "zero_output_gradient:0.3",
+      "passed": true
+    },
+    {
+      "name": "frozen_zero_first_gradient:0.3",
+      "passed": true
+    },
+    {
+      "name": "cap:0.3",
+      "passed": true
+    },
+    {
+      "name": "cap_active:0.3",
+      "passed": true
+    },
+    {
+      "name": "gain:0.3",
+      "passed": true
+    },
+    {
+      "name": "finite:0.3",
+      "passed": true
+    },
+    {
+      "name": "zero_context:0.3",
+      "passed": true
+    },
+    {
+      "name": "mock_zero_full_output",
+      "passed": true
+    },
+    {
+      "name": "mock_zero_delta",
+      "passed": true
+    },
+    {
+      "name": "mock_zero_hook_removed",
+      "passed": true
+    },
+    {
+      "name": "mock_correct_bf16_association",
+      "passed": true
+    },
+    {
+      "name": "mock_distinguishes_wrong_association",
+      "passed": true
+    },
+    {
+      "name": "mock_last_position_only",
+      "passed": true
+    },
+    {
+      "name": "mock_hook_removed",
+      "passed": true
+    },
+    {
+      "name": "mock_restore",
+      "passed": true
+    },
+    {
+      "name": "frozen_tail_same_association",
+      "passed": true
+    },
+    {
+      "name": "frozen_tail_zero",
+      "passed": true
+    },
+    {
+      "name": "prompt_independent_of_gold",
+      "passed": true
+    }
+  ],
+  "passed": 29,
+  "source_hashes": {
+    "ffn_readout_v2.py": "24179297dd09356b12936ee2f11f5f71db5d78bf028ad69a5f857a967d1c122f",
+    "ffn_train_v2.py": "92cffd759d87bd982aa0d6a5497928bf94ef65e2d3ebd28530ebab9972dfb1dc",
+    "ffn_evaluate_v2.py": "8e966f407a0bc3e45fdfeb011855850aa6dc806391cd0c8801afb3e5786fcd4d"
+  },
+  "limitations": [
+    "FFN norm caps and attention-head norm caps are not matched intervention strengths.",
+    "Rank four describes a bottleneck; output bias and tanh do not define a fixed four-dimensional linear residual subspace.",
+    "Training FFN context uses a 206-case batch; replay uses eight cases, so BF16 GEMM batch-shape approximation remains.",
+    "Training log capped_head_fraction is actually capped-token fraction for this controller."
+  ]
+}

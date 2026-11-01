@@ -1,0 +1,390 @@
+{
+  "created_at_utc": "2026-11-01T13:21:50.748782+00:00",
+  "check_count": 68,
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "independent_edge_table_none_causal_sham",
+      "passed": true,
+      "metrics": {
+        "visible_edges": 78
+      }
+    },
+    {
+      "name": "source_mask_not_mutated_none_causal_sham",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "independent_edge_table_none_first_gate",
+      "passed": true,
+      "metrics": {
+        "visible_edges": 66
+      }
+    },
+    {
+      "name": "source_mask_not_mutated_none_first_gate",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "independent_edge_table_none_last_gate",
+      "passed": true,
+      "metrics": {
+        "visible_edges": 66
+      }
+    },
+    {
+      "name": "source_mask_not_mutated_none_last_gate",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "independent_edge_table_boolean_causal_sham",
+      "passed": true,
+      "metrics": {
+        "visible_edges": 75
+      }
+    },
+    {
+      "name": "source_mask_not_mutated_boolean_causal_sham",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "independent_edge_table_boolean_first_gate",
+      "passed": true,
+      "metrics": {
+        "visible_edges": 63
+      }
+    },
+    {
+      "name": "source_mask_not_mutated_boolean_first_gate",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "independent_edge_table_boolean_last_gate",
+      "passed": true,
+      "metrics": {
+        "visible_edges": 63
+      }
+    },
+    {
+      "name": "source_mask_not_mutated_boolean_last_gate",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "independent_edge_table_additive_causal_sham",
+      "passed": true,
+      "metrics": {
+        "visible_edges": 75
+      }
+    },
+    {
+      "name": "source_mask_not_mutated_additive_causal_sham",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "additive_bias_preserved_causal_sham",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "independent_edge_table_additive_first_gate",
+      "passed": true,
+      "metrics": {
+        "visible_edges": 63
+      }
+    },
+    {
+      "name": "source_mask_not_mutated_additive_first_gate",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "additive_bias_preserved_first_gate",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "independent_edge_table_additive_last_gate",
+      "passed": true,
+      "metrics": {
+        "visible_edges": 63
+      }
+    },
+    {
+      "name": "source_mask_not_mutated_additive_last_gate",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "additive_bias_preserved_last_gate",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "bf16_minimum_finite_mask_is_supported",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "reject_boolean_future_edge",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "reject_additive_future_edge",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "reject_integer_mask",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "reject_wrong_mask_shape",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "reject_duplicate_positions",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "reject_unsorted_positions",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "reject_negative_position",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "reject_no_suffix",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "reject_non_integer_positions",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "reject_empty_positions",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "reject_nan",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "reject_positive_infinity",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "cpu_sdpa_native_gqa_vs_explicit_sham",
+      "passed": true,
+      "metrics": {
+        "maximum_error": 0.0
+      }
+    },
+    {
+      "name": "cpu_sdpa_dense_reference_first_gate",
+      "passed": true,
+      "metrics": {
+        "reference_error": 2.220446049250313e-16,
+        "prefix_error": 0.0,
+        "suffix_difference": 2.298812585198811
+      }
+    },
+    {
+      "name": "cpu_sdpa_dense_reference_last_gate",
+      "passed": true,
+      "metrics": {
+        "reference_error": 2.220446049250313e-16,
+        "prefix_error": 0.0,
+        "suffix_difference": 1.5795499673285862
+      }
+    },
+    {
+      "name": "mock_dispatch_visits_native",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "mock_visual_tensor_hooks_native",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "mock_vision_dispatch_unchanged_native",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "mock_registry_and_hooks_restored_native",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "mock_original_decoder_arguments_native",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "mock_dispatch_visits_passthrough",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "mock_visual_tensor_hooks_passthrough",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "mock_vision_dispatch_unchanged_passthrough",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "mock_registry_and_hooks_restored_passthrough",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "mock_original_decoder_arguments_passthrough",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "mock_dispatch_visits_causal_sham",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "mock_visual_tensor_hooks_causal_sham",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "mock_vision_dispatch_unchanged_causal_sham",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "mock_registry_and_hooks_restored_causal_sham",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "mock_explicit_decoder_arguments_causal_sham",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "mock_dispatch_visits_first_gate",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "mock_visual_tensor_hooks_first_gate",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "mock_vision_dispatch_unchanged_first_gate",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "mock_registry_and_hooks_restored_first_gate",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "mock_explicit_decoder_arguments_first_gate",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "mock_dispatch_visits_last_gate",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "mock_visual_tensor_hooks_last_gate",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "mock_vision_dispatch_unchanged_last_gate",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "mock_registry_and_hooks_restored_last_gate",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "mock_explicit_decoder_arguments_last_gate",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "exception_restores_registry_and_all_hooks",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "reject_noncausal_native_none_mask",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "all_three_static_controls_required_positive",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "static_failure_blocks_selectivity_causal_sham",
+      "passed": true,
+      "metrics": {
+        "target_static_correct": 8
+      }
+    },
+    {
+      "name": "static_failure_blocks_selectivity_first_gate",
+      "passed": true,
+      "metrics": {
+        "target_static_correct": 8
+      }
+    },
+    {
+      "name": "static_failure_blocks_selectivity_last_gate",
+      "passed": true,
+      "metrics": {
+        "target_static_correct": 8
+      }
+    }
+  ],
+  "torch": "2.10.0+cu128",
+  "cpu_threads": 2,
+  "interop_threads": 1,
+  "gpu_used": false,
+  "model_loaded": false,
+  "routing_source_sha256": "01cf51bf7cb96d800751429bfc0b2f1fb20650a5162c3b2f3f0550a21165aa44",
+  "protocol_sha256": "cbff1a9a965d5a024a2b51925f50b549715b5ad9ee73b92990770d0b534309ee",
+  "review_source_sha256": "64c40c937626fdd306ea1b339e4a8554dacc121cea2153dfcbb16d91e41446ee",
+  "scope": "CPU edge semantics, synthetic SDPA and mocked 28-layer dispatch lifecycle; no real-model intervention result"
+}

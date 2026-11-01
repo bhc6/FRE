@@ -1,0 +1,433 @@
+{
+  "created_at_utc": "2026-11-01T14:01:15.706602+00:00",
+  "status": "passed",
+  "passed": 73,
+  "failed": 0,
+  "device": "cpu",
+  "threads": 2,
+  "interop_threads": 1,
+  "torch_version": "2.10.0+cu128",
+  "source_sha256": {
+    "controller_runtime.py": "eccbbce89b75d289015e1affc2fa47f5a3486b6162c1747c3362b7cc8f8d0f4d",
+    "controller_train.py": "5a2570548ef267e16e23eba8467d501b7a8ee47345794c8690fe78ac3a5906dc",
+    "controller_cache.py": "c1086e2c7b06bf66d10482556384ad7e7973da98f35bad9d3e0b3529d139b291",
+    "learned_readout.py": "1ff3e5f50d6e1ed1f197dc5dc4ae71698a322fbb29f097cb16640ee105a0cbe3"
+  },
+  "checks": [
+    {
+      "name": "gqa_none_probabilities",
+      "passed": true,
+      "metrics": {
+        "max_absolute_error": 3.6987195195514744e-08
+      }
+    },
+    {
+      "name": "gqa_none_context",
+      "passed": true,
+      "metrics": {
+        "max_absolute_error": 1.2638716273549733e-07
+      }
+    },
+    {
+      "name": "gqa_none_query",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "gqa_none_visual_mass_not_renormalized",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "gqa_none_time_context",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "gqa_none_native_last_query",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "gqa_boolean_probabilities",
+      "passed": true,
+      "metrics": {
+        "max_absolute_error": 4.523893898378262e-08
+      }
+    },
+    {
+      "name": "gqa_boolean_context",
+      "passed": true,
+      "metrics": {
+        "max_absolute_error": 1.2899427881407632e-07
+      }
+    },
+    {
+      "name": "gqa_boolean_query",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "gqa_boolean_visual_mass_not_renormalized",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "gqa_boolean_time_context",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "gqa_boolean_native_last_query",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "gqa_additive_probabilities",
+      "passed": true,
+      "metrics": {
+        "max_absolute_error": 4.426263922052698e-08
+      }
+    },
+    {
+      "name": "gqa_additive_context",
+      "passed": true,
+      "metrics": {
+        "max_absolute_error": 1.6944821934483656e-07
+      }
+    },
+    {
+      "name": "gqa_additive_query",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "gqa_additive_visual_mass_not_renormalized",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "gqa_additive_time_context",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "gqa_additive_native_last_query",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "frozen_tail_forward_explicit_bf16",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "frozen_tail_delta_gradient_exact",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "frozen_tail_delta_gradient_finite_nonzero",
+      "passed": true,
+      "metrics": {
+        "gradient_norm": 2.3427958488464355
+      }
+    },
+    {
+      "name": "frozen_tail_weights_frozen",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "frozen_tail_rounding_sensitive_order_correct",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "frozen_tail_rounding_fixture_detects_wrong_association",
+      "passed": true,
+      "metrics": {
+        "maximum_logit_difference": 1.9375
+      }
+    },
+    {
+      "name": "time_mlp_tail_zero_init",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "time_mlp_zero_replay_matches_tail",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "time_mlp_step_1_finite_gradients",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "time_mlp_step_2_finite_gradients",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "time_mlp_step_3_finite_gradients",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "time_mlp_learns_nonzero_residual",
+      "passed": true,
+      "metrics": {
+        "gradient_norms": [
+          3.8020379543304443,
+          3.772087812423706,
+          3.958211660385132
+        ],
+        "residual_norm": 0.07080087810754776
+      }
+    },
+    {
+      "name": "time_mlp_residual_head_cap",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "spectral_mlp_tail_zero_init",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "spectral_mlp_zero_replay_matches_tail",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "spectral_mlp_step_1_finite_gradients",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "spectral_mlp_step_2_finite_gradients",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "spectral_mlp_step_3_finite_gradients",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "spectral_mlp_learns_nonzero_residual",
+      "passed": true,
+      "metrics": {
+        "gradient_norms": [
+          2.827648162841797,
+          2.820636749267578,
+          2.927166700363159
+        ],
+        "residual_norm": 0.05599946901202202
+      }
+    },
+    {
+      "name": "spectral_mlp_residual_head_cap",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "spectral_phaseblind_tail_zero_init",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "spectral_phaseblind_zero_replay_matches_tail",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "spectral_phaseblind_step_1_finite_gradients",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "spectral_phaseblind_step_2_finite_gradients",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "spectral_phaseblind_step_3_finite_gradients",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "spectral_phaseblind_learns_nonzero_residual",
+      "passed": true,
+      "metrics": {
+        "gradient_norms": [
+          2.5855419635772705,
+          2.5819320678710938,
+          2.676750898361206
+        ],
+        "residual_norm": 0.05959945544600487
+      }
+    },
+    {
+      "name": "spectral_phaseblind_residual_head_cap",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "constant_spectral_tail_zero_init",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "constant_spectral_zero_replay_matches_tail",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "constant_spectral_step_1_finite_gradients",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "constant_spectral_step_2_finite_gradients",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "constant_spectral_step_3_finite_gradients",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "constant_spectral_learns_nonzero_residual",
+      "passed": true,
+      "metrics": {
+        "gradient_norms": [
+          1.4106043577194214,
+          1.4094092845916748,
+          1.4090089797973633
+        ],
+        "residual_norm": 0.018475187942385674
+      }
+    },
+    {
+      "name": "constant_spectral_residual_head_cap",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "passive_hook_logits_bitwise_equal",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "passive_hook_attention_bitwise_equal",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "passive_hook_registry_restored",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "passive_hook_native_context_captured",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "passive_hook_query_post_rope_dispatch_input",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "passive_hook_attention_tuple_preserved",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "passive_hook_final_token_metadata",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "active_zero_logits_bitwise_equal",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "active_zero_attention_bitwise_equal",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "active_zero_registry_restored",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "active_nonzero_prefix_unchanged",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "active_nonzero_last_token_changed",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "active_nonzero_projection_exact",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "active_nonzero_registry_restored",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "active_nonzero_head_bound",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "error_path_original_exception",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "error_path_registry_and_hooks_restored",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "double_dispatch_rejected",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "double_dispatch_registry_and_hooks_restored",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "post_failure_recovery_exact",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "source_files_unchanged_during_review",
+      "passed": true,
+      "metrics": {}
+    }
+  ],
+  "limitations": [
+    "Synthetic QKV and small random official Qwen tail; no pretrained model or GPU execution.",
+    "CPU bitwise checks do not establish GPU cached-tail versus online full-model logit parity.",
+    "Training proxy numerical error must be reported; final conclusions require native online scoring.",
+    "Runtime's no-mask reference is valid for its guarded final query of uncached prefill only."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "tag": "unit_spectral_mlp_cap0.1_seed20261101",
+  "method": "unit_spectral_mlp",
+  "seed": 20261101,
+  "residual_limit": 0.1,
+  "steps": 200,
+  "elapsed_seconds": 2.5987497999994957,
+  "parameter_count": 18584,
+  "checkpoint_sha256": "6bdb8d714190e14972095ad020c6a942ba6cd374bf1ef5c07eb1f42530855d51",
+  "artifacts_sha256": {
+    "initial.pt": "0120b24d2f9ee891b54840ac20ec18a5e9a955bec0d644d94a8cd49646808252",
+    "optimizer.pt": "80cce43a3fc5499ba85c00d39fca46c455aff813da4153b6dac6c81af7683adf",
+    "initial_replay.json": "6995d1c7f9bbbca711b0ea455670b29b6b9bf7d16e35e8d8865654cde6ef30f1",
+    "final_replay.json": "f925c3e30272136d24ed82589fe68254ba7540cc514dd072221b49ec04f7139a",
+    "training.jsonl": "527a3abca888496d78c733b40a95a4e7ae313cd5a8fcd69ec615a22e4834e5d1"
+  }
+}

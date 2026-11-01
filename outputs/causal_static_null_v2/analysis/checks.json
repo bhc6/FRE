@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "checks": [
+    "constant temporal energy zero",
+    "DC separated from sinusoid",
+    "quadratic amplitude scaling",
+    "zero-denominator remains undefined"
+  ]
+}

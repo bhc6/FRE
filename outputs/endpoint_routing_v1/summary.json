@@ -1,0 +1,67 @@
+{
+  "conditions": {
+    "native": {
+      "correct": 20,
+      "total": 32,
+      "static_correct": 8,
+      "static_total": 8,
+      "mixed_correct": 12,
+      "mixed_total": 24
+    },
+    "passthrough": {
+      "correct": 20,
+      "total": 32,
+      "static_correct": 8,
+      "static_total": 8,
+      "mixed_correct": 12,
+      "mixed_total": 24
+    },
+    "causal_sham": {
+      "correct": 20,
+      "total": 32,
+      "static_correct": 8,
+      "static_total": 8,
+      "mixed_correct": 12,
+      "mixed_total": 24
+    },
+    "first_gate": {
+      "correct": 20,
+      "total": 32,
+      "static_correct": 8,
+      "static_total": 8,
+      "mixed_correct": 12,
+      "mixed_total": 24
+    },
+    "last_gate": {
+      "correct": 16,
+      "total": 32,
+      "static_correct": 5,
+      "static_total": 8,
+      "mixed_correct": 11,
+      "mixed_total": 24
+    },
+    "target_gate": {
+      "correct": 24,
+      "total": 32,
+      "static_correct": 6,
+      "static_total": 8,
+      "mixed_correct": 18,
+      "mixed_total": 24
+    },
+    "opposite_gate": {
+      "correct": 12,
+      "total": 32,
+      "static_correct": 7,
+      "static_total": 8,
+      "mixed_correct": 5,
+      "mixed_total": 24
+    }
+  },
+  "causal_sham_native_maximum_logit_difference": 0.3125,
+  "causal_sham_native_prediction_changes": 0,
+  "static_selectivity_gate_passed": false,
+  "static_selectivity_rule": "causal_sham, first_gate and last_gate each require all eight static controls correct",
+  "unit_of_analysis": "one previously seen source video; constructed conditions are not independent videos",
+  "spectral_intervention": false,
+  "long_term_forgetting_inferred": false
+}

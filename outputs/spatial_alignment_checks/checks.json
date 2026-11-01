@@ -1,0 +1,100 @@
+{
+  "created_at_utc": "2026-11-01T12:57:34.568598+00:00",
+  "purpose": "Synthetic coordinate counterexamples only; no model, tracking or task accuracy claim",
+  "python": "3.13.7",
+  "numpy": "2.4.2",
+  "dtype": "float64",
+  "processes": 1,
+  "library_thread_limit": 2,
+  "torch_imported": false,
+  "gpu_used": false,
+  "source_sha256": "444cd12b85b6d98c3649098829785c699c3626116e8bec2880cc8ef5d68256bf",
+  "time_samples": 16,
+  "spatial_patches": 16,
+  "channels": 3,
+  "check_count": 10,
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "object_feature_is_constant_while_location_moves",
+      "passed": true,
+      "metrics": {
+        "feature_error": 0.0,
+        "visited_patches": 16
+      }
+    },
+    {
+      "name": "fixed_patch_has_temporal_spectrum_from_pure_translation",
+      "passed": true,
+      "metrics": {
+        "fixed_patch_non_dc_energy": 1.23046875,
+        "all_patches_non_dc_energy": 19.6875
+      }
+    },
+    {
+      "name": "object_alignment_removes_translation_spectrum",
+      "passed": true,
+      "metrics": {
+        "aligned_non_dc_energy": 0.0
+      }
+    },
+    {
+      "name": "spatial_permutation_preserves_total_energy",
+      "passed": true,
+      "metrics": {
+        "total_energy_error": 0.0,
+        "total_energy": 21.0
+      }
+    },
+    {
+      "name": "opposite_motion_labels_collide_after_alignment",
+      "passed": true,
+      "metrics": {
+        "aligned_difference": 0.0,
+        "original_difference": 6.06217782649107,
+        "motion_labels": [
+          "clockwise",
+          "counterclockwise"
+        ]
+      }
+    },
+    {
+      "name": "retaining_warp_metadata_preserves_direction",
+      "passed": true,
+      "metrics": {
+        "clockwise_step": 1,
+        "counterclockwise_step": -1
+      }
+    },
+    {
+      "name": "spatial_mean_is_invariant_to_this_translation",
+      "passed": true,
+      "metrics": {
+        "mean_error": 0.0,
+        "mean_non_dc_energy": 0.0
+      }
+    },
+    {
+      "name": "time_varying_warp_does_not_commute_with_temporal_dft",
+      "passed": true,
+      "metrics": {
+        "commutator_norm": 6.274950199005566
+      }
+    },
+    {
+      "name": "constant_spatial_warp_commutes_with_temporal_dft",
+      "passed": true,
+      "metrics": {
+        "commutator_maximum_error": 0.0
+      }
+    },
+    {
+      "name": "time_varying_alignment_mixes_temporal_frequencies",
+      "passed": true,
+      "metrics": {
+        "frequency_operator_formula_error": 1.5515838457795457e-17,
+        "off_diagonal_frobenius": 15.491933384829668
+      }
+    }
+  ]
+}

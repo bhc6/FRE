@@ -1,0 +1,1813 @@
+{
+  "scores": {
+    "0:no_memory:all": {
+      "budget_pairs": 0,
+      "method": "no_memory",
+      "subset": "all",
+      "questions": 36,
+      "videos": 8,
+      "correct": 13,
+      "question_accuracy": 0.3611111111111111,
+      "video_macro_accuracy": 0.35625,
+      "mean_memory_bytes": 0.0,
+      "median_request_seconds": 0.04559250000056636
+    },
+    "0:no_memory:memory": {
+      "budget_pairs": 0,
+      "method": "no_memory",
+      "subset": "memory",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 0.0,
+      "median_request_seconds": 0.047319000001152745
+    },
+    "0:no_memory:temporal_state": {
+      "budget_pairs": 0,
+      "method": "no_memory",
+      "subset": "temporal_state",
+      "questions": 8,
+      "videos": 3,
+      "correct": 5,
+      "question_accuracy": 0.625,
+      "video_macro_accuracy": 0.6666666666666666,
+      "mean_memory_bytes": 0.0,
+      "median_request_seconds": 0.04475995000029798
+    },
+    "2:full_reference:all": {
+      "budget_pairs": 2,
+      "method": "full_reference",
+      "subset": "all",
+      "questions": 36,
+      "videos": 8,
+      "correct": 25,
+      "question_accuracy": 0.6944444444444444,
+      "video_macro_accuracy": 0.7250000000000001,
+      "mean_memory_bytes": 28313100.0,
+      "median_request_seconds": 1.448036649999267
+    },
+    "2:full_reference:memory": {
+      "budget_pairs": 2,
+      "method": "full_reference",
+      "subset": "memory",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 28313100.0,
+      "median_request_seconds": 1.425421700001607
+    },
+    "2:full_reference:temporal_state": {
+      "budget_pairs": 2,
+      "method": "full_reference",
+      "subset": "temporal_state",
+      "questions": 8,
+      "videos": 3,
+      "correct": 6,
+      "question_accuracy": 0.75,
+      "video_macro_accuracy": 0.8333333333333334,
+      "mean_memory_bytes": 28313100.0,
+      "median_request_seconds": 1.4419836000015493
+    },
+    "2:kcenter:all": {
+      "budget_pairs": 2,
+      "method": "kcenter",
+      "subset": "all",
+      "questions": 36,
+      "videos": 8,
+      "correct": 24,
+      "question_accuracy": 0.6666666666666666,
+      "video_macro_accuracy": 0.7,
+      "mean_memory_bytes": 1770300.0,
+      "median_request_seconds": 0.09029890000056184
+    },
+    "2:kcenter:memory": {
+      "budget_pairs": 2,
+      "method": "kcenter",
+      "subset": "memory",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 1770300.0,
+      "median_request_seconds": 0.08688889999757521
+    },
+    "2:kcenter:temporal_state": {
+      "budget_pairs": 2,
+      "method": "kcenter",
+      "subset": "temporal_state",
+      "questions": 8,
+      "videos": 3,
+      "correct": 6,
+      "question_accuracy": 0.75,
+      "video_macro_accuracy": 0.8333333333333334,
+      "mean_memory_bytes": 1770300.0,
+      "median_request_seconds": 0.08908904999952938
+    },
+    "2:random:all": {
+      "budget_pairs": 2,
+      "method": "random",
+      "subset": "all",
+      "questions": 36,
+      "videos": 8,
+      "correct": 24,
+      "question_accuracy": 0.6666666666666666,
+      "video_macro_accuracy": 0.7,
+      "mean_memory_bytes": 1770300.0,
+      "median_request_seconds": 0.09029890000056184
+    },
+    "2:random:memory": {
+      "budget_pairs": 2,
+      "method": "random",
+      "subset": "memory",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 1770300.0,
+      "median_request_seconds": 0.08688889999757521
+    },
+    "2:random:temporal_state": {
+      "budget_pairs": 2,
+      "method": "random",
+      "subset": "temporal_state",
+      "questions": 8,
+      "videos": 3,
+      "correct": 6,
+      "question_accuracy": 0.75,
+      "video_macro_accuracy": 0.8333333333333334,
+      "mean_memory_bytes": 1770300.0,
+      "median_request_seconds": 0.08908904999952938
+    },
+    "2:recent:all": {
+      "budget_pairs": 2,
+      "method": "recent",
+      "subset": "all",
+      "questions": 36,
+      "videos": 8,
+      "correct": 25,
+      "question_accuracy": 0.6944444444444444,
+      "video_macro_accuracy": 0.6729166666666667,
+      "mean_memory_bytes": 1770300.0,
+      "median_request_seconds": 0.08960359999946377
+    },
+    "2:recent:memory": {
+      "budget_pairs": 2,
+      "method": "recent",
+      "subset": "memory",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 1770300.0,
+      "median_request_seconds": 0.09177510000154143
+    },
+    "2:recent:temporal_state": {
+      "budget_pairs": 2,
+      "method": "recent",
+      "subset": "temporal_state",
+      "questions": 8,
+      "videos": 3,
+      "correct": 7,
+      "question_accuracy": 0.875,
+      "video_macro_accuracy": 0.9166666666666666,
+      "mean_memory_bytes": 1770300.0,
+      "median_request_seconds": 0.09000494999963848
+    },
+    "2:spectral_balanced:all": {
+      "budget_pairs": 2,
+      "method": "spectral_balanced",
+      "subset": "all",
+      "questions": 36,
+      "videos": 8,
+      "correct": 24,
+      "question_accuracy": 0.6666666666666666,
+      "video_macro_accuracy": 0.7,
+      "mean_memory_bytes": 1770300.0,
+      "median_request_seconds": 0.09029890000056184
+    },
+    "2:spectral_balanced:memory": {
+      "budget_pairs": 2,
+      "method": "spectral_balanced",
+      "subset": "memory",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 1770300.0,
+      "median_request_seconds": 0.08688889999757521
+    },
+    "2:spectral_balanced:temporal_state": {
+      "budget_pairs": 2,
+      "method": "spectral_balanced",
+      "subset": "temporal_state",
+      "questions": 8,
+      "videos": 3,
+      "correct": 6,
+      "question_accuracy": 0.75,
+      "video_macro_accuracy": 0.8333333333333334,
+      "mean_memory_bytes": 1770300.0,
+      "median_request_seconds": 0.08908904999952938
+    },
+    "2:spectral_power:all": {
+      "budget_pairs": 2,
+      "method": "spectral_power",
+      "subset": "all",
+      "questions": 36,
+      "videos": 8,
+      "correct": 24,
+      "question_accuracy": 0.6666666666666666,
+      "video_macro_accuracy": 0.7,
+      "mean_memory_bytes": 1770300.0,
+      "median_request_seconds": 0.09029890000056184
+    },
+    "2:spectral_power:memory": {
+      "budget_pairs": 2,
+      "method": "spectral_power",
+      "subset": "memory",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 1770300.0,
+      "median_request_seconds": 0.08688889999757521
+    },
+    "2:spectral_power:temporal_state": {
+      "budget_pairs": 2,
+      "method": "spectral_power",
+      "subset": "temporal_state",
+      "questions": 8,
+      "videos": 3,
+      "correct": 6,
+      "question_accuracy": 0.75,
+      "video_macro_accuracy": 0.8333333333333334,
+      "mean_memory_bytes": 1770300.0,
+      "median_request_seconds": 0.08908904999952938
+    },
+    "2:temporal_difference:all": {
+      "budget_pairs": 2,
+      "method": "temporal_difference",
+      "subset": "all",
+      "questions": 36,
+      "videos": 8,
+      "correct": 24,
+      "question_accuracy": 0.6666666666666666,
+      "video_macro_accuracy": 0.7,
+      "mean_memory_bytes": 1770300.0,
+      "median_request_seconds": 0.09029890000056184
+    },
+    "2:temporal_difference:memory": {
+      "budget_pairs": 2,
+      "method": "temporal_difference",
+      "subset": "memory",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 1770300.0,
+      "median_request_seconds": 0.08688889999757521
+    },
+    "2:temporal_difference:temporal_state": {
+      "budget_pairs": 2,
+      "method": "temporal_difference",
+      "subset": "temporal_state",
+      "questions": 8,
+      "videos": 3,
+      "correct": 6,
+      "question_accuracy": 0.75,
+      "video_macro_accuracy": 0.8333333333333334,
+      "mean_memory_bytes": 1770300.0,
+      "median_request_seconds": 0.08908904999952938
+    },
+    "2:temporal_reconstruction:all": {
+      "budget_pairs": 2,
+      "method": "temporal_reconstruction",
+      "subset": "all",
+      "questions": 36,
+      "videos": 8,
+      "correct": 24,
+      "question_accuracy": 0.6666666666666666,
+      "video_macro_accuracy": 0.7,
+      "mean_memory_bytes": 1770300.0,
+      "median_request_seconds": 0.09029890000056184
+    },
+    "2:temporal_reconstruction:memory": {
+      "budget_pairs": 2,
+      "method": "temporal_reconstruction",
+      "subset": "memory",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 1770300.0,
+      "median_request_seconds": 0.08688889999757521
+    },
+    "2:temporal_reconstruction:temporal_state": {
+      "budget_pairs": 2,
+      "method": "temporal_reconstruction",
+      "subset": "temporal_state",
+      "questions": 8,
+      "videos": 3,
+      "correct": 6,
+      "question_accuracy": 0.75,
+      "video_macro_accuracy": 0.8333333333333334,
+      "mean_memory_bytes": 1770300.0,
+      "median_request_seconds": 0.08908904999952938
+    },
+    "2:uniform:all": {
+      "budget_pairs": 2,
+      "method": "uniform",
+      "subset": "all",
+      "questions": 36,
+      "videos": 8,
+      "correct": 24,
+      "question_accuracy": 0.6666666666666666,
+      "video_macro_accuracy": 0.7,
+      "mean_memory_bytes": 1770300.0,
+      "median_request_seconds": 0.09029890000056184
+    },
+    "2:uniform:memory": {
+      "budget_pairs": 2,
+      "method": "uniform",
+      "subset": "memory",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 1770300.0,
+      "median_request_seconds": 0.08688889999757521
+    },
+    "2:uniform:temporal_state": {
+      "budget_pairs": 2,
+      "method": "uniform",
+      "subset": "temporal_state",
+      "questions": 8,
+      "videos": 3,
+      "correct": 6,
+      "question_accuracy": 0.75,
+      "video_macro_accuracy": 0.8333333333333334,
+      "mean_memory_bytes": 1770300.0,
+      "median_request_seconds": 0.08908904999952938
+    },
+    "4:full_reference:all": {
+      "budget_pairs": 4,
+      "method": "full_reference",
+      "subset": "all",
+      "questions": 36,
+      "videos": 8,
+      "correct": 25,
+      "question_accuracy": 0.6944444444444444,
+      "video_macro_accuracy": 0.7250000000000001,
+      "mean_memory_bytes": 28313100.0,
+      "median_request_seconds": 1.448036649999267
+    },
+    "4:full_reference:memory": {
+      "budget_pairs": 4,
+      "method": "full_reference",
+      "subset": "memory",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 28313100.0,
+      "median_request_seconds": 1.425421700001607
+    },
+    "4:full_reference:temporal_state": {
+      "budget_pairs": 4,
+      "method": "full_reference",
+      "subset": "temporal_state",
+      "questions": 8,
+      "videos": 3,
+      "correct": 6,
+      "question_accuracy": 0.75,
+      "video_macro_accuracy": 0.8333333333333334,
+      "mean_memory_bytes": 28313100.0,
+      "median_request_seconds": 1.4419836000015493
+    },
+    "4:kcenter:all": {
+      "budget_pairs": 4,
+      "method": "kcenter",
+      "subset": "all",
+      "questions": 36,
+      "videos": 8,
+      "correct": 26,
+      "question_accuracy": 0.7222222222222222,
+      "video_macro_accuracy": 0.7458333333333333,
+      "mean_memory_bytes": 3539820.0,
+      "median_request_seconds": 0.13574295000034908
+    },
+    "4:kcenter:memory": {
+      "budget_pairs": 4,
+      "method": "kcenter",
+      "subset": "memory",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 3539820.0,
+      "median_request_seconds": 0.12682020000283956
+    },
+    "4:kcenter:temporal_state": {
+      "budget_pairs": 4,
+      "method": "kcenter",
+      "subset": "temporal_state",
+      "questions": 8,
+      "videos": 3,
+      "correct": 6,
+      "question_accuracy": 0.75,
+      "video_macro_accuracy": 0.8333333333333334,
+      "mean_memory_bytes": 3539820.0,
+      "median_request_seconds": 0.131673049998426
+    },
+    "4:random:all": {
+      "budget_pairs": 4,
+      "method": "random",
+      "subset": "all",
+      "questions": 36,
+      "videos": 8,
+      "correct": 24,
+      "question_accuracy": 0.6666666666666666,
+      "video_macro_accuracy": 0.7,
+      "mean_memory_bytes": 3539820.0,
+      "median_request_seconds": 0.1367071999993641
+    },
+    "4:random:memory": {
+      "budget_pairs": 4,
+      "method": "random",
+      "subset": "memory",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 3539820.0,
+      "median_request_seconds": 0.13491170000270358
+    },
+    "4:random:temporal_state": {
+      "budget_pairs": 4,
+      "method": "random",
+      "subset": "temporal_state",
+      "questions": 8,
+      "videos": 3,
+      "correct": 6,
+      "question_accuracy": 0.75,
+      "video_macro_accuracy": 0.8333333333333334,
+      "mean_memory_bytes": 3539820.0,
+      "median_request_seconds": 0.1351142500006972
+    },
+    "4:recent:all": {
+      "budget_pairs": 4,
+      "method": "recent",
+      "subset": "all",
+      "questions": 36,
+      "videos": 8,
+      "correct": 22,
+      "question_accuracy": 0.6111111111111112,
+      "video_macro_accuracy": 0.60625,
+      "mean_memory_bytes": 3539820.0,
+      "median_request_seconds": 0.13574125000013737
+    },
+    "4:recent:memory": {
+      "budget_pairs": 4,
+      "method": "recent",
+      "subset": "memory",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 3539820.0,
+      "median_request_seconds": 0.1314688999991631
+    },
+    "4:recent:temporal_state": {
+      "budget_pairs": 4,
+      "method": "recent",
+      "subset": "temporal_state",
+      "questions": 8,
+      "videos": 3,
+      "correct": 6,
+      "question_accuracy": 0.75,
+      "video_macro_accuracy": 0.8333333333333334,
+      "mean_memory_bytes": 3539820.0,
+      "median_request_seconds": 0.1338403499994456
+    },
+    "4:spectral_balanced:all": {
+      "budget_pairs": 4,
+      "method": "spectral_balanced",
+      "subset": "all",
+      "questions": 36,
+      "videos": 8,
+      "correct": 25,
+      "question_accuracy": 0.6944444444444444,
+      "video_macro_accuracy": 0.725,
+      "mean_memory_bytes": 3539820.0,
+      "median_request_seconds": 0.13579870000103256
+    },
+    "4:spectral_balanced:memory": {
+      "budget_pairs": 4,
+      "method": "spectral_balanced",
+      "subset": "memory",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 3539820.0,
+      "median_request_seconds": 0.13403300000209128
+    },
+    "4:spectral_balanced:temporal_state": {
+      "budget_pairs": 4,
+      "method": "spectral_balanced",
+      "subset": "temporal_state",
+      "questions": 8,
+      "videos": 3,
+      "correct": 6,
+      "question_accuracy": 0.75,
+      "video_macro_accuracy": 0.8333333333333334,
+      "mean_memory_bytes": 3539820.0,
+      "median_request_seconds": 0.13456235000012384
+    },
+    "4:spectral_power:all": {
+      "budget_pairs": 4,
+      "method": "spectral_power",
+      "subset": "all",
+      "questions": 36,
+      "videos": 8,
+      "correct": 25,
+      "question_accuracy": 0.6944444444444444,
+      "video_macro_accuracy": 0.725,
+      "mean_memory_bytes": 3539820.0,
+      "median_request_seconds": 0.13548215000082564
+    },
+    "4:spectral_power:memory": {
+      "budget_pairs": 4,
+      "method": "spectral_power",
+      "subset": "memory",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 3539820.0,
+      "median_request_seconds": 0.13439419999849633
+    },
+    "4:spectral_power:temporal_state": {
+      "budget_pairs": 4,
+      "method": "spectral_power",
+      "subset": "temporal_state",
+      "questions": 8,
+      "videos": 3,
+      "correct": 6,
+      "question_accuracy": 0.75,
+      "video_macro_accuracy": 0.8333333333333334,
+      "mean_memory_bytes": 3539820.0,
+      "median_request_seconds": 0.13639334999970743
+    },
+    "4:temporal_difference:all": {
+      "budget_pairs": 4,
+      "method": "temporal_difference",
+      "subset": "all",
+      "questions": 36,
+      "videos": 8,
+      "correct": 23,
+      "question_accuracy": 0.6388888888888888,
+      "video_macro_accuracy": 0.675,
+      "mean_memory_bytes": 3539820.0,
+      "median_request_seconds": 0.13638015000105952
+    },
+    "4:temporal_difference:memory": {
+      "budget_pairs": 4,
+      "method": "temporal_difference",
+      "subset": "memory",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 3539820.0,
+      "median_request_seconds": 0.12904210000124294
+    },
+    "4:temporal_difference:temporal_state": {
+      "budget_pairs": 4,
+      "method": "temporal_difference",
+      "subset": "temporal_state",
+      "questions": 8,
+      "videos": 3,
+      "correct": 6,
+      "question_accuracy": 0.75,
+      "video_macro_accuracy": 0.8333333333333334,
+      "mean_memory_bytes": 3539820.0,
+      "median_request_seconds": 0.1325512000003073
+    },
+    "4:temporal_reconstruction:all": {
+      "budget_pairs": 4,
+      "method": "temporal_reconstruction",
+      "subset": "all",
+      "questions": 36,
+      "videos": 8,
+      "correct": 25,
+      "question_accuracy": 0.6944444444444444,
+      "video_macro_accuracy": 0.7250000000000001,
+      "mean_memory_bytes": 3539820.0,
+      "median_request_seconds": 0.13707400000021153
+    },
+    "4:temporal_reconstruction:memory": {
+      "budget_pairs": 4,
+      "method": "temporal_reconstruction",
+      "subset": "memory",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 3539820.0,
+      "median_request_seconds": 0.13190489999760757
+    },
+    "4:temporal_reconstruction:temporal_state": {
+      "budget_pairs": 4,
+      "method": "temporal_reconstruction",
+      "subset": "temporal_state",
+      "questions": 8,
+      "videos": 3,
+      "correct": 6,
+      "question_accuracy": 0.75,
+      "video_macro_accuracy": 0.8333333333333334,
+      "mean_memory_bytes": 3539820.0,
+      "median_request_seconds": 0.1356751000002987
+    },
+    "4:uniform:all": {
+      "budget_pairs": 4,
+      "method": "uniform",
+      "subset": "all",
+      "questions": 36,
+      "videos": 8,
+      "correct": 24,
+      "question_accuracy": 0.6666666666666666,
+      "video_macro_accuracy": 0.6625000000000001,
+      "mean_memory_bytes": 3539820.0,
+      "median_request_seconds": 0.13731619999998657
+    },
+    "4:uniform:memory": {
+      "budget_pairs": 4,
+      "method": "uniform",
+      "subset": "memory",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 3539820.0,
+      "median_request_seconds": 0.13131409999914467
+    },
+    "4:uniform:temporal_state": {
+      "budget_pairs": 4,
+      "method": "uniform",
+      "subset": "temporal_state",
+      "questions": 8,
+      "videos": 3,
+      "correct": 6,
+      "question_accuracy": 0.75,
+      "video_macro_accuracy": 0.8333333333333334,
+      "mean_memory_bytes": 3539820.0,
+      "median_request_seconds": 0.13698425000075076
+    },
+    "8:full_reference:all": {
+      "budget_pairs": 8,
+      "method": "full_reference",
+      "subset": "all",
+      "questions": 36,
+      "videos": 8,
+      "correct": 25,
+      "question_accuracy": 0.6944444444444444,
+      "video_macro_accuracy": 0.7250000000000001,
+      "mean_memory_bytes": 28313100.0,
+      "median_request_seconds": 1.448036649999267
+    },
+    "8:full_reference:memory": {
+      "budget_pairs": 8,
+      "method": "full_reference",
+      "subset": "memory",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 28313100.0,
+      "median_request_seconds": 1.425421700001607
+    },
+    "8:full_reference:temporal_state": {
+      "budget_pairs": 8,
+      "method": "full_reference",
+      "subset": "temporal_state",
+      "questions": 8,
+      "videos": 3,
+      "correct": 6,
+      "question_accuracy": 0.75,
+      "video_macro_accuracy": 0.8333333333333334,
+      "mean_memory_bytes": 28313100.0,
+      "median_request_seconds": 1.4419836000015493
+    },
+    "8:kcenter:all": {
+      "budget_pairs": 8,
+      "method": "kcenter",
+      "subset": "all",
+      "questions": 36,
+      "videos": 8,
+      "correct": 25,
+      "question_accuracy": 0.6944444444444444,
+      "video_macro_accuracy": 0.7250000000000001,
+      "mean_memory_bytes": 7078860.0,
+      "median_request_seconds": 0.2517826999992394
+    },
+    "8:kcenter:memory": {
+      "budget_pairs": 8,
+      "method": "kcenter",
+      "subset": "memory",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 7078860.0,
+      "median_request_seconds": 0.25015849999908824
+    },
+    "8:kcenter:temporal_state": {
+      "budget_pairs": 8,
+      "method": "kcenter",
+      "subset": "temporal_state",
+      "questions": 8,
+      "videos": 3,
+      "correct": 6,
+      "question_accuracy": 0.75,
+      "video_macro_accuracy": 0.8333333333333334,
+      "mean_memory_bytes": 7078860.0,
+      "median_request_seconds": 0.2526942499989673
+    },
+    "8:random:all": {
+      "budget_pairs": 8,
+      "method": "random",
+      "subset": "all",
+      "questions": 36,
+      "videos": 8,
+      "correct": 25,
+      "question_accuracy": 0.6944444444444444,
+      "video_macro_accuracy": 0.7208333333333333,
+      "mean_memory_bytes": 7078860.0,
+      "median_request_seconds": 0.2515154499997152
+    },
+    "8:random:memory": {
+      "budget_pairs": 8,
+      "method": "random",
+      "subset": "memory",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 7078860.0,
+      "median_request_seconds": 0.26334029999998165
+    },
+    "8:random:temporal_state": {
+      "budget_pairs": 8,
+      "method": "random",
+      "subset": "temporal_state",
+      "questions": 8,
+      "videos": 3,
+      "correct": 6,
+      "question_accuracy": 0.75,
+      "video_macro_accuracy": 0.8333333333333334,
+      "mean_memory_bytes": 7078860.0,
+      "median_request_seconds": 0.24685144999966724
+    },
+    "8:recent:all": {
+      "budget_pairs": 8,
+      "method": "recent",
+      "subset": "all",
+      "questions": 36,
+      "videos": 8,
+      "correct": 24,
+      "question_accuracy": 0.6666666666666666,
+      "video_macro_accuracy": 0.6895833333333333,
+      "mean_memory_bytes": 7078860.0,
+      "median_request_seconds": 0.2562302999976964
+    },
+    "8:recent:memory": {
+      "budget_pairs": 8,
+      "method": "recent",
+      "subset": "memory",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 7078860.0,
+      "median_request_seconds": 0.2563894999984768
+    },
+    "8:recent:temporal_state": {
+      "budget_pairs": 8,
+      "method": "recent",
+      "subset": "temporal_state",
+      "questions": 8,
+      "videos": 3,
+      "correct": 7,
+      "question_accuracy": 0.875,
+      "video_macro_accuracy": 0.9166666666666666,
+      "mean_memory_bytes": 7078860.0,
+      "median_request_seconds": 0.2521540999987337
+    },
+    "8:spectral_balanced:all": {
+      "budget_pairs": 8,
+      "method": "spectral_balanced",
+      "subset": "all",
+      "questions": 36,
+      "videos": 8,
+      "correct": 23,
+      "question_accuracy": 0.6388888888888888,
+      "video_macro_accuracy": 0.675,
+      "mean_memory_bytes": 7078860.0,
+      "median_request_seconds": 0.25232204999883834
+    },
+    "8:spectral_balanced:memory": {
+      "budget_pairs": 8,
+      "method": "spectral_balanced",
+      "subset": "memory",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 7078860.0,
+      "median_request_seconds": 0.2513230000004114
+    },
+    "8:spectral_balanced:temporal_state": {
+      "budget_pairs": 8,
+      "method": "spectral_balanced",
+      "subset": "temporal_state",
+      "questions": 8,
+      "videos": 3,
+      "correct": 6,
+      "question_accuracy": 0.75,
+      "video_macro_accuracy": 0.8333333333333334,
+      "mean_memory_bytes": 7078860.0,
+      "median_request_seconds": 0.25002329999915673
+    },
+    "8:spectral_power:all": {
+      "budget_pairs": 8,
+      "method": "spectral_power",
+      "subset": "all",
+      "questions": 36,
+      "videos": 8,
+      "correct": 26,
+      "question_accuracy": 0.7222222222222222,
+      "video_macro_accuracy": 0.75,
+      "mean_memory_bytes": 7078860.0,
+      "median_request_seconds": 0.25500014999852283
+    },
+    "8:spectral_power:memory": {
+      "budget_pairs": 8,
+      "method": "spectral_power",
+      "subset": "memory",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 7078860.0,
+      "median_request_seconds": 0.2591476000015973
+    },
+    "8:spectral_power:temporal_state": {
+      "budget_pairs": 8,
+      "method": "spectral_power",
+      "subset": "temporal_state",
+      "questions": 8,
+      "videos": 3,
+      "correct": 6,
+      "question_accuracy": 0.75,
+      "video_macro_accuracy": 0.8333333333333334,
+      "mean_memory_bytes": 7078860.0,
+      "median_request_seconds": 0.2553358999975899
+    },
+    "8:temporal_difference:all": {
+      "budget_pairs": 8,
+      "method": "temporal_difference",
+      "subset": "all",
+      "questions": 36,
+      "videos": 8,
+      "correct": 25,
+      "question_accuracy": 0.6944444444444444,
+      "video_macro_accuracy": 0.7250000000000001,
+      "mean_memory_bytes": 7078860.0,
+      "median_request_seconds": 0.25416554999901564
+    },
+    "8:temporal_difference:memory": {
+      "budget_pairs": 8,
+      "method": "temporal_difference",
+      "subset": "memory",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 7078860.0,
+      "median_request_seconds": 0.25002089999907184
+    },
+    "8:temporal_difference:temporal_state": {
+      "budget_pairs": 8,
+      "method": "temporal_difference",
+      "subset": "temporal_state",
+      "questions": 8,
+      "videos": 3,
+      "correct": 6,
+      "question_accuracy": 0.75,
+      "video_macro_accuracy": 0.8333333333333334,
+      "mean_memory_bytes": 7078860.0,
+      "median_request_seconds": 0.2553843500008952
+    },
+    "8:temporal_reconstruction:all": {
+      "budget_pairs": 8,
+      "method": "temporal_reconstruction",
+      "subset": "all",
+      "questions": 36,
+      "videos": 8,
+      "correct": 24,
+      "question_accuracy": 0.6666666666666666,
+      "video_macro_accuracy": 0.7,
+      "mean_memory_bytes": 7078860.0,
+      "median_request_seconds": 0.25108375000127126
+    },
+    "8:temporal_reconstruction:memory": {
+      "budget_pairs": 8,
+      "method": "temporal_reconstruction",
+      "subset": "memory",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 7078860.0,
+      "median_request_seconds": 0.2640701000018453
+    },
+    "8:temporal_reconstruction:temporal_state": {
+      "budget_pairs": 8,
+      "method": "temporal_reconstruction",
+      "subset": "temporal_state",
+      "questions": 8,
+      "videos": 3,
+      "correct": 6,
+      "question_accuracy": 0.75,
+      "video_macro_accuracy": 0.8333333333333334,
+      "mean_memory_bytes": 7078860.0,
+      "median_request_seconds": 0.25108375000127126
+    },
+    "8:uniform:all": {
+      "budget_pairs": 8,
+      "method": "uniform",
+      "subset": "all",
+      "questions": 36,
+      "videos": 8,
+      "correct": 25,
+      "question_accuracy": 0.6944444444444444,
+      "video_macro_accuracy": 0.7250000000000001,
+      "mean_memory_bytes": 7078860.0,
+      "median_request_seconds": 0.254766699998072
+    },
+    "8:uniform:memory": {
+      "budget_pairs": 8,
+      "method": "uniform",
+      "subset": "memory",
+      "questions": 1,
+      "videos": 1,
+      "correct": 1,
+      "question_accuracy": 1.0,
+      "video_macro_accuracy": 1.0,
+      "mean_memory_bytes": 7078860.0,
+      "median_request_seconds": 0.2748213000013493
+    },
+    "8:uniform:temporal_state": {
+      "budget_pairs": 8,
+      "method": "uniform",
+      "subset": "temporal_state",
+      "questions": 8,
+      "videos": 3,
+      "correct": 6,
+      "question_accuracy": 0.75,
+      "video_macro_accuracy": 0.8333333333333334,
+      "mean_memory_bytes": 7078860.0,
+      "median_request_seconds": 0.24970609999945736
+    }
+  },
+  "comparisons": [
+    {
+      "budget_pairs": 2,
+      "baseline": "full_reference",
+      "subset": "all",
+      "video_macro_difference": -0.024999999999999994,
+      "paired_video_bootstrap_ci95": [
+        -0.22499999999999998,
+        0.15000000000000002
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 2,
+      "baseline": "full_reference",
+      "subset": "memory",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 2,
+      "baseline": "full_reference",
+      "subset": "temporal_state",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 2,
+      "baseline": "kcenter",
+      "subset": "all",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 2,
+      "baseline": "kcenter",
+      "subset": "memory",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 2,
+      "baseline": "kcenter",
+      "subset": "temporal_state",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 2,
+      "baseline": "random",
+      "subset": "all",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 2,
+      "baseline": "random",
+      "subset": "memory",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 2,
+      "baseline": "random",
+      "subset": "temporal_state",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 2,
+      "baseline": "recent",
+      "subset": "all",
+      "video_macro_difference": 0.027083333333333327,
+      "paired_video_bootstrap_ci95": [
+        -0.16041666666666668,
+        0.2125
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 2,
+      "baseline": "recent",
+      "subset": "memory",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 2,
+      "baseline": "recent",
+      "subset": "temporal_state",
+      "video_macro_difference": -0.08333333333333333,
+      "paired_video_bootstrap_ci95": [
+        -0.25,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 2,
+      "baseline": "spectral_power",
+      "subset": "all",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 2,
+      "baseline": "spectral_power",
+      "subset": "memory",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 2,
+      "baseline": "spectral_power",
+      "subset": "temporal_state",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 2,
+      "baseline": "temporal_difference",
+      "subset": "all",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 2,
+      "baseline": "temporal_difference",
+      "subset": "memory",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 2,
+      "baseline": "temporal_difference",
+      "subset": "temporal_state",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 2,
+      "baseline": "temporal_reconstruction",
+      "subset": "all",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 2,
+      "baseline": "temporal_reconstruction",
+      "subset": "memory",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 2,
+      "baseline": "temporal_reconstruction",
+      "subset": "temporal_state",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 2,
+      "baseline": "uniform",
+      "subset": "all",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 2,
+      "baseline": "uniform",
+      "subset": "memory",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 2,
+      "baseline": "uniform",
+      "subset": "temporal_state",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 4,
+      "baseline": "full_reference",
+      "subset": "all",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        -0.1,
+        0.12500000000000003
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 4,
+      "baseline": "full_reference",
+      "subset": "memory",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 4,
+      "baseline": "full_reference",
+      "subset": "temporal_state",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 4,
+      "baseline": "kcenter",
+      "subset": "all",
+      "video_macro_difference": -0.020833333333333332,
+      "paired_video_bootstrap_ci95": [
+        -0.09583333333333334,
+        0.05416666666666667
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 4,
+      "baseline": "kcenter",
+      "subset": "memory",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 4,
+      "baseline": "kcenter",
+      "subset": "temporal_state",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 4,
+      "baseline": "random",
+      "subset": "all",
+      "video_macro_difference": 0.025,
+      "paired_video_bootstrap_ci95": [
+        -0.05,
+        0.1
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 4,
+      "baseline": "random",
+      "subset": "memory",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 4,
+      "baseline": "random",
+      "subset": "temporal_state",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 4,
+      "baseline": "recent",
+      "subset": "all",
+      "video_macro_difference": 0.11875,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.25
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 4,
+      "baseline": "recent",
+      "subset": "memory",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 4,
+      "baseline": "recent",
+      "subset": "temporal_state",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 4,
+      "baseline": "spectral_power",
+      "subset": "all",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 4,
+      "baseline": "spectral_power",
+      "subset": "memory",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 4,
+      "baseline": "spectral_power",
+      "subset": "temporal_state",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 4,
+      "baseline": "temporal_difference",
+      "subset": "all",
+      "video_macro_difference": 0.05000000000000001,
+      "paired_video_bootstrap_ci95": [
+        -0.05,
+        0.17500000000000002
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 4,
+      "baseline": "temporal_difference",
+      "subset": "memory",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 4,
+      "baseline": "temporal_difference",
+      "subset": "temporal_state",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 4,
+      "baseline": "temporal_reconstruction",
+      "subset": "all",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        -0.07500000000000001,
+        0.07500000000000001
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 4,
+      "baseline": "temporal_reconstruction",
+      "subset": "memory",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 4,
+      "baseline": "temporal_reconstruction",
+      "subset": "temporal_state",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 4,
+      "baseline": "uniform",
+      "subset": "all",
+      "video_macro_difference": 0.0625,
+      "paired_video_bootstrap_ci95": [
+        -0.1,
+        0.2375
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 4,
+      "baseline": "uniform",
+      "subset": "memory",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 4,
+      "baseline": "uniform",
+      "subset": "temporal_state",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 8,
+      "baseline": "full_reference",
+      "subset": "all",
+      "video_macro_difference": -0.05,
+      "paired_video_bootstrap_ci95": [
+        -0.125,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 8,
+      "baseline": "full_reference",
+      "subset": "memory",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 8,
+      "baseline": "full_reference",
+      "subset": "temporal_state",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 8,
+      "baseline": "kcenter",
+      "subset": "all",
+      "video_macro_difference": -0.05,
+      "paired_video_bootstrap_ci95": [
+        -0.125,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 8,
+      "baseline": "kcenter",
+      "subset": "memory",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 8,
+      "baseline": "kcenter",
+      "subset": "temporal_state",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 8,
+      "baseline": "random",
+      "subset": "all",
+      "video_macro_difference": -0.04583333333333334,
+      "paired_video_bootstrap_ci95": [
+        -0.1,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 8,
+      "baseline": "random",
+      "subset": "memory",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 8,
+      "baseline": "random",
+      "subset": "temporal_state",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 8,
+      "baseline": "recent",
+      "subset": "all",
+      "video_macro_difference": -0.014583333333333334,
+      "paired_video_bootstrap_ci95": [
+        -0.09583333333333334,
+        0.07291666666666667
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 8,
+      "baseline": "recent",
+      "subset": "memory",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 8,
+      "baseline": "recent",
+      "subset": "temporal_state",
+      "video_macro_difference": -0.08333333333333333,
+      "paired_video_bootstrap_ci95": [
+        -0.25,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 8,
+      "baseline": "spectral_power",
+      "subset": "all",
+      "video_macro_difference": -0.07500000000000001,
+      "paired_video_bootstrap_ci95": [
+        -0.17500000000000002,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 8,
+      "baseline": "spectral_power",
+      "subset": "memory",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 8,
+      "baseline": "spectral_power",
+      "subset": "temporal_state",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 8,
+      "baseline": "temporal_difference",
+      "subset": "all",
+      "video_macro_difference": -0.05,
+      "paired_video_bootstrap_ci95": [
+        -0.125,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 8,
+      "baseline": "temporal_difference",
+      "subset": "memory",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 8,
+      "baseline": "temporal_difference",
+      "subset": "temporal_state",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 8,
+      "baseline": "temporal_reconstruction",
+      "subset": "all",
+      "video_macro_difference": -0.025,
+      "paired_video_bootstrap_ci95": [
+        -0.07500000000000001,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 8,
+      "baseline": "temporal_reconstruction",
+      "subset": "memory",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 8,
+      "baseline": "temporal_reconstruction",
+      "subset": "temporal_state",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 8,
+      "baseline": "uniform",
+      "subset": "all",
+      "video_macro_difference": -0.05,
+      "paired_video_bootstrap_ci95": [
+        -0.125,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 8,
+      "baseline": "uniform",
+      "subset": "memory",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    },
+    {
+      "budget_pairs": 8,
+      "baseline": "uniform",
+      "subset": "temporal_state",
+      "video_macro_difference": 0.0,
+      "paired_video_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "independent_group_claim": "original videos; unknown participants; shared scenes may remain correlated"
+    }
+  ],
+  "limitations": [
+    "No participant IDs; video bootstrap does not establish cross-person generalization.",
+    "Intervals are unadjusted descriptive comparisons; only the frozen primary contrast is confirmatory.",
+    "Full/last-pair references have different budgets and are reader diagnostics.",
+    "Per-video raw-image bytes are matched across same-budget methods; compute is reported separately.",
+    "Short-video event memory is not lifelong streaming memory."
+  ]
+}

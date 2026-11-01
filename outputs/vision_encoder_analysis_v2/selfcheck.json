@@ -1,0 +1,234 @@
+{
+  "status": "passed",
+  "checks_passed": 57,
+  "checks": [
+    {
+      "name": "complex_vs_real_fft:(5, 4, 6, 3):temporal_power_fhw",
+      "passed": true
+    },
+    {
+      "name": "complex_vs_real_fft:(5, 4, 6, 3):spatial_power_thw",
+      "passed": true
+    },
+    {
+      "name": "complex_vs_real_fft:(5, 4, 6, 3):spatial_mean_temporal_power_f",
+      "passed": true
+    },
+    {
+      "name": "raw_energy:(5, 4, 6, 3)",
+      "passed": true
+    },
+    {
+      "name": "repacking:exact_inverse",
+      "passed": true
+    },
+    {
+      "name": "repacking:energy_preserved",
+      "passed": true
+    },
+    {
+      "name": "inverse:(5, 4, 6, 3)",
+      "passed": true
+    },
+    {
+      "name": "complex_vs_real_fft:(6, 4, 6, 35):temporal_power_fhw",
+      "passed": true
+    },
+    {
+      "name": "complex_vs_real_fft:(6, 4, 6, 35):spatial_power_thw",
+      "passed": true
+    },
+    {
+      "name": "complex_vs_real_fft:(6, 4, 6, 35):spatial_mean_temporal_power_f",
+      "passed": true
+    },
+    {
+      "name": "raw_energy:(6, 4, 6, 35)",
+      "passed": true
+    },
+    {
+      "name": "repacking:exact_inverse",
+      "passed": true
+    },
+    {
+      "name": "repacking:energy_preserved",
+      "passed": true
+    },
+    {
+      "name": "inverse:(6, 4, 6, 35)",
+      "passed": true
+    },
+    {
+      "name": "complex_vs_real_fft:(8, 4, 4, 7):temporal_power_fhw",
+      "passed": true
+    },
+    {
+      "name": "complex_vs_real_fft:(8, 4, 4, 7):spatial_power_thw",
+      "passed": true
+    },
+    {
+      "name": "complex_vs_real_fft:(8, 4, 4, 7):spatial_mean_temporal_power_f",
+      "passed": true
+    },
+    {
+      "name": "raw_energy:(8, 4, 4, 7)",
+      "passed": true
+    },
+    {
+      "name": "repacking:exact_inverse",
+      "passed": true
+    },
+    {
+      "name": "repacking:energy_preserved",
+      "passed": true
+    },
+    {
+      "name": "inverse:(8, 4, 4, 7)",
+      "passed": true
+    },
+    {
+      "name": "repacking:exact_inverse",
+      "passed": true
+    },
+    {
+      "name": "repacking:energy_preserved",
+      "passed": true
+    },
+    {
+      "name": "checkerboard_original_ac",
+      "passed": true
+    },
+    {
+      "name": "checkerboard_packed_ac",
+      "passed": true
+    },
+    {
+      "name": "antiphase_fullpatch_nonzero",
+      "passed": true
+    },
+    {
+      "name": "antiphase_pooled_zero",
+      "passed": true
+    },
+    {
+      "name": "zero_denominator_null",
+      "passed": true
+    },
+    {
+      "name": "zero_spectrum",
+      "passed": true
+    },
+    {
+      "name": "pre:alias_acyclic",
+      "passed": true
+    },
+    {
+      "name": "pre:stored_shape_dtype",
+      "passed": true
+    },
+    {
+      "name": "pre:stored_bytes",
+      "passed": true
+    },
+    {
+      "name": "pre:dense_encoding",
+      "passed": true
+    },
+    {
+      "name": "pre:logical_shape_dtype",
+      "passed": true
+    },
+    {
+      "name": "pre:finite_features",
+      "passed": true
+    },
+    {
+      "name": "pre:logical_hash",
+      "passed": true
+    },
+    {
+      "name": "decode:pre",
+      "passed": true
+    },
+    {
+      "name": "post:alias_acyclic",
+      "passed": true
+    },
+    {
+      "name": "post:stored_shape_dtype",
+      "passed": true
+    },
+    {
+      "name": "post:stored_bytes",
+      "passed": true
+    },
+    {
+      "name": "post:repeat_time_one",
+      "passed": true
+    },
+    {
+      "name": "post:logical_shape_dtype",
+      "passed": true
+    },
+    {
+      "name": "post:finite_features",
+      "passed": true
+    },
+    {
+      "name": "post:logical_hash",
+      "passed": true
+    },
+    {
+      "name": "decode:post",
+      "passed": true
+    },
+    {
+      "name": "llm_layer0_visual_input:alias_acyclic",
+      "passed": true
+    },
+    {
+      "name": "post:alias_acyclic",
+      "passed": true
+    },
+    {
+      "name": "post:stored_shape_dtype",
+      "passed": true
+    },
+    {
+      "name": "post:stored_bytes",
+      "passed": true
+    },
+    {
+      "name": "post:repeat_time_one",
+      "passed": true
+    },
+    {
+      "name": "post:logical_shape_dtype",
+      "passed": true
+    },
+    {
+      "name": "post:finite_features",
+      "passed": true
+    },
+    {
+      "name": "post:logical_hash",
+      "passed": true
+    },
+    {
+      "name": "llm_layer0_visual_input:logical_shape_dtype",
+      "passed": true
+    },
+    {
+      "name": "llm_layer0_visual_input:finite_features",
+      "passed": true
+    },
+    {
+      "name": "llm_layer0_visual_input:logical_hash",
+      "passed": true
+    },
+    {
+      "name": "decode:llm_layer0_visual_input",
+      "passed": true
+    }
+  ]
+}

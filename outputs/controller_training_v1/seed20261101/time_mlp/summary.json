@@ -1,0 +1,11 @@
+{
+  "method": "time_mlp",
+  "seed": 20261101,
+  "steps": 200,
+  "elapsed_seconds": 1.3069938999997248,
+  "parameter_count": 18584,
+  "checkpoint_sha256": "2ef90e9e7d72f007838d47ca6b9d69ae27d13fc6f0c4c25a34b97d9d25397577",
+  "training_log_sha256": "01982fe8068be75cff95798b9ab14938c14cb9840879d59b51233a23a64f47be",
+  "optimizer_sha256": "36643f40ba0583cb8d4e412499b9f1b65360ebf1f25e41ec5131e89391939f18",
+  "initial_state_sha256": "0120b24d2f9ee891b54840ac20ec18a5e9a955bec0d644d94a8cd49646808252"
+}

@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "checks": [
+    "opposite spatial signs cancel only pooled signal",
+    "full=mean+residual per frequency",
+    "constant temporal energy zero",
+    "BF16 representable values preserved"
+  ]
+}

@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+.venv-cuda/
+.cache/
+*.egg-info/
+data/
+outputs/
+.pytest_cache/
+.env
+.env.*
+!.env.example
+*.pem
+*.key

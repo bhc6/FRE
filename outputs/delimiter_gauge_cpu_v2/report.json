@@ -1,0 +1,175 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "test": "RMSNorm_exact_relation",
+      "epsilon": 0.0,
+      "scale": 0.5,
+      "maximum_error": 0.0
+    },
+    {
+      "test": "RMSNorm_exact_relation",
+      "epsilon": 0.0,
+      "scale": 2.0,
+      "maximum_error": 0.0
+    },
+    {
+      "test": "RMSNorm_exact_relation",
+      "epsilon": 0.0,
+      "scale": 4.0,
+      "maximum_error": 0.0
+    },
+    {
+      "test": "RMSNorm_exact_relation",
+      "epsilon": 1e-06,
+      "scale": 0.5,
+      "maximum_error": 0.0
+    },
+    {
+      "test": "RMSNorm_exact_relation",
+      "epsilon": 1e-06,
+      "scale": 2.0,
+      "maximum_error": 0.0
+    },
+    {
+      "test": "RMSNorm_exact_relation",
+      "epsilon": 1e-06,
+      "scale": 4.0,
+      "maximum_error": 0.0
+    },
+    {
+      "test": "actual_tiny_pre_norm_architecture",
+      "model": "llama",
+      "epsilon": 0.0,
+      "scale": 0.5,
+      "maximum_error": 0.0,
+      "last_answer_maximum_error": 0.0,
+      "native_restored_exact": true,
+      "dtype": "float32",
+      "threshold": 2e-05
+    },
+    {
+      "test": "actual_tiny_pre_norm_architecture",
+      "model": "llama",
+      "epsilon": 0.0,
+      "scale": 2.0,
+      "maximum_error": 0.0,
+      "last_answer_maximum_error": 0.0,
+      "native_restored_exact": true,
+      "dtype": "float32",
+      "threshold": 2e-05
+    },
+    {
+      "test": "actual_tiny_pre_norm_architecture",
+      "model": "llama",
+      "epsilon": 0.0,
+      "scale": 4.0,
+      "maximum_error": 0.0,
+      "last_answer_maximum_error": 0.0,
+      "native_restored_exact": true,
+      "dtype": "float32",
+      "threshold": 2e-05
+    },
+    {
+      "test": "actual_tiny_pre_norm_architecture",
+      "model": "llama",
+      "epsilon": 1e-06,
+      "scale": 0.5,
+      "maximum_error": 0.0029458999633789062,
+      "last_answer_maximum_error": 0.0008781552314758301,
+      "native_restored_exact": true,
+      "dtype": "float32",
+      "threshold": 0.03
+    },
+    {
+      "test": "actual_tiny_pre_norm_architecture",
+      "model": "llama",
+      "epsilon": 1e-06,
+      "scale": 2.0,
+      "maximum_error": 0.0013532638549804688,
+      "last_answer_maximum_error": 0.00019216537475585938,
+      "native_restored_exact": true,
+      "dtype": "float32",
+      "threshold": 0.03
+    },
+    {
+      "test": "actual_tiny_pre_norm_architecture",
+      "model": "llama",
+      "epsilon": 1e-06,
+      "scale": 4.0,
+      "maximum_error": 0.002073049545288086,
+      "last_answer_maximum_error": 0.00024023652076721191,
+      "native_restored_exact": true,
+      "dtype": "float32",
+      "threshold": 0.03
+    },
+    {
+      "test": "actual_tiny_pre_norm_architecture",
+      "model": "qwen3",
+      "epsilon": 0.0,
+      "scale": 0.5,
+      "maximum_error": 0.0,
+      "last_answer_maximum_error": 0.0,
+      "native_restored_exact": true,
+      "dtype": "float32",
+      "threshold": 2e-05
+    },
+    {
+      "test": "actual_tiny_pre_norm_architecture",
+      "model": "qwen3",
+      "epsilon": 0.0,
+      "scale": 2.0,
+      "maximum_error": 0.0,
+      "last_answer_maximum_error": 0.0,
+      "native_restored_exact": true,
+      "dtype": "float32",
+      "threshold": 2e-05
+    },
+    {
+      "test": "actual_tiny_pre_norm_architecture",
+      "model": "qwen3",
+      "epsilon": 0.0,
+      "scale": 4.0,
+      "maximum_error": 0.0,
+      "last_answer_maximum_error": 0.0,
+      "native_restored_exact": true,
+      "dtype": "float32",
+      "threshold": 2e-05
+    },
+    {
+      "test": "actual_tiny_pre_norm_architecture",
+      "model": "qwen3",
+      "epsilon": 1e-06,
+      "scale": 0.5,
+      "maximum_error": 0.002008676528930664,
+      "last_answer_maximum_error": 0.0008910894393920898,
+      "native_restored_exact": true,
+      "dtype": "float32",
+      "threshold": 0.03
+    },
+    {
+      "test": "actual_tiny_pre_norm_architecture",
+      "model": "qwen3",
+      "epsilon": 1e-06,
+      "scale": 2.0,
+      "maximum_error": 0.0012466907501220703,
+      "last_answer_maximum_error": 0.00018458068370819092,
+      "native_restored_exact": true,
+      "dtype": "float32",
+      "threshold": 0.03
+    },
+    {
+      "test": "actual_tiny_pre_norm_architecture",
+      "model": "qwen3",
+      "epsilon": 1e-06,
+      "scale": 4.0,
+      "maximum_error": 0.0017468929290771484,
+      "last_answer_maximum_error": 0.0002595186233520508,
+      "native_restored_exact": true,
+      "dtype": "float32",
+      "threshold": 0.03
+    }
+  ],
+  "source_sha256": "97726f5b6395ce6be1bb6f1500a57a79294f2b091175ddd9d3c95a8e62b868aa",
+  "scope": "mathematics and tiny real text architectures; no checkpoint/GPU task evidence"
+}

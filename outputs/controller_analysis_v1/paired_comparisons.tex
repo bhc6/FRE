@@ -1,0 +1,62 @@
+\begin{tabular}{lllrll}
+\toprule
+Subset & Comparison & Metric & Difference & Video CI & Video $\times$ seed CI \\
+\midrule
+all & time\_mlp - identity & micro\_accuracy & -1.35 & [-4.23, 0.00] & [-4.23, 0.00] \\
+all & time\_mlp - identity & video\_macro\_accuracy & -1.25 & [-3.75, 0.00] & [-3.75, 0.00] \\
+all & spectral\_mlp - identity & micro\_accuracy & -1.35 & [-4.23, 0.00] & [-4.23, 0.00] \\
+all & spectral\_mlp - identity & video\_macro\_accuracy & -1.25 & [-3.75, 0.00] & [-3.75, 0.00] \\
+all & spectral\_phaseblind - identity & micro\_accuracy & -0.90 & [-2.82, 0.00] & [-3.42, 0.00] \\
+all & spectral\_phaseblind - identity & video\_macro\_accuracy & -0.83 & [-2.50, 0.00] & [-3.33, 0.00] \\
+all & constant\_spectral - identity & micro\_accuracy & -0.90 & [-2.82, 0.00] & [-3.39, 0.00] \\
+all & constant\_spectral - identity & video\_macro\_accuracy & -0.83 & [-2.50, 0.00] & [-3.33, 0.00] \\
+all & spectral\_mlp - time\_mlp & micro\_accuracy & 0.00 & [0.00, 0.00] & [0.00, 0.00] \\
+all & spectral\_mlp - time\_mlp & video\_macro\_accuracy & 0.00 & [0.00, 0.00] & [0.00, 0.00] \\
+all & spectral\_mlp - spectral\_phaseblind & micro\_accuracy & -0.45 & [-1.41, 0.00] & [-2.47, 0.00] \\
+all & spectral\_mlp - spectral\_phaseblind & video\_macro\_accuracy & -0.42 & [-1.25, 0.00] & [-2.50, 0.00] \\
+all & spectral\_mlp - constant\_spectral & micro\_accuracy & -0.45 & [-1.41, 0.00] & [-2.35, 0.00] \\
+all & spectral\_mlp - constant\_spectral & video\_macro\_accuracy & -0.42 & [-1.25, 0.00] & [-2.08, 0.00] \\
+temporal & time\_mlp - identity & micro\_accuracy & -2.44 & [-7.69, 0.00] & [-7.69, 0.00] \\
+temporal & time\_mlp - identity & video\_macro\_accuracy & -2.08 & [-6.25, 0.00] & [-6.25, 0.00] \\
+temporal & spectral\_mlp - identity & micro\_accuracy & -2.44 & [-7.69, 0.00] & [-7.69, 0.00] \\
+temporal & spectral\_mlp - identity & video\_macro\_accuracy & -2.08 & [-6.25, 0.00] & [-6.25, 0.00] \\
+temporal & spectral\_phaseblind - identity & micro\_accuracy & -1.63 & [-5.13, 0.00] & [-6.12, 0.00] \\
+temporal & spectral\_phaseblind - identity & video\_macro\_accuracy & -1.39 & [-4.17, 0.00] & [-5.56, 0.00] \\
+temporal & constant\_spectral - identity & micro\_accuracy & -1.63 & [-5.13, 0.00] & [-6.20, 0.00] \\
+temporal & constant\_spectral - identity & video\_macro\_accuracy & -1.39 & [-4.17, 0.00] & [-5.56, 0.00] \\
+temporal & spectral\_mlp - time\_mlp & micro\_accuracy & 0.00 & [0.00, 0.00] & [0.00, 0.00] \\
+temporal & spectral\_mlp - time\_mlp & video\_macro\_accuracy & 0.00 & [0.00, 0.00] & [0.00, 0.00] \\
+temporal & spectral\_mlp - spectral\_phaseblind & micro\_accuracy & -0.81 & [-2.56, 0.00] & [-4.44, 0.00] \\
+temporal & spectral\_mlp - spectral\_phaseblind & video\_macro\_accuracy & -0.69 & [-2.08, 0.00] & [-4.17, 0.00] \\
+temporal & spectral\_mlp - constant\_spectral & micro\_accuracy & -0.81 & [-2.56, 0.00] & [-4.26, 0.00] \\
+temporal & spectral\_mlp - constant\_spectral & video\_macro\_accuracy & -0.69 & [-2.08, 0.00] & [-3.47, 0.00] \\
+memory & time\_mlp - identity & micro\_accuracy & -5.56 & [-16.67, 0.00] & [-16.67, 0.00] \\
+memory & time\_mlp - identity & video\_macro\_accuracy & -4.17 & [-12.50, 0.00] & [-12.50, 0.00] \\
+memory & spectral\_mlp - identity & micro\_accuracy & -5.56 & [-16.67, 0.00] & [-16.67, 0.00] \\
+memory & spectral\_mlp - identity & video\_macro\_accuracy & -4.17 & [-12.50, 0.00] & [-12.50, 0.00] \\
+memory & spectral\_phaseblind - identity & micro\_accuracy & -3.70 & [-11.11, 0.00] & [-13.33, 0.00] \\
+memory & spectral\_phaseblind - identity & video\_macro\_accuracy & -2.78 & [-8.33, 0.00] & [-11.11, 0.00] \\
+memory & constant\_spectral - identity & micro\_accuracy & -3.70 & [-11.11, 0.00] & [-13.33, 0.00] \\
+memory & constant\_spectral - identity & video\_macro\_accuracy & -2.78 & [-8.33, 0.00] & [-11.11, 0.00] \\
+memory & spectral\_mlp - time\_mlp & micro\_accuracy & 0.00 & [0.00, 0.00] & [0.00, 0.00] \\
+memory & spectral\_mlp - time\_mlp & video\_macro\_accuracy & 0.00 & [0.00, 0.00] & [0.00, 0.00] \\
+memory & spectral\_mlp - spectral\_phaseblind & micro\_accuracy & -1.85 & [-5.56, 0.00] & [-9.09, 0.00] \\
+memory & spectral\_mlp - spectral\_phaseblind & video\_macro\_accuracy & -1.39 & [-4.17, 0.00] & [-8.33, 0.00] \\
+memory & spectral\_mlp - constant\_spectral & micro\_accuracy & -1.85 & [-5.56, 0.00] & [-9.09, 0.00] \\
+memory & spectral\_mlp - constant\_spectral & video\_macro\_accuracy & -1.39 & [-4.17, 0.00] & [-6.94, 0.00] \\
+descriptive\_only & time\_mlp - identity & micro\_accuracy & 0.00 & [0.00, 0.00] & [0.00, 0.00] \\
+descriptive\_only & time\_mlp - identity & video\_macro\_accuracy & 0.00 & [0.00, 0.00] & [0.00, 0.00] \\
+descriptive\_only & spectral\_mlp - identity & micro\_accuracy & 0.00 & [0.00, 0.00] & [0.00, 0.00] \\
+descriptive\_only & spectral\_mlp - identity & video\_macro\_accuracy & 0.00 & [0.00, 0.00] & [0.00, 0.00] \\
+descriptive\_only & spectral\_phaseblind - identity & micro\_accuracy & 0.00 & [0.00, 0.00] & [0.00, 0.00] \\
+descriptive\_only & spectral\_phaseblind - identity & video\_macro\_accuracy & 0.00 & [0.00, 0.00] & [0.00, 0.00] \\
+descriptive\_only & constant\_spectral - identity & micro\_accuracy & 0.00 & [0.00, 0.00] & [0.00, 0.00] \\
+descriptive\_only & constant\_spectral - identity & video\_macro\_accuracy & 0.00 & [0.00, 0.00] & [0.00, 0.00] \\
+descriptive\_only & spectral\_mlp - time\_mlp & micro\_accuracy & 0.00 & [0.00, 0.00] & [0.00, 0.00] \\
+descriptive\_only & spectral\_mlp - time\_mlp & video\_macro\_accuracy & 0.00 & [0.00, 0.00] & [0.00, 0.00] \\
+descriptive\_only & spectral\_mlp - spectral\_phaseblind & micro\_accuracy & 0.00 & [0.00, 0.00] & [0.00, 0.00] \\
+descriptive\_only & spectral\_mlp - spectral\_phaseblind & video\_macro\_accuracy & 0.00 & [0.00, 0.00] & [0.00, 0.00] \\
+descriptive\_only & spectral\_mlp - constant\_spectral & micro\_accuracy & 0.00 & [0.00, 0.00] & [0.00, 0.00] \\
+descriptive\_only & spectral\_mlp - constant\_spectral & video\_macro\_accuracy & 0.00 & [0.00, 0.00] & [0.00, 0.00] \\
+\bottomrule
+\end{tabular}

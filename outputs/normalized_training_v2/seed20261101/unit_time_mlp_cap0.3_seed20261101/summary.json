@@ -1,0 +1,17 @@
+{
+  "tag": "unit_time_mlp_cap0.3_seed20261101",
+  "method": "unit_time_mlp",
+  "seed": 20261101,
+  "residual_limit": 0.3,
+  "steps": 200,
+  "elapsed_seconds": 1.8765591999999742,
+  "parameter_count": 18584,
+  "checkpoint_sha256": "d12ecf5b6b6c6380862f3635db45666a7a80016cf117c6312cc5ac2818997dfd",
+  "artifacts_sha256": {
+    "initial.pt": "0120b24d2f9ee891b54840ac20ec18a5e9a955bec0d644d94a8cd49646808252",
+    "optimizer.pt": "ee408bf2a84a7e7425aa46035f0257912956dcffe9c05871115e0b45e3d7523a",
+    "initial_replay.json": "6995d1c7f9bbbca711b0ea455670b29b6b9bf7d16e35e8d8865654cde6ef30f1",
+    "final_replay.json": "f207a6d46c5d5f44d88d5b5a812b23a468667eae57f8ae428e7f31643650057f",
+    "training.jsonl": "74aee22633bcbe6956ff7a6169b5ddb3bbce8d849c6b13ed3fcaee31a76180df"
+  }
+}

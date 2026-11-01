@@ -1,0 +1,121 @@
+{
+  "status": "complete",
+  "created_at_utc": "2026-11-01T14:26:53.868906+00:00",
+  "audit_script_sha256": "f9b6580d507504694606ff23ce6ccd5bfa24157281482f6156e490e82cac7de7",
+  "protocol_sha256": "3954767ef2662e15eb4934f90eea08ca6d48eaaef39fd2d297e3d9a3df590748",
+  "device": "cpu",
+  "gpu_or_model_execution": false,
+  "test_shards": 4,
+  "cases": 106,
+  "records": 1378,
+  "source_videos": 16,
+  "source_strata": {
+    "video_1001": "nonmemory_temporal",
+    "video_10049": "nonmemory_temporal",
+    "video_11070": "memory",
+    "video_1567": "nonmemory_temporal",
+    "video_2418": "memory",
+    "video_3017": "nonmemory_temporal",
+    "video_3020": "memory",
+    "video_309": "nonmemory_temporal",
+    "video_5320": "memory",
+    "video_5425": "memory",
+    "video_604": "nonmemory_temporal",
+    "video_6184": "memory",
+    "video_687": "memory",
+    "video_7303": "nonmemory_temporal",
+    "video_8108": "memory",
+    "video_8376": "nonmemory_temporal"
+  },
+  "primary": {
+    "method": "spectral_mlp",
+    "reference": "time_mlp",
+    "source_videos": 16,
+    "real_questions": 74,
+    "video_macro_seed_mean_difference": 0.0,
+    "micro_seed_mean_difference": 0.0,
+    "per_seed": [
+      {
+        "seed": 20261101,
+        "micro_difference": 0.0,
+        "video_macro_difference": 0.0,
+        "per_video_differences": {
+          "video_1001": 0.0,
+          "video_10049": 0.0,
+          "video_11070": 0.0,
+          "video_1567": 0.0,
+          "video_2418": 0.0,
+          "video_3017": 0.0,
+          "video_3020": 0.0,
+          "video_309": 0.0,
+          "video_5320": 0.0,
+          "video_5425": 0.0,
+          "video_604": 0.0,
+          "video_6184": 0.0,
+          "video_687": 0.0,
+          "video_7303": 0.0,
+          "video_8108": 0.0,
+          "video_8376": 0.0
+        }
+      },
+      {
+        "seed": 20261102,
+        "micro_difference": 0.0,
+        "video_macro_difference": 0.0,
+        "per_video_differences": {
+          "video_1001": 0.0,
+          "video_10049": 0.0,
+          "video_11070": 0.0,
+          "video_1567": 0.0,
+          "video_2418": 0.0,
+          "video_3017": 0.0,
+          "video_3020": 0.0,
+          "video_309": 0.0,
+          "video_5320": 0.0,
+          "video_5425": 0.0,
+          "video_604": 0.0,
+          "video_6184": 0.0,
+          "video_687": 0.0,
+          "video_7303": 0.0,
+          "video_8108": 0.0,
+          "video_8376": 0.0
+        }
+      },
+      {
+        "seed": 20261103,
+        "micro_difference": 0.0,
+        "video_macro_difference": 0.0,
+        "per_video_differences": {
+          "video_1001": 0.0,
+          "video_10049": 0.0,
+          "video_11070": 0.0,
+          "video_1567": 0.0,
+          "video_2418": 0.0,
+          "video_3017": 0.0,
+          "video_3020": 0.0,
+          "video_309": 0.0,
+          "video_5320": 0.0,
+          "video_5425": 0.0,
+          "video_604": 0.0,
+          "video_6184": 0.0,
+          "video_687": 0.0,
+          "video_7303": 0.0,
+          "video_8108": 0.0,
+          "video_8376": 0.0
+        }
+      }
+    ],
+    "bootstrap": "Point-estimate audit only; frozen primary analyzer supplies the predeclared intervals."
+  },
+  "identity_is_single_baseline": true,
+  "all_method_seed_condition_summaries": 52,
+  "input_id_hash_checks": 106,
+  "output_sha256": {
+    "audit_effects.py": "f9b6580d507504694606ff23ce6ccd5bfa24157281482f6156e490e82cac7de7",
+    "case_effects.jsonl": "3239954ac7256b37e98bd70ec7e2e4f76a9365b5f3818b85db279588a9a3a348",
+    "method_condition_effects.jsonl": "b895817650e6fbf4c5d4d281710dd0d1791a5b7429bcdb28e0f5e211a879b7f1",
+    "primary_point_estimates.json": "85496ce6179ddcb0158f60e6f56949e7860be73eb5844380280ac02ce429e66d",
+    "provenance_checks.json": "c43d339b229c5af48f569740b5ce45f9997b7c7a817636f768c31d0962295e49",
+    "report.md": "2389a2f9ccde150f8a9a844ad56cba70c4965868d363657e5ccd23507fa9a8b6"
+  }
+}

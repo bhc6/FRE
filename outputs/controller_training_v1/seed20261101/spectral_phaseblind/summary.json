@@ -1,0 +1,11 @@
+{
+  "method": "spectral_phaseblind",
+  "seed": 20261101,
+  "steps": 200,
+  "elapsed_seconds": 1.3032516000002943,
+  "parameter_count": 18584,
+  "checkpoint_sha256": "f89637930d2ca6ae242056bde0e415b95cd96444e0e79de6b457af3dce9b3463",
+  "training_log_sha256": "466f32d15335fb5bd727da2ab62cdf2b7cac25abd503f9d76fab66f7805135bf",
+  "optimizer_sha256": "311cbec6823a29ce20b8db9bc68ac6044e0c67115081d13c571d1cea3c72dcb8",
+  "initial_state_sha256": "0120b24d2f9ee891b54840ac20ec18a5e9a955bec0d644d94a8cd49646808252"
+}

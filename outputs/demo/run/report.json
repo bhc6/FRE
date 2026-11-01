@@ -1,0 +1,159 @@
+{
+  "status": "synthetic_smoke_test",
+  "manifest_sha256": "29ea76981715e5c4f9bb64817fba39e901093db12583d2a9f14b0316a375ed1e",
+  "task_mode": "retrieve",
+  "group_key": "subject_id",
+  "seed": 17,
+  "budget": 8,
+  "cost_unit": "synthetic_units",
+  "feature_config": {
+    "band_edges_hz": [
+      0.0,
+      0.125,
+      0.25,
+      0.5
+    ],
+    "resample_points": 16,
+    "stft_window": 16
+  },
+  "split_counts": {
+    "train": 112,
+    "validation": 40,
+    "test": 40
+  },
+  "projection_dim": null,
+  "models": {
+    "M1_semantic": {
+      "raw_feature_width": 16,
+      "fitted_feature_width": 18,
+      "alpha": 0.1,
+      "validation_mse": 0.04677614924333516,
+      "test": {
+        "mse": 0.061373566798701165,
+        "mae": 0.21941442370119435,
+        "spearman": -0.13677298311444655
+      },
+      "mean_group_linear_ndcg": 0.774975742873074,
+      "mean_sum_individual_utility_proxy": 0.9534662941648622
+    },
+    "M2_semantic_temporal": {
+      "raw_feature_width": 112,
+      "fitted_feature_width": 114,
+      "alpha": 100.0,
+      "validation_mse": 0.04932825287001458,
+      "test": {
+        "mse": 0.05693248428896371,
+        "mae": 0.20991040638994374,
+        "spearman": 0.027767354596622894
+      },
+      "mean_group_linear_ndcg": 0.8013373387798541,
+      "mean_sum_individual_utility_proxy": 1.0333866617257328
+    },
+    "M3_semantic_spectral": {
+      "raw_feature_width": 388,
+      "fitted_feature_width": 390,
+      "alpha": 100.0,
+      "validation_mse": 0.05325213696772233,
+      "test": {
+        "mse": 0.05382903767491398,
+        "mae": 0.19375595215104496,
+        "spearman": 0.053095684803001884
+      },
+      "mean_group_linear_ndcg": 0.805320302031523,
+      "mean_sum_individual_utility_proxy": 1.0304561042721176
+    },
+    "M4_all": {
+      "raw_feature_width": 484,
+      "fitted_feature_width": 486,
+      "alpha": 100.0,
+      "validation_mse": 0.054850353446801225,
+      "test": {
+        "mse": 0.05215964678733402,
+        "mae": 0.18964227711379422,
+        "spearman": 0.06923076923076925
+      },
+      "mean_group_linear_ndcg": 0.8049522570186275,
+      "mean_sum_individual_utility_proxy": 1.0304561042721176
+    },
+    "M5_ordered_control": {
+      "raw_feature_width": 304,
+      "fitted_feature_width": 306,
+      "alpha": 100.0,
+      "validation_mse": 0.05419078188863349,
+      "test": {
+        "mse": 0.05720959388154088,
+        "mae": 0.1968165360144706,
+        "spearman": 0.13621013133208254
+      },
+      "mean_group_linear_ndcg": 0.8585826431523456,
+      "mean_sum_individual_utility_proxy": 1.067750469851115
+    },
+    "M6_complex_control": {
+      "raw_feature_width": 328,
+      "fitted_feature_width": 330,
+      "alpha": 100.0,
+      "validation_mse": 0.057809988483271645,
+      "test": {
+        "mse": 0.06823802417749605,
+        "mae": 0.20635639867848368,
+        "spearman": 0.07166979362101314
+      },
+      "mean_group_linear_ndcg": 0.8851903546352003,
+      "mean_sum_individual_utility_proxy": 0.9558555172416391
+    }
+  },
+  "comparisons": {
+    "M3_semantic_spectral_vs_M1_semantic": {
+      "mean_group_mse_improvement": 0.007544529123787185,
+      "independent_test_groups": 5,
+      "draws": 1000,
+      "ci95": [
+        -0.00697690176102792,
+        0.023742954560676734
+      ],
+      "warning": "Few independent groups; interval is exploratory"
+    },
+    "M4_all_vs_M2_semantic_temporal": {
+      "mean_group_mse_improvement": 0.004772837501629712,
+      "independent_test_groups": 5,
+      "draws": 1000,
+      "ci95": [
+        -0.006690216414168644,
+        0.017507716971615433
+      ],
+      "warning": "Few independent groups; interval is exploratory"
+    },
+    "M4_all_vs_M5_ordered_control": {
+      "mean_group_mse_improvement": 0.0050499470942068575,
+      "independent_test_groups": 5,
+      "draws": 1000,
+      "ci95": [
+        -0.016842607737085007,
+        0.027007978498649082
+      ],
+      "warning": "Few independent groups; interval is exploratory"
+    },
+    "M4_all_vs_M6_complex_control": {
+      "mean_group_mse_improvement": 0.016078377390162026,
+      "independent_test_groups": 5,
+      "draws": 1000,
+      "ci95": [
+        -0.014205763834223407,
+        0.050668956833048125
+      ],
+      "warning": "Few independent groups; interval is exploratory"
+    }
+  },
+  "limitations": [
+    "Synthetic runs test plumbing only; their labels are independent of hidden-state features.",
+    "Summed individual utility is a proxy: selected sets require fresh downstream evaluation.",
+    "Ridge probes cannot replace matched nonlinear temporal baselines or causal task interventions.",
+    "Intervals use equal-weight independent split groups, not individual event rows.",
+    "Spectral features include ordered local STFT summaries; they are not power-only features."
+  ],
+  "environment": {
+    "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.2"
+  }
+}

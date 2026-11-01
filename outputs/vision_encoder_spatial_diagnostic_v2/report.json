@@ -1,0 +1,2265 @@
+{
+  "status": "complete_cpu_spatial_diagnostic",
+  "records": 10,
+  "rows": [
+    {
+      "model": "qwen",
+      "video_id": "video_1024",
+      "condition": "gray",
+      "stage": "vision_final_premerger",
+      "encoding": "exact_time_repeat",
+      "metrics": {
+        "shape": [
+          8,
+          12,
+          20,
+          1024
+        ],
+        "sha256": "58f970f72188a3f501428d7be8db1783faaaf29ea9c1eb88872cbe3a9f92994d",
+        "raw_energy": 6815649035.420791,
+        "energy_per_element": 3466.6183651839146,
+        "temporal_ac_energy": 0.0,
+        "temporal_ac_fraction": 0.0,
+        "temporal_bins": [
+          6815649035.420788,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "spatial_ac_energy": 2412775205.418977,
+        "spatial_ac_fraction": 0.3540052008077048,
+        "time_std_max": 0.0
+      },
+      "space_to_depth": {
+        "shape": [
+          8,
+          6,
+          10,
+          4096
+        ],
+        "metrics": {
+          "shape": [
+            8,
+            6,
+            10,
+            4096
+          ],
+          "sha256": "94a0af0094194df0258ec2398c3dfe7d4f40a4f3978aeb100954296e49fa23ed",
+          "raw_energy": 6815649035.420788,
+          "energy_per_element": 3466.6183651839133,
+          "temporal_ac_energy": 0.0,
+          "temporal_ac_fraction": 0.0,
+          "temporal_bins": [
+            6815649035.420787,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_ac_energy": 2372378461.204627,
+          "spatial_ac_fraction": 0.34807814323704533,
+          "time_std_max": 0.0
+        },
+        "energy_abs_diff": 0.0,
+        "restored_exact": true
+      },
+      "actual_input_rgb_hashes": {
+        "shape": [
+          1920,
+          1536
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "fc57da5f50138cf72091c4767384236246bb87fd6fdafdd8e8d396f4182580d4"
+      }
+    },
+    {
+      "model": "qwen",
+      "video_id": "video_1024",
+      "condition": "gray",
+      "stage": "vision_final_postmerger",
+      "encoding": "exact_time_repeat",
+      "metrics": {
+        "shape": [
+          8,
+          6,
+          10,
+          2048
+        ],
+        "sha256": "2c65d9d0e397da091b3fe21f0052ae73b43750c16c2f08ab6383560284de5681",
+        "raw_energy": 143718.22774113208,
+        "energy_per_element": 0.14619774143588468,
+        "temporal_ac_energy": 0.0,
+        "temporal_ac_fraction": 0.0,
+        "temporal_bins": [
+          143718.22774113208,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "spatial_ac_energy": 67933.22924817451,
+        "spatial_ac_fraction": 0.47268346065703715,
+        "time_std_max": 0.0
+      },
+      "space_to_depth": {
+        "shape": [
+          8,
+          3,
+          5,
+          8192
+        ],
+        "metrics": {
+          "shape": [
+            8,
+            3,
+            5,
+            8192
+          ],
+          "sha256": "ac0c2624490cb196bc080251b51210b890367780b43352a10cb260120c35f5c1",
+          "raw_energy": 143718.22774113205,
+          "energy_per_element": 0.14619774143588465,
+          "temporal_ac_energy": 0.0,
+          "temporal_ac_fraction": 0.0,
+          "temporal_bins": [
+            143718.2277411321,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_ac_energy": 61290.32334047138,
+          "spatial_ac_fraction": 0.426461725167309,
+          "time_std_max": 0.0
+        },
+        "energy_abs_diff": 2.9103830456733704e-11,
+        "restored_exact": true
+      },
+      "actual_input_rgb_hashes": {
+        "shape": [
+          1920,
+          1536
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "fc57da5f50138cf72091c4767384236246bb87fd6fdafdd8e8d396f4182580d4"
+      }
+    },
+    {
+      "model": "qwen",
+      "video_id": "video_1024",
+      "condition": "real",
+      "stage": "vision_final_premerger",
+      "encoding": "dense",
+      "metrics": {
+        "shape": [
+          8,
+          12,
+          20,
+          1024
+        ],
+        "sha256": "19d24a5799d66439aeb69139caf485f0910816302b32fc7e7105f28d317d7560",
+        "raw_energy": 8770608094.608795,
+        "energy_per_element": 4460.961962183022,
+        "temporal_ac_energy": 1797984987.9936793,
+        "temporal_ac_fraction": 0.20500117763771505,
+        "temporal_bins": [
+          6972623106.615114,
+          727753787.7884903,
+          453418906.3007966,
+          428983579.8893513,
+          187828714.0150412
+        ],
+        "spatial_ac_energy": 3092722925.281211,
+        "spatial_ac_fraction": 0.352623545815743,
+        "time_std_max": 1241.297832348768
+      },
+      "space_to_depth": {
+        "shape": [
+          8,
+          6,
+          10,
+          4096
+        ],
+        "metrics": {
+          "shape": [
+            8,
+            6,
+            10,
+            4096
+          ],
+          "sha256": "497cfc92edafff839338b587ca2e619b74b67b6850e77a12703cda62693eda30",
+          "raw_energy": 8770608094.608791,
+          "energy_per_element": 4460.96196218302,
+          "temporal_ac_energy": 1797984987.9936795,
+          "temporal_ac_fraction": 0.2050011776377152,
+          "temporal_bins": [
+            6972623106.615112,
+            727753787.7884904,
+            453418906.30079657,
+            428983579.88935137,
+            187828714.01504117
+          ],
+          "spatial_ac_energy": 3036261179.0594816,
+          "spatial_ac_fraction": 0.34618593674546266,
+          "time_std_max": 1241.297832348768
+        },
+        "energy_abs_diff": 0.0,
+        "restored_exact": true
+      },
+      "actual_input_rgb_hashes": {
+        "shape": [
+          1920,
+          1536
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "4d0306af4c96c34c31af74c993adb3235221d2a06f8b34b80e4638596d16d57e"
+      }
+    },
+    {
+      "model": "qwen",
+      "video_id": "video_1024",
+      "condition": "real",
+      "stage": "vision_final_postmerger",
+      "encoding": "dense",
+      "metrics": {
+        "shape": [
+          8,
+          6,
+          10,
+          2048
+        ],
+        "sha256": "39e21eca776224356166a1410e07a48e51a087ac895f9fb95c2f50e967fa2243",
+        "raw_energy": 240462.95339620966,
+        "energy_per_element": 0.2446115655479021,
+        "temporal_ac_energy": 65342.188637997286,
+        "temporal_ac_fraction": 0.2717349500832807,
+        "temporal_bins": [
+          175120.76475821232,
+          26269.29192995046,
+          16057.662009982265,
+          16097.478517883836,
+          6917.756180180722
+        ],
+        "spatial_ac_energy": 140274.28817288714,
+        "spatial_ac_fraction": 0.5833509328223124,
+        "time_std_max": 4.449393653278606
+      },
+      "space_to_depth": {
+        "shape": [
+          8,
+          3,
+          5,
+          8192
+        ],
+        "metrics": {
+          "shape": [
+            8,
+            3,
+            5,
+            8192
+          ],
+          "sha256": "bdf91459c6b9aa0b46834fc174b72d4b75773b6a9daa8237ceeca7ae59e2234b",
+          "raw_energy": 240462.9533962097,
+          "energy_per_element": 0.24461156554790212,
+          "temporal_ac_energy": 65342.188637997286,
+          "temporal_ac_fraction": 0.2717349500832807,
+          "temporal_bins": [
+            175120.76475821226,
+            26269.291929950465,
+            16057.66200998226,
+            16097.478517883836,
+            6917.756180180722
+          ],
+          "spatial_ac_energy": 133937.81749771186,
+          "spatial_ac_fraction": 0.5569998022814897,
+          "time_std_max": 4.449393653278606
+        },
+        "energy_abs_diff": 2.9103830456733704e-11,
+        "restored_exact": true
+      },
+      "actual_input_rgb_hashes": {
+        "shape": [
+          1920,
+          1536
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "4d0306af4c96c34c31af74c993adb3235221d2a06f8b34b80e4638596d16d57e"
+      }
+    },
+    {
+      "model": "qwen",
+      "video_id": "video_1024",
+      "condition": "static_first",
+      "stage": "vision_final_premerger",
+      "encoding": "exact_time_repeat",
+      "metrics": {
+        "shape": [
+          8,
+          12,
+          20,
+          1024
+        ],
+        "sha256": "77d577ab0a0f5fffc2c071b31e948a555f8cccbc629eead06dbfa7c6f307e30a",
+        "raw_energy": 8791804954.658045,
+        "energy_per_element": 4471.743242725649,
+        "temporal_ac_energy": 0.0,
+        "temporal_ac_fraction": 0.0,
+        "temporal_bins": [
+          8791804954.658052,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "spatial_ac_energy": 3165631822.391893,
+        "spatial_ac_fraction": 0.36006620241440734,
+        "time_std_max": 0.0
+      },
+      "space_to_depth": {
+        "shape": [
+          8,
+          6,
+          10,
+          4096
+        ],
+        "metrics": {
+          "shape": [
+            8,
+            6,
+            10,
+            4096
+          ],
+          "sha256": "69dbb891e5e98e975179a5e4bc814e4c5bb593212909cd0199ba7be0d3cee6db",
+          "raw_energy": 8791804954.658047,
+          "energy_per_element": 4471.743242725651,
+          "temporal_ac_energy": 0.0,
+          "temporal_ac_fraction": 0.0,
+          "temporal_bins": [
+            8791804954.65805,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_ac_energy": 3122562496.4092164,
+          "spatial_ac_fraction": 0.35516739878934983,
+          "time_std_max": 0.0
+        },
+        "energy_abs_diff": 0.0,
+        "restored_exact": true
+      },
+      "actual_input_rgb_hashes": {
+        "shape": [
+          1920,
+          1536
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "84f6a02671b240ad3b0ebf6a41e3e6a1df6e9e2569921f46c48977dcf433b9ad"
+      }
+    },
+    {
+      "model": "qwen",
+      "video_id": "video_1024",
+      "condition": "static_first",
+      "stage": "vision_final_postmerger",
+      "encoding": "exact_time_repeat",
+      "metrics": {
+        "shape": [
+          8,
+          6,
+          10,
+          2048
+        ],
+        "sha256": "aea32cfd5d5cfe27a5864a78bf77db38d841ded8288349542789675f4da56cb3",
+        "raw_energy": 275352.31774040207,
+        "energy_per_element": 0.28010286228475145,
+        "temporal_ac_energy": 0.0,
+        "temporal_ac_fraction": 0.0,
+        "temporal_bins": [
+          275352.31774040207,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "spatial_ac_energy": 167151.70712929778,
+        "spatial_ac_fraction": 0.6070466684318446,
+        "time_std_max": 0.0
+      },
+      "space_to_depth": {
+        "shape": [
+          8,
+          3,
+          5,
+          8192
+        ],
+        "metrics": {
+          "shape": [
+            8,
+            3,
+            5,
+            8192
+          ],
+          "sha256": "5e4046535085d12dd39f8095631b1c942e9ad05dd5b4f0b06bbff778cfe2210e",
+          "raw_energy": 275352.317740402,
+          "energy_per_element": 0.2801028622847514,
+          "temporal_ac_energy": 0.0,
+          "temporal_ac_fraction": 0.0,
+          "temporal_bins": [
+            275352.317740402,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_ac_energy": 160628.14201378083,
+          "spatial_ac_fraction": 0.583354966219019,
+          "time_std_max": 0.0
+        },
+        "energy_abs_diff": 0.0,
+        "restored_exact": true
+      },
+      "actual_input_rgb_hashes": {
+        "shape": [
+          1920,
+          1536
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "84f6a02671b240ad3b0ebf6a41e3e6a1df6e9e2569921f46c48977dcf433b9ad"
+      }
+    },
+    {
+      "model": "qwen",
+      "video_id": "video_341",
+      "condition": "gray",
+      "stage": "vision_final_premerger",
+      "encoding": "exact_time_repeat",
+      "metrics": {
+        "shape": [
+          8,
+          12,
+          20,
+          1024
+        ],
+        "sha256": "58f970f72188a3f501428d7be8db1783faaaf29ea9c1eb88872cbe3a9f92994d",
+        "raw_energy": 6815649035.420791,
+        "energy_per_element": 3466.6183651839146,
+        "temporal_ac_energy": 0.0,
+        "temporal_ac_fraction": 0.0,
+        "temporal_bins": [
+          6815649035.420788,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "spatial_ac_energy": 2412775205.418977,
+        "spatial_ac_fraction": 0.3540052008077048,
+        "time_std_max": 0.0
+      },
+      "space_to_depth": {
+        "shape": [
+          8,
+          6,
+          10,
+          4096
+        ],
+        "metrics": {
+          "shape": [
+            8,
+            6,
+            10,
+            4096
+          ],
+          "sha256": "94a0af0094194df0258ec2398c3dfe7d4f40a4f3978aeb100954296e49fa23ed",
+          "raw_energy": 6815649035.420788,
+          "energy_per_element": 3466.6183651839133,
+          "temporal_ac_energy": 0.0,
+          "temporal_ac_fraction": 0.0,
+          "temporal_bins": [
+            6815649035.420787,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_ac_energy": 2372378461.204627,
+          "spatial_ac_fraction": 0.34807814323704533,
+          "time_std_max": 0.0
+        },
+        "energy_abs_diff": 0.0,
+        "restored_exact": true
+      },
+      "actual_input_rgb_hashes": {
+        "shape": [
+          1920,
+          1536
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "fc57da5f50138cf72091c4767384236246bb87fd6fdafdd8e8d396f4182580d4"
+      }
+    },
+    {
+      "model": "qwen",
+      "video_id": "video_341",
+      "condition": "gray",
+      "stage": "vision_final_postmerger",
+      "encoding": "exact_time_repeat",
+      "metrics": {
+        "shape": [
+          8,
+          6,
+          10,
+          2048
+        ],
+        "sha256": "2c65d9d0e397da091b3fe21f0052ae73b43750c16c2f08ab6383560284de5681",
+        "raw_energy": 143718.22774113208,
+        "energy_per_element": 0.14619774143588468,
+        "temporal_ac_energy": 0.0,
+        "temporal_ac_fraction": 0.0,
+        "temporal_bins": [
+          143718.22774113208,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "spatial_ac_energy": 67933.22924817451,
+        "spatial_ac_fraction": 0.47268346065703715,
+        "time_std_max": 0.0
+      },
+      "space_to_depth": {
+        "shape": [
+          8,
+          3,
+          5,
+          8192
+        ],
+        "metrics": {
+          "shape": [
+            8,
+            3,
+            5,
+            8192
+          ],
+          "sha256": "ac0c2624490cb196bc080251b51210b890367780b43352a10cb260120c35f5c1",
+          "raw_energy": 143718.22774113205,
+          "energy_per_element": 0.14619774143588465,
+          "temporal_ac_energy": 0.0,
+          "temporal_ac_fraction": 0.0,
+          "temporal_bins": [
+            143718.2277411321,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_ac_energy": 61290.32334047138,
+          "spatial_ac_fraction": 0.426461725167309,
+          "time_std_max": 0.0
+        },
+        "energy_abs_diff": 2.9103830456733704e-11,
+        "restored_exact": true
+      },
+      "actual_input_rgb_hashes": {
+        "shape": [
+          1920,
+          1536
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "fc57da5f50138cf72091c4767384236246bb87fd6fdafdd8e8d396f4182580d4"
+      }
+    },
+    {
+      "model": "qwen",
+      "video_id": "video_341",
+      "condition": "real",
+      "stage": "vision_final_premerger",
+      "encoding": "dense",
+      "metrics": {
+        "shape": [
+          8,
+          12,
+          20,
+          1024
+        ],
+        "sha256": "d11a5af3d19c5a98e002b1340faf5ae580db8ff7a904eca3488340d132d2f03b",
+        "raw_energy": 8895890292.035028,
+        "energy_per_element": 4524.683782976801,
+        "temporal_ac_energy": 2505099974.048566,
+        "temporal_ac_fraction": 0.2816019410998714,
+        "temporal_bins": [
+          6390790317.986465,
+          764262558.8646711,
+          751000330.7265859,
+          680877804.4839196,
+          308959279.9733894
+        ],
+        "spatial_ac_energy": 3130367117.327943,
+        "spatial_ac_fraction": 0.3518891324604947,
+        "time_std_max": 1274.3717922348053
+      },
+      "space_to_depth": {
+        "shape": [
+          8,
+          6,
+          10,
+          4096
+        ],
+        "metrics": {
+          "shape": [
+            8,
+            6,
+            10,
+            4096
+          ],
+          "sha256": "d8c6d1d243a9ec6d5cf78e0a72a648c506d60c7561801e020fe68797fada0197",
+          "raw_energy": 8895890292.03503,
+          "energy_per_element": 4524.683782976802,
+          "temporal_ac_energy": 2505099974.048566,
+          "temporal_ac_fraction": 0.28160194109987136,
+          "temporal_bins": [
+            6390790317.9864645,
+            764262558.8646711,
+            751000330.726586,
+            680877804.4839195,
+            308959279.9733894
+          ],
+          "spatial_ac_energy": 3080752378.9649773,
+          "spatial_ac_fraction": 0.346311867371312,
+          "time_std_max": 1274.3717922348053
+        },
+        "energy_abs_diff": 0.0,
+        "restored_exact": true
+      },
+      "actual_input_rgb_hashes": {
+        "shape": [
+          1920,
+          1536
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "38c2b4322ebcadbbd860d291f0f48bec98a6dfc458f3205add8a39012e4c377f"
+      }
+    },
+    {
+      "model": "qwen",
+      "video_id": "video_341",
+      "condition": "real",
+      "stage": "vision_final_postmerger",
+      "encoding": "dense",
+      "metrics": {
+        "shape": [
+          8,
+          6,
+          10,
+          2048
+        ],
+        "sha256": "6a7281cb1d9d9d8747aa1a4ff5b323f82d42e3ce8a2dd5a870745f70979b9bfd",
+        "raw_energy": 200262.8148013597,
+        "energy_per_element": 0.20371786987443002,
+        "temporal_ac_energy": 78826.0926326937,
+        "temporal_ac_fraction": 0.3936132262541159,
+        "temporal_bins": [
+          121436.72216866593,
+          26299.51254939894,
+          23334.003880940578,
+          20163.33324836553,
+          9029.242953988663
+        ],
+        "spatial_ac_energy": 112178.91959552342,
+        "spatial_ac_fraction": 0.5601585082422489,
+        "time_std_max": 4.445844085499216
+      },
+      "space_to_depth": {
+        "shape": [
+          8,
+          3,
+          5,
+          8192
+        ],
+        "metrics": {
+          "shape": [
+            8,
+            3,
+            5,
+            8192
+          ],
+          "sha256": "97805023420a78385e9204c456391a5ea7a0fa2d485046be742309cdacb77c5f",
+          "raw_energy": 200262.81480135964,
+          "energy_per_element": 0.20371786987442997,
+          "temporal_ac_energy": 78826.0926326937,
+          "temporal_ac_fraction": 0.393613226254116,
+          "temporal_bins": [
+            121436.72216866592,
+            26299.51254939894,
+            23334.00388094057,
+            20163.33324836553,
+            9029.242953988663
+          ],
+          "spatial_ac_energy": 106996.50149054803,
+          "spatial_ac_fraction": 0.5342804234359618,
+          "time_std_max": 4.445844085499216
+        },
+        "energy_abs_diff": 0.0,
+        "restored_exact": true
+      },
+      "actual_input_rgb_hashes": {
+        "shape": [
+          1920,
+          1536
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "38c2b4322ebcadbbd860d291f0f48bec98a6dfc458f3205add8a39012e4c377f"
+      }
+    },
+    {
+      "model": "smol",
+      "video_id": "video_1024",
+      "condition": "gray",
+      "stage": "vision_final_postnorm",
+      "encoding": "exact_time_repeat",
+      "metrics": {
+        "shape": [
+          16,
+          32,
+          32,
+          768
+        ],
+        "sha256": "d2302e302f6ef8598ed7196f9eab829ab58c8b667b9f7435eacee866e95f84dd",
+        "raw_energy": 8161290.062914304,
+        "energy_per_element": 0.6486010601452433,
+        "temporal_ac_energy": 0.0,
+        "temporal_ac_fraction": 0.0,
+        "temporal_bins": [
+          8161290.062914304,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "spatial_ac_energy": 4984477.345084154,
+        "spatial_ac_fraction": 0.6107462553909343,
+        "time_std_max": 0.0
+      },
+      "space_to_depth": {
+        "shape": [
+          16,
+          8,
+          8,
+          12288
+        ],
+        "metrics": {
+          "shape": [
+            16,
+            8,
+            8,
+            12288
+          ],
+          "sha256": "a2a901219273f3c36089852008512161576f8f7aad7c3dc60ddc58e45d1bc9db",
+          "raw_energy": 8161290.062914308,
+          "energy_per_element": 0.6486010601452437,
+          "temporal_ac_energy": 0.0,
+          "temporal_ac_fraction": 0.0,
+          "temporal_bins": [
+            8161290.062914304,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_ac_energy": 4447813.103443741,
+          "spatial_ac_fraction": 0.5449889746787746,
+          "time_std_max": 0.0
+        },
+        "energy_abs_diff": 0.0,
+        "restored_exact": true
+      },
+      "actual_input_rgb_hashes": {
+        "shape": [
+          1,
+          16,
+          3,
+          512,
+          512
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "a5417bbdb42c2a6e545b476056f2193a3c70a9107af4754ddb2e861181f40973"
+      }
+    },
+    {
+      "model": "smol",
+      "video_id": "video_1024",
+      "condition": "gray",
+      "stage": "vision_connector_output",
+      "encoding": "exact_time_repeat",
+      "metrics": {
+        "shape": [
+          16,
+          8,
+          8,
+          960
+        ],
+        "sha256": "edbd411109afd5e26a395d164756cbfa1611687a3e01c04507530eb05196e752",
+        "raw_energy": 16732955.632170925,
+        "energy_per_element": 17.021642692231165,
+        "temporal_ac_energy": 0.0,
+        "temporal_ac_fraction": 0.0,
+        "temporal_bins": [
+          16732955.632170925,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "spatial_ac_energy": 5324464.418444124,
+        "spatial_ac_fraction": 0.3182022671599788,
+        "time_std_max": 0.0
+      },
+      "space_to_depth": {
+        "shape": [
+          16,
+          2,
+          2,
+          15360
+        ],
+        "metrics": {
+          "shape": [
+            16,
+            2,
+            2,
+            15360
+          ],
+          "sha256": "0f5e97bd70f3b48c0c9c4190e1f0451e12b13af0039e699e9b798ec0d6294cdb",
+          "raw_energy": 16732955.632170923,
+          "energy_per_element": 17.021642692231165,
+          "temporal_ac_energy": 0.0,
+          "temporal_ac_fraction": 0.0,
+          "temporal_bins": [
+            16732955.632170923,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_ac_energy": 3283318.443378154,
+          "spatial_ac_fraction": 0.19621867860963058,
+          "time_std_max": 0.0
+        },
+        "energy_abs_diff": 0.0,
+        "restored_exact": true
+      },
+      "actual_input_rgb_hashes": {
+        "shape": [
+          1,
+          16,
+          3,
+          512,
+          512
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "a5417bbdb42c2a6e545b476056f2193a3c70a9107af4754ddb2e861181f40973"
+      }
+    },
+    {
+      "model": "smol",
+      "video_id": "video_1024",
+      "condition": "real",
+      "stage": "vision_final_postnorm",
+      "encoding": "dense",
+      "metrics": {
+        "shape": [
+          16,
+          32,
+          32,
+          768
+        ],
+        "sha256": "67bba52f0801c11addc3265a581bbe664756b38e8dc9f3710bf7bee67ac6c263",
+        "raw_energy": 9833349.647856956,
+        "energy_per_element": 0.7814844169503018,
+        "temporal_ac_energy": 3315766.7933716257,
+        "temporal_ac_fraction": 0.3371960636113709,
+        "temporal_bins": [
+          6517582.854485332,
+          1076474.0350259857,
+          541027.1973716506,
+          376442.69136094634,
+          326144.7965427288,
+          319344.9768117763,
+          266935.7190103874,
+          275950.08476440323,
+          133447.2924837473
+        ],
+        "spatial_ac_energy": 7467875.445315814,
+        "spatial_ac_fraction": 0.759443700544436,
+        "time_std_max": 7.170972749017106
+      },
+      "space_to_depth": {
+        "shape": [
+          16,
+          8,
+          8,
+          12288
+        ],
+        "metrics": {
+          "shape": [
+            16,
+            8,
+            8,
+            12288
+          ],
+          "sha256": "e4437e5b420bc77620fa0cb41f324ace46f76721790ec09b250847edd52e8e55",
+          "raw_energy": 9833349.647856964,
+          "energy_per_element": 0.7814844169503025,
+          "temporal_ac_energy": 3315766.7933716252,
+          "temporal_ac_fraction": 0.33719606361137056,
+          "temporal_bins": [
+            6517582.854485331,
+            1076474.0350259854,
+            541027.1973716505,
+            376442.6913609464,
+            326144.7965427286,
+            319344.97681177635,
+            266935.71901038743,
+            275950.0847644032,
+            133447.29248374724
+          ],
+          "spatial_ac_energy": 7198428.968519649,
+          "spatial_ac_fraction": 0.732042409382691,
+          "time_std_max": 7.170972749017106
+        },
+        "energy_abs_diff": 1.862645149230957e-09,
+        "restored_exact": true
+      },
+      "actual_input_rgb_hashes": {
+        "shape": [
+          1,
+          16,
+          3,
+          512,
+          512
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "8258907134b281f69b0b62e127a9a849986e842000c90054f01015c299d3d709"
+      }
+    },
+    {
+      "model": "smol",
+      "video_id": "video_1024",
+      "condition": "real",
+      "stage": "vision_connector_output",
+      "encoding": "dense",
+      "metrics": {
+        "shape": [
+          16,
+          8,
+          8,
+          960
+        ],
+        "sha256": "d963a814007217f778a46f8698a167307cb8e6b93bd2de2b63af0e157645ead5",
+        "raw_energy": 25895500.01789597,
+        "energy_per_element": 26.34226482940264,
+        "temporal_ac_energy": 3534073.999705338,
+        "temporal_ac_fraction": 0.13647444526126143,
+        "temporal_bins": [
+          22361426.01819063,
+          1382023.4466846436,
+          594291.9609022968,
+          335652.8512480677,
+          308841.9270699879,
+          338466.4638584091,
+          217722.15303527075,
+          239562.37775773625,
+          117512.81914892522
+        ],
+        "spatial_ac_energy": 12019889.211940834,
+        "spatial_ac_fraction": 0.46416903337004806,
+        "time_std_max": 14.071480183121178
+      },
+      "space_to_depth": {
+        "shape": [
+          16,
+          2,
+          2,
+          15360
+        ],
+        "metrics": {
+          "shape": [
+            16,
+            2,
+            2,
+            15360
+          ],
+          "sha256": "da06ab3c2a6510332af40bdecc3a318cd2c766aceeaab9a5ddc4af19655d5638",
+          "raw_energy": 25895500.017896008,
+          "energy_per_element": 26.342264829402676,
+          "temporal_ac_energy": 3534073.999705337,
+          "temporal_ac_fraction": 0.1364744452612612,
+          "temporal_bins": [
+            22361426.018190615,
+            1382023.4466846432,
+            594291.9609022968,
+            335652.8512480677,
+            308841.92706998775,
+            338466.4638584092,
+            217722.15303527087,
+            239562.37775773628,
+            117512.8191489252
+          ],
+          "spatial_ac_energy": 9063923.62567743,
+          "spatial_ac_fraction": 0.35001925506028003,
+          "time_std_max": 14.071480183121178
+        },
+        "energy_abs_diff": 0.0,
+        "restored_exact": true
+      },
+      "actual_input_rgb_hashes": {
+        "shape": [
+          1,
+          16,
+          3,
+          512,
+          512
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "8258907134b281f69b0b62e127a9a849986e842000c90054f01015c299d3d709"
+      }
+    },
+    {
+      "model": "smol",
+      "video_id": "video_1024",
+      "condition": "static_first",
+      "stage": "vision_final_postnorm",
+      "encoding": "exact_time_repeat",
+      "metrics": {
+        "shape": [
+          16,
+          32,
+          32,
+          768
+        ],
+        "sha256": "88079a42fc9bf9f11ce9ebc2e8aa3d8af7f2fb3f9fdba274af65b170232de118",
+        "raw_energy": 8978234.481125636,
+        "energy_per_element": 0.7135259692768762,
+        "temporal_ac_energy": 0.0,
+        "temporal_ac_fraction": 0.0,
+        "temporal_bins": [
+          8978234.481125638,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "spatial_ac_energy": 6638661.747178784,
+        "spatial_ac_fraction": 0.7394172831122661,
+        "time_std_max": 0.0
+      },
+      "space_to_depth": {
+        "shape": [
+          16,
+          8,
+          8,
+          12288
+        ],
+        "metrics": {
+          "shape": [
+            16,
+            8,
+            8,
+            12288
+          ],
+          "sha256": "89200792d9937cae4b4368c5fc1a4ea604d71548967aa78270d7a9a59fa876d9",
+          "raw_energy": 8978234.481125649,
+          "energy_per_element": 0.7135259692768772,
+          "temporal_ac_energy": 0.0,
+          "temporal_ac_fraction": 0.0,
+          "temporal_bins": [
+            8978234.481125638,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_ac_energy": 6409117.586337738,
+          "spatial_ac_fraction": 0.7138505459855391,
+          "time_std_max": 0.0
+        },
+        "energy_abs_diff": 0.0,
+        "restored_exact": true
+      },
+      "actual_input_rgb_hashes": {
+        "shape": [
+          1,
+          16,
+          3,
+          512,
+          512
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "97cbfddc2754a635ad7311af268176851d2c49a206e2b94e9136bafe65559541"
+      }
+    },
+    {
+      "model": "smol",
+      "video_id": "video_1024",
+      "condition": "static_first",
+      "stage": "vision_connector_output",
+      "encoding": "exact_time_repeat",
+      "metrics": {
+        "shape": [
+          16,
+          8,
+          8,
+          960
+        ],
+        "sha256": "8685d56378de217f99a0f2232f6fad208d4130bf0e6cb063e32b6d262f43d822",
+        "raw_energy": 24122940.521696046,
+        "energy_per_element": 24.53912406585291,
+        "temporal_ac_energy": 0.0,
+        "temporal_ac_fraction": 0.0,
+        "temporal_bins": [
+          24122940.521696046,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "spatial_ac_energy": 10701756.210252631,
+        "spatial_ac_fraction": 0.44363398403389204,
+        "time_std_max": 0.0
+      },
+      "space_to_depth": {
+        "shape": [
+          16,
+          2,
+          2,
+          15360
+        ],
+        "metrics": {
+          "shape": [
+            16,
+            2,
+            2,
+            15360
+          ],
+          "sha256": "52997b8cc13400c25324993d5eca9cdb5093e005973fb184b867085484d66772",
+          "raw_energy": 24122940.52169605,
+          "energy_per_element": 24.539124065852914,
+          "temporal_ac_energy": 0.0,
+          "temporal_ac_fraction": 0.0,
+          "temporal_bins": [
+            24122940.52169605,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_ac_energy": 7947561.434644839,
+          "spatial_ac_fraction": 0.3294607233930226,
+          "time_std_max": 0.0
+        },
+        "energy_abs_diff": 0.0,
+        "restored_exact": true
+      },
+      "actual_input_rgb_hashes": {
+        "shape": [
+          1,
+          16,
+          3,
+          512,
+          512
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "97cbfddc2754a635ad7311af268176851d2c49a206e2b94e9136bafe65559541"
+      }
+    },
+    {
+      "model": "smol",
+      "video_id": "video_341",
+      "condition": "gray",
+      "stage": "vision_final_postnorm",
+      "encoding": "exact_time_repeat",
+      "metrics": {
+        "shape": [
+          16,
+          32,
+          32,
+          768
+        ],
+        "sha256": "d2302e302f6ef8598ed7196f9eab829ab58c8b667b9f7435eacee866e95f84dd",
+        "raw_energy": 8161290.062914304,
+        "energy_per_element": 0.6486010601452433,
+        "temporal_ac_energy": 0.0,
+        "temporal_ac_fraction": 0.0,
+        "temporal_bins": [
+          8161290.062914304,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "spatial_ac_energy": 4984477.345084154,
+        "spatial_ac_fraction": 0.6107462553909343,
+        "time_std_max": 0.0
+      },
+      "space_to_depth": {
+        "shape": [
+          16,
+          8,
+          8,
+          12288
+        ],
+        "metrics": {
+          "shape": [
+            16,
+            8,
+            8,
+            12288
+          ],
+          "sha256": "a2a901219273f3c36089852008512161576f8f7aad7c3dc60ddc58e45d1bc9db",
+          "raw_energy": 8161290.062914308,
+          "energy_per_element": 0.6486010601452437,
+          "temporal_ac_energy": 0.0,
+          "temporal_ac_fraction": 0.0,
+          "temporal_bins": [
+            8161290.062914304,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_ac_energy": 4447813.103443741,
+          "spatial_ac_fraction": 0.5449889746787746,
+          "time_std_max": 0.0
+        },
+        "energy_abs_diff": 0.0,
+        "restored_exact": true
+      },
+      "actual_input_rgb_hashes": {
+        "shape": [
+          1,
+          16,
+          3,
+          512,
+          512
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "a5417bbdb42c2a6e545b476056f2193a3c70a9107af4754ddb2e861181f40973"
+      }
+    },
+    {
+      "model": "smol",
+      "video_id": "video_341",
+      "condition": "gray",
+      "stage": "vision_connector_output",
+      "encoding": "exact_time_repeat",
+      "metrics": {
+        "shape": [
+          16,
+          8,
+          8,
+          960
+        ],
+        "sha256": "edbd411109afd5e26a395d164756cbfa1611687a3e01c04507530eb05196e752",
+        "raw_energy": 16732955.632170925,
+        "energy_per_element": 17.021642692231165,
+        "temporal_ac_energy": 0.0,
+        "temporal_ac_fraction": 0.0,
+        "temporal_bins": [
+          16732955.632170925,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "spatial_ac_energy": 5324464.418444124,
+        "spatial_ac_fraction": 0.3182022671599788,
+        "time_std_max": 0.0
+      },
+      "space_to_depth": {
+        "shape": [
+          16,
+          2,
+          2,
+          15360
+        ],
+        "metrics": {
+          "shape": [
+            16,
+            2,
+            2,
+            15360
+          ],
+          "sha256": "0f5e97bd70f3b48c0c9c4190e1f0451e12b13af0039e699e9b798ec0d6294cdb",
+          "raw_energy": 16732955.632170923,
+          "energy_per_element": 17.021642692231165,
+          "temporal_ac_energy": 0.0,
+          "temporal_ac_fraction": 0.0,
+          "temporal_bins": [
+            16732955.632170923,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_ac_energy": 3283318.443378154,
+          "spatial_ac_fraction": 0.19621867860963058,
+          "time_std_max": 0.0
+        },
+        "energy_abs_diff": 0.0,
+        "restored_exact": true
+      },
+      "actual_input_rgb_hashes": {
+        "shape": [
+          1,
+          16,
+          3,
+          512,
+          512
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "a5417bbdb42c2a6e545b476056f2193a3c70a9107af4754ddb2e861181f40973"
+      }
+    },
+    {
+      "model": "smol",
+      "video_id": "video_341",
+      "condition": "real",
+      "stage": "vision_final_postnorm",
+      "encoding": "dense",
+      "metrics": {
+        "shape": [
+          16,
+          32,
+          32,
+          768
+        ],
+        "sha256": "82a106b92d34f0ca9e320ce36aacce3cb7c9a7f7379667a7cbd808fe0c18ce55",
+        "raw_energy": 10497252.640794631,
+        "energy_per_element": 0.8342466863627935,
+        "temporal_ac_energy": 5290612.702144946,
+        "temporal_ac_fraction": 0.503999749571089,
+        "temporal_bins": [
+          5206639.938649684,
+          1205552.8945895405,
+          873244.9053026582,
+          714126.8524181745,
+          572243.5288136895,
+          576466.2301279769,
+          539364.4495278605,
+          532010.0798974305,
+          277603.7614676154
+        ],
+        "spatial_ac_energy": 8106252.318456309,
+        "spatial_ac_fraction": 0.7722260858001674,
+        "time_std_max": 7.0834742284300445
+      },
+      "space_to_depth": {
+        "shape": [
+          16,
+          8,
+          8,
+          12288
+        ],
+        "metrics": {
+          "shape": [
+            16,
+            8,
+            8,
+            12288
+          ],
+          "sha256": "735e0760de7964f47c62772895f0a77071d91f355a338390088b84a6812902c1",
+          "raw_energy": 10497252.64079464,
+          "energy_per_element": 0.8342466863627943,
+          "temporal_ac_energy": 5290612.702144946,
+          "temporal_ac_fraction": 0.5039997495710885,
+          "temporal_bins": [
+            5206639.938649682,
+            1205552.8945895405,
+            873244.9053026584,
+            714126.8524181745,
+            572243.5288136892,
+            576466.2301279769,
+            539364.4495278605,
+            532010.0798974305,
+            277603.7614676152
+          ],
+          "spatial_ac_energy": 7835535.825484403,
+          "spatial_ac_fraction": 0.746436814813219,
+          "time_std_max": 7.0834742284300445
+        },
+        "energy_abs_diff": 0.0,
+        "restored_exact": true
+      },
+      "actual_input_rgb_hashes": {
+        "shape": [
+          1,
+          16,
+          3,
+          512,
+          512
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "bd12d450bd3f21d7b3894c80f00e9d02834ec5e15ad6f072a51c381cafd215e4"
+      }
+    },
+    {
+      "model": "smol",
+      "video_id": "video_341",
+      "condition": "real",
+      "stage": "vision_connector_output",
+      "encoding": "dense",
+      "metrics": {
+        "shape": [
+          16,
+          8,
+          8,
+          960
+        ],
+        "sha256": "9d85a2dec0696c911cb0a886aa7dc655d9bfaf1fc6117ceeaa781b3f4f19d903",
+        "raw_energy": 26272899.791686486,
+        "energy_per_element": 26.726175732102952,
+        "temporal_ac_energy": 6717556.580662543,
+        "temporal_ac_fraction": 0.2556838656533899,
+        "temporal_bins": [
+          19555343.211023934,
+          1869346.2412067098,
+          1208864.269752784,
+          862618.7603761482,
+          635450.1318845768,
+          675280.025583825,
+          589644.4686508387,
+          566066.8991959883,
+          310285.78401167225
+        ],
+        "spatial_ac_energy": 12535033.061416654,
+        "spatial_ac_fraction": 0.47710885211776677,
+        "time_std_max": 17.64249325802266
+      },
+      "space_to_depth": {
+        "shape": [
+          16,
+          2,
+          2,
+          15360
+        ],
+        "metrics": {
+          "shape": [
+            16,
+            2,
+            2,
+            15360
+          ],
+          "sha256": "d2ab6f72b684d211d36cb4c154dd44a8c07cf47893cac3f6b5ed94691e7efad7",
+          "raw_energy": 26272899.79168647,
+          "energy_per_element": 26.726175732102938,
+          "temporal_ac_energy": 6717556.580662542,
+          "temporal_ac_fraction": 0.25568386565339,
+          "temporal_bins": [
+            19555343.211023923,
+            1869346.2412067098,
+            1208864.2697527835,
+            862618.7603761482,
+            635450.1318845763,
+            675280.0255838252,
+            589644.4686508385,
+            566066.8991959884,
+            310285.7840116721
+          ],
+          "spatial_ac_energy": 9687792.981248463,
+          "spatial_ac_fraction": 0.3687371039383315,
+          "time_std_max": 17.64249325802266
+        },
+        "energy_abs_diff": 0.0,
+        "restored_exact": true
+      },
+      "actual_input_rgb_hashes": {
+        "shape": [
+          1,
+          16,
+          3,
+          512,
+          512
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "bd12d450bd3f21d7b3894c80f00e9d02834ec5e15ad6f072a51c381cafd215e4"
+      }
+    }
+  ],
+  "checks_passed": 144,
+  "checks": [
+    {
+      "name": "perception_test:video_1024:mc:0:gray:vision_final_premerger:shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:gray:vision_final_premerger:finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:gray:vision_final_premerger:hash",
+      "passed": true,
+      "detail": "58f970f72188a3f501428d7be8db1783faaaf29ea9c1eb88872cbe3a9f92994d"
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:gray:vision_final_premerger:time_repeat",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:gray:vision_final_premerger:temporal_ac_zero",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:gray:vision_final_premerger:space_depth_inverse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:gray:vision_final_premerger:space_depth_energy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:gray:vision_final_postmerger:shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:gray:vision_final_postmerger:finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:gray:vision_final_postmerger:hash",
+      "passed": true,
+      "detail": "2c65d9d0e397da091b3fe21f0052ae73b43750c16c2f08ab6383560284de5681"
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:gray:vision_final_postmerger:time_repeat",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:gray:vision_final_postmerger:temporal_ac_zero",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:gray:vision_final_postmerger:space_depth_inverse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:gray:vision_final_postmerger:space_depth_energy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:gray:gray_rgb_repeat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:real:vision_final_premerger:shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:real:vision_final_premerger:finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:real:vision_final_premerger:hash",
+      "passed": true,
+      "detail": "19d24a5799d66439aeb69139caf485f0910816302b32fc7e7105f28d317d7560"
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:real:vision_final_premerger:temporal_ac_positive",
+      "passed": true,
+      "detail": 1797984987.9936793
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:real:vision_final_premerger:space_depth_inverse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:real:vision_final_premerger:space_depth_energy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:real:vision_final_postmerger:shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:real:vision_final_postmerger:finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:real:vision_final_postmerger:hash",
+      "passed": true,
+      "detail": "39e21eca776224356166a1410e07a48e51a087ac895f9fb95c2f50e967fa2243"
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:real:vision_final_postmerger:temporal_ac_positive",
+      "passed": true,
+      "detail": 65342.188637997286
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:real:vision_final_postmerger:space_depth_inverse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:real:vision_final_postmerger:space_depth_energy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:static_first:vision_final_premerger:shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:static_first:vision_final_premerger:finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:static_first:vision_final_premerger:hash",
+      "passed": true,
+      "detail": "77d577ab0a0f5fffc2c071b31e948a555f8cccbc629eead06dbfa7c6f307e30a"
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:static_first:vision_final_premerger:time_repeat",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:static_first:vision_final_premerger:temporal_ac_zero",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:static_first:vision_final_premerger:space_depth_inverse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:static_first:vision_final_premerger:space_depth_energy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:static_first:vision_final_postmerger:shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:static_first:vision_final_postmerger:finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:static_first:vision_final_postmerger:hash",
+      "passed": true,
+      "detail": "aea32cfd5d5cfe27a5864a78bf77db38d841ded8288349542789675f4da56cb3"
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:static_first:vision_final_postmerger:time_repeat",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:static_first:vision_final_postmerger:temporal_ac_zero",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:static_first:vision_final_postmerger:space_depth_inverse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:static_first:vision_final_postmerger:space_depth_energy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:vision_final_premerger:shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:vision_final_premerger:finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:vision_final_premerger:hash",
+      "passed": true,
+      "detail": "58f970f72188a3f501428d7be8db1783faaaf29ea9c1eb88872cbe3a9f92994d"
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:vision_final_premerger:time_repeat",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:vision_final_premerger:temporal_ac_zero",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:vision_final_premerger:space_depth_inverse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:vision_final_premerger:space_depth_energy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:vision_final_postmerger:shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:vision_final_postmerger:finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:vision_final_postmerger:hash",
+      "passed": true,
+      "detail": "2c65d9d0e397da091b3fe21f0052ae73b43750c16c2f08ab6383560284de5681"
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:vision_final_postmerger:time_repeat",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:vision_final_postmerger:temporal_ac_zero",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:vision_final_postmerger:space_depth_inverse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:vision_final_postmerger:space_depth_energy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:gray_rgb_repeat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:real:vision_final_premerger:shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:real:vision_final_premerger:finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:real:vision_final_premerger:hash",
+      "passed": true,
+      "detail": "d11a5af3d19c5a98e002b1340faf5ae580db8ff7a904eca3488340d132d2f03b"
+    },
+    {
+      "name": "perception_test:video_341:mc:0:real:vision_final_premerger:temporal_ac_positive",
+      "passed": true,
+      "detail": 2505099974.048566
+    },
+    {
+      "name": "perception_test:video_341:mc:0:real:vision_final_premerger:space_depth_inverse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:real:vision_final_premerger:space_depth_energy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:real:vision_final_postmerger:shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:real:vision_final_postmerger:finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:real:vision_final_postmerger:hash",
+      "passed": true,
+      "detail": "6a7281cb1d9d9d8747aa1a4ff5b323f82d42e3ce8a2dd5a870745f70979b9bfd"
+    },
+    {
+      "name": "perception_test:video_341:mc:0:real:vision_final_postmerger:temporal_ac_positive",
+      "passed": true,
+      "detail": 78826.0926326937
+    },
+    {
+      "name": "perception_test:video_341:mc:0:real:vision_final_postmerger:space_depth_inverse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:real:vision_final_postmerger:space_depth_energy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:gray:vision_final_postnorm:shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:gray:vision_final_postnorm:finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:gray:vision_final_postnorm:hash",
+      "passed": true,
+      "detail": "d2302e302f6ef8598ed7196f9eab829ab58c8b667b9f7435eacee866e95f84dd"
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:gray:vision_final_postnorm:time_repeat",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:gray:vision_final_postnorm:temporal_ac_zero",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:gray:vision_final_postnorm:space_depth_inverse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:gray:vision_final_postnorm:space_depth_energy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:gray:vision_connector_output:shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:gray:vision_connector_output:finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:gray:vision_connector_output:hash",
+      "passed": true,
+      "detail": "edbd411109afd5e26a395d164756cbfa1611687a3e01c04507530eb05196e752"
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:gray:vision_connector_output:time_repeat",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:gray:vision_connector_output:temporal_ac_zero",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:gray:vision_connector_output:space_depth_inverse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:gray:vision_connector_output:space_depth_energy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:gray:gray_rgb_repeat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:real:vision_final_postnorm:shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:real:vision_final_postnorm:finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:real:vision_final_postnorm:hash",
+      "passed": true,
+      "detail": "67bba52f0801c11addc3265a581bbe664756b38e8dc9f3710bf7bee67ac6c263"
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:real:vision_final_postnorm:temporal_ac_positive",
+      "passed": true,
+      "detail": 3315766.7933716257
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:real:vision_final_postnorm:space_depth_inverse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:real:vision_final_postnorm:space_depth_energy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:real:vision_connector_output:shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:real:vision_connector_output:finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:real:vision_connector_output:hash",
+      "passed": true,
+      "detail": "d963a814007217f778a46f8698a167307cb8e6b93bd2de2b63af0e157645ead5"
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:real:vision_connector_output:temporal_ac_positive",
+      "passed": true,
+      "detail": 3534073.999705338
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:real:vision_connector_output:space_depth_inverse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:real:vision_connector_output:space_depth_energy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:static_first:vision_final_postnorm:shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:static_first:vision_final_postnorm:finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:static_first:vision_final_postnorm:hash",
+      "passed": true,
+      "detail": "88079a42fc9bf9f11ce9ebc2e8aa3d8af7f2fb3f9fdba274af65b170232de118"
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:static_first:vision_final_postnorm:time_repeat",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:static_first:vision_final_postnorm:temporal_ac_zero",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:static_first:vision_final_postnorm:space_depth_inverse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:static_first:vision_final_postnorm:space_depth_energy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:static_first:vision_connector_output:shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:static_first:vision_connector_output:finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:static_first:vision_connector_output:hash",
+      "passed": true,
+      "detail": "8685d56378de217f99a0f2232f6fad208d4130bf0e6cb063e32b6d262f43d822"
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:static_first:vision_connector_output:time_repeat",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:static_first:vision_connector_output:temporal_ac_zero",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:static_first:vision_connector_output:space_depth_inverse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_1024:mc:0:static_first:vision_connector_output:space_depth_energy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:vision_final_postnorm:shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:vision_final_postnorm:finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:vision_final_postnorm:hash",
+      "passed": true,
+      "detail": "d2302e302f6ef8598ed7196f9eab829ab58c8b667b9f7435eacee866e95f84dd"
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:vision_final_postnorm:time_repeat",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:vision_final_postnorm:temporal_ac_zero",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:vision_final_postnorm:space_depth_inverse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:vision_final_postnorm:space_depth_energy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:vision_connector_output:shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:vision_connector_output:finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:vision_connector_output:hash",
+      "passed": true,
+      "detail": "edbd411109afd5e26a395d164756cbfa1611687a3e01c04507530eb05196e752"
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:vision_connector_output:time_repeat",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:vision_connector_output:temporal_ac_zero",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:vision_connector_output:space_depth_inverse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:vision_connector_output:space_depth_energy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:gray:gray_rgb_repeat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:real:vision_final_postnorm:shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:real:vision_final_postnorm:finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:real:vision_final_postnorm:hash",
+      "passed": true,
+      "detail": "82a106b92d34f0ca9e320ce36aacce3cb7c9a7f7379667a7cbd808fe0c18ce55"
+    },
+    {
+      "name": "perception_test:video_341:mc:0:real:vision_final_postnorm:temporal_ac_positive",
+      "passed": true,
+      "detail": 5290612.702144946
+    },
+    {
+      "name": "perception_test:video_341:mc:0:real:vision_final_postnorm:space_depth_inverse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:real:vision_final_postnorm:space_depth_energy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:real:vision_connector_output:shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:real:vision_connector_output:finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:real:vision_connector_output:hash",
+      "passed": true,
+      "detail": "9d85a2dec0696c911cb0a886aa7dc655d9bfaf1fc6117ceeaa781b3f4f19d903"
+    },
+    {
+      "name": "perception_test:video_341:mc:0:real:vision_connector_output:temporal_ac_positive",
+      "passed": true,
+      "detail": 6717556.580662543
+    },
+    {
+      "name": "perception_test:video_341:mc:0:real:vision_connector_output:space_depth_inverse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "perception_test:video_341:mc:0:real:vision_connector_output:space_depth_energy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "qwen:vision_final_postmerger:gray_cross_source_identical",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "qwen:vision_final_postmerger:real_cross_source_not_all_identical",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "qwen:vision_final_premerger:gray_cross_source_identical",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "qwen:vision_final_premerger:real_cross_source_not_all_identical",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "smol:vision_connector_output:gray_cross_source_identical",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "smol:vision_connector_output:real_cross_source_not_all_identical",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "smol:vision_final_postnorm:gray_cross_source_identical",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "smol:vision_final_postnorm:real_cross_source_not_all_identical",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "interpretation": [
+    "Static and gray controls have exact temporal repeats in captured logical feature tensors.",
+    "Real videos retain nonzero temporal AC in the sampled time grid.",
+    "Pure space-to-depth is exactly invertible and preserves total energy; spatial AC fractions can change because the coordinate partition changes.",
+    "These checks do not establish information loss, forgetting, or task-level benefit."
+  ]
+}

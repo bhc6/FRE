@@ -1,0 +1,1919 @@
+{
+  "status": "passed",
+  "created_at_utc": "2026-11-01T14:56:35.682817+00:00",
+  "passed": 477,
+  "failed": 0,
+  "source_sha256": "a66e73226ae12b1a45e2cf6d4d6f48afe3dfb1a1706eb5a84c40207e8f6e5609",
+  "checks": [
+    {
+      "name": "base_40_real_16_static",
+      "passed": true
+    },
+    {
+      "name": "rotation_zero_preserves_count",
+      "passed": true
+    },
+    {
+      "name": "all_rotations_120_real_16_static",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1024:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_1024:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_1024:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1024:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1024:mc:0:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_1024:mc:0:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1024:mc:0:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1024:mc:0:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_1024:mc:0:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1024:mc:0:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1024:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "static_no_gold:perception_test:video_1024:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_1024:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1024:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1024:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "static_no_gold:perception_test:video_1024:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_1024:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1024:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1024:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_1024:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_1024:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1024:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1024:mc:1:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_1024:mc:1:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1024:mc:1:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1024:mc:1:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_1024:mc:1:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1024:mc:1:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1024:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_1024:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_1024:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1024:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1024:mc:2:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_1024:mc:2:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1024:mc:2:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1024:mc:2:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_1024:mc:2:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1024:mc:2:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1024:mc:3:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_1024:mc:3:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_1024:mc:3:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1024:mc:3:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1024:mc:3:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_1024:mc:3:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1024:mc:3:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1024:mc:3:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_1024:mc:3:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1024:mc:3:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1024:mc:4:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_1024:mc:4:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_1024:mc:4:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1024:mc:4:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1024:mc:4:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_1024:mc:4:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1024:mc:4:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1024:mc:4:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_1024:mc:4:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1024:mc:4:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1024:mc:5:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_1024:mc:5:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_1024:mc:5:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1024:mc:5:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1024:mc:5:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_1024:mc:5:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1024:mc:5:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1024:mc:5:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_1024:mc:5:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1024:mc:5:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_10267:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_10267:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_10267:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_10267:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_10267:mc:0:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_10267:mc:0:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_10267:mc:0:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_10267:mc:0:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_10267:mc:0:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_10267:mc:0:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_10267:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "static_no_gold:perception_test:video_10267:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_10267:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_10267:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_10267:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "static_no_gold:perception_test:video_10267:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_10267:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_10267:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_10267:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_10267:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_10267:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_10267:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_10267:mc:1:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_10267:mc:1:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_10267:mc:1:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_10267:mc:1:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_10267:mc:1:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_10267:mc:1:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_10267:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_10267:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_10267:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_10267:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_10267:mc:2:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_10267:mc:2:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_10267:mc:2:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_10267:mc:2:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_10267:mc:2:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_10267:mc:2:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_10267:mc:3:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_10267:mc:3:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_10267:mc:3:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_10267:mc:3:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_10267:mc:3:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_10267:mc:3:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_10267:mc:3:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_10267:mc:3:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_10267:mc:3:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_10267:mc:3:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_10267:mc:4:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_10267:mc:4:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_10267:mc:4:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_10267:mc:4:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_10267:mc:4:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_10267:mc:4:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_10267:mc:4:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_10267:mc:4:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_10267:mc:4:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_10267:mc:4:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1414:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_1414:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_1414:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1414:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1414:mc:0:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_1414:mc:0:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1414:mc:0:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1414:mc:0:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_1414:mc:0:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1414:mc:0:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1414:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "static_no_gold:perception_test:video_1414:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_1414:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1414:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1414:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "static_no_gold:perception_test:video_1414:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_1414:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1414:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1414:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_1414:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_1414:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1414:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1414:mc:1:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_1414:mc:1:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1414:mc:1:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1414:mc:1:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_1414:mc:1:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1414:mc:1:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1414:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_1414:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_1414:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1414:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1414:mc:2:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_1414:mc:2:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1414:mc:2:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_1414:mc:2:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_1414:mc:2:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_1414:mc:2:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_275:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_275:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_275:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_275:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_275:mc:0:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_275:mc:0:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_275:mc:0:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_275:mc:0:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_275:mc:0:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_275:mc:0:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_275:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "static_no_gold:perception_test:video_275:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_275:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_275:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_275:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "static_no_gold:perception_test:video_275:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_275:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_275:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_275:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_275:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_275:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_275:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_275:mc:1:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_275:mc:1:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_275:mc:1:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_275:mc:1:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_275:mc:1:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_275:mc:1:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_275:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_275:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_275:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_275:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_275:mc:2:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_275:mc:2:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_275:mc:2:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_275:mc:2:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_275:mc:2:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_275:mc:2:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_275:mc:3:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_275:mc:3:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_275:mc:3:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_275:mc:3:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_275:mc:3:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_275:mc:3:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_275:mc:3:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_275:mc:3:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_275:mc:3:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_275:mc:3:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_275:mc:4:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_275:mc:4:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_275:mc:4:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_275:mc:4:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_275:mc:4:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_275:mc:4:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_275:mc:4:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_275:mc:4:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_275:mc:4:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_275:mc:4:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_275:mc:5:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_275:mc:5:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_275:mc:5:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_275:mc:5:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_275:mc:5:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_275:mc:5:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_275:mc:5:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_275:mc:5:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_275:mc:5:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_275:mc:5:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_3007:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_3007:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_3007:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_3007:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_3007:mc:0:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_3007:mc:0:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_3007:mc:0:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_3007:mc:0:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_3007:mc:0:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_3007:mc:0:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_3007:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "static_no_gold:perception_test:video_3007:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_3007:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_3007:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_3007:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "static_no_gold:perception_test:video_3007:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_3007:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_3007:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_3007:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_3007:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_3007:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_3007:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_3007:mc:1:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_3007:mc:1:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_3007:mc:1:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_3007:mc:1:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_3007:mc:1:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_3007:mc:1:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_3007:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_3007:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_3007:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_3007:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_3007:mc:2:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_3007:mc:2:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_3007:mc:2:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_3007:mc:2:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_3007:mc:2:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_3007:mc:2:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_3007:mc:3:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_3007:mc:3:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_3007:mc:3:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_3007:mc:3:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_3007:mc:3:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_3007:mc:3:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_3007:mc:3:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_3007:mc:3:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_3007:mc:3:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_3007:mc:3:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_3007:mc:4:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_3007:mc:4:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_3007:mc:4:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_3007:mc:4:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_3007:mc:4:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_3007:mc:4:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_3007:mc:4:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_3007:mc:4:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_3007:mc:4:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_3007:mc:4:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_341:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_341:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_341:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_341:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_341:mc:0:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_341:mc:0:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_341:mc:0:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_341:mc:0:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_341:mc:0:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_341:mc:0:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_341:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "static_no_gold:perception_test:video_341:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_341:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_341:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_341:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "static_no_gold:perception_test:video_341:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_341:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_341:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_341:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_341:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_341:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_341:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_341:mc:1:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_341:mc:1:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_341:mc:1:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_341:mc:1:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_341:mc:1:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_341:mc:1:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_341:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_341:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_341:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_341:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_341:mc:2:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_341:mc:2:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_341:mc:2:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_341:mc:2:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_341:mc:2:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_341:mc:2:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_341:mc:3:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_341:mc:3:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_341:mc:3:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_341:mc:3:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_341:mc:3:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_341:mc:3:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_341:mc:3:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_341:mc:3:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_341:mc:3:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_341:mc:3:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_341:mc:4:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_341:mc:4:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_341:mc:4:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_341:mc:4:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_341:mc:4:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_341:mc:4:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_341:mc:4:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_341:mc:4:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_341:mc:4:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_341:mc:4:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_341:mc:5:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_341:mc:5:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_341:mc:5:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_341:mc:5:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_341:mc:5:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_341:mc:5:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_341:mc:5:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_341:mc:5:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_341:mc:5:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_341:mc:5:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_341:mc:6:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_341:mc:6:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_341:mc:6:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_341:mc:6:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_341:mc:6:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_341:mc:6:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_341:mc:6:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_341:mc:6:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_341:mc:6:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_341:mc:6:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_6532:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_6532:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_6532:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_6532:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_6532:mc:0:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_6532:mc:0:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_6532:mc:0:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_6532:mc:0:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_6532:mc:0:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_6532:mc:0:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_6532:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "static_no_gold:perception_test:video_6532:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_6532:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_6532:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_6532:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "static_no_gold:perception_test:video_6532:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_6532:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_6532:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_6532:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_6532:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_6532:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_6532:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_6532:mc:1:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_6532:mc:1:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_6532:mc:1:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_6532:mc:1:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_6532:mc:1:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_6532:mc:1:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_6532:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_6532:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_6532:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_6532:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_6532:mc:2:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_6532:mc:2:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_6532:mc:2:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_6532:mc:2:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_6532:mc:2:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_6532:mc:2:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_6532:mc:3:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_6532:mc:3:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_6532:mc:3:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_6532:mc:3:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_6532:mc:3:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_6532:mc:3:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_6532:mc:3:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_6532:mc:3:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_6532:mc:3:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_6532:mc:3:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_8221:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_8221:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_8221:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_8221:mc:0:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_8221:mc:0:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_8221:mc:0:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_8221:mc:0:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_8221:mc:0:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_8221:mc:0:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_8221:mc:0:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_8221:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "static_no_gold:perception_test:video_8221:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_8221:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_8221:mc:0:static_first:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_8221:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "static_no_gold:perception_test:video_8221:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_8221:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_8221:mc:0:static_last:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_8221:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_8221:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_8221:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_8221:mc:1:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_8221:mc:1:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_8221:mc:1:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_8221:mc:1:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_8221:mc:1:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_8221:mc:1:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_8221:mc:1:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_8221:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_8221:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_8221:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_8221:mc:2:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_8221:mc:2:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_8221:mc:2:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_8221:mc:2:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_8221:mc:2:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_8221:mc:2:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_8221:mc:2:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_8221:mc:3:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_8221:mc:3:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "zero_prompt_unchanged:perception_test:video_8221:mc:3:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_8221:mc:3:real:rot0",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_8221:mc:3:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_8221:mc:3:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_8221:mc:3:real:rot1",
+      "passed": true
+    },
+    {
+      "name": "semantic_options:perception_test:video_8221:mc:3:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "gold_mapping:perception_test:video_8221:mc:3:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "frames_and_times_unchanged:perception_test:video_8221:mc:3:real:rot2",
+      "passed": true
+    },
+    {
+      "name": "case_ids_unique",
+      "passed": true
+    },
+    {
+      "name": "original_cases_not_mutated",
+      "passed": true
+    },
+    {
+      "name": "static_still_only_zero_when_real_rotations_exclude_zero",
+      "passed": true
+    },
+    {
+      "name": "checkpoint_tags_unique",
+      "passed": true
+    },
+    {
+      "name": "checkpoint_tag_format",
+      "passed": true
+    },
+    {
+      "name": "reject_bad_rotations:[]",
+      "passed": true
+    },
+    {
+      "name": "reject_bad_rotations:[0, 0]",
+      "passed": true
+    },
+    {
+      "name": "reject_bad_rotations:[3]",
+      "passed": true
+    },
+    {
+      "name": "reject_bad_rotations:[-1]",
+      "passed": true
+    },
+    {
+      "name": "source_unchanged",
+      "passed": true
+    }
+  ],
+  "gpu_used": false,
+  "scope": "Pure case construction using already-seen V1 validation metadata; no image/model forward and no fresh data evaluation."
+}

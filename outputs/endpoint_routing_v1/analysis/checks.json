@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "checks": [
+    "semantic margin invariant under option-label swap",
+    "exact ties preserve first-index argmax",
+    "gate selection uses endpoint only",
+    "three masks preserve causal edges and endpoint key counts"
+  ]
+}

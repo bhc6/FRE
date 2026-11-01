@@ -1,0 +1,281 @@
+{
+  "created_at_utc": "2026-11-01T13:24:56.570026+00:00",
+  "purpose": "Synthetic NumPy identities and counterexamples, not a new theorem or model-performance evidence",
+  "seed": 20261101,
+  "dtype": "float64",
+  "tolerance": 1e-12,
+  "python": "3.13.7",
+  "numpy": "2.4.2",
+  "source_sha256": "a6e6d7c7f6b4f87198b070efd84e85fd2f1b9e35b341bdc5f5f344e02739f151",
+  "torch_imported": false,
+  "gpu_used": false,
+  "check_count": 32,
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "time_full_and_weighted_rfft_readouts_T1",
+      "passed": true,
+      "metrics": {
+        "full_fft_error": 0.0,
+        "rfft_error": 0.0,
+        "backward_fft_error": 0.0
+      }
+    },
+    {
+      "name": "visual_mass_and_text_partition_T1",
+      "passed": true,
+      "metrics": {
+        "visual_mass": 0.35733541208855624,
+        "total_reconstruction_error": 1.1102230246251565e-16,
+        "conditional_readout_scale_error": 2.7755575615628914e-17
+      }
+    },
+    {
+      "name": "fixed_qkv_gate_includes_text_normalizer_T1",
+      "passed": true,
+      "metrics": {
+        "attention_error": 1.1102230246251565e-16,
+        "readout_error": 1.1102230246251565e-16,
+        "before_visual_mass": 0.35733541208855624,
+        "after_visual_mass": 0.45276205047786755
+      }
+    },
+    {
+      "name": "zero_gate_matches_masked_softmax_T1",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "time_full_and_weighted_rfft_readouts_T2",
+      "passed": true,
+      "metrics": {
+        "full_fft_error": 5.551115123125783e-17,
+        "rfft_error": 5.551115123125783e-17,
+        "backward_fft_error": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "visual_mass_and_text_partition_T2",
+      "passed": true,
+      "metrics": {
+        "visual_mass": 0.6112158271542644,
+        "total_reconstruction_error": 5.551115123125783e-17,
+        "conditional_readout_scale_error": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "fixed_qkv_gate_includes_text_normalizer_T2",
+      "passed": true,
+      "metrics": {
+        "attention_error": 5.551115123125783e-17,
+        "readout_error": 1.1102230246251565e-16,
+        "before_visual_mass": 0.6112158271542644,
+        "after_visual_mass": 0.6051444121144847
+      }
+    },
+    {
+      "name": "zero_gate_matches_masked_softmax_T2",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "time_full_and_weighted_rfft_readouts_T3",
+      "passed": true,
+      "metrics": {
+        "full_fft_error": 1.1102230246251565e-16,
+        "rfft_error": 1.1102230246251565e-16,
+        "backward_fft_error": 5.627685845386882e-17
+      }
+    },
+    {
+      "name": "visual_mass_and_text_partition_T3",
+      "passed": true,
+      "metrics": {
+        "visual_mass": 0.5742008253576196,
+        "total_reconstruction_error": 1.3877787807814457e-16,
+        "conditional_readout_scale_error": 5.204170427930421e-17
+      }
+    },
+    {
+      "name": "fixed_qkv_gate_includes_text_normalizer_T3",
+      "passed": true,
+      "metrics": {
+        "attention_error": 2.7755575615628914e-17,
+        "readout_error": 2.220446049250313e-16,
+        "before_visual_mass": 0.5742008253576196,
+        "after_visual_mass": 0.6196899690562926
+      }
+    },
+    {
+      "name": "zero_gate_matches_masked_softmax_T3",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "time_full_and_weighted_rfft_readouts_T7",
+      "passed": true,
+      "metrics": {
+        "full_fft_error": 8.327689062194404e-17,
+        "rfft_error": 5.551115123125783e-17,
+        "backward_fft_error": 5.554654246930079e-17
+      }
+    },
+    {
+      "name": "visual_mass_and_text_partition_T7",
+      "passed": true,
+      "metrics": {
+        "visual_mass": 0.762608455319882,
+        "total_reconstruction_error": 5.377642775528102e-17,
+        "conditional_readout_scale_error": 8.326672684688674e-17
+      }
+    },
+    {
+      "name": "fixed_qkv_gate_includes_text_normalizer_T7",
+      "passed": true,
+      "metrics": {
+        "attention_error": 2.7755575615628914e-17,
+        "readout_error": 1.6653345369377348e-16,
+        "before_visual_mass": 0.762608455319882,
+        "after_visual_mass": 0.8012910304459736
+      }
+    },
+    {
+      "name": "zero_gate_matches_masked_softmax_T7",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "time_full_and_weighted_rfft_readouts_T8",
+      "passed": true,
+      "metrics": {
+        "full_fft_error": 1.9441289864255276e-16,
+        "rfft_error": 1.942890293094024e-16,
+        "backward_fft_error": 8.326672684688674e-17
+      }
+    },
+    {
+      "name": "visual_mass_and_text_partition_T8",
+      "passed": true,
+      "metrics": {
+        "visual_mass": 0.9517517230836513,
+        "total_reconstruction_error": 1.3877787807814457e-16,
+        "conditional_readout_scale_error": 9.71445146547012e-17
+      }
+    },
+    {
+      "name": "fixed_qkv_gate_includes_text_normalizer_T8",
+      "passed": true,
+      "metrics": {
+        "attention_error": 4.163336342344337e-17,
+        "readout_error": 8.326672684688674e-17,
+        "before_visual_mass": 0.9517517230836513,
+        "after_visual_mass": 0.9410918458388658
+      }
+    },
+    {
+      "name": "zero_gate_matches_masked_softmax_T8",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "time_full_and_weighted_rfft_readouts_T31",
+      "passed": true,
+      "metrics": {
+        "full_fft_error": 8.414750032627943e-17,
+        "rfft_error": 8.326672684688674e-17,
+        "backward_fft_error": 1.1125311830930302e-16
+      }
+    },
+    {
+      "name": "visual_mass_and_text_partition_T31",
+      "passed": true,
+      "metrics": {
+        "visual_mass": 0.9339083839992238,
+        "total_reconstruction_error": 6.938893903907228e-17,
+        "conditional_readout_scale_error": 8.326672684688674e-17
+      }
+    },
+    {
+      "name": "fixed_qkv_gate_includes_text_normalizer_T31",
+      "passed": true,
+      "metrics": {
+        "attention_error": 2.7755575615628914e-17,
+        "readout_error": 1.6653345369377348e-16,
+        "before_visual_mass": 0.9339083839992238,
+        "after_visual_mass": 0.9497298770396413
+      }
+    },
+    {
+      "name": "zero_gate_matches_masked_softmax_T31",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "time_full_and_weighted_rfft_readouts_T32",
+      "passed": true,
+      "metrics": {
+        "full_fft_error": 1.3899725562405533e-16,
+        "rfft_error": 8.326672684688674e-17,
+        "backward_fft_error": 1.3877787807814457e-16
+      }
+    },
+    {
+      "name": "visual_mass_and_text_partition_T32",
+      "passed": true,
+      "metrics": {
+        "visual_mass": 0.9862850208690628,
+        "total_reconstruction_error": 1.3877787807814457e-16,
+        "conditional_readout_scale_error": 1.3877787807814457e-16
+      }
+    },
+    {
+      "name": "fixed_qkv_gate_includes_text_normalizer_T32",
+      "passed": true,
+      "metrics": {
+        "attention_error": 2.0816681711721685e-17,
+        "readout_error": 1.1102230246251565e-16,
+        "before_visual_mass": 0.9862850208690628,
+        "after_visual_mass": 0.9864282335454166
+      }
+    },
+    {
+      "name": "zero_gate_matches_masked_softmax_T32",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "onehot_same_attention_and_value_powers_opposite_readouts",
+      "passed": true,
+      "metrics": {
+        "attention_power_error": 5.551115123125783e-17,
+        "value_power_error": 0.0,
+        "first_readout": 1.0,
+        "last_readout": -1.0,
+        "minimum_first_band_contribution": 0.0,
+        "minimum_last_band_contribution": -0.42677669529663687
+      }
+    },
+    {
+      "name": "finite_softmax_same_attention_and_value_powers_opposite_readouts",
+      "passed": true,
+      "metrics": {
+        "attention_power_error": 2.7755575615628914e-17,
+        "value_power_error": 0.0,
+        "first_readout": 0.9,
+        "last_readout": -0.9,
+        "minimum_first_band_contribution": 0.0,
+        "minimum_last_band_contribution": -0.3840990257669732
+      }
+    },
+    {
+      "name": "counterexample_uses_finite_softmax_logits",
+      "passed": true,
+      "metrics": {}
+    },
+    {
+      "name": "one_sided_endpoint_weights_even_and_odd",
+      "passed": true,
+      "metrics": {}
+    }
+  ]
+}
